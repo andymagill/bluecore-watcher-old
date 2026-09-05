@@ -51,7 +51,7 @@ export const DeltaDetailModal: React.FC<DeltaDetailModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 overflow-y-auto">
-      <div className="bg-[#020617] border border-slate-700/80 rounded-lg w-full max-w-3xl shadow-2xl overflow-hidden my-6 animate-in fade-in zoom-in-95 duration-150">
+      <div className="bg-[#020617] border border-slate-700/80 rounded-lg w-full max-w-3xl shadow-2xl overflow-hidden my-6">
         
         {/* Modal Header */}
         <div className="p-3 sm:p-4 border-b border-slate-800 bg-slate-950/90 flex items-start justify-between gap-4">

@@ -26,7 +26,7 @@ export const EvidenceTimeline: React.FC<EvidenceTimelineProps> = ({
   const snapshots = getComparativeSnapshots(records);
 
   return (
-    <div className="w-full max-w-5xl mx-auto px-4 py-4">
+    <div className="layout-container px-4 py-5">
       {/* Comparative Snapshots Panel */}
       <ComparativeSnapshots snapshots={snapshots} />
 
@@ -106,11 +106,11 @@ export const EvidenceTimeline: React.FC<EvidenceTimelineProps> = ({
                       <span className="text-[10px] font-mono-code text-slate-400 uppercase font-semibold">
                         {associatedRecord.subVector}
                       </span>
-                      <span className="text-[9px] font-mono-code px-1.5 py-0.2 rounded bg-emerald-950 text-emerald-300 border border-emerald-800">
+                      <span className="text-[9px] font-mono-code px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-800">
                         {associatedRecord.prNoiseFilter.verificationStatus}
                       </span>
                     </div>
-                    <p className="text-xs text-slate-300 mb-2 font-sans leading-relaxed">
+                    <p className="text-xs text-slate-300 mb-2 font-sans leading-relaxed max-w-prose">
                       {associatedRecord.verifiableDelta}
                     </p>
 
