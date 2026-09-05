@@ -1,0 +1,40 @@
+{
+  "id": "REC-REG-20260905-bdd970a3",
+  "operationalVector": "REGULATORY_PATHWAYS",
+  "subVector": "MARAD Frameworks",
+  "headline": "Request for Information: Development of a Commercially Viable System-Centric Small Modular Reactor Concept for Deployment in the Marine Transportation System",
+  "verifiableClaim": "Request for Information: Development of a Commercially Viable System-Centric Small Modular Reactor Concept for Deployment in the Marine Transportation System",
+  "verifiableDelta": "Accessioned from Federal Register (Transportation Department), published 2026-05-07. This record captures the headline, publisher, and publication date as stated by the source feed; the article body was not retrieved and no claim within it has been independently corroborated.",
+  "keyMetrics": [
+    {
+      "label": "Docket Number",
+      "value": "2026-09070",
+      "status": "nominal"
+    }
+  ],
+  "sourceProvenance": {
+    "documentRef": "2026-09070",
+    "commitHash": "",
+    "timestamp": "2026-09-05T22:41:10.451Z",
+    "filePath": "intelligence/regulatory/REC-REG-20260905-bdd970a3.json",
+    "externalUrl": "https://www.federalregister.gov/documents/2026/05/07/2026-09070/request-for-information-development-of-a-commercially-viable-system-centric-small-modular-reactor",
+    "canonicalUrl": "https://www.federalregister.gov/documents/2026/05/07/2026-09070/request-for-information-development-of-a-commercially-viable-system-centric-small-modular-reactor",
+    "urlVerifiedAt": "2026-09-05T22:41:07.632Z",
+    "sourcePublisher": "Federal Register (Transportation Department)",
+    "externalDocketId": "2026-09070",
+    "fileSizeBytes": 2469
+  },
+  "prNoiseFilter": {
+    "prChatterDetected": false,
+    "chatterFlags": [],
+    "verificationStatus": "UNVERIFIED_EXTERNAL_ITEM",
+    "filterRationale": "Canonical URL resolved to https://www.federalregister.gov/documents/2026/05/07/2026-09070/request-for-information-development-of-a-commercially-viable-system-centric-small-modular-reactor and confirmed reachable (successful HTTP response) at 2026-09-05T22:41:07.632Z. No further corroboration — article body, cross-source confirmation, or claim verification — has been performed."
+  },
+  "agentRoutingMeta": {
+    "targetAgent": "AGENT_NUCLEAR_COMPLIANCE",
+    "actionType": "UPDATE_METRIC_STORE",
+    "priority": "P2_INFORMATIONAL",
+    "checksum": "sha256:0aff95ec8920e3d1eaacb42c83c1d583389096f7c99cee0256decaf38d19f1a2",
+    "routingTimestamp": "2026-09-05T22:41:10.451Z"
+  }
+}
