@@ -9,10 +9,12 @@
  * that stand in for the schema validation a database would normally provide.
  */
 
-export type OperationalVector =
-  | 'TECHNICAL_EVOLUTION'
-  | 'REGULATORY_PATHWAYS'
-  | 'ECOSYSTEM_MOMENTUM';
+export const OPERATIONAL_VECTORS = [
+  'TECHNICAL_EVOLUTION',
+  'REGULATORY_PATHWAYS',
+  'ECOSYSTEM_MOMENTUM',
+] as const;
+export type OperationalVector = (typeof OPERATIONAL_VECTORS)[number];
 
 /**
  * The app's single primary-navigation state: one operational vector's grid, or the all-vector
@@ -21,25 +23,30 @@ export type OperationalVector =
  */
 export type ActiveTab = OperationalVector | 'TIMELINE';
 
-export type SubVector =
+export const SUB_VECTORS = [
   // Technical Evolution
-  | 'Berth 48 Physical Assets'
-  | 'SMR Scaling Metrics'
-  | 'Marine Barge Modifications'
-  | 'Subsea Grid Integration'
+  'Berth 48 Physical Assets',
+  'SMR Scaling Metrics',
+  'Marine Barge Modifications',
+  'Subsea Grid Integration',
   // Regulatory Pathways
-  | 'Port of Long Beach Compliance'
-  | 'MARAD Frameworks'
-  | 'Early NRC Indicators'
+  'Port of Long Beach Compliance',
+  'MARAD Frameworks',
+  'Early NRC Indicators',
   // Ecosystem Momentum
-  | 'Capital Structure Updates'
-  | 'Executive Talent Acquisition'
-  | 'Corporate & Maritime Alliances';
+  'Capital Structure Updates',
+  'Executive Talent Acquisition',
+  'Corporate & Maritime Alliances',
+] as const;
+export type SubVector = (typeof SUB_VECTORS)[number];
 
-export type VerificationStatus = 
-  | 'VERIFIED_DELTA'
-  | 'PENDING_DOCUMENT_CORROBORATION'
-  | 'REJECTED_PR_CHATTER';
+export const VERIFICATION_STATUSES = [
+  'VERIFIED_DELTA',
+  'PENDING_DOCUMENT_CORROBORATION',
+  'REJECTED_PR_CHATTER',
+  'UNVERIFIED_EXTERNAL_ITEM',
+] as const;
+export type VerificationStatus = (typeof VERIFICATION_STATUSES)[number];
 
 export interface OperationalMetric {
   label: string;
@@ -108,30 +115,46 @@ export interface OperationalMilestone {
   criticalPath: boolean;
 }
 
+/**
+ * `confidenceScore` and `signalNoiseRatio` are optional because nothing in this codebase
+ * computes them — a record that omits them is stating an honest absence of a noise-filtering
+ * pass; a record that fills them with a constant (the ingest pipeline used to hardcode 0.99 /
+ * 26.5 on every accession) is asserting confidence nobody derived. Do not reintroduce a default.
+ */
 export interface PRNoiseFilter {
   prChatterDetected: boolean;
   chatterFlags: string[];
-  confidenceScore: number; // 0.00 to 1.00
+  confidenceScore?: number; // 0.00 to 1.00
   verificationStatus: VerificationStatus;
-  signalNoiseRatio: number; // e.g. 9.4x
+  signalNoiseRatio?: number; // e.g. 9.4x
   filterRationale: string;
 }
 
+export const TARGET_AGENTS = [
+  'AGENT_MARITIME_INFRASTRUCTURE',
+  'AGENT_NUCLEAR_COMPLIANCE',
+  'AGENT_CAPITAL_AUDITOR',
+  'AGENT_GRID_INTERCONNECT',
+  'AGENT_HARBOR_LOGISTICS',
+] as const;
+
+export const ACTION_TYPES = [
+  'DISPATCH_INSPECTION',
+  'QUEUE_LEGAL_AUDIT',
+  'UPDATE_METRIC_STORE',
+  'ALERT_SECURITY_ANOMALY',
+  'LOG_CORROBORATED_DELTA',
+] as const;
+
+export const ROUTING_PRIORITIES = ['P0_CRITICAL', 'P1_OPERATIONAL', 'P2_INFORMATIONAL'] as const;
+
 export interface AgentRoutingMeta {
-  targetAgent: 
-    | 'AGENT_MARITIME_INFRASTRUCTURE'
-    | 'AGENT_NUCLEAR_COMPLIANCE'
-    | 'AGENT_CAPITAL_AUDITOR'
-    | 'AGENT_GRID_INTERCONNECT'
-    | 'AGENT_HARBOR_LOGISTICS';
-  actionType: 
-    | 'DISPATCH_INSPECTION'
-    | 'QUEUE_LEGAL_AUDIT'
-    | 'UPDATE_METRIC_STORE'
-    | 'ALERT_SECURITY_ANOMALY'
-    | 'LOG_CORROBORATED_DELTA';
-  priority: 'P0_CRITICAL' | 'P1_OPERATIONAL' | 'P2_INFORMATIONAL';
-  checksum: string;
+  targetAgent: (typeof TARGET_AGENTS)[number];
+  actionType: (typeof ACTION_TYPES)[number];
+  priority: (typeof ROUTING_PRIORITIES)[number];
+  /** A real `sha256:`-prefixed digest of the record's file content, or omitted — never the
+   * record's own id relabeled as a hash. */
+  checksum?: string;
   routingTimestamp: string;
 }
 
@@ -166,11 +189,22 @@ export interface OperationalDeltaRecord {
   sourceProvenance: {
     documentRef: string;
     commitHash: string;
-    author: string;
+    /** Optional: the ingest pipeline records the publisher as `sourcePublisher`, not as an
+     * author — this is unknown for most feed items and should not be filled with the publisher
+     * name as a stand-in. */
+    author?: string;
     timestamp: string;
     filePath: string;
     fileSizeBytes?: number;
+    /** As given by the source feed — for Google News items this is an opaque
+     * `news.google.com/rss/articles/...` redirect, not the publisher's real URL. See
+     * `canonicalUrl` for what was actually resolved and checked. */
     externalUrl?: string;
+    /** The resolved publisher URL that was actually HTTP-verified before this record was
+     * accessioned. Absent means no resolution/verification was performed. */
+    canonicalUrl?: string;
+    /** When `canonicalUrl` was last confirmed to return a successful response. */
+    urlVerifiedAt?: string;
     sourcePublisher?: string;
     externalDocketId?: string;
   };
@@ -223,6 +257,9 @@ export interface FlatFileStateLog {
     verifiedDeltas: number;
     pendingCorroboration: number;
     rejectedPrChatter: number;
+    /** Accessioned but not yet corroborated beyond a live-URL check — what the ingest pipeline
+     * stamps on every record it writes today. See `VerificationStatus`. */
+    unverifiedExternal: number;
     prNoiseSuppressionRatio: string;
   };
   commits: GitCommitSnapshot[];

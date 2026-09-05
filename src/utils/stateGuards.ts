@@ -1,4 +1,14 @@
-import { FlatFileStateLog, GitCommitSnapshot, OperationalDeltaRecord } from '../types';
+import {
+  FlatFileStateLog,
+  GitCommitSnapshot,
+  OperationalDeltaRecord,
+  OPERATIONAL_VECTORS,
+  SUB_VECTORS,
+  VERIFICATION_STATUSES,
+  TARGET_AGENTS,
+  ACTION_TYPES,
+  ROUTING_PRIORITIES,
+} from '../types';
 
 /**
  * Runtime shape guards for `FlatFileStateLog` and its members.
@@ -16,13 +26,17 @@ function isNonEmptyString(value: unknown): value is string {
   return typeof value === 'string' && value.length > 0;
 }
 
+function isOneOf<T extends readonly string[]>(value: unknown, allowed: T): value is T[number] {
+  return typeof value === 'string' && (allowed as readonly string[]).includes(value);
+}
+
 export function isOperationalDeltaRecord(value: unknown): value is OperationalDeltaRecord {
   if (typeof value !== 'object' || value === null) return false;
   const r = value as Record<string, unknown>;
 
   if (!isNonEmptyString(r.id)) return false;
-  if (!isNonEmptyString(r.operationalVector)) return false;
-  if (!isNonEmptyString(r.subVector)) return false;
+  if (!isOneOf(r.operationalVector, OPERATIONAL_VECTORS)) return false;
+  if (!isOneOf(r.subVector, SUB_VECTORS)) return false;
   if (!isNonEmptyString(r.headline)) return false;
   if (!isNonEmptyString(r.verifiableClaim)) return false;
   if (!isNonEmptyString(r.verifiableDelta)) return false;
@@ -31,19 +45,20 @@ export function isOperationalDeltaRecord(value: unknown): value is OperationalDe
   if (typeof sp !== 'object' || sp === null) return false;
   if (!isNonEmptyString(sp.documentRef)) return false;
   if (typeof sp.commitHash !== 'string') return false;
-  if (!isNonEmptyString(sp.author)) return false;
+  if (sp.author !== undefined && !isNonEmptyString(sp.author)) return false;
   if (!isNonEmptyString(sp.timestamp)) return false;
   if (!isNonEmptyString(sp.filePath)) return false;
 
   const pnf = r.prNoiseFilter as Record<string, unknown> | undefined;
   if (typeof pnf !== 'object' || pnf === null) return false;
-  if (!isNonEmptyString(pnf.verificationStatus)) return false;
+  if (!isOneOf(pnf.verificationStatus, VERIFICATION_STATUSES)) return false;
   if (!Array.isArray(pnf.chatterFlags)) return false;
 
   const arm = r.agentRoutingMeta as Record<string, unknown> | undefined;
   if (typeof arm !== 'object' || arm === null) return false;
-  if (!isNonEmptyString(arm.targetAgent)) return false;
-  if (!isNonEmptyString(arm.actionType)) return false;
+  if (!isOneOf(arm.targetAgent, TARGET_AGENTS)) return false;
+  if (!isOneOf(arm.actionType, ACTION_TYPES)) return false;
+  if (!isOneOf(arm.priority, ROUTING_PRIORITIES)) return false;
 
   return true;
 }
@@ -116,6 +131,7 @@ export function parseStateLog(value: unknown): ParseStateLogResult {
       verifiedDeltas: records.filter((r) => r.prNoiseFilter.verificationStatus === 'VERIFIED_DELTA').length,
       pendingCorroboration: records.filter((r) => r.prNoiseFilter.verificationStatus === 'PENDING_DOCUMENT_CORROBORATION').length,
       rejectedPrChatter: records.filter((r) => r.prNoiseFilter.verificationStatus === 'REJECTED_PR_CHATTER').length,
+      unverifiedExternal: records.filter((r) => r.prNoiseFilter.verificationStatus === 'UNVERIFIED_EXTERNAL_ITEM').length,
       prNoiseSuppressionRatio: 'n/a (imported snapshot)',
     },
     commits,

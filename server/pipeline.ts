@@ -3,7 +3,19 @@ import path from 'path';
 import { OperationalDeltaRecord } from '../src/types';
 import { readRecords } from './records';
 import { stageAndCommit } from './git';
-import { fetchRealExternalCandidates, classifyIngestCandidate, buildRecordFromCandidate, normalizeHeadline } from './ingest';
+import {
+  fetchRealExternalCandidates,
+  classifyIngestCandidate,
+  buildRecordFromCandidate,
+  makeRecordId,
+  resolveAndVerify,
+  isVerified,
+  headlineTokens,
+  jaccardSimilarity,
+  DUPLICATE_HEADLINE_THRESHOLD,
+  VerifiedCandidate,
+  QuarantinedCandidate,
+} from './ingest';
 
 const DEFAULT_MAX_RECORDS = 5;
 
@@ -12,6 +24,32 @@ export type IngestResult =
   | { status: 'up-to-date' }
   | { status: 'failed'; error: string };
 
+/** Appends this run's rejected candidates to a dated quarantine file, so a failure to resolve or
+ * verify a URL is visible for later review rather than silently discarded. `readRecords` only
+ * ever looks under `technical/`, `regulatory/`, `ecosystem/`, so this directory is never read
+ * into `/api/state` — quarantined items never masquerade as accessioned records. */
+function writeQuarantine(rootDir: string, rejected: QuarantinedCandidate[]): void {
+  if (rejected.length === 0) return;
+
+  const dir = path.join(rootDir, 'intelligence', '_quarantine');
+  fs.mkdirSync(dir, { recursive: true });
+
+  const dateStamp = new Date().toISOString().slice(0, 10);
+  const filePath = path.join(dir, `${dateStamp}.json`);
+
+  const existing: unknown[] = fs.existsSync(filePath)
+    ? JSON.parse(fs.readFileSync(filePath, 'utf-8'))
+    : [];
+
+  const entries = rejected.map((q) => ({
+    quarantinedAt: new Date().toISOString(),
+    reason: q.reason,
+    candidate: q.candidate,
+  }));
+
+  fs.writeFileSync(filePath, JSON.stringify([...existing, ...entries], null, 2), 'utf-8');
+}
+
 /**
  * The full ingest pipeline, extracted so it can run identically from `POST /api/workflow/run`
  * (`server/routes.ts`) and from `scripts/ingest.ts` (a plain CLI, no Express/browser involved).
@@ -19,9 +57,12 @@ export type IngestResult =
  * button click in the running server and a scheduled CI job without either one surprising you
  * with a network push the other didn't expect; the workflow that wants a push does that itself.
  *
- * Fetches candidates, dedups against both existing records and other candidates from this same
- * fetch, writes up to `maxRecords` new record files, and makes ONE commit covering all of them —
- * not one commit per record — so a catch-up run after being offline doesn't spam the history.
+ * Fetches candidates, resolves and HTTP-verifies each one's real publisher URL (quarantining any
+ * that fail), dedups the survivors against both existing records and other candidates from this
+ * same fetch (by canonical URL and by headline token-similarity, not just exact URL/headline
+ * equality), writes up to `maxRecords` new record files, and makes ONE commit covering all of
+ * them — not one commit per record — so a catch-up run after being offline doesn't spam the
+ * history.
  */
 export async function runIngestPipeline(
   rootDir: string,
@@ -32,26 +73,43 @@ export async function runIngestPipeline(
 
   try {
     const existingRecords = readRecords(rootDir, intelligenceDir);
-    const existingHeadlines = new Set(existingRecords.map((r) => normalizeHeadline(r.headline)));
     const existingUrls = new Set(
-      existingRecords.map((r) => (r.sourceProvenance?.externalUrl || '').toLowerCase())
+      existingRecords
+        .map((r) => (r.sourceProvenance?.canonicalUrl || r.sourceProvenance?.externalUrl || '').toLowerCase())
+        .filter(Boolean)
     );
+    const existingTokenSets = existingRecords.map((r) => headlineTokens(r.headline));
 
     const candidates = await fetchRealExternalCandidates();
 
-    const seenHeadlines = new Set(existingHeadlines);
+    const resolutions = await Promise.all(candidates.map((c) => resolveAndVerify(c)));
+    const quarantined = resolutions.filter(
+      (r): r is QuarantinedCandidate => !isVerified(r)
+    );
+    writeQuarantine(rootDir, quarantined);
+
     const seenUrls = new Set(existingUrls);
-    const fresh = [];
-    for (const candidate of candidates) {
-      const normalizedHeadline = normalizeHeadline(candidate.title);
-      const normalizedUrl = candidate.url.toLowerCase();
-      if (seenHeadlines.has(normalizedHeadline) || seenUrls.has(normalizedUrl)) continue;
+    const seenTokenSets = [...existingTokenSets];
+    const fresh: VerifiedCandidate[] = [];
+
+    for (const resolution of resolutions) {
+      if (!isVerified(resolution)) continue;
+
+      const normalizedUrl = resolution.canonicalUrl.toLowerCase();
+      const tokens = headlineTokens(resolution.candidate.title);
+
+      const isUrlDuplicate = seenUrls.has(normalizedUrl);
+      const isHeadlineDuplicate = seenTokenSets.some(
+        (existing) => jaccardSimilarity(existing, tokens) >= DUPLICATE_HEADLINE_THRESHOLD
+      );
+      if (isUrlDuplicate || isHeadlineDuplicate) continue;
 
       // Mark seen immediately (not just at the end) so duplicate stories within this same fetch
-      // — the four RSS queries overlap — don't both make it into the batch.
-      seenHeadlines.add(normalizedHeadline);
+      // — the four RSS queries overlap, and the same event is often filed under regulatory and
+      // technical alike — don't both make it into the batch.
       seenUrls.add(normalizedUrl);
-      fresh.push(candidate);
+      seenTokenSets.push(tokens);
+      fresh.push(resolution);
       if (fresh.length >= maxRecords) break;
     }
 
@@ -61,26 +119,31 @@ export async function runIngestPipeline(
 
     const writtenPaths: string[] = [];
     const newRecords: OperationalDeltaRecord[] = [];
+    const commitTime = new Date();
 
-    for (const candidate of fresh) {
-      const { vector, subVector, targetSubdir } = classifyIngestCandidate(candidate);
-      const recordId = `REC-${
-        vector === 'TECHNICAL_EVOLUTION' ? 'TECH' : vector === 'REGULATORY_PATHWAYS' ? 'REG' : 'ECO'
-      }-LIVE-${Date.now().toString().slice(-4)}-${writtenPaths.length}`;
+    for (const verified of fresh) {
+      const { vector, subVector, targetSubdir } = classifyIngestCandidate(verified.candidate);
+      const recordId = makeRecordId(vector, verified.canonicalUrl, commitTime);
 
-      const record = buildRecordFromCandidate(candidate, recordId, targetSubdir, vector, subVector);
+      const record = buildRecordFromCandidate(verified, recordId, targetSubdir, vector, subVector);
       const targetPath = path.join(intelligenceDir, targetSubdir, `${record.id}.json`);
       const relativePath = path.relative(rootDir, targetPath).split(path.sep).join('/');
 
+      // Written once with an approximate size (the field can't include its own final byte
+      // count), then re-measured against the file actually on disk — closer to the truth than a
+      // hardcoded literal, and still a single logical write since nothing is committed yet.
       fs.writeFileSync(targetPath, JSON.stringify(record, null, 2), 'utf-8');
+      record.sourceProvenance.fileSizeBytes = fs.statSync(targetPath).size;
+      fs.writeFileSync(targetPath, JSON.stringify(record, null, 2), 'utf-8');
+
       writtenPaths.push(relativePath);
       newRecords.push(record);
     }
 
     const commitMessage =
       newRecords.length === 1
-        ? `feat(ingest): accession real external record: ${newRecords[0].headline.slice(0, 50)} [${newRecords[0].sourceProvenance.sourcePublisher}]`
-        : `feat(ingest): accession ${newRecords.length} real external records`;
+        ? `feat(ingest): accession external item: ${newRecords[0].headline.slice(0, 50)} [${newRecords[0].sourceProvenance.sourcePublisher}]`
+        : `feat(ingest): accession ${newRecords.length} external items`;
 
     const outcome = stageAndCommit(rootDir, writtenPaths, commitMessage);
 

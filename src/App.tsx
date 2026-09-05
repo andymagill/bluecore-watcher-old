@@ -71,7 +71,8 @@ export default function App() {
           rec.sourceProvenance.documentRef.toLowerCase().includes(q) ||
           rec.sourceProvenance.commitHash.toLowerCase().includes(q) ||
           rec.subVector.toLowerCase().includes(q) ||
-          rec.sourceProvenance.author.toLowerCase().includes(q)
+          (rec.sourceProvenance.author?.toLowerCase().includes(q) ?? false) ||
+          (rec.sourceProvenance.sourcePublisher?.toLowerCase().includes(q) ?? false)
         );
       }
 

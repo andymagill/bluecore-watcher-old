@@ -134,9 +134,9 @@ export const EvidenceTimeline: React.FC<EvidenceTimelineProps> = ({
                         <span className="truncate text-slate-300 font-semibold">
                           {associatedRecord.sourceProvenance.sourcePublisher || associatedRecord.sourceProvenance.documentRef}
                         </span>
-                        {associatedRecord.sourceProvenance.externalUrl && (
+                        {(associatedRecord.sourceProvenance.canonicalUrl || associatedRecord.sourceProvenance.externalUrl) && (
                           <a
-                            href={associatedRecord.sourceProvenance.externalUrl}
+                            href={associatedRecord.sourceProvenance.canonicalUrl || associatedRecord.sourceProvenance.externalUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-cyan-400 hover:text-cyan-300 flex items-center gap-1 font-bold px-1.5 py-0.5 rounded bg-cyan-950/60 border border-cyan-800/60"

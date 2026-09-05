@@ -222,14 +222,14 @@ export const DeltaDetailModal: React.FC<DeltaDetailModalProps> = ({
                 )}
               </div>
               <div className="flex items-center gap-2">
-                {record.sourceProvenance.externalUrl && (
+                {(record.sourceProvenance.canonicalUrl || record.sourceProvenance.externalUrl) && (
                   <a
-                    href={record.sourceProvenance.externalUrl}
+                    href={record.sourceProvenance.canonicalUrl || record.sourceProvenance.externalUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1.5 text-[10px] font-mono-code px-2 py-1 rounded bg-cyan-950 text-cyan-300 border border-cyan-700/80 hover:bg-cyan-900/60 transition font-bold"
                   >
-                    <span>View Verified External Source</span>
+                    <span>{record.sourceProvenance.canonicalUrl ? 'View URL-Verified Source' : 'View External Source (unverified link)'}</span>
                     <ExternalLink className="h-3 w-3" />
                   </a>
                 )}
@@ -250,7 +250,7 @@ export const DeltaDetailModal: React.FC<DeltaDetailModalProps> = ({
               </div>
               <div className="bg-slate-900/80 p-2 rounded border border-slate-800">
                 <span className="text-[9px] text-slate-400 block uppercase">Author / Station</span>
-                <span className="font-mono-code text-slate-200 truncate block">{record.sourceProvenance.author}</span>
+                <span className="font-mono-code text-slate-200 truncate block">{record.sourceProvenance.author ?? record.sourceProvenance.sourcePublisher ?? 'Not established'}</span>
               </div>
               <div className="bg-slate-900/80 p-2 rounded border border-slate-800">
                 <span className="text-[9px] text-slate-400 block uppercase">Committed Timestamp</span>
