@@ -10,7 +10,6 @@ export function createRoutes(rootDir: string, intelligenceDir: string): Router {
       status: 'ok',
       system: 'Bluecore Energy Intelligence Engine',
       mode: 'native-git-repository',
-      dataProvenance: '100% Real Externally Sourced (MARAD, POLB, Forbes, Federal Register)',
       timestamp: new Date().toISOString(),
     });
   });

@@ -22,19 +22,6 @@
     "urlVerifiedAt": "2026-09-05T22:48:01.006Z",
     "sourcePublisher": "Federal Register (Nuclear Regulatory Commission)",
     "externalDocketId": "2024-17598",
-    "fileSizeBytes": 2192
-  },
-  "prNoiseFilter": {
-    "prChatterDetected": false,
-    "chatterFlags": [],
-    "verificationStatus": "UNVERIFIED_EXTERNAL_ITEM",
-    "filterRationale": "Canonical URL resolved to https://www.federalregister.gov/documents/2024/08/09/2024-17598/alternative-physical-security-requirements-for-advanced-reactors and confirmed reachable (successful HTTP response) at 2026-09-05T22:48:01.006Z. No further corroboration — article body, cross-source confirmation, or claim verification — has been performed."
-  },
-  "agentRoutingMeta": {
-    "targetAgent": "AGENT_NUCLEAR_COMPLIANCE",
-    "actionType": "UPDATE_METRIC_STORE",
-    "priority": "P2_INFORMATIONAL",
-    "checksum": "sha256:428ab9bf52af4b7fc87419433c7b7609f2b78f3c7992a5ad10c2c8bff7280018",
-    "routingTimestamp": "2026-09-05T22:48:01.513Z"
+    "fileSizeBytes": 1409
   }
 }

@@ -6,7 +6,7 @@ import {
   ChevronRight,
   ChevronDown,
   ShieldCheck,
-  AlertOctagon,
+  ShieldQuestion,
 } from 'lucide-react';
 import { ActiveTab, OperationalDeltaRecord, OperationalVector } from '../types';
 import { getVectorTheme } from '../utils/vectorTheme';
@@ -82,7 +82,7 @@ export const HighDensitySidebar: React.FC<HighDensitySidebarProps> = ({
 
         <div className="space-y-3 font-mono-code">
           {records.slice(0, 5).map((rec) => {
-            const isRejected = rec.prNoiseFilter.verificationStatus === 'REJECTED_PR_CHATTER';
+            const isUrlVerified = Boolean(rec.sourceProvenance.canonicalUrl && rec.sourceProvenance.urlVerifiedAt);
             const theme = getVectorTheme(rec.operationalVector);
 
             return (
@@ -106,13 +106,13 @@ export const HighDensitySidebar: React.FC<HighDensitySidebarProps> = ({
                   <span className="truncate max-w-[120px] text-blue-300 font-medium">
                     {rec.sourceProvenance.sourcePublisher || rec.subVector}
                   </span>
-                  {isRejected ? (
-                    <span className="text-rose-400 flex items-center gap-0.5">
-                      <AlertOctagon className="h-2.5 w-2.5" /> Noise
+                  {isUrlVerified ? (
+                    <span className="text-emerald-400 flex items-center gap-0.5">
+                      <ShieldCheck className="h-2.5 w-2.5" /> Verified
                     </span>
                   ) : (
-                    <span className="text-emerald-400 flex items-center gap-0.5">
-                      <ShieldCheck className="h-2.5 w-2.5" /> Delta
+                    <span className="text-slate-400 flex items-center gap-0.5">
+                      <ShieldQuestion className="h-2.5 w-2.5" /> Unverified
                     </span>
                   )}
                 </div>

@@ -7,10 +7,8 @@ export interface VectorCounts {
   ecosystem: number;
 }
 
-export interface StatusCounts {
+export interface UrlVerificationCounts {
   verified: number;
-  rejected: number;
-  pending: number;
   unverified: number;
 }
 
@@ -31,12 +29,18 @@ export function countByVector(records: OperationalDeltaRecord[]): VectorCounts {
   };
 }
 
-/** Tallies records per PR-noise-filter verification status. */
-export function countByStatus(records: OperationalDeltaRecord[]): StatusCounts {
+/**
+ * Tallies records by whether their source URL was actually resolved and HTTP-verified
+ * (`sourceProvenance.canonicalUrl` + `urlVerifiedAt` both present) — the one real check this
+ * system performs on a source, and the only thing this count claims. It does not mean the
+ * article was read, or that any claim in it was corroborated.
+ */
+export function countByUrlVerification(records: OperationalDeltaRecord[]): UrlVerificationCounts {
+  const verified = records.filter(
+    (r) => Boolean(r.sourceProvenance.canonicalUrl) && Boolean(r.sourceProvenance.urlVerifiedAt)
+  ).length;
   return {
-    verified: records.filter((r) => r.prNoiseFilter.verificationStatus === 'VERIFIED_DELTA').length,
-    rejected: records.filter((r) => r.prNoiseFilter.verificationStatus === 'REJECTED_PR_CHATTER').length,
-    pending: records.filter((r) => r.prNoiseFilter.verificationStatus === 'PENDING_DOCUMENT_CORROBORATION').length,
-    unverified: records.filter((r) => r.prNoiseFilter.verificationStatus === 'UNVERIFIED_EXTERNAL_ITEM').length,
+    verified,
+    unverified: records.length - verified,
   };
 }

@@ -5,8 +5,7 @@ import { shortHash } from '../utils/hash';
 import {
   X,
   CheckCircle2,
-  ShieldAlert,
-  AlertTriangle,
+  ShieldQuestion,
   FileText,
   Copy,
   Check,
@@ -31,8 +30,9 @@ export const DeltaDetailModal: React.FC<DeltaDetailModalProps> = ({
 
   if (!record) return null;
 
-  const isRejected = record.prNoiseFilter.verificationStatus === 'REJECTED_PR_CHATTER';
-  const isVerified = record.prNoiseFilter.verificationStatus === 'VERIFIED_DELTA';
+  // The only evaluation this app actually performs on a source: was its URL resolved and
+  // confirmed reachable by an HTTP request. See `sourceProvenance.canonicalUrl`/`urlVerifiedAt`.
+  const isUrlVerified = Boolean(record.sourceProvenance.canonicalUrl && record.sourceProvenance.urlVerifiedAt);
 
   const theme = getVectorTheme(record.operationalVector);
   const VectorIcon = theme.icon;
@@ -66,20 +66,15 @@ export const DeltaDetailModal: React.FC<DeltaDetailModalProps> = ({
                 {record.subVector}
               </span>
 
-              {isVerified ? (
+              {isUrlVerified ? (
                 <span className="inline-flex items-center gap-1 font-mono-code text-[10px] px-2 py-0.5 rounded bg-emerald-950 border border-emerald-800 text-emerald-300">
                   <CheckCircle2 className="h-3 w-3 text-emerald-400" />
-                  VERIFIED DELTA
-                </span>
-              ) : isRejected ? (
-                <span className="inline-flex items-center gap-1 font-mono-code text-[10px] px-2 py-0.5 rounded bg-rose-950 border border-rose-800 text-rose-300">
-                  <ShieldAlert className="h-3 w-3 text-rose-400" />
-                  PR NOISE SUPPRESSED
+                  URL VERIFIED
                 </span>
               ) : (
-                <span className="inline-flex items-center gap-1 font-mono-code text-[10px] px-2 py-0.5 rounded bg-amber-950 border border-amber-800 text-amber-300">
-                  <AlertTriangle className="h-3 w-3 text-amber-400" />
-                  PENDING CORROBORATION
+                <span className="inline-flex items-center gap-1 font-mono-code text-[10px] px-2 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-400">
+                  <ShieldQuestion className="h-3 w-3 text-slate-400" />
+                  URL UNVERIFIED
                 </span>
               )}
             </div>
@@ -184,27 +179,19 @@ export const DeltaDetailModal: React.FC<DeltaDetailModalProps> = ({
             </div>
 
             <div className={`rounded-lg border p-3 ${
-              isRejected ? 'border-rose-900/60 bg-rose-950/20' : 'border-slate-800 bg-slate-900/30'
+              isUrlVerified ? 'border-slate-800 bg-slate-900/30' : 'border-amber-900/60 bg-amber-950/10'
             }`}>
               <span className="text-[10px] font-mono-code font-bold text-slate-400 uppercase block mb-1">
-                Deterministic Verification Audit
+                Source Verification
               </span>
+              {/* Derived directly from sourceProvenance, not a stored rationale string — the only
+                  thing this app checks on a source is whether its URL resolves and responds, and
+                  this states exactly that, no more. */}
               <p className="text-xs text-slate-300 leading-relaxed font-mono-code">
-                {record.prNoiseFilter.filterRationale}
+                {isUrlVerified
+                  ? `Canonical URL resolved to ${record.sourceProvenance.canonicalUrl} and confirmed reachable (successful HTTP response) at ${new Date(record.sourceProvenance.urlVerifiedAt!).toLocaleString()}. No further corroboration — article body, cross-source confirmation, or claim verification — has been performed.`
+                  : 'No canonical URL has been resolved and HTTP-verified for this record.'}
               </p>
-              {record.prNoiseFilter.chatterFlags.length > 0 && (
-                <div className="mt-2 pt-2 border-t border-rose-900/40 space-y-1">
-                  <span className="text-[10px] font-mono-code text-rose-300 font-bold block">
-                    SUPPRESSION FLAGS TRIGGERED:
-                  </span>
-                  {record.prNoiseFilter.chatterFlags.map((flag, idx) => (
-                    <div key={idx} className="text-[10px] font-mono-code text-rose-300 flex items-start gap-1">
-                      <span>•</span>
-                      <span>{flag}</span>
-                    </div>
-                  ))}
-                </div>
-              )}
             </div>
           </div>
 

@@ -240,27 +240,20 @@ export const StateLogInspectorModal: React.FC<StateLogInspectorModalProps> = ({
               </div>
 
               <div className="p-4 rounded-xl border border-slate-800 bg-[#0c1220]">
-                <h4 className="text-xs font-bold text-slate-200 mb-2">Noise Suppression & Operational Integrity</h4>
-                <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 text-xs">
+                <h4 className="text-xs font-bold text-slate-200 mb-2">Source Verification Summary</h4>
+                <p className="text-[10px] text-slate-500 mb-3">
+                  The only check this system performs on a record's source: was its URL resolved and
+                  confirmed reachable by a live HTTP request. Not a claim that any article was read or
+                  corroborated.
+                </p>
+                <div className="grid grid-cols-2 gap-3 text-xs">
                   <div>
-                    <span className="text-[10px] text-slate-400 block">Verified Deltas</span>
-                    <span className="text-emerald-400 font-bold text-base">{stateLog.filterMetrics.verifiedDeltas}</span>
+                    <span className="text-[10px] text-slate-400 block">URL Verified</span>
+                    <span className="text-emerald-400 font-bold text-base">{stateLog.urlVerification.verified}</span>
                   </div>
                   <div>
-                    <span className="text-[10px] text-slate-400 block">Unverified External</span>
-                    <span className="text-sky-400 font-bold text-base">{stateLog.filterMetrics.unverifiedExternal}</span>
-                  </div>
-                  <div>
-                    <span className="text-[10px] text-slate-400 block">Pending Corroboration</span>
-                    <span className="text-amber-400 font-bold text-base">{stateLog.filterMetrics.pendingCorroboration}</span>
-                  </div>
-                  <div>
-                    <span className="text-[10px] text-slate-400 block">Rejected PR Chatter</span>
-                    <span className="text-rose-400 font-bold text-base">{stateLog.filterMetrics.rejectedPrChatter}</span>
-                  </div>
-                  <div>
-                    <span className="text-[10px] text-slate-400 block">Signal Ratio</span>
-                    <span className="text-purple-400 font-bold text-base">{stateLog.filterMetrics.prNoiseSuppressionRatio}</span>
+                    <span className="text-[10px] text-slate-400 block">URL Unverified</span>
+                    <span className="text-slate-400 font-bold text-base">{stateLog.urlVerification.unverified}</span>
                   </div>
                 </div>
               </div>

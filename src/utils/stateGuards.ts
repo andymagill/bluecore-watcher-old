@@ -4,11 +4,8 @@ import {
   OperationalDeltaRecord,
   OPERATIONAL_VECTORS,
   SUB_VECTORS,
-  VERIFICATION_STATUSES,
-  TARGET_AGENTS,
-  ACTION_TYPES,
-  ROUTING_PRIORITIES,
 } from '../types';
+import { countByUrlVerification } from './counts';
 
 /**
  * Runtime shape guards for `FlatFileStateLog` and its members.
@@ -48,17 +45,6 @@ export function isOperationalDeltaRecord(value: unknown): value is OperationalDe
   if (sp.author !== undefined && !isNonEmptyString(sp.author)) return false;
   if (!isNonEmptyString(sp.timestamp)) return false;
   if (!isNonEmptyString(sp.filePath)) return false;
-
-  const pnf = r.prNoiseFilter as Record<string, unknown> | undefined;
-  if (typeof pnf !== 'object' || pnf === null) return false;
-  if (!isOneOf(pnf.verificationStatus, VERIFICATION_STATUSES)) return false;
-  if (!Array.isArray(pnf.chatterFlags)) return false;
-
-  const arm = r.agentRoutingMeta as Record<string, unknown> | undefined;
-  if (typeof arm !== 'object' || arm === null) return false;
-  if (!isOneOf(arm.targetAgent, TARGET_AGENTS)) return false;
-  if (!isOneOf(arm.actionType, ACTION_TYPES)) return false;
-  if (!isOneOf(arm.priority, ROUTING_PRIORITIES)) return false;
 
   return true;
 }
@@ -127,13 +113,7 @@ export function parseStateLog(value: unknown): ParseStateLogResult {
       REGULATORY_PATHWAYS: records.filter((r) => r.operationalVector === 'REGULATORY_PATHWAYS').length,
       ECOSYSTEM_MOMENTUM: records.filter((r) => r.operationalVector === 'ECOSYSTEM_MOMENTUM').length,
     },
-    filterMetrics: {
-      verifiedDeltas: records.filter((r) => r.prNoiseFilter.verificationStatus === 'VERIFIED_DELTA').length,
-      pendingCorroboration: records.filter((r) => r.prNoiseFilter.verificationStatus === 'PENDING_DOCUMENT_CORROBORATION').length,
-      rejectedPrChatter: records.filter((r) => r.prNoiseFilter.verificationStatus === 'REJECTED_PR_CHATTER').length,
-      unverifiedExternal: records.filter((r) => r.prNoiseFilter.verificationStatus === 'UNVERIFIED_EXTERNAL_ITEM').length,
-      prNoiseSuppressionRatio: 'n/a (imported snapshot)',
-    },
+    urlVerification: countByUrlVerification(records),
     commits,
     records,
   };

@@ -22,19 +22,6 @@
     "urlVerifiedAt": "2026-09-05T22:41:08.893Z",
     "sourcePublisher": "Federal Register (Nuclear Regulatory Commission)",
     "externalDocketId": "2025-10123",
-    "fileSizeBytes": 2268
-  },
-  "prNoiseFilter": {
-    "prChatterDetected": false,
-    "chatterFlags": [],
-    "verificationStatus": "UNVERIFIED_EXTERNAL_ITEM",
-    "filterRationale": "Canonical URL resolved to https://www.federalregister.gov/documents/2025/06/04/2025-10123/nuscale-power-llc-nuscale-us460-small-modular-reactor-standard-design-approval and confirmed reachable (successful HTTP response) at 2026-09-05T22:41:08.893Z. No further corroboration — article body, cross-source confirmation, or claim verification — has been performed."
-  },
-  "agentRoutingMeta": {
-    "targetAgent": "AGENT_NUCLEAR_COMPLIANCE",
-    "actionType": "UPDATE_METRIC_STORE",
-    "priority": "P2_INFORMATIONAL",
-    "checksum": "sha256:c143c66a02c48a88fe67ce01564ffd489be1b0b49b78ef97471d2560a65fd55f",
-    "routingTimestamp": "2026-09-05T22:41:10.451Z"
+    "fileSizeBytes": 1471
   }
 }

@@ -22,19 +22,6 @@
     "urlVerifiedAt": "2026-09-05T22:41:08.405Z",
     "sourcePublisher": "Federal Register (Nuclear Regulatory Commission)",
     "externalDocketId": "2023-25163",
-    "fileSizeBytes": 2252
-  },
-  "prNoiseFilter": {
-    "prChatterDetected": false,
-    "chatterFlags": [],
-    "verificationStatus": "UNVERIFIED_EXTERNAL_ITEM",
-    "filterRationale": "Canonical URL resolved to https://www.federalregister.gov/documents/2023/11/16/2023-25163/emergency-preparedness-for-small-modular-reactors-and-other-new-technologies and confirmed reachable (successful HTTP response) at 2026-09-05T22:41:08.405Z. No further corroboration — article body, cross-source confirmation, or claim verification — has been performed."
-  },
-  "agentRoutingMeta": {
-    "targetAgent": "AGENT_NUCLEAR_COMPLIANCE",
-    "actionType": "UPDATE_METRIC_STORE",
-    "priority": "P2_INFORMATIONAL",
-    "checksum": "sha256:27b4aad899e21e5a99881fbc4adb4df5383f50b7b76349f549d51a88d20e63bc",
-    "routingTimestamp": "2026-09-05T22:41:10.454Z"
+    "fileSizeBytes": 1457
   }
 }

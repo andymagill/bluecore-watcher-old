@@ -7,7 +7,6 @@ import { useMemo, useState } from 'react';
 import {
   ActiveTab,
   OperationalDeltaRecord,
-  VerificationStatus,
 } from './types';
 import { Header } from './components/Header';
 import { FilterBar } from './components/FilterBar';
@@ -18,7 +17,7 @@ import { StateLogInspectorModal } from './components/StateLogInspectorModal';
 import { HighDensitySidebar } from './components/HighDensitySidebar';
 import { DateScrubber } from './components/DateScrubber';
 import { filterStateByCommit } from './utils/timeline';
-import { countByVector, countByStatus } from './utils/counts';
+import { countByVector } from './utils/counts';
 import { shortHash } from './utils/hash';
 import { useIntelligenceState } from './hooks/useIntelligenceState';
 import { ShieldCheck, AlertTriangle } from 'lucide-react';
@@ -38,9 +37,8 @@ export default function App() {
   // Primary navigation: one operational vector's grid, or the all-vector Timeline.
   const [activeTab, setActiveTab] = useState<ActiveTab>('TECHNICAL_EVOLUTION');
 
-  // Secondary filters: apply within whichever tab is active.
+  // Secondary filter: applies within whichever tab is active.
   const [searchQuery, setSearchQuery] = useState<string>('');
-  const [selectedStatus, setSelectedStatus] = useState<VerificationStatus | 'ALL'>('ALL');
 
   // Time-Series Scrubber (0 = HEAD, commits.length - 1 = Genesis)
   const [scrubberIndex, setScrubberIndex] = useState<number>(0);
@@ -54,31 +52,22 @@ export default function App() {
     return filterStateByCommit(stateLog.records, stateLog.commits, scrubberIndex);
   }, [stateLog.records, stateLog.commits, scrubberIndex]);
 
-  // Status + search apply in every tab (previously search/status only affected the grid, so
-  // Timeline's secondary row did nothing — see EvidenceTimeline below for the other half of this).
+  // Search applies in every tab (previously it only affected the grid, so Timeline's secondary
+  // row did nothing — see EvidenceTimeline below for the other half of this).
   const searchedRecords = useMemo(() => {
-    return activeRecords.filter((rec) => {
-      if (selectedStatus !== 'ALL' && rec.prNoiseFilter.verificationStatus !== selectedStatus) {
-        return false;
-      }
-
-      if (searchQuery.trim()) {
-        const q = searchQuery.toLowerCase();
-        return (
-          rec.headline.toLowerCase().includes(q) ||
-          rec.verifiableClaim.toLowerCase().includes(q) ||
-          rec.verifiableDelta.toLowerCase().includes(q) ||
-          rec.sourceProvenance.documentRef.toLowerCase().includes(q) ||
-          rec.sourceProvenance.commitHash.toLowerCase().includes(q) ||
-          rec.subVector.toLowerCase().includes(q) ||
-          (rec.sourceProvenance.author?.toLowerCase().includes(q) ?? false) ||
-          (rec.sourceProvenance.sourcePublisher?.toLowerCase().includes(q) ?? false)
-        );
-      }
-
-      return true;
-    });
-  }, [activeRecords, selectedStatus, searchQuery]);
+    if (!searchQuery.trim()) return activeRecords;
+    const q = searchQuery.toLowerCase();
+    return activeRecords.filter((rec) => (
+      rec.headline.toLowerCase().includes(q) ||
+      rec.verifiableClaim.toLowerCase().includes(q) ||
+      rec.verifiableDelta.toLowerCase().includes(q) ||
+      rec.sourceProvenance.documentRef.toLowerCase().includes(q) ||
+      rec.sourceProvenance.commitHash.toLowerCase().includes(q) ||
+      rec.subVector.toLowerCase().includes(q) ||
+      (rec.sourceProvenance.author?.toLowerCase().includes(q) ?? false) ||
+      (rec.sourceProvenance.sourcePublisher?.toLowerCase().includes(q) ?? false)
+    ));
+  }, [activeRecords, searchQuery]);
 
   // Grid tabs additionally narrow to the active vector; Timeline shows every vector.
   const filteredRecords = useMemo(() => {
@@ -86,20 +75,16 @@ export default function App() {
     return searchedRecords.filter((rec) => rec.operationalVector === activeTab);
   }, [searchedRecords, activeTab]);
 
-  // Timeline's commit list follows the same search/status filter as the record list: a commit
-  // shows if no filter is active, or if its associated record survives the filter above.
+  // Timeline's commit list follows the same search filter as the record list: a commit shows if
+  // no filter is active, or if its associated record survives the filter above.
   const filteredCommits = useMemo(() => {
-    if (selectedStatus === 'ALL' && !searchQuery.trim()) return activeCommits;
+    if (!searchQuery.trim()) return activeCommits;
     const survivingHashes = new Set(searchedRecords.map((r) => r.sourceProvenance.commitHash));
     return activeCommits.filter((c) => survivingHashes.has(c.commitHash));
-  }, [activeCommits, searchedRecords, selectedStatus, searchQuery]);
+  }, [activeCommits, searchedRecords, searchQuery]);
 
-  // Counts for tab labels & status filters
-  const counts = useMemo(() => {
-    const vectorCounts = countByVector(activeRecords);
-    const statusCounts = countByStatus(activeRecords);
-    return { ...vectorCounts, ...statusCounts };
-  }, [activeRecords]);
+  // Counts for tab labels
+  const counts = useMemo(() => countByVector(activeRecords), [activeRecords]);
 
   // Unfiltered record count for whichever tab is active — the denominator shown next to
   // filteredRecords.length in FilterBar's "n of m" indicator.
@@ -122,10 +107,9 @@ export default function App() {
     URL.revokeObjectURL(url);
   };
 
-  // Reset secondary filters (status + search). Vector/Timeline selection is navigation, not a
-  // filter, so it's untouched by reset.
+  // Reset the secondary (search) filter. Vector/Timeline selection is navigation, not a filter,
+  // so it's untouched by reset.
   const handleResetSecondaryFilters = () => {
-    setSelectedStatus('ALL');
     setSearchQuery('');
   };
 
@@ -162,8 +146,6 @@ export default function App() {
         onSearchChange={setSearchQuery}
         activeTab={activeTab}
         onTabSelect={setActiveTab}
-        selectedStatus={selectedStatus}
-        onStatusSelect={setSelectedStatus}
         counts={counts}
         filteredCount={filteredRecords.length}
         totalCount={activeTabTotal}

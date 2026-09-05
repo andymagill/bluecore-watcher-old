@@ -57,6 +57,9 @@ export const EvidenceTimeline: React.FC<EvidenceTimelineProps> = ({
         {commits.map((commit) => {
           // Find associated operational delta record if any
           const associatedRecord = records.find(r => r.sourceProvenance.commitHash === commit.commitHash);
+          const isUrlVerified = Boolean(
+            associatedRecord?.sourceProvenance.canonicalUrl && associatedRecord?.sourceProvenance.urlVerifiedAt
+          );
 
           const theme = getVectorTheme(commit.vectorTag);
           const VectorIcon = theme.icon;
@@ -106,8 +109,14 @@ export const EvidenceTimeline: React.FC<EvidenceTimelineProps> = ({
                       <span className="text-[10px] font-mono-code text-slate-400 uppercase font-semibold">
                         {associatedRecord.subVector}
                       </span>
-                      <span className="text-[9px] font-mono-code px-1.5 py-0.5 rounded bg-emerald-950 text-emerald-300 border border-emerald-800">
-                        {associatedRecord.prNoiseFilter.verificationStatus}
+                      <span
+                        className={`text-[9px] font-mono-code px-1.5 py-0.5 rounded border ${
+                          isUrlVerified
+                            ? 'bg-emerald-950 text-emerald-300 border-emerald-800'
+                            : 'bg-slate-800 text-slate-400 border-slate-700'
+                        }`}
+                      >
+                        {isUrlVerified ? 'URL VERIFIED' : 'URL UNVERIFIED'}
                       </span>
                     </div>
                     <p className="text-xs text-slate-300 mb-2 font-sans leading-relaxed max-w-prose">

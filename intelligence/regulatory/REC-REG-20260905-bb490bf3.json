@@ -22,19 +22,6 @@
     "urlVerifiedAt": "2026-09-05T22:41:08.893Z",
     "sourcePublisher": "Federal Register (Nuclear Regulatory Commission)",
     "externalDocketId": "2026-13662",
-    "fileSizeBytes": 2263
-  },
-  "prNoiseFilter": {
-    "prChatterDetected": false,
-    "chatterFlags": [],
-    "verificationStatus": "UNVERIFIED_EXTERNAL_ITEM",
-    "filterRationale": "Canonical URL resolved to https://www.federalregister.gov/documents/2026/07/07/2026-13662/tennessee-valley-authority-clinch-river-nuclear-site-unit-1-notice-of-hearing and confirmed reachable (successful HTTP response) at 2026-09-05T22:41:08.893Z. No further corroboration — article body, cross-source confirmation, or claim verification — has been performed."
-  },
-  "agentRoutingMeta": {
-    "targetAgent": "AGENT_NUCLEAR_COMPLIANCE",
-    "actionType": "UPDATE_METRIC_STORE",
-    "priority": "P2_INFORMATIONAL",
-    "checksum": "sha256:d521e836d1df0be3d0d072eade2128a0d4cabb9721ec2c7841db4b868a986830",
-    "routingTimestamp": "2026-09-05T22:41:10.453Z"
+    "fileSizeBytes": 1467
   }
 }

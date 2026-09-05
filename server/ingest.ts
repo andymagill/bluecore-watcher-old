@@ -315,14 +315,16 @@ export function makeRecordId(vector: OperationalVector, canonicalUrl: string, no
 /**
  * Builds a complete `OperationalDeltaRecord` for a freshly-accessioned external candidate.
  *
- * Every field here is either taken verbatim from the source feed, actually measured (the URL
- * verification timestamp, the content digest), or explicitly marked as not yet established
- * (`verificationStatus: 'UNVERIFIED_EXTERNAL_ITEM'`, no `confidenceScore`, no `nextMilestone`).
- * An earlier version of this function synthesized a claim, a corroboration statement, three fake
- * "metrics," an invented milestone, a hardcoded 0.99 confidence score, and a checksum that was
- * just the record's own id relabeled — none of which this pipeline had any basis to assert. Do
- * not reintroduce a literal in place of an unresolved field; render it absent instead, the way
- * `metricDrift.ts` renders an unsupported metric as `isUnpopulated` rather than a placeholder.
+ * Every field here is either taken verbatim from the source feed or actually measured (the URL
+ * verification timestamp). An earlier version of this function additionally synthesized a
+ * corroboration statement, three fake "metrics," an invented milestone, a hardcoded 0.99
+ * confidence score, and — inside two whole objects, `prNoiseFilter` and `agentRoutingMeta` — a
+ * "PR chatter" evaluation and an "agent" that dispatches inspections and alerts security, none of
+ * which this codebase implements anywhere. Those objects have been removed rather than
+ * reformed: nothing here reads an article for spin, classifies it as noise, or routes it to a
+ * backend agent, so no field should claim it does. `sourceProvenance.canonicalUrl` /
+ * `urlVerifiedAt` already say precisely what was checked (a live HTTP request) and when — that is
+ * the whole of what this pipeline verifies, and it needs no separate framing.
  */
 export function buildRecordFromCandidate(
   verified: VerifiedCandidate,
@@ -338,11 +340,6 @@ export function buildRecordFromCandidate(
     candidate.type === 'DOCKET' && candidate.docketNumber
       ? [{ label: 'Docket Number', value: candidate.docketNumber, status: 'nominal' }]
       : undefined;
-
-  const contentDigest = crypto
-    .createHash('sha256')
-    .update(`${recordId}|${candidate.title}|${canonicalUrl}|${now}`)
-    .digest('hex');
 
   return {
     id: recordId,
@@ -367,24 +364,6 @@ export function buildRecordFromCandidate(
       urlVerifiedAt,
       sourcePublisher: candidate.publisher,
       externalDocketId: candidate.docketNumber,
-    },
-    prNoiseFilter: {
-      prChatterDetected: false,
-      chatterFlags: [],
-      verificationStatus: 'UNVERIFIED_EXTERNAL_ITEM',
-      filterRationale: `Canonical URL resolved to ${canonicalUrl} and confirmed reachable (successful HTTP response) at ${urlVerifiedAt}. No further corroboration — article body, cross-source confirmation, or claim verification — has been performed.`,
-    },
-    agentRoutingMeta: {
-      targetAgent:
-        vector === 'REGULATORY_PATHWAYS'
-          ? 'AGENT_NUCLEAR_COMPLIANCE'
-          : vector === 'TECHNICAL_EVOLUTION'
-          ? 'AGENT_MARITIME_INFRASTRUCTURE'
-          : 'AGENT_CAPITAL_AUDITOR',
-      actionType: 'UPDATE_METRIC_STORE',
-      priority: 'P2_INFORMATIONAL',
-      checksum: `sha256:${contentDigest}`,
-      routingTimestamp: now,
     },
   };
 }
