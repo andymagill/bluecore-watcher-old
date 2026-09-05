@@ -1,0 +1,6 @@
+{
+  "name": "Bluecore Energy Intelligence Engine",
+  "description": "Stateless, Git-driven intelligence tracking engine and verifiable operational evidence command center for Bluecore Energy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
