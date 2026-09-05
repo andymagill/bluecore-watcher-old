@@ -81,7 +81,7 @@ export const StateLogInspectorModal: React.FC<StateLogInspectorModalProps> = ({
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4 overflow-y-auto">
-      <div className="bg-[#0b101d] border border-slate-700 rounded-2xl w-full max-w-4xl shadow-2xl overflow-hidden my-8 animate-in fade-in zoom-in-95 duration-150">
+      <div className="bg-[#0b101d] border border-slate-700 rounded-2xl w-full max-w-4xl shadow-2xl overflow-hidden my-8">
         
         {/* Header */}
         <div className="p-4 sm:p-5 border-b border-slate-800 bg-[#0e1628] flex items-center justify-between">
@@ -196,7 +196,7 @@ export const StateLogInspectorModal: React.FC<StateLogInspectorModalProps> = ({
                     <div className="flex items-center gap-2 mb-1">
                       <span className="font-bold text-cyan-300">sha:{c.commitHash.slice(0, 7)}</span>
                       <span className="text-[10px] text-slate-400">parent:{c.parentHash.slice(0, 7)}</span>
-                      <span className="text-[10px] px-1.5 py-0.2 rounded bg-slate-800 text-slate-300">
+                      <span className="text-[10px] px-1.5 py-0.5 rounded bg-slate-800 text-slate-300">
                         {c.vectorTag}
                       </span>
                     </div>

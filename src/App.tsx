@@ -5,13 +5,13 @@
 
 import { useMemo, useState } from 'react';
 import {
+  ActiveTab,
   OperationalDeltaRecord,
-  OperationalVector,
   VerificationStatus,
 } from './types';
 import { Header } from './components/Header';
 import { FilterBar } from './components/FilterBar';
-import { ModularGridView } from './components/ModularGridView';
+import { VectorGridView } from './components/VectorGridView';
 import { EvidenceTimeline } from './components/EvidenceTimeline';
 import { DeltaDetailModal } from './components/DeltaDetailModal';
 import { StateLogInspectorModal } from './components/StateLogInspectorModal';
@@ -35,11 +35,12 @@ export default function App() {
     importStateLog,
   } = useIntelligenceState();
 
-  // Filter & Search State
+  // Primary navigation: one operational vector's grid, or the all-vector Timeline.
+  const [activeTab, setActiveTab] = useState<ActiveTab>('TECHNICAL_EVOLUTION');
+
+  // Secondary filters: apply within whichever tab is active.
   const [searchQuery, setSearchQuery] = useState<string>('');
-  const [selectedVector, setSelectedVector] = useState<OperationalVector | 'ALL'>('ALL');
   const [selectedStatus, setSelectedStatus] = useState<VerificationStatus | 'ALL'>('ALL');
-  const [activeView, setActiveView] = useState<'GRID' | 'TIMELINE'>('GRID');
 
   // Time-Series Scrubber (0 = HEAD, commits.length - 1 = Genesis)
   const [scrubberIndex, setScrubberIndex] = useState<number>(0);
@@ -53,13 +54,10 @@ export default function App() {
     return filterStateByCommit(stateLog.records, stateLog.commits, scrubberIndex);
   }, [stateLog.records, stateLog.commits, scrubberIndex]);
 
-  // Filter records in browser memory based on active time-series window
-  const filteredRecords = useMemo(() => {
+  // Status + search apply in every tab (previously search/status only affected the grid, so
+  // Timeline's secondary row did nothing — see EvidenceTimeline below for the other half of this).
+  const searchedRecords = useMemo(() => {
     return activeRecords.filter((rec) => {
-      if (selectedVector !== 'ALL' && rec.operationalVector !== selectedVector) {
-        return false;
-      }
-
       if (selectedStatus !== 'ALL' && rec.prNoiseFilter.verificationStatus !== selectedStatus) {
         return false;
       }
@@ -79,14 +77,37 @@ export default function App() {
 
       return true;
     });
-  }, [activeRecords, selectedVector, selectedStatus, searchQuery]);
+  }, [activeRecords, selectedStatus, searchQuery]);
 
-  // Counts for filters
+  // Grid tabs additionally narrow to the active vector; Timeline shows every vector.
+  const filteredRecords = useMemo(() => {
+    if (activeTab === 'TIMELINE') return searchedRecords;
+    return searchedRecords.filter((rec) => rec.operationalVector === activeTab);
+  }, [searchedRecords, activeTab]);
+
+  // Timeline's commit list follows the same search/status filter as the record list: a commit
+  // shows if no filter is active, or if its associated record survives the filter above.
+  const filteredCommits = useMemo(() => {
+    if (selectedStatus === 'ALL' && !searchQuery.trim()) return activeCommits;
+    const survivingHashes = new Set(searchedRecords.map((r) => r.sourceProvenance.commitHash));
+    return activeCommits.filter((c) => survivingHashes.has(c.commitHash));
+  }, [activeCommits, searchedRecords, selectedStatus, searchQuery]);
+
+  // Counts for tab labels & status filters
   const counts = useMemo(() => {
     const vectorCounts = countByVector(activeRecords);
     const statusCounts = countByStatus(activeRecords);
     return { ...vectorCounts, ...statusCounts };
   }, [activeRecords]);
+
+  // Unfiltered record count for whichever tab is active — the denominator shown next to
+  // filteredRecords.length in FilterBar's "n of m" indicator.
+  const activeTabTotal = useMemo(() => {
+    if (activeTab === 'TIMELINE') return activeRecords.length;
+    if (activeTab === 'TECHNICAL_EVOLUTION') return counts.technical;
+    if (activeTab === 'REGULATORY_PATHWAYS') return counts.regulatory;
+    return counts.ecosystem;
+  }, [activeTab, activeRecords.length, counts]);
 
   // Export state log as JSON file
   const handleExportJson = () => {
@@ -100,9 +121,9 @@ export default function App() {
     URL.revokeObjectURL(url);
   };
 
-  // Reset filters
-  const handleResetFilters = () => {
-    setSelectedVector('ALL');
+  // Reset secondary filters (status + search). Vector/Timeline selection is navigation, not a
+  // filter, so it's untouched by reset.
+  const handleResetSecondaryFilters = () => {
     setSelectedStatus('ALL');
     setSearchQuery('');
   };
@@ -112,7 +133,6 @@ export default function App() {
 
       {/* Top Application Header */}
       <Header
-        stateLog={stateLog}
         onRunWorkflow={runWorkflow}
         onRefreshState={refresh}
         onOpenStateInspector={() => setIsStateInspectorOpen(true)}
@@ -123,27 +143,30 @@ export default function App() {
 
       {/* Data Provenance Banner: only shown when the on-screen state is not confirmed live */}
       {dataSource !== 'live' && (
-        <div className="bg-amber-950/60 border-b border-amber-900/70 px-4 py-1.5 flex items-center gap-2 text-[11px] font-mono-code text-amber-300">
-          <AlertTriangle className="h-3.5 w-3.5 shrink-0" />
-          <span>
-            {dataSource === 'seed'
-              ? 'Displaying bundled seed data — the backend at /api/state was unreachable. This is not live repository state.'
-              : 'Displaying an imported snapshot — not the live repository state.'}
-          </span>
+        <div className="border-b border-amber-900/70 bg-amber-950/60">
+          <div className="layout-container px-4 py-1.5 flex items-center gap-2 text-[11px] font-mono-code text-amber-300">
+            <AlertTriangle className="h-3.5 w-3.5 shrink-0" />
+            <span>
+              {dataSource === 'seed'
+                ? 'Displaying bundled seed data — the backend at /api/state was unreachable. This is not live repository state.'
+                : 'Displaying an imported snapshot — not the live repository state.'}
+            </span>
+          </div>
         </div>
       )}
 
-      {/* Filter and View Mode Controller Bar */}
+      {/* Primary Navigation & Secondary Filters */}
       <FilterBar
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
-        selectedVector={selectedVector}
-        onVectorSelect={setSelectedVector}
+        activeTab={activeTab}
+        onTabSelect={setActiveTab}
         selectedStatus={selectedStatus}
         onStatusSelect={setSelectedStatus}
-        activeView={activeView}
-        onViewChange={setActiveView}
         counts={counts}
+        filteredCount={filteredRecords.length}
+        totalCount={activeTabTotal}
+        onResetSecondaryFilters={handleResetSecondaryFilters}
       />
 
       {/* Interactive Time-Series History Scrubber */}
@@ -156,21 +179,23 @@ export default function App() {
 
       {/* Historical Replay Active Banner */}
       {!isHead && selectedCommit && (
-        <div className="bg-amber-950/70 border-b border-amber-800/80 px-4 py-2 flex items-center justify-between text-xs font-mono-code text-amber-200">
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
-            <span>
-              <strong>POINT-IN-TIME AUDIT ACTIVE:</strong> Viewing historical Git repository state at commit{' '}
-              <span className="font-bold underline text-amber-100">{shortHash(selectedCommit.commitHash)}</span>{' '}
-              ({new Date(selectedCommit.timestamp).toLocaleDateString()}) — displaying {activeRecords.length} records accessioned up to this commit.
-            </span>
+        <div className="border-b border-amber-800/80 bg-amber-950/70">
+          <div className="layout-container px-4 py-2 flex items-center justify-between text-xs font-mono-code text-amber-200">
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
+              <span>
+                <strong>POINT-IN-TIME AUDIT ACTIVE:</strong> Viewing historical Git repository state at commit{' '}
+                <span className="font-bold underline text-amber-100">{shortHash(selectedCommit.commitHash)}</span>{' '}
+                ({new Date(selectedCommit.timestamp).toLocaleDateString()}) — displaying {activeRecords.length} records accessioned up to this commit.
+              </span>
+            </div>
+            <button
+              onClick={() => setScrubberIndex(0)}
+              className="px-2.5 py-0.5 rounded bg-amber-900/80 hover:bg-amber-800 border border-amber-700 text-amber-100 text-[10px] font-bold transition shrink-0"
+            >
+              Return to Live HEAD
+            </button>
           </div>
-          <button
-            onClick={() => setScrubberIndex(0)}
-            className="px-2.5 py-0.5 rounded bg-amber-900/80 hover:bg-amber-800 border border-amber-700 text-amber-100 text-[10px] font-bold transition shrink-0"
-          >
-            Return to Live HEAD
-          </button>
         </div>
       )}
 
@@ -181,63 +206,25 @@ export default function App() {
           <HighDensitySidebar
             records={activeRecords}
             onSelectRecord={setSelectedRecord}
-            onFilterByVector={setSelectedVector}
-            selectedVector={selectedVector}
+            onSelectVector={setActiveTab}
+            activeTab={activeTab}
           />
         </div>
 
         {/* Center Operations Grid / Timeline Section */}
-        <section className="flex-1 flex flex-col overflow-y-auto bg-slate-900/10">
-
-          {/* Active Filter Indicators if filtered */}
-          {(selectedVector !== 'ALL' || selectedStatus !== 'ALL' || searchQuery) && (
-            <div className="p-3 bg-slate-950/60 border-b border-slate-800">
-              <div className="flex flex-wrap items-center justify-between gap-2 text-[11px] font-mono-code">
-                <div className="flex items-center gap-2">
-                  <span className="text-slate-500 uppercase tracking-wider">FILTERS:</span>
-                  {selectedVector !== 'ALL' && (
-                    <span className="px-1.5 py-0.5 rounded bg-blue-950 border border-blue-800 text-blue-300">
-                      Vector: {selectedVector}
-                    </span>
-                  )}
-                  {selectedStatus !== 'ALL' && (
-                    <span className="px-1.5 py-0.5 rounded bg-purple-950 border border-purple-800 text-purple-300">
-                      Status: {selectedStatus}
-                    </span>
-                  )}
-                  {searchQuery && (
-                    <span className="px-1.5 py-0.5 rounded bg-slate-900 border border-slate-800 text-slate-300">
-                      &quot;{searchQuery}&quot;
-                    </span>
-                  )}
-                  <span className="text-slate-500">
-                    ({filteredRecords.length}/{activeRecords.length} records)
-                  </span>
-                </div>
-
-                <button
-                  onClick={handleResetFilters}
-                  className="text-slate-400 hover:text-slate-200 underline text-[10px]"
-                >
-                  Reset
-                </button>
-              </div>
-            </div>
-          )}
-
-          {/* View Switching: Modular Grid View vs Evidence Timeline */}
-          {activeView === 'GRID' ? (
-            <ModularGridView
-              records={filteredRecords}
+        <section className="flex-1 overflow-y-auto bg-slate-900/10">
+          {activeTab === 'TIMELINE' ? (
+            <EvidenceTimeline
+              commits={filteredCommits}
+              records={searchedRecords}
               onSelectRecord={setSelectedRecord}
-              onResetFilters={handleResetFilters}
-              selectedVector={selectedVector}
             />
           ) : (
-            <EvidenceTimeline
-              commits={activeCommits}
-              records={activeRecords}
+            <VectorGridView
+              vector={activeTab}
+              records={filteredRecords}
               onSelectRecord={setSelectedRecord}
+              onResetFilters={handleResetSecondaryFilters}
             />
           )}
         </section>
@@ -259,7 +246,7 @@ export default function App() {
 
       {/* Toast Notification Alert */}
       {toastNotification && (
-        <div className="fixed bottom-10 right-6 z-50 animate-in slide-in-from-bottom-5 duration-200">
+        <div className="fixed bottom-10 right-6 z-50">
           <div className="flex items-center gap-2.5 px-3 py-2 rounded-lg bg-slate-900 border border-slate-700 text-slate-100 text-xs font-mono-code shadow-2xl">
             <ShieldCheck className="h-4 w-4 text-emerald-400 shrink-0" />
             <span>{toastNotification}</span>
@@ -268,27 +255,21 @@ export default function App() {
       )}
 
       {/* High Density Status Footer */}
-      <footer className="h-8 flex-none border-t border-slate-800 bg-slate-950 px-4 flex items-center justify-between font-mono-code text-[9px] z-30">
-        <div className="flex gap-6 items-center">
+      <footer className="h-8 flex-none border-t border-slate-800 bg-slate-950 z-30">
+        <div className="layout-container h-full px-4 flex items-center justify-between font-mono-code text-[9px]">
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
             <span className="text-slate-400 uppercase">Engine Online</span>
           </div>
-          <div className="text-slate-500 hidden sm:block">
-            <span className="text-slate-600">Repo:</span> Native Git (branch main)
-          </div>
-          <div className="text-slate-500 uppercase tracking-widest hidden md:block">
-            <span className="text-blue-500">●</span> {activeRecords.length} Active Records
-          </div>
-        </div>
 
-        <div className="flex gap-4 text-slate-500">
-          <span className="text-slate-400 font-bold hidden sm:inline">BLUECORE</span>
-          <span>v4.2.0</span>
-          <span>HEAD: {shortHash(stateLog.commits[0]?.commitHash, 'init')}</span>
-          {!isHead && selectedCommit && (
-            <span className="text-amber-400 font-bold">REPLAY: {shortHash(selectedCommit.commitHash)}</span>
-          )}
+          <div className="flex gap-4 text-slate-500">
+            <span className="text-slate-400 font-bold hidden sm:inline">BLUECORE</span>
+            <span>{stateLog.version}</span>
+            <span>HEAD: {shortHash(stateLog.commits[0]?.commitHash, 'init')}</span>
+            {!isHead && selectedCommit && (
+              <span className="text-amber-400 font-bold">REPLAY: {shortHash(selectedCommit.commitHash)}</span>
+            )}
+          </div>
         </div>
       </footer>
 

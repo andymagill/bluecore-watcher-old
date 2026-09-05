@@ -14,6 +14,13 @@ export type OperationalVector =
   | 'REGULATORY_PATHWAYS'
   | 'ECOSYSTEM_MOMENTUM';
 
+/**
+ * The app's single primary-navigation state: one operational vector's grid, or the all-vector
+ * Timeline. Replaces the old pairing of a `selectedVector: OperationalVector | 'ALL'` filter
+ * with a separate `activeView: 'GRID' | 'TIMELINE'` toggle — vector selection now *is* the view.
+ */
+export type ActiveTab = OperationalVector | 'TIMELINE';
+
 export type SubVector =
   // Technical Evolution
   | 'Berth 48 Physical Assets'

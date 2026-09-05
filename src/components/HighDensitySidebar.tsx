@@ -8,15 +8,15 @@ import {
   ShieldCheck,
   AlertOctagon,
 } from 'lucide-react';
-import { OperationalDeltaRecord, OperationalVector } from '../types';
+import { ActiveTab, OperationalDeltaRecord, OperationalVector } from '../types';
 import { getVectorTheme } from '../utils/vectorTheme';
 import { shortHash } from '../utils/hash';
 
 interface HighDensitySidebarProps {
   records: OperationalDeltaRecord[];
   onSelectRecord: (rec: OperationalDeltaRecord) => void;
-  onFilterByVector: (vector: OperationalVector | 'ALL') => void;
-  selectedVector: OperationalVector | 'ALL';
+  onSelectVector: (vector: OperationalVector) => void;
+  activeTab: ActiveTab;
 }
 
 const FOLDERS: { vector: OperationalVector; folderLabel: string }[] = [
@@ -28,8 +28,8 @@ const FOLDERS: { vector: OperationalVector; folderLabel: string }[] = [
 export const HighDensitySidebar: React.FC<HighDensitySidebarProps> = ({
   records,
   onSelectRecord,
-  onFilterByVector,
-  selectedVector,
+  onSelectVector,
+  activeTab,
 }) => {
   const [openFolders, setOpenFolders] = useState<Record<OperationalVector, boolean>>({
     TECHNICAL_EVOLUTION: true,
@@ -44,7 +44,7 @@ export const HighDensitySidebar: React.FC<HighDensitySidebarProps> = ({
   return (
     <aside className="w-64 xl:w-72 flex-none border-r border-slate-800 bg-slate-950/40 flex flex-col h-full overflow-hidden select-none">
       {/* SECTION 1: GIT FILE TREE */}
-      <div className="p-3.5 border-b border-slate-800 bg-slate-900/30">
+      <div className="p-4 border-b border-slate-800 bg-slate-900/30">
         <div className="flex items-center justify-between mb-2.5">
           <h2 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest font-mono-code flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
@@ -60,12 +60,10 @@ export const HighDensitySidebar: React.FC<HighDensitySidebarProps> = ({
               vector={vector}
               folderLabel={folderLabel}
               isOpen={openFolders[vector]}
-              isSelected={selectedVector === vector}
+              isSelected={activeTab === vector}
               records={records.filter((r) => r.operationalVector === vector)}
-              onToggle={() => {
-                toggleFolder(vector);
-                onFilterByVector(selectedVector === vector ? 'ALL' : vector);
-              }}
+              onToggleOpen={() => toggleFolder(vector)}
+              onSelectVector={() => onSelectVector(vector)}
               onSelectRecord={onSelectRecord}
             />
           ))}
@@ -73,7 +71,7 @@ export const HighDensitySidebar: React.FC<HighDensitySidebarProps> = ({
       </div>
 
       {/* SECTION 2: LIVE EVIDENCE LOG */}
-      <div className="flex-1 overflow-y-auto p-3.5">
+      <div className="flex-1 overflow-y-auto p-4">
         <div className="flex items-center justify-between mb-3">
           <h2 className="text-[10px] font-bold text-slate-400 uppercase tracking-widest font-mono-code flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -133,7 +131,8 @@ interface VectorFolderProps {
   isOpen: boolean;
   isSelected: boolean;
   records: OperationalDeltaRecord[];
-  onToggle: () => void;
+  onToggleOpen: () => void;
+  onSelectVector: () => void;
   onSelectRecord: (rec: OperationalDeltaRecord) => void;
 }
 
@@ -143,6 +142,10 @@ interface VectorFolderProps {
  * Extracted from three near-identical 50-line blocks (one per vector) that differed only in
  * color classes and the vector being filtered — the theme now comes from `getVectorTheme`
  * instead of being hand-copied per block.
+ *
+ * The chevron/icon expand the folder in place; the label switches the app to that vector's tab.
+ * These used to be one combined click that both toggled open state and set (or cleared) the
+ * vector filter — conflating "browse the tree" with "navigate to a vector."
  */
 const VectorFolder: React.FC<VectorFolderProps> = ({
   vector,
@@ -150,7 +153,8 @@ const VectorFolder: React.FC<VectorFolderProps> = ({
   isOpen,
   isSelected,
   records,
-  onToggle,
+  onToggleOpen,
+  onSelectVector,
   onSelectRecord,
 }) => {
   const theme = getVectorTheme(vector);
@@ -158,12 +162,15 @@ const VectorFolder: React.FC<VectorFolderProps> = ({
   return (
     <div>
       <div
-        onClick={onToggle}
-        className={`flex items-center justify-between px-1.5 py-1 rounded cursor-pointer transition ${
+        className={`flex items-center justify-between px-1.5 py-1 rounded transition ${
           isSelected ? theme.sidebarSelected : 'hover:bg-slate-800/60 text-slate-300'
         }`}
       >
-        <div className="flex items-center gap-1.5 truncate">
+        <button
+          onClick={onToggleOpen}
+          className="flex items-center gap-1.5 truncate"
+          title={isOpen ? 'Collapse folder' : 'Expand folder'}
+        >
           {isOpen ? (
             <ChevronDown className="h-3 w-3 text-slate-500 shrink-0" />
           ) : (
@@ -174,8 +181,10 @@ const VectorFolder: React.FC<VectorFolderProps> = ({
           ) : (
             <Folder className={`h-3.5 w-3.5 shrink-0 ${theme.accentText}`} />
           )}
-          <span className="truncate">{folderLabel}</span>
-        </div>
+        </button>
+        <button onClick={onSelectVector} className="flex-1 text-left truncate ml-1.5" title={`View ${theme.label}`}>
+          {folderLabel}
+        </button>
         <span className="text-[9px] text-slate-500 ml-1">{records.length}</span>
       </div>
 
