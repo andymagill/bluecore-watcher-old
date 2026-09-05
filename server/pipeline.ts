@@ -30,6 +30,13 @@ export type IngestResult =
  * ever looks under `technical/`, `regulatory/`, `ecosystem/`, so this directory is never read
  * into `/api/state` — quarantined items never masquerade as accessioned records.
  *
+ * Deduped by candidate URL against today's file: live-testing this against the real feeds showed
+ * that a candidate which fails resolution (in practice, almost every Google News link — see
+ * `tryDecodeGoogleNewsUrl`'s docstring) fails identically on every run, and this pipeline runs
+ * every 4 hours (`INGEST_CRON`). Appending unconditionally would re-log the same ~100+ candidates
+ * six times a day, forever, turning a review log into unbounded noise nobody would actually read.
+ * One entry per URL per day is enough to show a rejection is still happening without burying it.
+ *
  * Returns the file's repo-relative path so the caller can stage and commit it. Every CI run
  * (`.github/workflows/ingest.yml`) starts from a fresh checkout — a quarantine write that never
  * makes it into a commit would simply vanish before the next scheduled run could ever surface it,
@@ -44,17 +51,23 @@ function writeQuarantine(rootDir: string, rejected: QuarantinedCandidate[]): str
   const dateStamp = new Date().toISOString().slice(0, 10);
   const filePath = path.join(dir, `${dateStamp}.json`);
 
-  const existing: unknown[] = fs.existsSync(filePath)
+  const existing: Array<{ candidate: { url: string } }> = fs.existsSync(filePath)
     ? JSON.parse(fs.readFileSync(filePath, 'utf-8'))
     : [];
+  const alreadyLoggedToday = new Set(existing.map((e) => e.candidate.url));
 
-  const entries = rejected.map((q) => ({
-    quarantinedAt: new Date().toISOString(),
-    reason: q.reason,
-    candidate: q.candidate,
-  }));
+  const now = new Date().toISOString();
+  const newEntries = rejected
+    .filter((q) => !alreadyLoggedToday.has(q.candidate.url))
+    .map((q) => ({
+      quarantinedAt: now,
+      reason: q.reason,
+      candidate: q.candidate,
+    }));
 
-  fs.writeFileSync(filePath, JSON.stringify([...existing, ...entries], null, 2), 'utf-8');
+  if (newEntries.length === 0) return null;
+
+  fs.writeFileSync(filePath, JSON.stringify([...existing, ...newEntries], null, 2), 'utf-8');
   return path.relative(rootDir, filePath).split(path.sep).join('/');
 }
 
@@ -128,7 +141,7 @@ export async function runIngestPipeline(
         const outcome = stageAndCommit(
           rootDir,
           [quarantinePath],
-          `chore(ingest): log ${quarantined.length} quarantined candidate(s)`
+          'chore(ingest): log newly quarantined candidate(s)'
         );
         if (!outcome.ok) {
           return { status: 'failed', error: `Failed to commit quarantine log: ${outcome.error}` };
