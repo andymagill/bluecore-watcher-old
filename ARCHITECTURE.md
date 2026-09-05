@@ -21,6 +21,7 @@ the three folders in the sidebar's file tree, and one of the three metric-card p
 | `npm run build` | `vite build` (SPA → `dist/`) + esbuild bundles `server/index.ts` → `dist/server.cjs` |
 | `npm start` | `node dist/server.cjs` — the production server, serving the built SPA as static files |
 | `npm run seed` | `scripts/seed_git_repo.ts` — writes `src/data/seedState.ts`'s records to `intelligence/` and commits them |
+| `npm run ingest` | `scripts/ingest.ts` — runs the ingest pipeline headlessly (no Express, no browser); also what `.github/workflows/ingest.yml` runs on a schedule |
 | `npm run lint` | `tsc --noEmit` under `strict` — the gate this project builds against |
 
 ## File layout
@@ -28,10 +29,12 @@ the three folders in the sidebar's file tree, and one of the three metric-card p
 ```
 server/                  Express backend — all filesystem and Git access lives here
   index.ts                 wiring: express app, Vite middleware / static serving, listen(PORT)
-  routes.ts                the four /api/* route handlers
+  routes.ts                the three /api/* route handlers (thin adapters, no pipeline logic)
+  pipeline.ts               runIngestPipeline() — the ingest pipeline itself; callable headlessly
   state.ts                 buildStateLog() — assembles the full snapshot from git.ts + records.ts
+  config.ts                 INGEST_CRON — the one source of truth for the ingest schedule
   git.ts                   ALL git subprocess calls (spawnSync, never a shell); commit parsing
-  records.ts                reads + validates intelligence/**/*.json
+  records.ts                reads + validates intelligence/**/*.json; resolves commitHash from git log
   ingest.ts                 external fetch (RSS, Federal Register) + candidate classification
 
 src/
@@ -52,6 +55,8 @@ src/
 
 intelligence/<vector>/*.json  the actual database: one file per accessioned record
 scripts/seed_git_repo.ts       (re)writes intelligence/ from src/data/seedState.ts and commits it
+scripts/ingest.ts               headless CLI wrapper around server/pipeline.ts's runIngestPipeline()
+.github/workflows/ingest.yml    runs `npm run ingest` + `git push` on INGEST_CRON's schedule
 ```
 
 ## Data flow
@@ -77,15 +82,29 @@ If `/api/state` is unreachable, `useIntelligenceState` keeps `src/data/seedState
 data on screen with `dataSource: 'seed'`, and `App.tsx` shows a banner saying so — the UI never
 silently presents seed data as if it were a live repository read.
 
-## Ingest pipeline (`POST /api/workflow/run`)
+## Ingest pipeline (`server/pipeline.ts` → `runIngestPipeline()`)
 
 ```
-fetch RSS + Federal Register  →  dedup against existing headlines/URLs
-    → classify (vector + subVector)  →  write intelligence/<vector>/<id>.json
-    → git add -- <path> && git commit -m <message> --  <path>
-    → on success: backfill the real commit hash into the file
-    → on failure: delete the file (no orphan left for the dedup check to trip on forever)
+fetch RSS + Federal Register
+    → dedup against existing records' normalized headlines/URLs, AND within this same fetch
+    → classify + write up to 5 new intelligence/<vector>/<id>.json files
+    → git add -- <paths> && git commit -m <message> -- <paths>   (ONE commit for the whole batch)
+    → on failure: delete every file written this run (no orphan left for the dedup check to trip
+      on forever)
 ```
+
+This function is the single implementation, called from two places that never push on their own:
+
+- `POST /api/workflow/run` (`server/routes.ts`) — the "Run Workflow" button, commits locally only.
+- `npm run ingest` (`scripts/ingest.ts`) — headless; the same code, no Express/browser required.
+  `.github/workflows/ingest.yml` runs this on `INGEST_CRON`'s schedule (`server/config.ts`) and is
+  the thing that actually pushes the resulting commit — the pipeline deliberately stays push-free
+  so the UI button and CI don't behave differently by surprise.
+
+`sourceProvenance.commitHash` is never backfilled by a second write. `server/records.ts` resolves
+it at read time from `git log --diff-filter=A` (via `readAddedFileCommits` in `server/git.ts`), so
+the working tree is clean immediately after every ingest run — there is no dirty, uncommitted
+modification left behind the way there used to be.
 
 Every Git call in this path goes through `server/git.ts`'s `spawnSync('git', [argv])` — an
 ingested headline is untrusted external text, and an earlier version of this code built a shell
@@ -114,8 +133,8 @@ existing metric.
 - No automated tests. `filterStateByCommit`, `classifyVector` / `classifyIngestCandidate`,
   `parseStateLog`, and the metric resolver are all pure functions and would be the cheapest place
   to start.
-- `POST /api/workflow/run` and `POST /api/cron-tick` have no auth — anyone who can reach the
-  server can trigger a real commit to this repository.
+- `POST /api/workflow/run` has no auth — anyone who can reach the server can trigger a real
+  commit to this repository.
 - Records reference their commit by short hash only (`sourceProvenance.commitHash`), not a full
   SHA or ref, which is sufficient for display but not for programmatic lookup if the repository
   ever accumulates enough commits for short-hash collisions to matter.
