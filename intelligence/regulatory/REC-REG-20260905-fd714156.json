@@ -22,19 +22,6 @@
     "urlVerifiedAt": "2026-09-05T22:48:00.601Z",
     "sourcePublisher": "Federal Register (Nuclear Regulatory Commission)",
     "externalDocketId": "2023-16679",
-    "fileSizeBytes": 1959
-  },
-  "prNoiseFilter": {
-    "prChatterDetected": false,
-    "chatterFlags": [],
-    "verificationStatus": "UNVERIFIED_EXTERNAL_ITEM",
-    "filterRationale": "Canonical URL resolved to https://www.federalregister.gov/documents/2023/08/04/2023-16679/nuscale-power-llc and confirmed reachable (successful HTTP response) at 2026-09-05T22:48:00.601Z. No further corroboration — article body, cross-source confirmation, or claim verification — has been performed."
-  },
-  "agentRoutingMeta": {
-    "targetAgent": "AGENT_NUCLEAR_COMPLIANCE",
-    "actionType": "UPDATE_METRIC_STORE",
-    "priority": "P2_INFORMATIONAL",
-    "checksum": "sha256:0262e498e68cecbac54348fb39f48b80352b053db857dfe5a13963091bb2fc9b",
-    "routingTimestamp": "2026-09-05T22:48:01.515Z"
+    "fileSizeBytes": 1223
   }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Search, GitPullRequest, ShieldCheck, AlertOctagon } from 'lucide-react';
-import { ActiveTab, VerificationStatus } from '../types';
+import { Search, GitPullRequest } from 'lucide-react';
+import { ActiveTab } from '../types';
 import { VECTORS } from '../utils/vectorTheme';
 
 interface FilterBarProps {
@@ -8,16 +8,11 @@ interface FilterBarProps {
   onSearchChange: (q: string) => void;
   activeTab: ActiveTab;
   onTabSelect: (tab: ActiveTab) => void;
-  selectedStatus: VerificationStatus | 'ALL';
-  onStatusSelect: (s: VerificationStatus | 'ALL') => void;
   counts: {
     total: number;
     technical: number;
     regulatory: number;
     ecosystem: number;
-    verified: number;
-    rejected: number;
-    pending: number;
   };
   filteredCount: number;
   totalCount: number;
@@ -43,14 +38,12 @@ export const FilterBar: React.FC<FilterBarProps> = ({
   onSearchChange,
   activeTab,
   onTabSelect,
-  selectedStatus,
-  onStatusSelect,
   counts,
   filteredCount,
   totalCount,
   onResetSecondaryFilters,
 }) => {
-  const hasSecondaryFilter = selectedStatus !== 'ALL' || searchQuery.trim() !== '';
+  const hasSecondaryFilter = searchQuery.trim() !== '';
 
   return (
     <div className="bg-slate-950/85 backdrop-blur-md border-b border-slate-800 sticky top-14 z-30 shadow-sm">
@@ -134,47 +127,6 @@ export const FilterBar: React.FC<FilterBarProps> = ({
                 </button>
               </div>
             )}
-
-            <div className="flex items-center bg-slate-900/90 border border-slate-800 rounded p-0.5">
-              <button
-                id="filter-status-all"
-                onClick={() => onStatusSelect('ALL')}
-                className={`px-2 py-0.5 text-[10px] font-mono-code rounded ${
-                  selectedStatus === 'ALL'
-                    ? 'bg-slate-800 text-slate-100 font-medium'
-                    : 'text-slate-400 hover:text-slate-200'
-                }`}
-                title="Show all records including filtered chatter"
-              >
-                All
-              </button>
-              <button
-                id="filter-status-verified"
-                onClick={() => onStatusSelect('VERIFIED_DELTA')}
-                className={`px-2 py-0.5 text-[10px] font-mono-code rounded flex items-center gap-1 ${
-                  selectedStatus === 'VERIFIED_DELTA'
-                    ? 'bg-emerald-950 text-emerald-300 border border-emerald-800/80 font-medium'
-                    : 'text-slate-400 hover:text-emerald-400'
-                }`}
-                title="Show only verified operational deltas (PR noise filtered out)"
-              >
-                <ShieldCheck className="h-3 w-3 text-emerald-400" />
-                Verified ({counts.verified})
-              </button>
-              <button
-                id="filter-status-rejected"
-                onClick={() => onStatusSelect('REJECTED_PR_CHATTER')}
-                className={`px-2 py-0.5 text-[10px] font-mono-code rounded flex items-center gap-1 ${
-                  selectedStatus === 'REJECTED_PR_CHATTER'
-                    ? 'bg-rose-950 text-rose-300 border border-rose-800/80 font-medium'
-                    : 'text-slate-400 hover:text-rose-400'
-                }`}
-                title="Show only items suppressed by PR noise filter"
-              >
-                <AlertOctagon className="h-3 w-3 text-rose-400" />
-                Noise ({counts.rejected})
-              </button>
-            </div>
           </div>
         </div>
       </div>

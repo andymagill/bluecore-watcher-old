@@ -22,19 +22,6 @@
     "urlVerifiedAt": "2026-09-05T22:48:01.074Z",
     "sourcePublisher": "Federal Register (Nuclear Regulatory Commission)",
     "externalDocketId": "2023-00729",
-    "fileSizeBytes": 2122
-  },
-  "prNoiseFilter": {
-    "prChatterDetected": false,
-    "chatterFlags": [],
-    "verificationStatus": "UNVERIFIED_EXTERNAL_ITEM",
-    "filterRationale": "Canonical URL resolved to https://www.federalregister.gov/documents/2023/01/19/2023-00729/nuscale-small-modular-reactor-design-certification and confirmed reachable (successful HTTP response) at 2026-09-05T22:48:01.074Z. No further corroboration — article body, cross-source confirmation, or claim verification — has been performed."
-  },
-  "agentRoutingMeta": {
-    "targetAgent": "AGENT_NUCLEAR_COMPLIANCE",
-    "actionType": "UPDATE_METRIC_STORE",
-    "priority": "P2_INFORMATIONAL",
-    "checksum": "sha256:3c7d85fcbb7bad45556dadf01b7364aa14f929680de86aedd927e91dfb3b3650",
-    "routingTimestamp": "2026-09-05T22:48:01.516Z"
+    "fileSizeBytes": 1353
   }
 }

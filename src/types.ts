@@ -40,14 +40,6 @@ export const SUB_VECTORS = [
 ] as const;
 export type SubVector = (typeof SUB_VECTORS)[number];
 
-export const VERIFICATION_STATUSES = [
-  'VERIFIED_DELTA',
-  'PENDING_DOCUMENT_CORROBORATION',
-  'REJECTED_PR_CHATTER',
-  'UNVERIFIED_EXTERNAL_ITEM',
-] as const;
-export type VerificationStatus = (typeof VERIFICATION_STATUSES)[number];
-
 export interface OperationalMetric {
   label: string;
   value: string;
@@ -116,49 +108,6 @@ export interface OperationalMilestone {
 }
 
 /**
- * `confidenceScore` and `signalNoiseRatio` are optional because nothing in this codebase
- * computes them — a record that omits them is stating an honest absence of a noise-filtering
- * pass; a record that fills them with a constant (the ingest pipeline used to hardcode 0.99 /
- * 26.5 on every accession) is asserting confidence nobody derived. Do not reintroduce a default.
- */
-export interface PRNoiseFilter {
-  prChatterDetected: boolean;
-  chatterFlags: string[];
-  confidenceScore?: number; // 0.00 to 1.00
-  verificationStatus: VerificationStatus;
-  signalNoiseRatio?: number; // e.g. 9.4x
-  filterRationale: string;
-}
-
-export const TARGET_AGENTS = [
-  'AGENT_MARITIME_INFRASTRUCTURE',
-  'AGENT_NUCLEAR_COMPLIANCE',
-  'AGENT_CAPITAL_AUDITOR',
-  'AGENT_GRID_INTERCONNECT',
-  'AGENT_HARBOR_LOGISTICS',
-] as const;
-
-export const ACTION_TYPES = [
-  'DISPATCH_INSPECTION',
-  'QUEUE_LEGAL_AUDIT',
-  'UPDATE_METRIC_STORE',
-  'ALERT_SECURITY_ANOMALY',
-  'LOG_CORROBORATED_DELTA',
-] as const;
-
-export const ROUTING_PRIORITIES = ['P0_CRITICAL', 'P1_OPERATIONAL', 'P2_INFORMATIONAL'] as const;
-
-export interface AgentRoutingMeta {
-  targetAgent: (typeof TARGET_AGENTS)[number];
-  actionType: (typeof ACTION_TYPES)[number];
-  priority: (typeof ROUTING_PRIORITIES)[number];
-  /** A real `sha256:`-prefixed digest of the record's file content, or omitted — never the
-   * record's own id relabeled as a hash. */
-  checksum?: string;
-  routingTimestamp: string;
-}
-
-/**
  * An illustrative diff snippet shown in the record detail modal's "Raw Flat-File Audit" panel.
  * Every field is optional — a record ingested without a captured diff (or one hand-authored
  * without one) is valid and must render with the panel simply omitted, not a crash. See
@@ -209,8 +158,6 @@ export interface OperationalDeltaRecord {
     externalDocketId?: string;
   };
   evidenceDiff?: EvidenceDiffSnippet;
-  prNoiseFilter: PRNoiseFilter;
-  agentRoutingMeta: AgentRoutingMeta;
 }
 
 /**
@@ -253,14 +200,15 @@ export interface FlatFileStateLog {
     REGULATORY_PATHWAYS: number;
     ECOSYSTEM_MOMENTUM: number;
   };
-  filterMetrics: {
-    verifiedDeltas: number;
-    pendingCorroboration: number;
-    rejectedPrChatter: number;
-    /** Accessioned but not yet corroborated beyond a live-URL check — what the ingest pipeline
-     * stamps on every record it writes today. See `VerificationStatus`. */
-    unverifiedExternal: number;
-    prNoiseSuppressionRatio: string;
+  /**
+   * A record's `sourceProvenance.canonicalUrl`/`urlVerifiedAt` presence is the only evaluation
+   * this system actually performs on a source — a live HTTP check, nothing more (no claim
+   * corroboration, no cross-source confirmation). This tally is derived straight from that, not
+   * from a separate evaluative judgment. See `countByUrlVerification` in `src/utils/counts.ts`.
+   */
+  urlVerification: {
+    verified: number;
+    unverified: number;
   };
   commits: GitCommitSnapshot[];
   records: OperationalDeltaRecord[];

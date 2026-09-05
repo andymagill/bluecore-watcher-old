@@ -130,13 +130,27 @@ regulatory framework that does not exist, and all of which carried commit hashes
 no commit in this repository. That entire seed set — and the fabricated git history that went
 with it in `src/data/seedState.ts` — has been removed; `npm run seed` no longer exists.
 
-The only thing the ingest pipeline verifies is that a record's `sourceProvenance.canonicalUrl` is
-a real, resolved, currently-live publisher URL (`urlVerifiedAt` records when). It does not fetch
-or read the article, does not corroborate the headline against a second source, and does not
-compute a confidence score — so it stamps every record `UNVERIFIED_EXTERNAL_ITEM` and leaves
-`confidenceScore`/`signalNoiseRatio` absent rather than filling them with a constant. A future
-pass that actually reads sources and cross-corroborates claims is what `VERIFIED_DELTA` should be
-reserved for; nothing in this codebase performs that today.
+The schema went further than removing bad data: it used to carry two whole objects,
+`prNoiseFilter` and `agentRoutingMeta`, that read as if the pipeline evaluated each item for "PR
+chatter" and routed it to a specialized backend agent (`AGENT_NUCLEAR_COMPLIANCE`,
+`DISPATCH_INSPECTION`, `ALERT_SECURITY_ANOMALY`, and so on). Nothing in this codebase ever
+implemented either: `prChatterDetected` was hardcoded `false`, `chatterFlags` was always `[]`,
+`REJECTED_PR_CHATTER` was a status nothing could ever assign, and `agentRoutingMeta` was never
+even rendered anywhere in the UI — dead schema whose only visible effect was to make a plain
+lookup table (vector → label) read like an autonomous evaluation system. Both objects have been
+removed rather than reformed, along with the `VerificationStatus` enum and the `FilterBar`
+buttons that filtered on it.
+
+The only thing the ingest pipeline verifies about a source, full stop, is that
+`sourceProvenance.canonicalUrl` is a real, resolved, currently-live publisher URL
+(`urlVerifiedAt` records when). It does not fetch or read the article, and does not corroborate
+the headline against a second source. That single fact — URL resolved and confirmed reachable,
+or not — is what `countByUrlVerification` (`src/utils/counts.ts`) tallies and what the UI's
+"URL Verified" / "URL Unverified" badges show; there is no separate confidence score, signal
+ratio, or rationale field standing in for a judgment this pipeline doesn't make. A future pass
+that actually reads sources and cross-corroborates claims would need its own honestly-named
+field — reintroducing something like `VERIFIED_DELTA` only once a real corroboration step exists
+to set it, not as a status any record can be stamped with by default.
 
 ## What is derived vs. declared
 

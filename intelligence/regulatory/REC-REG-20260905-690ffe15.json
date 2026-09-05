@@ -22,19 +22,6 @@
     "urlVerifiedAt": "2026-09-05T22:41:08.266Z",
     "sourcePublisher": "Federal Register (Nuclear Regulatory Commission)",
     "externalDocketId": "2026-06571",
-    "fileSizeBytes": 2393
-  },
-  "prNoiseFilter": {
-    "prChatterDetected": false,
-    "chatterFlags": [],
-    "verificationStatus": "UNVERIFIED_EXTERNAL_ITEM",
-    "filterRationale": "Canonical URL resolved to https://www.federalregister.gov/documents/2026/04/06/2026-06571/tennessee-valley-authority-clinch-river-nuclear-site-unit-1-final-supplemental-environmental-impact and confirmed reachable (successful HTTP response) at 2026-09-05T22:41:08.266Z. No further corroboration — article body, cross-source confirmation, or claim verification — has been performed."
-  },
-  "agentRoutingMeta": {
-    "targetAgent": "AGENT_NUCLEAR_COMPLIANCE",
-    "actionType": "UPDATE_METRIC_STORE",
-    "priority": "P2_INFORMATIONAL",
-    "checksum": "sha256:81f37399618f79cf18c580c7f19d5d8787865d3bbc8686c04b30f6709ae0c171",
-    "routingTimestamp": "2026-09-05T22:41:10.452Z"
+    "fileSizeBytes": 1575
   }
 }

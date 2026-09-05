@@ -34,12 +34,9 @@ export const INITIAL_STATE_LOG: FlatFileStateLog = {
     REGULATORY_PATHWAYS: 0,
     ECOSYSTEM_MOMENTUM: 0
   },
-  filterMetrics: {
-    verifiedDeltas: 0,
-    rejectedPrChatter: 0,
-    pendingCorroboration: 0,
-    unverifiedExternal: 0,
-    prNoiseSuppressionRatio: "n/a (no items screened)"
+  urlVerification: {
+    verified: 0,
+    unverified: 0
   },
   commits: INITIAL_GIT_COMMITS,
   records: INITIAL_DELTA_RECORDS

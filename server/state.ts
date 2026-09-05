@@ -1,5 +1,5 @@
 import { FlatFileStateLog } from '../src/types';
-import { countByVector, countByStatus } from '../src/utils/counts';
+import { countByVector, countByUrlVerification } from '../src/utils/counts';
 import { readCommits } from './git';
 import { readRecords } from './records';
 import { INGEST_CRON } from './config';
@@ -17,7 +17,7 @@ export function buildStateLog(rootDir: string, intelligenceDir: string): FlatFil
   const records = readRecords(rootDir, intelligenceDir);
 
   const vectorCounts = countByVector(records);
-  const statusCounts = countByStatus(records);
+  const urlVerification = countByUrlVerification(records);
 
   // The most recent real ingest commit, not "now" — this used to be regenerated on every call,
   // which meant the UI always read "just synced" whether or not anything had actually run since
@@ -37,21 +37,7 @@ export function buildStateLog(rootDir: string, intelligenceDir: string): FlatFil
       REGULATORY_PATHWAYS: vectorCounts.regulatory,
       ECOSYSTEM_MOMENTUM: vectorCounts.ecosystem,
     },
-    filterMetrics: {
-      verifiedDeltas: statusCounts.verified,
-      rejectedPrChatter: statusCounts.rejected,
-      pendingCorroboration: statusCounts.pending,
-      unverifiedExternal: statusCounts.unverified,
-      prNoiseSuppressionRatio:
-        statusCounts.verified + statusCounts.rejected === 0
-          ? 'n/a (no items screened)'
-          : statusCounts.rejected === 0
-          ? `${statusCounts.verified}:0 (no chatter rejected yet)`
-          : `${Math.round(statusCounts.verified / statusCounts.rejected)}:1 (${(
-              (statusCounts.verified / (statusCounts.verified + statusCounts.rejected)) *
-              100
-            ).toFixed(1)}% Chatter Screened)`,
-    },
+    urlVerification,
     commits,
     records,
   };

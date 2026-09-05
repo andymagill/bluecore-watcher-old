@@ -8,8 +8,7 @@ import { getVectorMetrics } from '../utils/metricDrift';
 import { getVectorTheme } from '../utils/vectorTheme';
 import {
   CheckCircle2,
-  AlertTriangle,
-  ShieldAlert,
+  ShieldQuestion,
   SearchX,
   ArrowRight,
   Calendar,
@@ -91,35 +90,30 @@ interface RecordCardProps {
 }
 
 const RecordCard: React.FC<RecordCardProps> = ({ record, onSelect }) => {
-  const isRejected = record.prNoiseFilter.verificationStatus === 'REJECTED_PR_CHATTER';
-  const isVerified = record.prNoiseFilter.verificationStatus === 'VERIFIED_DELTA';
+  // The only evaluation this app actually performs on a source: was its URL resolved and
+  // confirmed reachable by an HTTP request. Nothing here reads the article or corroborates a
+  // claim in it — the badge says exactly that much and no more.
+  const isUrlVerified = Boolean(record.sourceProvenance.canonicalUrl && record.sourceProvenance.urlVerifiedAt);
 
   return (
     <div
       onClick={onSelect}
-      className={`bg-slate-900/70 border border-slate-800 rounded-lg p-4 hover:border-blue-500/60 hover:bg-slate-800/40 transition group cursor-pointer shadow-sm ${
-        isRejected ? 'bg-rose-950/10 border-rose-900/40 hover:border-rose-700/60' : ''
-      }`}
+      className="bg-slate-900/70 border border-slate-800 rounded-lg p-4 hover:border-blue-500/60 hover:bg-slate-800/40 transition group cursor-pointer shadow-sm"
     >
-      {/* Top Meta: Sub-Vector Tag & Verification Status */}
+      {/* Top Meta: Sub-Vector Tag & URL Verification */}
       <div className="flex justify-between items-start gap-2 mb-2">
         <span className="text-[10px] font-mono-code text-slate-400 uppercase tracking-wide">
           {record.subVector}
         </span>
-        {isVerified ? (
+        {isUrlVerified ? (
           <span className="text-[9px] px-1.5 py-0.5 rounded bg-emerald-950/80 text-emerald-300 border border-emerald-800/80 font-mono-code flex items-center gap-1 shrink-0">
             <CheckCircle2 className="h-2.5 w-2.5 text-emerald-400" />
-            VERIFIED DELTA
-          </span>
-        ) : isRejected ? (
-          <span className="text-[9px] px-1.5 py-0.5 rounded bg-rose-950/80 text-rose-300 border border-rose-800/80 font-mono-code flex items-center gap-1 shrink-0">
-            <ShieldAlert className="h-2.5 w-2.5 text-rose-400" />
-            NOISE PURGED
+            URL VERIFIED
           </span>
         ) : (
-          <span className="text-[9px] px-1.5 py-0.5 rounded bg-amber-950/80 text-amber-300 border border-amber-800/80 font-mono-code flex items-center gap-1 shrink-0">
-            <AlertTriangle className="h-2.5 w-2.5 text-amber-400" />
-            PENDING
+          <span className="text-[9px] px-1.5 py-0.5 rounded bg-slate-800/80 text-slate-400 border border-slate-700/80 font-mono-code flex items-center gap-1 shrink-0">
+            <ShieldQuestion className="h-2.5 w-2.5 text-slate-400" />
+            URL UNVERIFIED
           </span>
         )}
       </div>
