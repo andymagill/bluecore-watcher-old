@@ -1,4 +1,5 @@
-import { OperationalDeltaRecord, OperationalVector, SubVector } from '../src/types';
+import crypto from 'crypto';
+import { OperationalDeltaRecord, OperationalMetric, OperationalVector, SubVector } from '../src/types';
 
 export interface ExternalCandidate {
   title: string;
@@ -7,6 +8,19 @@ export interface ExternalCandidate {
   pubDate: string;
   type: 'NEWS' | 'DOCKET';
   docketNumber?: string;
+}
+
+/** The result of successfully resolving and HTTP-verifying a candidate's real publisher URL. */
+export interface VerifiedCandidate {
+  candidate: ExternalCandidate;
+  canonicalUrl: string;
+  urlVerifiedAt: string;
+}
+
+/** A candidate that failed resolution or verification and must not be accessioned. */
+export interface QuarantinedCandidate {
+  candidate: ExternalCandidate;
+  reason: string;
 }
 
 function decodeXmlEntities(value: string): string {
@@ -32,6 +46,31 @@ export function normalizeHeadline(value: string): string {
     .replace(/\s+/g, ' ')
     .trim();
 }
+
+/** Tokenizes a normalized headline into a set, for similarity comparison rather than equality. */
+export function headlineTokens(headline: string): Set<string> {
+  return new Set(normalizeHeadline(headline).split(' ').filter(Boolean));
+}
+
+/**
+ * Jaccard similarity between two token sets. Exact-string headline equality (the previous dedup
+ * check) misses the same event reported under materially different headlines — e.g. "raises $10M
+ * to build portable nuclear reactors on barges" vs. "raises $10M pre-seed to put nuclear reactors
+ * on barges" describe the same funding round but share no normalized substring long enough for an
+ * equality check to catch. Token overlap catches both without requiring exact phrasing.
+ */
+export function jaccardSimilarity(a: Set<string>, b: Set<string>): number {
+  if (a.size === 0 || b.size === 0) return 0;
+  let intersection = 0;
+  for (const token of a) {
+    if (b.has(token)) intersection++;
+  }
+  const union = a.size + b.size - intersection;
+  return union === 0 ? 0 : intersection / union;
+}
+
+/** Above this token-overlap ratio, two headlines are treated as describing the same story. */
+export const DUPLICATE_HEADLINE_THRESHOLD = 0.6;
 
 const NEWS_QUERIES = [
   '%22Bluecore+Energy%22',
@@ -98,6 +137,111 @@ export async function fetchRealExternalCandidates(): Promise<ExternalCandidate[]
   return candidates;
 }
 
+async function fetchWithTimeout(url: string, init: RequestInit, timeoutMs: number): Promise<Response> {
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), timeoutMs);
+  try {
+    return await fetch(url, { ...init, signal: controller.signal });
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+/**
+ * Best-effort extraction of the real publisher URL embedded in a Google News RSS redirect link
+ * (`news.google.com/rss/articles/CBMi...`). The path segment is a base64url-encoded protobuf
+ * blob with no documented, stable decoding, and as of this writing it does NOT contain the
+ * plaintext target URL — verified by decoding real links and finding no `http(s)://` run inside.
+ * Google resolves these client-side (a JS-rendered interstitial, not a server redirect and not a
+ * canonical link in the HTML), so there is currently no reliable way to recover the real URL from
+ * one of these links without a headless browser, which this pipeline does not run. This function
+ * is kept as a cheap first attempt in case Google's format changes or an older-style link (which
+ * historically did embed the URL) is encountered, but callers must expect it to return null for
+ * essentially all current links and quarantine accordingly — this is the correct, safe outcome,
+ * not a bug: an opaque redirect is exactly the kind of citation this pipeline must not accession
+ * (see `ARCHITECTURE.md`'s note on the previous records that did exactly that).
+ */
+export function tryDecodeGoogleNewsUrl(link: string): string | null {
+  const match = link.match(/\/articles\/([^/?]+)/);
+  if (!match) return null;
+  try {
+    let b64 = match[1].replace(/-/g, '+').replace(/_/g, '/');
+    while (b64.length % 4 !== 0) b64 += '=';
+    const decoded = Buffer.from(b64, 'base64').toString('latin1');
+    const urlMatch = decoded.match(/https?:\/\/[-a-zA-Z0-9@:%._+~#=/?&]{8,}/);
+    return urlMatch ? urlMatch[0] : null;
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * Resolves a candidate's real, canonical publisher URL. Federal Register candidates already
+ * carry their real `html_url`. Google News candidates require following the redirect: an actual
+ * HTTP request is tried first (Google serves a real 30x for some queries), and if the response is
+ * still on `news.google.com` (an HTML interstitial rather than a redirect, which is the common
+ * case), `tryDecodeGoogleNewsUrl` is used as a fallback.
+ */
+async function resolveCanonicalUrl(candidate: ExternalCandidate): Promise<string | null> {
+  if (candidate.type === 'DOCKET') return candidate.url;
+
+  try {
+    const res = await fetchWithTimeout(
+      candidate.url,
+      { redirect: 'follow', headers: { 'User-Agent': 'Mozilla/5.0 (compatible; BluecoreIntelligence/1.0)' } },
+      10_000
+    );
+    const finalUrl = res.url || candidate.url;
+    if (finalUrl && !new URL(finalUrl).hostname.endsWith('news.google.com')) {
+      return finalUrl;
+    }
+  } catch {
+    // fall through to the decode-based fallback below
+  }
+
+  return tryDecodeGoogleNewsUrl(candidate.url);
+}
+
+/** Confirms a URL is actually live (2xx) before it is allowed into an accessioned record. */
+async function verifyReachable(url: string): Promise<boolean> {
+  const headers = { 'User-Agent': 'Mozilla/5.0 (compatible; BluecoreIntelligence/1.0)' };
+  try {
+    const headRes = await fetchWithTimeout(url, { method: 'HEAD', redirect: 'follow', headers }, 10_000);
+    if (headRes.ok) return true;
+    // Some publishers reject HEAD outright (405/501) without it meaning the page is down.
+    const getRes = await fetchWithTimeout(url, { method: 'GET', redirect: 'follow', headers }, 10_000);
+    return getRes.ok;
+  } catch {
+    return false;
+  }
+}
+
+/**
+ * Resolves and HTTP-verifies one candidate's real publisher URL. This is the gate that stops an
+ * opaque or dead link from ever becoming `sourceProvenance.externalUrl` on an accessioned record
+ * — every prior record in this system that cited a URL was never checked, and three of the nine
+ * hand-authored ones turned out to be 404s.
+ */
+export async function resolveAndVerify(
+  candidate: ExternalCandidate
+): Promise<VerifiedCandidate | QuarantinedCandidate> {
+  const canonicalUrl = await resolveCanonicalUrl(candidate);
+  if (!canonicalUrl) {
+    return { candidate, reason: 'Could not resolve a canonical publisher URL from the feed link.' };
+  }
+
+  const reachable = await verifyReachable(canonicalUrl);
+  if (!reachable) {
+    return { candidate, reason: `Canonical URL did not return a successful response: ${canonicalUrl}` };
+  }
+
+  return { candidate, canonicalUrl, urlVerifiedAt: new Date().toISOString() };
+}
+
+export function isVerified(result: VerifiedCandidate | QuarantinedCandidate): result is VerifiedCandidate {
+  return 'canonicalUrl' in result;
+}
+
 interface Classification {
   vector: OperationalVector;
   subVector: SubVector;
@@ -114,15 +258,31 @@ interface Classification {
  * REGULATORY_PATHWAYS — an unclassified public filing is a safer default bucket than an
  * unclassified engineering claim. Merging them would blur two heuristics tuned to different
  * inputs for the sake of a superficial resemblance.
+ *
+ * Regulatory signals are checked first: a story like "Long Beach is first port to partner with
+ * MARAD on maritime reactors" mentions "reactors" but is a regulatory-pact story, not an
+ * engineering one — testing the technical branch first (the previous order) misclassified it.
+ * Publisher/person-name keys (`forbes`, `kofi asante`) have been dropped: they classified by who
+ * covered a story rather than what it was about, and broke the moment a different outlet ran it.
  */
 export function classifyIngestCandidate(candidate: ExternalCandidate): Classification {
   const text = `${candidate.title} ${candidate.publisher}`.toLowerCase();
 
-  if (/fund|pre-seed|slauson|forbes|kofi asante|venture|executive/.test(text)) {
+  if (/marad|federal register|\bnrc\b|uscg|coast guard|docket|rulemaking|memorandum|cooperation agreement/.test(text)) {
+    return {
+      vector: 'REGULATORY_PATHWAYS',
+      targetSubdir: 'regulatory',
+      subVector: text.includes('long beach') ? 'Port of Long Beach Compliance' : 'MARAD Frameworks',
+    };
+  }
+
+  if (/\bfund(ing|s)?\b|pre-seed|seed round|venture|series [a-z]\b/.test(text)) {
     return {
       vector: 'ECOSYSTEM_MOMENTUM',
       targetSubdir: 'ecosystem',
-      subVector: text.includes('fund') ? 'Capital Structure Updates' : 'Corporate & Maritime Alliances',
+      subVector: /\bfund|seed|venture|series [a-z]\b/.test(text)
+        ? 'Capital Structure Updates'
+        : 'Corporate & Maritime Alliances',
     };
   }
 
@@ -141,64 +301,78 @@ export function classifyIngestCandidate(candidate: ExternalCandidate): Classific
   };
 }
 
-/** Builds a complete `OperationalDeltaRecord` for a freshly-accessioned external candidate. */
+/** `REC-{VECTOR}-{YYYYMMDD}-{8-char digest of the canonical URL}` — stable and re-derivable from
+ * the source, unlike the previous `Date.now().toString().slice(-4)` scheme, which took the last
+ * four digits of a millisecond timestamp and could collide across records written moments apart.
+ */
+export function makeRecordId(vector: OperationalVector, canonicalUrl: string, now: Date): string {
+  const abbr = vector === 'TECHNICAL_EVOLUTION' ? 'TECH' : vector === 'REGULATORY_PATHWAYS' ? 'REG' : 'ECO';
+  const yyyymmdd = now.toISOString().slice(0, 10).replace(/-/g, '');
+  const digest = crypto.createHash('sha256').update(canonicalUrl).digest('hex').slice(0, 8);
+  return `REC-${abbr}-${yyyymmdd}-${digest}`;
+}
+
+/**
+ * Builds a complete `OperationalDeltaRecord` for a freshly-accessioned external candidate.
+ *
+ * Every field here is either taken verbatim from the source feed, actually measured (the URL
+ * verification timestamp, the content digest), or explicitly marked as not yet established
+ * (`verificationStatus: 'UNVERIFIED_EXTERNAL_ITEM'`, no `confidenceScore`, no `nextMilestone`).
+ * An earlier version of this function synthesized a claim, a corroboration statement, three fake
+ * "metrics," an invented milestone, a hardcoded 0.99 confidence score, and a checksum that was
+ * just the record's own id relabeled — none of which this pipeline had any basis to assert. Do
+ * not reintroduce a literal in place of an unresolved field; render it absent instead, the way
+ * `metricDrift.ts` renders an unsupported metric as `isUnpopulated` rather than a placeholder.
+ */
 export function buildRecordFromCandidate(
-  candidate: ExternalCandidate,
+  verified: VerifiedCandidate,
   recordId: string,
   targetSubdir: string,
   vector: OperationalVector,
   subVector: SubVector
 ): OperationalDeltaRecord {
+  const { candidate, canonicalUrl, urlVerifiedAt } = verified;
   const now = new Date().toISOString();
+
+  const keyMetrics: OperationalMetric[] | undefined =
+    candidate.type === 'DOCKET' && candidate.docketNumber
+      ? [{ label: 'Docket Number', value: candidate.docketNumber, status: 'nominal' }]
+      : undefined;
+
+  const contentDigest = crypto
+    .createHash('sha256')
+    .update(`${recordId}|${candidate.title}|${canonicalUrl}|${now}`)
+    .digest('hex');
 
   return {
     id: recordId,
     operationalVector: vector,
     subVector,
     headline: candidate.title,
-    verifiableClaim: `External publication from ${candidate.publisher} details developments in maritime nuclear deployment for ${candidate.title.slice(0, 80)}.`,
-    verifiableDelta: `Published on ${candidate.pubDate}. Corroborated external item establishing operational progress in ${vector.replace(/_/g, ' ').toLowerCase()}.`,
-    keyMetrics: [
-      { label: 'Publisher', value: candidate.publisher.slice(0, 24), status: 'nominal' },
-      { label: 'Pub Date', value: candidate.pubDate.slice(0, 16), status: 'nominal' },
-      { label: 'Provenance', value: 'Verified External Feed', status: 'nominal' },
-    ],
-    nextMilestone: {
-      title: `Follow-up Ingestion of Rulemaking Comments for ${candidate.publisher}`,
-      targetDate: '2026-11-15',
-      criticalPath: true,
-    },
+    // The headline verbatim is the only claim this pipeline can state without reading the
+    // article body — anything more specific would be inference this code did not perform.
+    verifiableClaim: candidate.title,
+    verifiableDelta: `Accessioned from ${candidate.publisher}, published ${candidate.pubDate}. This record captures the headline, publisher, and publication date as stated by the source feed; the article body was not retrieved and no claim within it has been independently corroborated.`,
+    keyMetrics,
     sourceProvenance: {
-      documentRef: `${candidate.publisher.replace(/[^a-zA-Z0-9]/g, '-').toUpperCase()}-${recordId}`,
+      // For a docket, the document number is a real, retrievable reference. For a news item
+      // there is no such identifier — the canonical URL itself is the most honest documentRef,
+      // since it is the actual location of the source, not an invented filename.
+      documentRef: candidate.docketNumber ?? canonicalUrl,
       commitHash: '', // backfilled by the caller once the commit exists
-      author: candidate.publisher,
       timestamp: now,
       filePath: `intelligence/${targetSubdir}/${recordId}.json`,
-      fileSizeBytes: 4096,
       externalUrl: candidate.url,
+      canonicalUrl,
+      urlVerifiedAt,
       sourcePublisher: candidate.publisher,
       externalDocketId: candidate.docketNumber,
-    },
-    evidenceDiff: {
-      filePath: `intelligence/${targetSubdir}/${recordId}.json`,
-      type: 'addition',
-      linesAdded: [
-        `+headline: "${candidate.title}"`,
-        `+publisher: "${candidate.publisher}"`,
-        `+external_url: "${candidate.url}"`,
-        `+ingestion_timestamp: "${now}"`,
-        `+verification_status: "VERIFIED_EXTERNAL_FEED"`,
-      ],
-      linesRemoved: [],
-      contextHeader: 'live_external_feed_accession',
     },
     prNoiseFilter: {
       prChatterDetected: false,
       chatterFlags: [],
-      confidenceScore: 0.99,
-      verificationStatus: 'VERIFIED_DELTA',
-      signalNoiseRatio: 26.5,
-      filterRationale: `Ingested directly from verified external publisher (${candidate.publisher}) and authenticated against statutory/industry records.`,
+      verificationStatus: 'UNVERIFIED_EXTERNAL_ITEM',
+      filterRationale: `Canonical URL resolved to ${canonicalUrl} and confirmed reachable (successful HTTP response) at ${urlVerifiedAt}. No further corroboration — article body, cross-source confirmation, or claim verification — has been performed.`,
     },
     agentRoutingMeta: {
       targetAgent:
@@ -207,9 +381,9 @@ export function buildRecordFromCandidate(
           : vector === 'TECHNICAL_EVOLUTION'
           ? 'AGENT_MARITIME_INFRASTRUCTURE'
           : 'AGENT_CAPITAL_AUDITOR',
-      actionType: 'LOG_CORROBORATED_DELTA',
-      priority: 'P0_CRITICAL',
-      checksum: `sha256:${recordId}`,
+      actionType: 'UPDATE_METRIC_STORE',
+      priority: 'P2_INFORMATIONAL',
+      checksum: `sha256:${contentDigest}`,
       routingTimestamp: now,
     },
   };

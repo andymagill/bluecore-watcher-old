@@ -11,6 +11,7 @@ export interface StatusCounts {
   verified: number;
   rejected: number;
   pending: number;
+  unverified: number;
 }
 
 /**
@@ -36,5 +37,6 @@ export function countByStatus(records: OperationalDeltaRecord[]): StatusCounts {
     verified: records.filter((r) => r.prNoiseFilter.verificationStatus === 'VERIFIED_DELTA').length,
     rejected: records.filter((r) => r.prNoiseFilter.verificationStatus === 'REJECTED_PR_CHATTER').length,
     pending: records.filter((r) => r.prNoiseFilter.verificationStatus === 'PENDING_DOCUMENT_CORROBORATION').length,
+    unverified: records.filter((r) => r.prNoiseFilter.verificationStatus === 'UNVERIFIED_EXTERNAL_ITEM').length,
   };
 }

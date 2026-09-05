@@ -39,7 +39,7 @@ export const METRIC_DEFINITIONS: MetricDefinition[] = [
   {
     id: 'METRIC-TECH-BERTH-RPV',
     vector: 'TECHNICAL_EVOLUTION',
-    label: 'Pier J Test RPV Staging',
+    label: 'Berth 48 Test RPV Staging',
     sourceSubVector: 'Berth 48 Physical Assets',
     sourceMetricLabel: 'Test RPV',
     unpopulatedReason:

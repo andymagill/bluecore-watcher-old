@@ -3,7 +3,19 @@ import path from 'path';
 import { OperationalDeltaRecord } from '../src/types';
 import { readRecords } from './records';
 import { stageAndCommit } from './git';
-import { fetchRealExternalCandidates, classifyIngestCandidate, buildRecordFromCandidate, normalizeHeadline } from './ingest';
+import {
+  fetchRealExternalCandidates,
+  classifyIngestCandidate,
+  buildRecordFromCandidate,
+  makeRecordId,
+  resolveAndVerify,
+  isVerified,
+  headlineTokens,
+  jaccardSimilarity,
+  DUPLICATE_HEADLINE_THRESHOLD,
+  VerifiedCandidate,
+  QuarantinedCandidate,
+} from './ingest';
 
 const DEFAULT_MAX_RECORDS = 5;
 
@@ -13,15 +25,65 @@ export type IngestResult =
   | { status: 'failed'; error: string };
 
 /**
+ * Appends this run's rejected candidates to a dated quarantine file, so a failure to resolve or
+ * verify a URL is visible for later review rather than silently discarded. `readRecords` only
+ * ever looks under `technical/`, `regulatory/`, `ecosystem/`, so this directory is never read
+ * into `/api/state` — quarantined items never masquerade as accessioned records.
+ *
+ * Deduped by candidate URL against today's file: live-testing this against the real feeds showed
+ * that a candidate which fails resolution (in practice, almost every Google News link — see
+ * `tryDecodeGoogleNewsUrl`'s docstring) fails identically on every run, and this pipeline runs
+ * every 4 hours (`INGEST_CRON`). Appending unconditionally would re-log the same ~100+ candidates
+ * six times a day, forever, turning a review log into unbounded noise nobody would actually read.
+ * One entry per URL per day is enough to show a rejection is still happening without burying it.
+ *
+ * Returns the file's repo-relative path so the caller can stage and commit it. Every CI run
+ * (`.github/workflows/ingest.yml`) starts from a fresh checkout — a quarantine write that never
+ * makes it into a commit would simply vanish before the next scheduled run could ever surface it,
+ * defeating the entire point of keeping a record of what got rejected and why.
+ */
+function writeQuarantine(rootDir: string, rejected: QuarantinedCandidate[]): string | null {
+  if (rejected.length === 0) return null;
+
+  const dir = path.join(rootDir, 'intelligence', '_quarantine');
+  fs.mkdirSync(dir, { recursive: true });
+
+  const dateStamp = new Date().toISOString().slice(0, 10);
+  const filePath = path.join(dir, `${dateStamp}.json`);
+
+  const existing: Array<{ candidate: { url: string } }> = fs.existsSync(filePath)
+    ? JSON.parse(fs.readFileSync(filePath, 'utf-8'))
+    : [];
+  const alreadyLoggedToday = new Set(existing.map((e) => e.candidate.url));
+
+  const now = new Date().toISOString();
+  const newEntries = rejected
+    .filter((q) => !alreadyLoggedToday.has(q.candidate.url))
+    .map((q) => ({
+      quarantinedAt: now,
+      reason: q.reason,
+      candidate: q.candidate,
+    }));
+
+  if (newEntries.length === 0) return null;
+
+  fs.writeFileSync(filePath, JSON.stringify([...existing, ...newEntries], null, 2), 'utf-8');
+  return path.relative(rootDir, filePath).split(path.sep).join('/');
+}
+
+/**
  * The full ingest pipeline, extracted so it can run identically from `POST /api/workflow/run`
  * (`server/routes.ts`) and from `scripts/ingest.ts` (a plain CLI, no Express/browser involved).
  * This function only ever commits locally — it never pushes — so the same code can back a
  * button click in the running server and a scheduled CI job without either one surprising you
  * with a network push the other didn't expect; the workflow that wants a push does that itself.
  *
- * Fetches candidates, dedups against both existing records and other candidates from this same
- * fetch, writes up to `maxRecords` new record files, and makes ONE commit covering all of them —
- * not one commit per record — so a catch-up run after being offline doesn't spam the history.
+ * Fetches candidates, resolves and HTTP-verifies each one's real publisher URL (quarantining any
+ * that fail), dedups the survivors against both existing records and other candidates from this
+ * same fetch (by canonical URL and by headline token-similarity, not just exact URL/headline
+ * equality), writes up to `maxRecords` new record files, and makes ONE commit covering all of
+ * them — not one commit per record — so a catch-up run after being offline doesn't spam the
+ * history.
  */
 export async function runIngestPipeline(
   rootDir: string,
@@ -32,63 +94,102 @@ export async function runIngestPipeline(
 
   try {
     const existingRecords = readRecords(rootDir, intelligenceDir);
-    const existingHeadlines = new Set(existingRecords.map((r) => normalizeHeadline(r.headline)));
     const existingUrls = new Set(
-      existingRecords.map((r) => (r.sourceProvenance?.externalUrl || '').toLowerCase())
+      existingRecords
+        .map((r) => (r.sourceProvenance?.canonicalUrl || r.sourceProvenance?.externalUrl || '').toLowerCase())
+        .filter(Boolean)
     );
+    const existingTokenSets = existingRecords.map((r) => headlineTokens(r.headline));
 
     const candidates = await fetchRealExternalCandidates();
 
-    const seenHeadlines = new Set(existingHeadlines);
+    const resolutions = await Promise.all(candidates.map((c) => resolveAndVerify(c)));
+    const quarantined = resolutions.filter(
+      (r): r is QuarantinedCandidate => !isVerified(r)
+    );
+    const quarantinePath = writeQuarantine(rootDir, quarantined);
+
     const seenUrls = new Set(existingUrls);
-    const fresh = [];
-    for (const candidate of candidates) {
-      const normalizedHeadline = normalizeHeadline(candidate.title);
-      const normalizedUrl = candidate.url.toLowerCase();
-      if (seenHeadlines.has(normalizedHeadline) || seenUrls.has(normalizedUrl)) continue;
+    const seenTokenSets = [...existingTokenSets];
+    const fresh: VerifiedCandidate[] = [];
+
+    for (const resolution of resolutions) {
+      if (!isVerified(resolution)) continue;
+
+      const normalizedUrl = resolution.canonicalUrl.toLowerCase();
+      const tokens = headlineTokens(resolution.candidate.title);
+
+      const isUrlDuplicate = seenUrls.has(normalizedUrl);
+      const isHeadlineDuplicate = seenTokenSets.some(
+        (existing) => jaccardSimilarity(existing, tokens) >= DUPLICATE_HEADLINE_THRESHOLD
+      );
+      if (isUrlDuplicate || isHeadlineDuplicate) continue;
 
       // Mark seen immediately (not just at the end) so duplicate stories within this same fetch
-      // — the four RSS queries overlap — don't both make it into the batch.
-      seenHeadlines.add(normalizedHeadline);
+      // — the four RSS queries overlap, and the same event is often filed under regulatory and
+      // technical alike — don't both make it into the batch.
       seenUrls.add(normalizedUrl);
-      fresh.push(candidate);
+      seenTokenSets.push(tokens);
+      fresh.push(resolution);
       if (fresh.length >= maxRecords) break;
     }
 
     if (fresh.length === 0) {
+      // Nothing accessioned this run, but if anything was quarantined it still needs to be
+      // committed on its own — otherwise it never leaves the working tree of this one run.
+      if (quarantinePath) {
+        const outcome = stageAndCommit(
+          rootDir,
+          [quarantinePath],
+          'chore(ingest): log newly quarantined candidate(s)'
+        );
+        if (!outcome.ok) {
+          return { status: 'failed', error: `Failed to commit quarantine log: ${outcome.error}` };
+        }
+      }
       return { status: 'up-to-date' };
     }
 
-    const writtenPaths: string[] = [];
+    const recordPaths: string[] = [];
     const newRecords: OperationalDeltaRecord[] = [];
+    const commitTime = new Date();
 
-    for (const candidate of fresh) {
-      const { vector, subVector, targetSubdir } = classifyIngestCandidate(candidate);
-      const recordId = `REC-${
-        vector === 'TECHNICAL_EVOLUTION' ? 'TECH' : vector === 'REGULATORY_PATHWAYS' ? 'REG' : 'ECO'
-      }-LIVE-${Date.now().toString().slice(-4)}-${writtenPaths.length}`;
+    for (const verified of fresh) {
+      const { vector, subVector, targetSubdir } = classifyIngestCandidate(verified.candidate);
+      const recordId = makeRecordId(vector, verified.canonicalUrl, commitTime);
 
-      const record = buildRecordFromCandidate(candidate, recordId, targetSubdir, vector, subVector);
+      const record = buildRecordFromCandidate(verified, recordId, targetSubdir, vector, subVector);
       const targetPath = path.join(intelligenceDir, targetSubdir, `${record.id}.json`);
       const relativePath = path.relative(rootDir, targetPath).split(path.sep).join('/');
 
+      // Written once with an approximate size (the field can't include its own final byte
+      // count), then re-measured against the file actually on disk — closer to the truth than a
+      // hardcoded literal, and still a single logical write since nothing is committed yet.
       fs.writeFileSync(targetPath, JSON.stringify(record, null, 2), 'utf-8');
-      writtenPaths.push(relativePath);
+      record.sourceProvenance.fileSizeBytes = fs.statSync(targetPath).size;
+      fs.writeFileSync(targetPath, JSON.stringify(record, null, 2), 'utf-8');
+
+      recordPaths.push(relativePath);
       newRecords.push(record);
     }
 
     const commitMessage =
       newRecords.length === 1
-        ? `feat(ingest): accession real external record: ${newRecords[0].headline.slice(0, 50)} [${newRecords[0].sourceProvenance.sourcePublisher}]`
-        : `feat(ingest): accession ${newRecords.length} real external records`;
+        ? `feat(ingest): accession external item: ${newRecords[0].headline.slice(0, 50)} [${newRecords[0].sourceProvenance.sourcePublisher}]`
+        : `feat(ingest): accession ${newRecords.length} external items`;
 
-    const outcome = stageAndCommit(rootDir, writtenPaths, commitMessage);
+    // The quarantine file (if any) rides along in the same commit as the records — one commit
+    // per run, same as before — but is kept out of the rollback list below: unlike a record file,
+    // it is often an *append* to entries from earlier runs, and deleting it on a failed commit
+    // would destroy that history, not just this run's contribution to it.
+    const commitPaths = quarantinePath ? [...recordPaths, quarantinePath] : recordPaths;
+    const outcome = stageAndCommit(rootDir, commitPaths, commitMessage);
 
     if (!outcome.ok) {
-      // Roll back every write from this run: an uncommitted file on disk would be picked up as
+      // Roll back this run's record writes: an uncommitted file on disk would be picked up as
       // "already accessioned" by the dedup check above on the next run, permanently excluding
       // that headline from ever being retried.
-      for (const relativePath of writtenPaths) {
+      for (const relativePath of recordPaths) {
         fs.unlinkSync(path.join(rootDir, relativePath));
       }
       return { status: 'failed', error: `Failed to commit new records to Git: ${outcome.error}` };

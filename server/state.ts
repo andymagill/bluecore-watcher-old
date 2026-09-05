@@ -41,9 +41,12 @@ export function buildStateLog(rootDir: string, intelligenceDir: string): FlatFil
       verifiedDeltas: statusCounts.verified,
       rejectedPrChatter: statusCounts.rejected,
       pendingCorroboration: statusCounts.pending,
+      unverifiedExternal: statusCounts.unverified,
       prNoiseSuppressionRatio:
-        statusCounts.rejected === 0
-          ? '100% Signal Fidelity (100% Real Sourced)'
+        statusCounts.verified + statusCounts.rejected === 0
+          ? 'n/a (no items screened)'
+          : statusCounts.rejected === 0
+          ? `${statusCounts.verified}:0 (no chatter rejected yet)`
           : `${Math.round(statusCounts.verified / statusCounts.rejected)}:1 (${(
               (statusCounts.verified / (statusCounts.verified + statusCounts.rejected)) *
               100

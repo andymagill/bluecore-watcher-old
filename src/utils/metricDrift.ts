@@ -141,10 +141,13 @@ export function getVectorMetrics(
       baselineEstimate: previous ? `${previous.value}${previous.unit ? ` ${previous.unit}` : ''}` : undefined,
       currentActual: `${current.value}${current.unit ? ` ${current.unit}` : ''}`,
       sourceAttribution: {
-        publisher: current.record.sourceProvenance.sourcePublisher ?? current.record.sourceProvenance.author,
+        publisher:
+          current.record.sourceProvenance.sourcePublisher ??
+          current.record.sourceProvenance.author ??
+          'Unknown Publisher',
         documentRef: current.record.sourceProvenance.documentRef,
         commitHash: shortHash(current.record.sourceProvenance.commitHash),
-        url: current.record.sourceProvenance.externalUrl,
+        url: current.record.sourceProvenance.canonicalUrl || current.record.sourceProvenance.externalUrl,
       },
     };
   });
@@ -175,8 +178,11 @@ export function getComparativeSnapshots(records: OperationalDeltaRecord[]): Comp
       varianceDelta: drift.label.replace(/^[▲▼►]\s*/, ''),
       direction: drift.direction,
       evolutionRationale: drift.detail,
-      sourcePublisher: current.record.sourceProvenance.sourcePublisher ?? current.record.sourceProvenance.author,
-      sourceUrl: current.record.sourceProvenance.externalUrl,
+      sourcePublisher:
+        current.record.sourceProvenance.sourcePublisher ??
+        current.record.sourceProvenance.author ??
+        'Unknown Publisher',
+      sourceUrl: current.record.sourceProvenance.canonicalUrl || current.record.sourceProvenance.externalUrl,
       commitHash: shortHash(current.record.sourceProvenance.commitHash),
       targetHorizon: current.record.nextMilestone?.targetDate ?? 'Unspecified',
       revisionDate: current.record.sourceProvenance.timestamp.slice(0, 10),

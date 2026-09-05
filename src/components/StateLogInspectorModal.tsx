@@ -241,10 +241,14 @@ export const StateLogInspectorModal: React.FC<StateLogInspectorModalProps> = ({
 
               <div className="p-4 rounded-xl border border-slate-800 bg-[#0c1220]">
                 <h4 className="text-xs font-bold text-slate-200 mb-2">Noise Suppression & Operational Integrity</h4>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-xs">
+                <div className="grid grid-cols-2 sm:grid-cols-5 gap-3 text-xs">
                   <div>
                     <span className="text-[10px] text-slate-400 block">Verified Deltas</span>
                     <span className="text-emerald-400 font-bold text-base">{stateLog.filterMetrics.verifiedDeltas}</span>
+                  </div>
+                  <div>
+                    <span className="text-[10px] text-slate-400 block">Unverified External</span>
+                    <span className="text-sky-400 font-bold text-base">{stateLog.filterMetrics.unverifiedExternal}</span>
                   </div>
                   <div>
                     <span className="text-[10px] text-slate-400 block">Pending Corroboration</span>

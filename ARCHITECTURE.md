@@ -20,8 +20,7 @@ the three folders in the sidebar's file tree, and one of the three metric-card p
 | `npm run dev` | `server/index.ts` — Express + Vite dev middleware on one port (`PORT`, default 3000) |
 | `npm run build` | `vite build` (SPA → `dist/`) + esbuild bundles `server/index.ts` → `dist/server.cjs` |
 | `npm start` | `node dist/server.cjs` — the production server, serving the built SPA as static files |
-| `npm run seed` | `scripts/seed_git_repo.ts` — writes `src/data/seedState.ts`'s records to `intelligence/` and commits them |
-| `npm run ingest` | `scripts/ingest.ts` — runs the ingest pipeline headlessly (no Express, no browser); also what `.github/workflows/ingest.yml` runs on a schedule |
+| `npm run ingest` | `scripts/ingest.ts` — runs the ingest pipeline headlessly (no Express, no browser); also what `.github/workflows/ingest.yml` runs on a schedule. The only way records enter `intelligence/` — there is no seed script. |
 | `npm run lint` | `tsc --noEmit` under `strict` — the gate this project builds against |
 
 ## File layout
@@ -35,7 +34,8 @@ server/                  Express backend — all filesystem and Git access lives
   config.ts                 INGEST_CRON — the one source of truth for the ingest schedule
   git.ts                   ALL git subprocess calls (spawnSync, never a shell); commit parsing
   records.ts                reads + validates intelligence/**/*.json; resolves commitHash from git log
-  ingest.ts                 external fetch (RSS, Federal Register) + candidate classification
+  ingest.ts                 external fetch (RSS, Federal Register), URL resolution/verification,
+                              candidate classification, and record construction
 
 src/
   types.ts                  the shared schema — see its own docstrings for what each type means
@@ -51,10 +51,12 @@ src/
     counts.ts, hash.ts         small shared helpers (vector/status tallies, short-hash display)
   data/
     metricDefinitions.ts       declares WHICH metrics are tracked and WHERE to find them
-    seedState.ts                bundled offline fallback (used before the first /api/state reply)
+    seedState.ts                bundled offline fallback (used before the first /api/state reply);
+                                 deliberately empty — see its docstring for why
 
 intelligence/<vector>/*.json  the actual database: one file per accessioned record
-scripts/seed_git_repo.ts       (re)writes intelligence/ from src/data/seedState.ts and commits it
+intelligence/_quarantine/*.json  candidates that failed URL resolution/verification; never read
+                                  by server/records.ts, so these never reach the UI
 scripts/ingest.ts               headless CLI wrapper around server/pipeline.ts's runIngestPipeline()
 .github/workflows/ingest.yml    runs `npm run ingest` + `git push` on INGEST_CRON's schedule
 ```
@@ -86,8 +88,17 @@ silently presents seed data as if it were a live repository read.
 
 ```
 fetch RSS + Federal Register
-    → dedup against existing records' normalized headlines/URLs, AND within this same fetch
-    → classify + write up to 5 new intelligence/<vector>/<id>.json files
+    → resolve each candidate's real publisher URL (Google News links are opaque redirects) and
+      HTTP-verify it actually returns a successful response
+    → candidates that fail resolution or verification are written to
+      intelligence/_quarantine/<date>.json with a reason, not accessioned
+    → dedup survivors against existing records AND within this same fetch, by canonical URL and
+      by headline token-similarity (not just exact string/URL equality — the same story is
+      routinely reported under different headlines across outlets)
+    → classify + write up to 5 new intelligence/<vector>/<id>.json files, each stamped
+      verificationStatus: 'UNVERIFIED_EXTERNAL_ITEM' — a live, resolved URL is the only thing
+      this pipeline actually checks; it does not read the article body or corroborate any claim
+      in it, and does not assert otherwise
     → git add -- <paths> && git commit -m <message> -- <paths>   (ONE commit for the whole batch)
     → on failure: delete every file written this run (no orphan left for the dedup check to trip
       on forever)
@@ -110,6 +121,22 @@ Every Git call in this path goes through `server/git.ts`'s `spawnSync('git', [ar
 ingested headline is untrusted external text, and an earlier version of this code built a shell
 command string from it (`execSync(`git commit -m "${msg}"`)`), which was a command-injection
 vector. Do not reintroduce string-built shell commands here.
+
+### What "verified" does and doesn't mean here
+
+`intelligence/` used to ship nine hand-authored records under a `*-REAL-*` naming convention and
+labeled `VERIFIED_DELTA`, several of which cited dead or unrelated URLs, one of which asserted a
+regulatory framework that does not exist, and all of which carried commit hashes that resolved to
+no commit in this repository. That entire seed set — and the fabricated git history that went
+with it in `src/data/seedState.ts` — has been removed; `npm run seed` no longer exists.
+
+The only thing the ingest pipeline verifies is that a record's `sourceProvenance.canonicalUrl` is
+a real, resolved, currently-live publisher URL (`urlVerifiedAt` records when). It does not fetch
+or read the article, does not corroborate the headline against a second source, and does not
+compute a confidence score — so it stamps every record `UNVERIFIED_EXTERNAL_ITEM` and leaves
+`confidenceScore`/`signalNoiseRatio` absent rather than filling them with a constant. A future
+pass that actually reads sources and cross-corroborates claims is what `VERIFIED_DELTA` should be
+reserved for; nothing in this codebase performs that today.
 
 ## What is derived vs. declared
 

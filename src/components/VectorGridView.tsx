@@ -188,14 +188,14 @@ const RecordCard: React.FC<RecordCardProps> = ({ record, onSelect }) => {
             )}
           </div>
 
-          {record.sourceProvenance.externalUrl && (
+          {(record.sourceProvenance.canonicalUrl || record.sourceProvenance.externalUrl) && (
             <a
-              href={record.sourceProvenance.externalUrl}
+              href={record.sourceProvenance.canonicalUrl || record.sourceProvenance.externalUrl}
               target="_blank"
               rel="noopener noreferrer"
               onClick={(e) => e.stopPropagation()}
               className="flex items-center gap-1 text-[9px] text-cyan-400 hover:text-cyan-300 font-bold px-1.5 py-0.5 rounded bg-cyan-950/40 border border-cyan-800/50 hover:bg-cyan-900/40 transition shrink-0"
-              title="Open verified external source"
+              title={record.sourceProvenance.canonicalUrl ? 'Open URL-verified external source' : 'Open external source (unresolved link, not independently verified)'}
             >
               <span>Source</span>
               <ExternalLink className="h-2.5 w-2.5" />
