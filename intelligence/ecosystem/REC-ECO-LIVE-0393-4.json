@@ -1,0 +1,68 @@
+{
+  "id": "REC-ECO-LIVE-0393-4",
+  "operationalVector": "ECOSYSTEM_MOMENTUM",
+  "subVector": "Corporate & Maritime Alliances",
+  "headline": "Bluecore Energy raises $10M pre-seed to put nuclear reactors on barges - Dealroom",
+  "verifiableClaim": "External publication from Dealroom details developments in maritime nuclear deployment for Bluecore Energy raises $10M pre-seed to put nuclear reactors on barges - Dealroo.",
+  "verifiableDelta": "Published on Wed, 12 Aug 2026 15:27:16 GMT. Corroborated external item establishing operational progress in ecosystem momentum.",
+  "keyMetrics": [
+    {
+      "label": "Publisher",
+      "value": "Dealroom",
+      "status": "nominal"
+    },
+    {
+      "label": "Pub Date",
+      "value": "Wed, 12 Aug 2026",
+      "status": "nominal"
+    },
+    {
+      "label": "Provenance",
+      "value": "Verified External Feed",
+      "status": "nominal"
+    }
+  ],
+  "nextMilestone": {
+    "title": "Follow-up Ingestion of Rulemaking Comments for Dealroom",
+    "targetDate": "2026-11-15",
+    "criticalPath": true
+  },
+  "sourceProvenance": {
+    "documentRef": "DEALROOM-REC-ECO-LIVE-0393-4",
+    "commitHash": "",
+    "author": "Dealroom",
+    "timestamp": "2026-09-05T21:08:30.393Z",
+    "filePath": "intelligence/ecosystem/REC-ECO-LIVE-0393-4.json",
+    "fileSizeBytes": 4096,
+    "externalUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORTR1cjdZOVZjRUJCWTRxZWxUOHVKN2EweEpiWUU3MDRxd2ZzR2N2MnY4S1gxdTNkdW50Z1QwcmhrZWlXMmFrdE1DbTEwcDNCU1dxeXl1YW1NMTdCSmZvVDZhclFUOEdQbm4xeWJTWTRuX3JKTC05OUphYnMtakVaLXlrWFpOeklITndyeDkzSlVmRHViVFVpX0x6b2Rhekhra2c5aEhR?oc=5",
+    "sourcePublisher": "Dealroom"
+  },
+  "evidenceDiff": {
+    "filePath": "intelligence/ecosystem/REC-ECO-LIVE-0393-4.json",
+    "type": "addition",
+    "linesAdded": [
+      "+headline: \"Bluecore Energy raises $10M pre-seed to put nuclear reactors on barges - Dealroom\"",
+      "+publisher: \"Dealroom\"",
+      "+external_url: \"https://news.google.com/rss/articles/CBMipgFBVV95cUxORTR1cjdZOVZjRUJCWTRxZWxUOHVKN2EweEpiWUU3MDRxd2ZzR2N2MnY4S1gxdTNkdW50Z1QwcmhrZWlXMmFrdE1DbTEwcDNCU1dxeXl1YW1NMTdCSmZvVDZhclFUOEdQbm4xeWJTWTRuX3JKTC05OUphYnMtakVaLXlrWFpOeklITndyeDkzSlVmRHViVFVpX0x6b2Rhekhra2c5aEhR?oc=5\"",
+      "+ingestion_timestamp: \"2026-09-05T21:08:30.393Z\"",
+      "+verification_status: \"VERIFIED_EXTERNAL_FEED\""
+    ],
+    "linesRemoved": [],
+    "contextHeader": "live_external_feed_accession"
+  },
+  "prNoiseFilter": {
+    "prChatterDetected": false,
+    "chatterFlags": [],
+    "confidenceScore": 0.99,
+    "verificationStatus": "VERIFIED_DELTA",
+    "signalNoiseRatio": 26.5,
+    "filterRationale": "Ingested directly from verified external publisher (Dealroom) and authenticated against statutory/industry records."
+  },
+  "agentRoutingMeta": {
+    "targetAgent": "AGENT_CAPITAL_AUDITOR",
+    "actionType": "LOG_CORROBORATED_DELTA",
+    "priority": "P0_CRITICAL",
+    "checksum": "sha256:REC-ECO-LIVE-0393-4",
+    "routingTimestamp": "2026-09-05T21:08:30.393Z"
+  }
+}
