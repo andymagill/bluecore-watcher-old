@@ -24,12 +24,19 @@ export type IngestResult =
   | { status: 'up-to-date' }
   | { status: 'failed'; error: string };
 
-/** Appends this run's rejected candidates to a dated quarantine file, so a failure to resolve or
+/**
+ * Appends this run's rejected candidates to a dated quarantine file, so a failure to resolve or
  * verify a URL is visible for later review rather than silently discarded. `readRecords` only
  * ever looks under `technical/`, `regulatory/`, `ecosystem/`, so this directory is never read
- * into `/api/state` — quarantined items never masquerade as accessioned records. */
-function writeQuarantine(rootDir: string, rejected: QuarantinedCandidate[]): void {
-  if (rejected.length === 0) return;
+ * into `/api/state` — quarantined items never masquerade as accessioned records.
+ *
+ * Returns the file's repo-relative path so the caller can stage and commit it. Every CI run
+ * (`.github/workflows/ingest.yml`) starts from a fresh checkout — a quarantine write that never
+ * makes it into a commit would simply vanish before the next scheduled run could ever surface it,
+ * defeating the entire point of keeping a record of what got rejected and why.
+ */
+function writeQuarantine(rootDir: string, rejected: QuarantinedCandidate[]): string | null {
+  if (rejected.length === 0) return null;
 
   const dir = path.join(rootDir, 'intelligence', '_quarantine');
   fs.mkdirSync(dir, { recursive: true });
@@ -48,6 +55,7 @@ function writeQuarantine(rootDir: string, rejected: QuarantinedCandidate[]): voi
   }));
 
   fs.writeFileSync(filePath, JSON.stringify([...existing, ...entries], null, 2), 'utf-8');
+  return path.relative(rootDir, filePath).split(path.sep).join('/');
 }
 
 /**
@@ -86,7 +94,7 @@ export async function runIngestPipeline(
     const quarantined = resolutions.filter(
       (r): r is QuarantinedCandidate => !isVerified(r)
     );
-    writeQuarantine(rootDir, quarantined);
+    const quarantinePath = writeQuarantine(rootDir, quarantined);
 
     const seenUrls = new Set(existingUrls);
     const seenTokenSets = [...existingTokenSets];
@@ -114,10 +122,22 @@ export async function runIngestPipeline(
     }
 
     if (fresh.length === 0) {
+      // Nothing accessioned this run, but if anything was quarantined it still needs to be
+      // committed on its own — otherwise it never leaves the working tree of this one run.
+      if (quarantinePath) {
+        const outcome = stageAndCommit(
+          rootDir,
+          [quarantinePath],
+          `chore(ingest): log ${quarantined.length} quarantined candidate(s)`
+        );
+        if (!outcome.ok) {
+          return { status: 'failed', error: `Failed to commit quarantine log: ${outcome.error}` };
+        }
+      }
       return { status: 'up-to-date' };
     }
 
-    const writtenPaths: string[] = [];
+    const recordPaths: string[] = [];
     const newRecords: OperationalDeltaRecord[] = [];
     const commitTime = new Date();
 
@@ -136,7 +156,7 @@ export async function runIngestPipeline(
       record.sourceProvenance.fileSizeBytes = fs.statSync(targetPath).size;
       fs.writeFileSync(targetPath, JSON.stringify(record, null, 2), 'utf-8');
 
-      writtenPaths.push(relativePath);
+      recordPaths.push(relativePath);
       newRecords.push(record);
     }
 
@@ -145,13 +165,18 @@ export async function runIngestPipeline(
         ? `feat(ingest): accession external item: ${newRecords[0].headline.slice(0, 50)} [${newRecords[0].sourceProvenance.sourcePublisher}]`
         : `feat(ingest): accession ${newRecords.length} external items`;
 
-    const outcome = stageAndCommit(rootDir, writtenPaths, commitMessage);
+    // The quarantine file (if any) rides along in the same commit as the records — one commit
+    // per run, same as before — but is kept out of the rollback list below: unlike a record file,
+    // it is often an *append* to entries from earlier runs, and deleting it on a failed commit
+    // would destroy that history, not just this run's contribution to it.
+    const commitPaths = quarantinePath ? [...recordPaths, quarantinePath] : recordPaths;
+    const outcome = stageAndCommit(rootDir, commitPaths, commitMessage);
 
     if (!outcome.ok) {
-      // Roll back every write from this run: an uncommitted file on disk would be picked up as
+      // Roll back this run's record writes: an uncommitted file on disk would be picked up as
       // "already accessioned" by the dedup check above on the next run, permanently excluding
       // that headline from ever being retried.
-      for (const relativePath of writtenPaths) {
+      for (const relativePath of recordPaths) {
         fs.unlinkSync(path.join(rootDir, relativePath));
       }
       return { status: 'failed', error: `Failed to commit new records to Git: ${outcome.error}` };

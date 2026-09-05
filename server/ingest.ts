@@ -150,11 +150,16 @@ async function fetchWithTimeout(url: string, init: RequestInit, timeoutMs: numbe
 /**
  * Best-effort extraction of the real publisher URL embedded in a Google News RSS redirect link
  * (`news.google.com/rss/articles/CBMi...`). The path segment is a base64url-encoded protobuf
- * blob, not a plain encoding of the URL — there is no documented, stable decoding — but the
- * plaintext URL is typically embedded verbatim inside it as a string field, so decoding the
- * bytes and regex-matching an `http(s)://` run recovers it in practice. Returns null rather than
- * guessing when no such run is found; the caller must then quarantine the candidate rather than
- * accession a link nobody could resolve.
+ * blob with no documented, stable decoding, and as of this writing it does NOT contain the
+ * plaintext target URL — verified by decoding real links and finding no `http(s)://` run inside.
+ * Google resolves these client-side (a JS-rendered interstitial, not a server redirect and not a
+ * canonical link in the HTML), so there is currently no reliable way to recover the real URL from
+ * one of these links without a headless browser, which this pipeline does not run. This function
+ * is kept as a cheap first attempt in case Google's format changes or an older-style link (which
+ * historically did embed the URL) is encountered, but callers must expect it to return null for
+ * essentially all current links and quarantine accordingly — this is the correct, safe outcome,
+ * not a bug: an opaque redirect is exactly the kind of citation this pipeline must not accession
+ * (see `ARCHITECTURE.md`'s note on the previous records that did exactly that).
  */
 export function tryDecodeGoogleNewsUrl(link: string): string | null {
   const match = link.match(/\/articles\/([^/?]+)/);
