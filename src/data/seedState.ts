@@ -1,6 +1,16 @@
 /**
- * Real Externally Sourced Flat-File State Log for Bluecore Energy Intelligence Engine.
- * Grounded strictly in verifiable public filings, agency dockets, and authorized reporting.
+ * Bundled offline fallback state for the Bluecore Energy Intelligence Engine.
+ *
+ * This is a SECONDARY source of truth, not the primary one: `intelligence/**\/*.json` on disk
+ * (read by `server/records.ts`) is authoritative. `useIntelligenceState` renders this data only
+ * until the first successful `/api/state` response replaces it, and falls back to it again if
+ * the backend becomes unreachable — see `DataSource` in `src/hooks/useIntelligenceState.ts`.
+ *
+ * Content here mirrors the real, publicly-sourced records seeded onto disk by
+ * `scripts/seed_git_repo.ts` (MARAD RFI 2026-09070, the Port of Long Beach/MARAD pact, the
+ * Slauson & Co. pre-seed round, and the 10 MWe SMR technical specification) so the UI looks
+ * identical whether it is running against a live repository or has never reached the server at
+ * all. If this drifts from what is on disk, `npm run seed` re-derives the flat files from here.
  */
 
 import { FlatFileStateLog, GitCommitSnapshot, OperationalDeltaRecord } from '../types';
@@ -20,13 +30,7 @@ export const INITIAL_GIT_COMMITS: GitCommitSnapshot[] = [
         filename: "regulatory/marad/docket_2026_09070_smr_rfi.json",
         status: "added",
         additions: 38,
-        deletions: 0,
-        patch: `@@ -0,0 +1,12 @@
-+title: "Request for Information: Development of a Commercially Viable System-Centric Small Modular Reactor Concept for Deployment in the Marine Transportation System"
-+agency: "Department of Transportation - Maritime Administration (MARAD)"
-+docket_number: "2026-09070"
-+statutory_authority: "46 U.S.C. Title XI / Center for Maritime Innovation"
-+url: "https://www.federalregister.gov/documents/2026/05/07/2026-09070/request-for-information-development-of-a-commercially-viable-system-centric-small-modular-reactor"`
+        deletions: 0
       }
     ]
   },
@@ -44,13 +48,7 @@ export const INITIAL_GIT_COMMITS: GitCommitSnapshot[] = [
         filename: "regulatory/polb/marad_longbeach_partnership_pact.md",
         status: "added",
         additions: 44,
-        deletions: 2,
-        patch: `@@ -0,0 +1,10 @@
-+# Bilateral Agreement: Port of Long Beach & U.S. Maritime Administration (MARAD)
-+* Executive Director: Mario Cordero, Port of Long Beach
-+* Federal Signatory: U.S. Maritime Administration (MARAD)
-+* Scope: Port Decarbonization by 2050 through commercial small modular reactors (SMRs)
-+* Safety Standards: Harbor Emergency Zones & Coast Guard Navigation Corridors`
+        deletions: 2
       }
     ]
   },
@@ -68,16 +66,7 @@ export const INITIAL_GIT_COMMITS: GitCommitSnapshot[] = [
         filename: "ecosystem/funding/slauson_pre_seed_round.json",
         status: "added",
         additions: 52,
-        deletions: 0,
-        patch: `@@ -0,0 +1,9 @@
-+{
-+  "round": "Pre-Seed",
-+  "capital_raised_usd": 10000000,
-+  "lead_investor": "Slauson & Co. (Austin Clements)",
-+  "founder_ceo": "Kofi Asante",
-+  "entity": "Bluecore Energy Inc.",
-+  "headquarters": "Port of Long Beach, California"
-+}`
+        deletions: 0
       }
     ]
   },
@@ -95,18 +84,7 @@ export const INITIAL_GIT_COMMITS: GitCommitSnapshot[] = [
         filename: "technical/reactor/10mwe_floating_smr_spec.json",
         status: "added",
         additions: 60,
-        deletions: 5,
-        patch: `@@ -0,0 +1,11 @@
-+{
-+  "model": "Bluecore Marine SMR-10",
-+  "net_electrical_output_mwe": 10,
-+  "thermal_capacity_mwt": 30,
-+  "coolant_cycle": "Water-Cooled Closed-Loop",
-+  "safety_architecture": "Passive Gravity-Driven Decay Heat Removal",
-+  "refueling_cadence_years": "3 to 5",
-+  "deployment_vehicle": "Towed Floating Maritime Barge",
-+  "power_equivalent": "15,000 homes or 1 container terminal"
-+}`
+        deletions: 5
       }
     ]
   }
@@ -139,13 +117,13 @@ export const INITIAL_DELTA_RECORDS: OperationalDeltaRecord[] = [
       commitHash: "6d09a82",
       author: "Nuclear Engineering International",
       timestamp: "2026-08-10T11:20:00Z",
-      filePath: "technical/reactor/10mwe_floating_smr_spec.json",
+      filePath: "intelligence/technical/reactor/10mwe_floating_smr_spec.json",
       fileSizeBytes: 18450,
       externalUrl: "https://www.neimagazine.com/news/bluecore-energy-developing-nuclear-power-barge-at-port-of-long-beach/",
       sourcePublisher: "Nuclear Engineering International"
     },
     evidenceDiff: {
-      filePath: "technical/reactor/10mwe_floating_smr_spec.json",
+      filePath: "intelligence/technical/reactor/10mwe_floating_smr_spec.json",
       type: "addition",
       linesAdded: [
         '+net_electrical_output_mwe: 10',
@@ -195,13 +173,13 @@ export const INITIAL_DELTA_RECORDS: OperationalDeltaRecord[] = [
       commitHash: "6d09a82",
       author: "WorkBoat Maritime Review",
       timestamp: "2026-08-12T09:40:00Z",
-      filePath: "technical/assets/long_beach_berth_barge_rpv.json",
+      filePath: "intelligence/technical/assets/long_beach_berth_barge_rpv.json",
       fileSizeBytes: 12800,
       externalUrl: "https://www.workboat.com/coastal-ocean-maneuvering/bluecore-energy-developing-nuclear-power-barge-at-port-of-long-beach",
       sourcePublisher: "WorkBoat"
     },
     evidenceDiff: {
-      filePath: "technical/assets/long_beach_berth_barge_rpv.json",
+      filePath: "intelligence/technical/assets/long_beach_berth_barge_rpv.json",
       type: "addition",
       linesAdded: [
         '+facility_location: "Port of Long Beach, Pier J Complex"',
@@ -250,13 +228,13 @@ export const INITIAL_DELTA_RECORDS: OperationalDeltaRecord[] = [
       commitHash: "5f88c31",
       author: "California Air Resources Board (CARB)",
       timestamp: "2026-08-05T14:10:00Z",
-      filePath: "technical/grid/carb_at_berth_shore_power.json",
+      filePath: "intelligence/technical/grid/carb_at_berth_shore_power.json",
       fileSizeBytes: 24500,
       externalUrl: "https://ww2.arb.ca.gov/our-work/programs/ocean-going-vessels-at-berth-regulation",
       sourcePublisher: "California Air Resources Board (CARB)"
     },
     evidenceDiff: {
-      filePath: "technical/grid/carb_at_berth_shore_power.json",
+      filePath: "intelligence/technical/grid/carb_at_berth_shore_power.json",
       type: "addition",
       linesAdded: [
         '+interconnect_voltage: "6.6kV / 11kV Three-Phase Dual Standard"',
@@ -310,14 +288,14 @@ export const INITIAL_DELTA_RECORDS: OperationalDeltaRecord[] = [
       commitHash: "9e41b2c",
       author: "Maritime Administration (MARAD)",
       timestamp: "2026-08-28T14:30:00Z",
-      filePath: "regulatory/marad/docket_2026_09070_smr_rfi.json",
+      filePath: "intelligence/regulatory/marad/docket_2026_09070_smr_rfi.json",
       fileSizeBytes: 34100,
       externalUrl: "https://www.federalregister.gov/documents/2026/05/07/2026-09070/request-for-information-development-of-a-commercially-viable-system-centric-small-modular-reactor",
       sourcePublisher: "Federal Register / U.S. DOT MARAD",
       externalDocketId: "MARAD-2026-09070"
     },
     evidenceDiff: {
-      filePath: "regulatory/marad/docket_2026_09070_smr_rfi.json",
+      filePath: "intelligence/regulatory/marad/docket_2026_09070_smr_rfi.json",
       type: "addition",
       linesAdded: [
         '+federal_register_doc: "2026-09070"',
@@ -368,13 +346,13 @@ export const INITIAL_DELTA_RECORDS: OperationalDeltaRecord[] = [
       commitHash: "8c12a0f",
       author: "Port of Long Beach / American Nuclear Society",
       timestamp: "2026-08-22T10:15:00Z",
-      filePath: "regulatory/polb/marad_longbeach_partnership_pact.md",
+      filePath: "intelligence/regulatory/polb/marad_longbeach_partnership_pact.md",
       fileSizeBytes: 28900,
       externalUrl: "https://polb.com",
       sourcePublisher: "Port of Long Beach & American Nuclear Society (ANS)"
     },
     evidenceDiff: {
-      filePath: "regulatory/polb/marad_longbeach_partnership_pact.md",
+      filePath: "intelligence/regulatory/polb/marad_longbeach_partnership_pact.md",
       type: "addition",
       linesAdded: [
         '+partnership: "Port of Long Beach & U.S. Maritime Administration"',
@@ -424,13 +402,13 @@ export const INITIAL_DELTA_RECORDS: OperationalDeltaRecord[] = [
       commitHash: "8c12a0f",
       author: "Nuclear Regulatory Commission (NRC)",
       timestamp: "2026-08-24T13:00:00Z",
-      filePath: "regulatory/nrc/nrc_uscg_dual_jurisdiction_fnpp.json",
+      filePath: "intelligence/regulatory/nrc/nrc_uscg_dual_jurisdiction_fnpp.json",
       fileSizeBytes: 31200,
       externalUrl: "https://www.nrc.gov/reactors/new-reactors/advanced.html",
       sourcePublisher: "Nuclear Regulatory Commission (NRC)"
     },
     evidenceDiff: {
-      filePath: "regulatory/nrc/nrc_uscg_dual_jurisdiction_fnpp.json",
+      filePath: "intelligence/regulatory/nrc/nrc_uscg_dual_jurisdiction_fnpp.json",
       type: "addition",
       linesAdded: [
         '+nrc_statutory_scope: "10 CFR Part 50/52/53 Reactor Licensing & Containment"',
@@ -484,13 +462,13 @@ export const INITIAL_DELTA_RECORDS: OperationalDeltaRecord[] = [
       commitHash: "7b33e14",
       author: "Forbes Exclusive / Slauson & Co.",
       timestamp: "2026-08-18T16:00:00Z",
-      filePath: "ecosystem/funding/slauson_pre_seed_round.json",
+      filePath: "intelligence/ecosystem/funding/slauson_pre_seed_round.json",
       fileSizeBytes: 21500,
       externalUrl: "https://www.forbes.com/sites/forbes-under-30/",
       sourcePublisher: "Forbes"
     },
     evidenceDiff: {
-      filePath: "ecosystem/funding/slauson_pre_seed_round.json",
+      filePath: "intelligence/ecosystem/funding/slauson_pre_seed_round.json",
       type: "addition",
       linesAdded: [
         '+funding_round: "Pre-Seed Venture Capital"',
@@ -540,13 +518,13 @@ export const INITIAL_DELTA_RECORDS: OperationalDeltaRecord[] = [
       commitHash: "7b33e14",
       author: "Los Angeles Times / CBS News",
       timestamp: "2026-08-19T14:30:00Z",
-      filePath: "ecosystem/corporate/long_beach_headquarters_establishment.json",
+      filePath: "intelligence/ecosystem/corporate/long_beach_headquarters_establishment.json",
       fileSizeBytes: 19800,
       externalUrl: "https://www.latimes.com/environment/",
       sourcePublisher: "Los Angeles Times"
     },
     evidenceDiff: {
-      filePath: "ecosystem/corporate/long_beach_headquarters_establishment.json",
+      filePath: "intelligence/ecosystem/corporate/long_beach_headquarters_establishment.json",
       type: "addition",
       linesAdded: [
         '+entity: "Bluecore Energy Inc."',
@@ -595,13 +573,13 @@ export const INITIAL_DELTA_RECORDS: OperationalDeltaRecord[] = [
       commitHash: "7b33e14",
       author: "The Waterways Journal",
       timestamp: "2026-08-20T11:00:00Z",
-      filePath: "ecosystem/talent/engineering_leadership_roster.json",
+      filePath: "intelligence/ecosystem/talent/engineering_leadership_roster.json",
       fileSizeBytes: 14200,
       externalUrl: "https://www.waterwaysjournal.net/",
       sourcePublisher: "The Waterways Journal"
     },
     evidenceDiff: {
-      filePath: "ecosystem/talent/engineering_leadership_roster.json",
+      filePath: "intelligence/ecosystem/talent/engineering_leadership_roster.json",
       type: "addition",
       linesAdded: [
         '+engineering_roster: "Naval propulsion engineers, maritime naval architects, and aerospace manufacturing leads"',

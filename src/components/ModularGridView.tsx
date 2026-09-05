@@ -1,102 +1,69 @@
 import React from 'react';
-import { 
-  OperationalDeltaRecord, 
+import {
+  OperationalDeltaRecord,
   OperationalVector,
-  GitCommitSnapshot 
 } from '../types';
 import { VectorMetricCards } from './VectorMetricCards';
 import { getVectorMetrics } from '../utils/metricDrift';
-import { 
-  CheckCircle2, 
-  AlertTriangle, 
-  ShieldAlert, 
-  SearchX, 
-  Plus,
+import { getVectorTheme } from '../utils/vectorTheme';
+import { shortHash } from '../utils/hash';
+import {
+  CheckCircle2,
+  AlertTriangle,
+  ShieldAlert,
+  SearchX,
   ArrowRight,
   FileText,
   Calendar,
-  Layers,
-  Activity,
   ExternalLink,
-  Globe
 } from 'lucide-react';
 
 interface ModularGridViewProps {
   records: OperationalDeltaRecord[];
-  commits: GitCommitSnapshot[];
   onSelectRecord: (record: OperationalDeltaRecord) => void;
   onResetFilters: () => void;
   selectedVector: OperationalVector | 'ALL';
 }
 
+const VECTOR_ORDER: { number: string; vector: OperationalVector; subVectorsDescription: string }[] = [
+  {
+    number: '01',
+    vector: 'TECHNICAL_EVOLUTION',
+    subVectorsDescription: 'Berth 48 physical assets • SMR scaling metrics • Marine barge modifications • Subsea grid integration',
+  },
+  {
+    number: '02',
+    vector: 'REGULATORY_PATHWAYS',
+    subVectorsDescription: 'Port of Long Beach compliance • MARAD frameworks • Early NRC indicators',
+  },
+  {
+    number: '03',
+    vector: 'ECOSYSTEM_MOMENTUM',
+    subVectorsDescription: 'Capital structure updates • Executive talent acquisition • Corporate & maritime alliances',
+  },
+];
+
 export const ModularGridView: React.FC<ModularGridViewProps> = ({
   records,
-  commits,
   onSelectRecord,
   onResetFilters,
   selectedVector,
 }) => {
-  // Group records strictly across the three operational vectors
-  const technicalRecords = records.filter(r => r.operationalVector === 'TECHNICAL_EVOLUTION');
-  const regulatoryRecords = records.filter(r => r.operationalVector === 'REGULATORY_PATHWAYS');
-  const ecosystemRecords = records.filter(r => r.operationalVector === 'ECOSYSTEM_MOMENTUM');
-
-  const showTechnical = selectedVector === 'ALL' || selectedVector === 'TECHNICAL_EVOLUTION';
-  const showRegulatory = selectedVector === 'ALL' || selectedVector === 'REGULATORY_PATHWAYS';
-  const showEcosystem = selectedVector === 'ALL' || selectedVector === 'ECOSYSTEM_MOMENTUM';
-
   return (
     <div className="w-full">
       {/* High Density 3-Column Operations Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 bg-[#020617] border-b border-slate-800 divide-y lg:divide-y-0 lg:divide-x divide-slate-800">
-        
-        {/* VECTOR 01: TECHNICAL EVOLUTION */}
-        {showTechnical && (
+        {VECTOR_ORDER.filter((v) => selectedVector === 'ALL' || selectedVector === v.vector).map((v) => (
           <VectorColumn
-            vectorNumber="01"
-            vector="TECHNICAL_EVOLUTION"
-            title="Technical Evolution"
-            subVectorsDescription="Berth 48 physical assets • SMR scaling metrics • Marine barge modifications • Subsea grid integration"
-            headerColorClass="text-blue-400"
-            badgeClass="bg-blue-900/40 text-blue-300 border-blue-800/60"
-            records={technicalRecords}
-            commits={commits}
+            key={v.vector}
+            vectorNumber={v.number}
+            vector={v.vector}
+            subVectorsDescription={v.subVectorsDescription}
+            records={records.filter((r) => r.operationalVector === v.vector)}
             onSelectRecord={onSelectRecord}
             onResetFilters={onResetFilters}
           />
-        )}
-
-        {/* VECTOR 02: REGULATORY PATHWAYS */}
-        {showRegulatory && (
-          <VectorColumn
-            vectorNumber="02"
-            vector="REGULATORY_PATHWAYS"
-            title="Regulatory Pathways"
-            subVectorsDescription="Port of Long Beach compliance • MARAD frameworks • Early NRC indicators"
-            headerColorClass="text-emerald-400"
-            badgeClass="bg-emerald-900/40 text-emerald-300 border-emerald-800/60"
-            records={regulatoryRecords}
-            commits={commits}
-            onSelectRecord={onSelectRecord}
-            onResetFilters={onResetFilters}
-          />
-        )}
-
-        {/* VECTOR 03: ECOSYSTEM MOMENTUM */}
-        {showEcosystem && (
-          <VectorColumn
-            vectorNumber="03"
-            vector="ECOSYSTEM_MOMENTUM"
-            title="Ecosystem Momentum"
-            subVectorsDescription="Capital structure updates • Executive talent acquisition • Corporate & maritime alliances"
-            headerColorClass="text-purple-400"
-            badgeClass="bg-purple-900/40 text-purple-300 border-purple-800/60"
-            records={ecosystemRecords}
-            commits={commits}
-            onSelectRecord={onSelectRecord}
-            onResetFilters={onResetFilters}
-          />
-        )}
+        ))}
       </div>
     </div>
   );
@@ -105,12 +72,8 @@ export const ModularGridView: React.FC<ModularGridViewProps> = ({
 interface VectorColumnProps {
   vectorNumber: string;
   vector: OperationalVector;
-  title: string;
   subVectorsDescription: string;
-  headerColorClass: string;
-  badgeClass: string;
   records: OperationalDeltaRecord[];
-  commits: GitCommitSnapshot[];
   onSelectRecord: (record: OperationalDeltaRecord) => void;
   onResetFilters: () => void;
 }
@@ -118,27 +81,24 @@ interface VectorColumnProps {
 const VectorColumn: React.FC<VectorColumnProps> = ({
   vectorNumber,
   vector,
-  title,
   subVectorsDescription,
-  headerColorClass,
-  badgeClass,
   records,
-  commits,
   onSelectRecord,
   onResetFilters,
 }) => {
-  const metrics = getVectorMetrics(vector, records, commits);
+  const theme = getVectorTheme(vector);
+  const metrics = getVectorMetrics(vector, records);
 
   return (
     <div className="p-3.5 flex flex-col min-h-[520px]">
       {/* High Density Column Header */}
       <div className="flex items-center justify-between mb-2 pb-2 border-b border-slate-800/80">
         <div className="flex items-center gap-2">
-          <h2 className={`text-xs font-bold uppercase tracking-tight font-mono-code ${headerColorClass}`}>
-            Vector {vectorNumber}: {title}
+          <h2 className={`text-xs font-bold uppercase tracking-tight font-mono-code ${theme.accentText}`}>
+            Vector {vectorNumber}: {theme.label}
           </h2>
         </div>
-        <span className={`text-[10px] px-1.5 py-0.5 rounded border font-mono-code ${badgeClass}`}>
+        <span className={`text-[10px] px-1.5 py-0.5 rounded border font-mono-code ${theme.columnBadge}`}>
           {records.length} {records.length === 1 ? 'RECORD' : 'RECORDS'}
         </span>
       </div>
@@ -148,7 +108,7 @@ const VectorColumn: React.FC<VectorColumnProps> = ({
       </p>
 
       {/* Metric Cards & Automated Drift Indicators */}
-      <VectorMetricCards vector={vector} metrics={metrics} />
+      <VectorMetricCards metrics={metrics} />
 
       {/* Column Record Cards Header */}
       <div className="flex items-center justify-between text-[10px] font-mono-code text-slate-400 mb-2 px-0.5">
@@ -248,7 +208,7 @@ const RecordCard: React.FC<RecordCardProps> = ({ record, onSelect }) => {
         <div className="mb-2.5">
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-1.5">
             {record.keyMetrics.map((metric, idx) => (
-              <div 
+              <div
                 key={idx}
                 className="bg-slate-950/80 border border-slate-800/90 rounded px-2 py-1 flex flex-col"
               >
@@ -315,7 +275,7 @@ const RecordCard: React.FC<RecordCardProps> = ({ record, onSelect }) => {
             </span>
           </div>
           <div className="flex items-center gap-1 text-blue-400 font-semibold shrink-0">
-            <span>{record.sourceProvenance.commitHash ? record.sourceProvenance.commitHash.slice(0, 7) : 'git'}</span>
+            <span>{shortHash(record.sourceProvenance.commitHash, 'git')}</span>
             <ArrowRight className="h-2.5 w-2.5 opacity-0 group-hover:opacity-100 transition" />
           </div>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, Layers, GitPullRequest, ShieldCheck, FilterX, AlertOctagon } from 'lucide-react';
+import { Search, Layers, GitPullRequest, ShieldCheck, AlertOctagon } from 'lucide-react';
 import { OperationalVector, VerificationStatus } from '../types';
 
 interface FilterBarProps {

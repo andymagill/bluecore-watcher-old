@@ -1,16 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { GitCommitSnapshot, OperationalDeltaRecord } from '../types';
 import { ComparativeSnapshots } from './ComparativeSnapshots';
 import { getComparativeSnapshots } from '../utils/metricDrift';
-import { 
-  GitCommit, 
-  Calendar, 
-  User, 
-  FileText, 
-  CheckCircle2,
-  Cpu,
-  Scale,
-  TrendingUp,
+import { getVectorTheme } from '../utils/vectorTheme';
+import {
+  Calendar,
+  User,
+  FileText,
   Activity,
   ArrowRight,
   ExternalLink
@@ -27,7 +23,7 @@ export const EvidenceTimeline: React.FC<EvidenceTimelineProps> = ({
   records,
   onSelectRecord,
 }) => {
-  const snapshots = getComparativeSnapshots(records, commits);
+  const snapshots = getComparativeSnapshots(records);
 
   return (
     <div className="w-full max-w-5xl mx-auto px-4 py-4">
@@ -62,25 +58,8 @@ export const EvidenceTimeline: React.FC<EvidenceTimelineProps> = ({
           // Find associated operational delta record if any
           const associatedRecord = records.find(r => r.sourceProvenance.commitHash === commit.commitHash);
 
-          const vectorBadge = {
-            TECHNICAL_EVOLUTION: {
-              label: 'Technical Evolution',
-              color: 'text-blue-300 bg-blue-950/80 border-blue-800/80',
-              icon: Cpu,
-            },
-            REGULATORY_PATHWAYS: {
-              label: 'Regulatory Pathways',
-              color: 'text-emerald-300 bg-emerald-950/80 border-emerald-800/80',
-              icon: Scale,
-            },
-            ECOSYSTEM_MOMENTUM: {
-              label: 'Ecosystem Momentum',
-              color: 'text-purple-300 bg-purple-950/80 border-purple-800/80',
-              icon: TrendingUp,
-            },
-          }[commit.vectorTag];
-
-          const VectorIcon = vectorBadge.icon;
+          const theme = getVectorTheme(commit.vectorTag);
+          const VectorIcon = theme.icon;
 
           return (
             <div key={commit.commitHash} className="relative group">
@@ -97,9 +76,9 @@ export const EvidenceTimeline: React.FC<EvidenceTimelineProps> = ({
                     <span className="text-xs font-mono-code font-bold text-blue-400">
                       {commit.commitHash}
                     </span>
-                    <span className={`text-[10px] px-1.5 py-0.5 rounded border font-mono-code flex items-center gap-1 ${vectorBadge.color}`}>
+                    <span className={`text-[10px] px-1.5 py-0.5 rounded border font-mono-code flex items-center gap-1 ${theme.detailBadge}`}>
                       <VectorIcon className="h-3 w-3" />
-                      {vectorBadge.label}
+                      {theme.label}
                     </span>
                   </div>
 

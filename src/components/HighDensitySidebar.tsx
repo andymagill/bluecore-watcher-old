@@ -1,46 +1,45 @@
 import React, { useState } from 'react';
-import { 
-  Folder, 
-  FolderOpen, 
-  FileText, 
-  ChevronRight, 
-  ChevronDown, 
-  GitCommit, 
-  ShieldCheck, 
+import {
+  Folder,
+  FolderOpen,
+  FileText,
+  ChevronRight,
+  ChevronDown,
+  ShieldCheck,
   AlertOctagon,
-  Clock,
-  Filter
 } from 'lucide-react';
-import { OperationalDeltaRecord, GitCommitSnapshot, OperationalVector } from '../types';
+import { OperationalDeltaRecord, OperationalVector } from '../types';
+import { getVectorTheme } from '../utils/vectorTheme';
+import { shortHash } from '../utils/hash';
 
 interface HighDensitySidebarProps {
   records: OperationalDeltaRecord[];
-  commits: GitCommitSnapshot[];
   onSelectRecord: (rec: OperationalDeltaRecord) => void;
   onFilterByVector: (vector: OperationalVector | 'ALL') => void;
   selectedVector: OperationalVector | 'ALL';
 }
 
+const FOLDERS: { vector: OperationalVector; folderLabel: string }[] = [
+  { vector: 'TECHNICAL_EVOLUTION', folderLabel: 'core/telemetry' },
+  { vector: 'REGULATORY_PATHWAYS', folderLabel: 'reg/filings' },
+  { vector: 'ECOSYSTEM_MOMENTUM', folderLabel: 'momentum/sec' },
+];
+
 export const HighDensitySidebar: React.FC<HighDensitySidebarProps> = ({
   records,
-  commits,
   onSelectRecord,
   onFilterByVector,
   selectedVector,
 }) => {
-  const [openFolders, setOpenFolders] = useState<Record<string, boolean>>({
-    core: true,
-    reg: true,
-    momentum: true,
+  const [openFolders, setOpenFolders] = useState<Record<OperationalVector, boolean>>({
+    TECHNICAL_EVOLUTION: true,
+    REGULATORY_PATHWAYS: true,
+    ECOSYSTEM_MOMENTUM: true,
   });
 
-  const toggleFolder = (key: string) => {
-    setOpenFolders((prev) => ({ ...prev, [key]: !prev[key] }));
+  const toggleFolder = (vector: OperationalVector) => {
+    setOpenFolders((prev) => ({ ...prev, [vector]: !prev[vector] }));
   };
-
-  const techRecords = records.filter((r) => r.operationalVector === 'TECHNICAL_EVOLUTION');
-  const regRecords = records.filter((r) => r.operationalVector === 'REGULATORY_PATHWAYS');
-  const ecoRecords = records.filter((r) => r.operationalVector === 'ECOSYSTEM_MOMENTUM');
 
   return (
     <aside className="w-64 xl:w-72 flex-none border-r border-slate-800 bg-slate-950/40 flex flex-col h-full overflow-hidden select-none">
@@ -55,152 +54,21 @@ export const HighDensitySidebar: React.FC<HighDensitySidebarProps> = ({
         </div>
 
         <div className="font-mono-code text-[11px] space-y-1">
-          {/* core/ (Technical Evolution) */}
-          <div>
-            <div 
-              onClick={() => {
-                toggleFolder('core');
-                onFilterByVector(selectedVector === 'TECHNICAL_EVOLUTION' ? 'ALL' : 'TECHNICAL_EVOLUTION');
+          {FOLDERS.map(({ vector, folderLabel }) => (
+            <VectorFolder
+              key={vector}
+              vector={vector}
+              folderLabel={folderLabel}
+              isOpen={openFolders[vector]}
+              isSelected={selectedVector === vector}
+              records={records.filter((r) => r.operationalVector === vector)}
+              onToggle={() => {
+                toggleFolder(vector);
+                onFilterByVector(selectedVector === vector ? 'ALL' : vector);
               }}
-              className={`flex items-center justify-between px-1.5 py-1 rounded cursor-pointer transition ${
-                selectedVector === 'TECHNICAL_EVOLUTION' 
-                  ? 'bg-blue-950/80 text-blue-300 border border-blue-800/60' 
-                  : 'hover:bg-slate-800/60 text-slate-300'
-              }`}
-            >
-              <div className="flex items-center gap-1.5 truncate">
-                {openFolders.core ? (
-                  <ChevronDown className="h-3 w-3 text-slate-500 shrink-0" />
-                ) : (
-                  <ChevronRight className="h-3 w-3 text-slate-500 shrink-0" />
-                )}
-                {openFolders.core ? (
-                  <FolderOpen className="h-3.5 w-3.5 text-blue-400 shrink-0" />
-                ) : (
-                  <Folder className="h-3.5 w-3.5 text-blue-400 shrink-0" />
-                )}
-                <span className="truncate">core/telemetry</span>
-              </div>
-              <span className="text-[9px] text-slate-500 ml-1">{techRecords.length}</span>
-            </div>
-
-            {openFolders.core && (
-              <div className="ml-4 pl-1.5 border-l border-slate-800 space-y-0.5 mt-0.5">
-                {techRecords.slice(0, 3).map((r) => (
-                  <div
-                    key={r.id}
-                    onClick={() => onSelectRecord(r)}
-                    className="flex items-center justify-between px-1.5 py-0.5 rounded text-[10px] text-slate-400 hover:text-blue-300 hover:bg-slate-800/40 cursor-pointer truncate"
-                    title={r.sourceProvenance.documentRef}
-                  >
-                    <span className="truncate flex items-center gap-1">
-                      <FileText className="h-2.5 w-2.5 text-slate-500 shrink-0" />
-                      {r.sourceProvenance.documentRef.toLowerCase()}
-                    </span>
-                    <span className="w-1.5 h-1.5 rounded-full bg-blue-400 shrink-0 ml-1"></span>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {/* reg/ (Regulatory Pathways) */}
-          <div>
-            <div 
-              onClick={() => {
-                toggleFolder('reg');
-                onFilterByVector(selectedVector === 'REGULATORY_PATHWAYS' ? 'ALL' : 'REGULATORY_PATHWAYS');
-              }}
-              className={`flex items-center justify-between px-1.5 py-1 rounded cursor-pointer transition ${
-                selectedVector === 'REGULATORY_PATHWAYS' 
-                  ? 'bg-emerald-950/80 text-emerald-300 border border-emerald-800/60' 
-                  : 'hover:bg-slate-800/60 text-slate-300'
-              }`}
-            >
-              <div className="flex items-center gap-1.5 truncate">
-                {openFolders.reg ? (
-                  <ChevronDown className="h-3 w-3 text-slate-500 shrink-0" />
-                ) : (
-                  <ChevronRight className="h-3 w-3 text-slate-500 shrink-0" />
-                )}
-                {openFolders.reg ? (
-                  <FolderOpen className="h-3.5 w-3.5 text-emerald-400 shrink-0" />
-                ) : (
-                  <Folder className="h-3.5 w-3.5 text-emerald-400 shrink-0" />
-                )}
-                <span className="truncate">reg/filings</span>
-              </div>
-              <span className="text-[9px] text-slate-500 ml-1">{regRecords.length}</span>
-            </div>
-
-            {openFolders.reg && (
-              <div className="ml-4 pl-1.5 border-l border-slate-800 space-y-0.5 mt-0.5">
-                {regRecords.slice(0, 3).map((r) => (
-                  <div
-                    key={r.id}
-                    onClick={() => onSelectRecord(r)}
-                    className="flex items-center justify-between px-1.5 py-0.5 rounded text-[10px] text-slate-400 hover:text-emerald-300 hover:bg-slate-800/40 cursor-pointer truncate"
-                    title={r.sourceProvenance.documentRef}
-                  >
-                    <span className="truncate flex items-center gap-1">
-                      <FileText className="h-2.5 w-2.5 text-slate-500 shrink-0" />
-                      {r.sourceProvenance.documentRef.toLowerCase()}
-                    </span>
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0 ml-1"></span>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
-
-          {/* momentum/ (Ecosystem Momentum) */}
-          <div>
-            <div 
-              onClick={() => {
-                toggleFolder('momentum');
-                onFilterByVector(selectedVector === 'ECOSYSTEM_MOMENTUM' ? 'ALL' : 'ECOSYSTEM_MOMENTUM');
-              }}
-              className={`flex items-center justify-between px-1.5 py-1 rounded cursor-pointer transition ${
-                selectedVector === 'ECOSYSTEM_MOMENTUM' 
-                  ? 'bg-purple-950/80 text-purple-300 border border-purple-800/60' 
-                  : 'hover:bg-slate-800/60 text-slate-300'
-              }`}
-            >
-              <div className="flex items-center gap-1.5 truncate">
-                {openFolders.momentum ? (
-                  <ChevronDown className="h-3 w-3 text-slate-500 shrink-0" />
-                ) : (
-                  <ChevronRight className="h-3 w-3 text-slate-500 shrink-0" />
-                )}
-                {openFolders.momentum ? (
-                  <FolderOpen className="h-3.5 w-3.5 text-purple-400 shrink-0" />
-                ) : (
-                  <Folder className="h-3.5 w-3.5 text-purple-400 shrink-0" />
-                )}
-                <span className="truncate">momentum/sec</span>
-              </div>
-              <span className="text-[9px] text-slate-500 ml-1">{ecoRecords.length}</span>
-            </div>
-
-            {openFolders.momentum && (
-              <div className="ml-4 pl-1.5 border-l border-slate-800 space-y-0.5 mt-0.5">
-                {ecoRecords.slice(0, 3).map((r) => (
-                  <div
-                    key={r.id}
-                    onClick={() => onSelectRecord(r)}
-                    className="flex items-center justify-between px-1.5 py-0.5 rounded text-[10px] text-slate-400 hover:text-purple-300 hover:bg-slate-800/40 cursor-pointer truncate"
-                    title={r.sourceProvenance.documentRef}
-                  >
-                    <span className="truncate flex items-center gap-1">
-                      <FileText className="h-2.5 w-2.5 text-slate-500 shrink-0" />
-                      {r.sourceProvenance.documentRef.toLowerCase()}
-                    </span>
-                    <span className="w-1.5 h-1.5 rounded-full bg-purple-400 shrink-0 ml-1"></span>
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
+              onSelectRecord={onSelectRecord}
+            />
+          ))}
         </div>
       </div>
 
@@ -215,26 +83,22 @@ export const HighDensitySidebar: React.FC<HighDensitySidebarProps> = ({
         </div>
 
         <div className="space-y-3 font-mono-code">
-          {records.slice(0, 5).map((rec, idx) => {
+          {records.slice(0, 5).map((rec) => {
             const isRejected = rec.prNoiseFilter.verificationStatus === 'REJECTED_PR_CHATTER';
-            const accentBorder = rec.operationalVector === 'TECHNICAL_EVOLUTION'
-              ? 'border-blue-500/50'
-              : rec.operationalVector === 'REGULATORY_PATHWAYS'
-              ? 'border-emerald-500/50'
-              : 'border-purple-500/50';
+            const theme = getVectorTheme(rec.operationalVector);
 
             return (
               <div
                 key={rec.id}
                 onClick={() => onSelectRecord(rec)}
-                className={`border-l-2 ${accentBorder} pl-2.5 py-0.5 hover:bg-slate-900/50 rounded-r cursor-pointer transition`}
+                className={`border-l-2 ${theme.accentBorder} pl-2.5 py-0.5 hover:bg-slate-900/50 rounded-r cursor-pointer transition`}
               >
                 <div className="flex items-center justify-between text-[9px] mb-1">
                   <span className="text-emerald-400 font-bold">
                     {new Date(rec.sourceProvenance.timestamp).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })}
                   </span>
                   <span className="text-slate-500">
-                    commit_{rec.sourceProvenance.commitHash.slice(0, 7)}
+                    commit_{shortHash(rec.sourceProvenance.commitHash)}
                   </span>
                 </div>
                 <div className="text-[11px] font-medium text-slate-200 line-clamp-2 leading-snug">
@@ -260,5 +124,79 @@ export const HighDensitySidebar: React.FC<HighDensitySidebarProps> = ({
         </div>
       </div>
     </aside>
+  );
+};
+
+interface VectorFolderProps {
+  vector: OperationalVector;
+  folderLabel: string;
+  isOpen: boolean;
+  isSelected: boolean;
+  records: OperationalDeltaRecord[];
+  onToggle: () => void;
+  onSelectRecord: (rec: OperationalDeltaRecord) => void;
+}
+
+/**
+ * One collapsible vector folder in the Git File Tree section.
+ *
+ * Extracted from three near-identical 50-line blocks (one per vector) that differed only in
+ * color classes and the vector being filtered — the theme now comes from `getVectorTheme`
+ * instead of being hand-copied per block.
+ */
+const VectorFolder: React.FC<VectorFolderProps> = ({
+  vector,
+  folderLabel,
+  isOpen,
+  isSelected,
+  records,
+  onToggle,
+  onSelectRecord,
+}) => {
+  const theme = getVectorTheme(vector);
+
+  return (
+    <div>
+      <div
+        onClick={onToggle}
+        className={`flex items-center justify-between px-1.5 py-1 rounded cursor-pointer transition ${
+          isSelected ? theme.sidebarSelected : 'hover:bg-slate-800/60 text-slate-300'
+        }`}
+      >
+        <div className="flex items-center gap-1.5 truncate">
+          {isOpen ? (
+            <ChevronDown className="h-3 w-3 text-slate-500 shrink-0" />
+          ) : (
+            <ChevronRight className="h-3 w-3 text-slate-500 shrink-0" />
+          )}
+          {isOpen ? (
+            <FolderOpen className={`h-3.5 w-3.5 shrink-0 ${theme.accentText}`} />
+          ) : (
+            <Folder className={`h-3.5 w-3.5 shrink-0 ${theme.accentText}`} />
+          )}
+          <span className="truncate">{folderLabel}</span>
+        </div>
+        <span className="text-[9px] text-slate-500 ml-1">{records.length}</span>
+      </div>
+
+      {isOpen && (
+        <div className="ml-4 pl-1.5 border-l border-slate-800 space-y-0.5 mt-0.5">
+          {records.slice(0, 3).map((r) => (
+            <div
+              key={r.id}
+              onClick={() => onSelectRecord(r)}
+              className={`flex items-center justify-between px-1.5 py-0.5 rounded text-[10px] text-slate-400 hover:bg-slate-800/40 cursor-pointer truncate ${theme.hoverText}`}
+              title={r.sourceProvenance.documentRef}
+            >
+              <span className="truncate flex items-center gap-1">
+                <FileText className="h-2.5 w-2.5 text-slate-500 shrink-0" />
+                {r.sourceProvenance.documentRef.toLowerCase()}
+              </span>
+              <span className={`w-1.5 h-1.5 rounded-full shrink-0 ml-1 ${theme.accentDot}`}></span>
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
   );
 };

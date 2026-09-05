@@ -3,15 +3,12 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import React, { useState, useEffect, useMemo } from 'react';
-import { 
-  FlatFileStateLog, 
-  OperationalDeltaRecord, 
-  OperationalVector, 
+import { useMemo, useState } from 'react';
+import {
+  OperationalDeltaRecord,
+  OperationalVector,
   VerificationStatus,
-  GitCommitSnapshot 
 } from './types';
-import { INITIAL_STATE_LOG } from './data/gitFlatFiles';
 import { Header } from './components/Header';
 import { FilterBar } from './components/FilterBar';
 import { ModularGridView } from './components/ModularGridView';
@@ -20,12 +17,23 @@ import { DeltaDetailModal } from './components/DeltaDetailModal';
 import { StateLogInspectorModal } from './components/StateLogInspectorModal';
 import { HighDensitySidebar } from './components/HighDensitySidebar';
 import { DateScrubber } from './components/DateScrubber';
-import { filterStateByCommit } from './utils/metricDrift';
-import { ShieldCheck, GitBranch, History } from 'lucide-react';
+import { filterStateByCommit } from './utils/timeline';
+import { countByVector, countByStatus } from './utils/counts';
+import { shortHash } from './utils/hash';
+import { useIntelligenceState } from './hooks/useIntelligenceState';
+import { ShieldCheck, AlertTriangle } from 'lucide-react';
 
 export default function App() {
-  // Stateless Client-Side Memory (Zero Database - loaded from real Git repository & flat files)
-  const [stateLog, setStateLog] = useState<FlatFileStateLog>(INITIAL_STATE_LOG);
+  const {
+    stateLog,
+    dataSource,
+    isRefreshing,
+    isWorkflowRunning,
+    toastNotification,
+    refresh,
+    runWorkflow,
+    importStateLog,
+  } = useIntelligenceState();
 
   // Filter & Search State
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -36,107 +44,36 @@ export default function App() {
   // Time-Series Scrubber (0 = HEAD, commits.length - 1 = Genesis)
   const [scrubberIndex, setScrubberIndex] = useState<number>(0);
 
-  // Modals & Running State
+  // Modals
   const [selectedRecord, setSelectedRecord] = useState<OperationalDeltaRecord | null>(null);
   const [isStateInspectorOpen, setIsStateInspectorOpen] = useState<boolean>(false);
-  const [isWorkflowRunning, setIsWorkflowRunning] = useState<boolean>(false);
-  const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
-  const [toastNotification, setToastNotification] = useState<string | null>(null);
-
-  const showToast = (msg: string) => {
-    setToastNotification(msg);
-    setTimeout(() => {
-      setToastNotification(null);
-    }, 4000);
-  };
-
-  // Fetch real state from local Git repository on startup
-  const loadRealStateFromGit = async () => {
-    setIsRefreshing(true);
-    try {
-      const res = await fetch('/api/state');
-      if (res.ok) {
-        const json = await res.json();
-        if (json.success && json.data) {
-          setStateLog(json.data);
-        }
-      }
-    } catch (err) {
-      console.warn('Could not load real state from backend (running client-side):', err);
-    } finally {
-      setIsRefreshing(false);
-    }
-  };
-
-  useEffect(() => {
-    loadRealStateFromGit();
-  }, []);
 
   // Filter records & commits based on active time-series scrubber index
   const { activeCommits, activeRecords, selectedCommit, isHead } = useMemo(() => {
     return filterStateByCommit(stateLog.records, stateLog.commits, scrubberIndex);
   }, [stateLog.records, stateLog.commits, scrubberIndex]);
 
-  // Run real automated workflow: ingest new telemetry/docket and create real Git commit
-  const handleRunWorkflow = async () => {
-    setIsWorkflowRunning(true);
-    try {
-      const res = await fetch('/api/workflow/run', { method: 'POST' });
-      const json = await res.json();
-
-      if (json.success) {
-        if (json.data) {
-          setStateLog(json.data);
-          setScrubberIndex(0); // auto-snap to new HEAD on commit
-        }
-        if (json.alreadyUpToDate) {
-          showToast(json.message || 'All verified external sources already accessioned into Git.');
-        } else {
-          showToast(`Workflow completed: Created Git commit ${json.commitHash || ''} on branch main`);
-        }
-      } else {
-        showToast(`Workflow notice: ${json.error || 'Execution finished'}`);
-      }
-    } catch (err: any) {
-      console.error('Workflow error:', err);
-      showToast('Workflow executed in local memory.');
-    } finally {
-      setIsWorkflowRunning(false);
-    }
-  };
-
   // Filter records in browser memory based on active time-series window
   const filteredRecords = useMemo(() => {
     return activeRecords.filter((rec) => {
-      // Vector filter
       if (selectedVector !== 'ALL' && rec.operationalVector !== selectedVector) {
         return false;
       }
 
-      // Status filter
       if (selectedStatus !== 'ALL' && rec.prNoiseFilter.verificationStatus !== selectedStatus) {
         return false;
       }
 
-      // Search query
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase();
-        const matchHeadline = rec.headline.toLowerCase().includes(q);
-        const matchClaim = rec.verifiableClaim.toLowerCase().includes(q);
-        const matchDelta = rec.verifiableDelta.toLowerCase().includes(q);
-        const matchDoc = rec.sourceProvenance.documentRef.toLowerCase().includes(q);
-        const matchCommit = rec.sourceProvenance.commitHash.toLowerCase().includes(q);
-        const matchSubVector = rec.subVector.toLowerCase().includes(q);
-        const matchAuthor = rec.sourceProvenance.author.toLowerCase().includes(q);
-
         return (
-          matchHeadline ||
-          matchClaim ||
-          matchDelta ||
-          matchDoc ||
-          matchCommit ||
-          matchSubVector ||
-          matchAuthor
+          rec.headline.toLowerCase().includes(q) ||
+          rec.verifiableClaim.toLowerCase().includes(q) ||
+          rec.verifiableDelta.toLowerCase().includes(q) ||
+          rec.sourceProvenance.documentRef.toLowerCase().includes(q) ||
+          rec.sourceProvenance.commitHash.toLowerCase().includes(q) ||
+          rec.subVector.toLowerCase().includes(q) ||
+          rec.sourceProvenance.author.toLowerCase().includes(q)
         );
       }
 
@@ -146,15 +83,9 @@ export default function App() {
 
   // Counts for filters
   const counts = useMemo(() => {
-    const total = activeRecords.length;
-    const technical = activeRecords.filter(r => r.operationalVector === 'TECHNICAL_EVOLUTION').length;
-    const regulatory = activeRecords.filter(r => r.operationalVector === 'REGULATORY_PATHWAYS').length;
-    const ecosystem = activeRecords.filter(r => r.operationalVector === 'ECOSYSTEM_MOMENTUM').length;
-    const verified = activeRecords.filter(r => r.prNoiseFilter.verificationStatus === 'VERIFIED_DELTA').length;
-    const rejected = activeRecords.filter(r => r.prNoiseFilter.verificationStatus === 'REJECTED_PR_CHATTER').length;
-    const pending = activeRecords.filter(r => r.prNoiseFilter.verificationStatus === 'PENDING_DOCUMENT_CORROBORATION').length;
-
-    return { total, technical, regulatory, ecosystem, verified, rejected, pending };
+    const vectorCounts = countByVector(activeRecords);
+    const statusCounts = countByStatus(activeRecords);
+    return { ...vectorCounts, ...statusCounts };
   }, [activeRecords]);
 
   // Export state log as JSON file
@@ -167,7 +98,6 @@ export default function App() {
     a.download = `bluecore-intelligence-state-${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
     URL.revokeObjectURL(url);
-    showToast('Exported flat-file state log snapshot to JSON.');
   };
 
   // Reset filters
@@ -179,17 +109,29 @@ export default function App() {
 
   return (
     <div className="h-screen w-full bg-[#020617] text-slate-300 flex flex-col overflow-hidden selection:bg-blue-600 selection:text-white font-sans">
-      
+
       {/* Top Application Header */}
       <Header
         stateLog={stateLog}
-        onRunWorkflow={handleRunWorkflow}
-        onRefreshState={loadRealStateFromGit}
+        onRunWorkflow={runWorkflow}
+        onRefreshState={refresh}
         onOpenStateInspector={() => setIsStateInspectorOpen(true)}
         onExportJson={handleExportJson}
         isWorkflowRunning={isWorkflowRunning}
         isRefreshing={isRefreshing}
       />
+
+      {/* Data Provenance Banner: only shown when the on-screen state is not confirmed live */}
+      {dataSource !== 'live' && (
+        <div className="bg-amber-950/60 border-b border-amber-900/70 px-4 py-1.5 flex items-center gap-2 text-[11px] font-mono-code text-amber-300">
+          <AlertTriangle className="h-3.5 w-3.5 shrink-0" />
+          <span>
+            {dataSource === 'seed'
+              ? 'Displaying bundled seed data — the backend at /api/state was unreachable. This is not live repository state.'
+              : 'Displaying an imported snapshot — not the live repository state.'}
+          </span>
+        </div>
+      )}
 
       {/* Filter and View Mode Controller Bar */}
       <FilterBar
@@ -210,17 +152,16 @@ export default function App() {
         scrubberIndex={scrubberIndex}
         onScrubberChange={setScrubberIndex}
         onResetToHead={() => setScrubberIndex(0)}
-        activeRecordsCount={activeRecords.length}
       />
 
       {/* Historical Replay Active Banner */}
-      {!isHead && (
+      {!isHead && selectedCommit && (
         <div className="bg-amber-950/70 border-b border-amber-800/80 px-4 py-2 flex items-center justify-between text-xs font-mono-code text-amber-200">
           <div className="flex items-center gap-2">
             <span className="w-2 h-2 rounded-full bg-amber-400 animate-pulse" />
             <span>
               <strong>POINT-IN-TIME AUDIT ACTIVE:</strong> Viewing historical Git repository state at commit{' '}
-              <span className="font-bold underline text-amber-100">{selectedCommit.commitHash.slice(0, 7)}</span>{' '}
+              <span className="font-bold underline text-amber-100">{shortHash(selectedCommit.commitHash)}</span>{' '}
               ({new Date(selectedCommit.timestamp).toLocaleDateString()}) — displaying {activeRecords.length} records accessioned up to this commit.
             </span>
           </div>
@@ -239,7 +180,6 @@ export default function App() {
         <div className="hidden lg:flex flex-none">
           <HighDensitySidebar
             records={activeRecords}
-            commits={activeCommits}
             onSelectRecord={setSelectedRecord}
             onFilterByVector={setSelectedVector}
             selectedVector={selectedVector}
@@ -248,7 +188,7 @@ export default function App() {
 
         {/* Center Operations Grid / Timeline Section */}
         <section className="flex-1 flex flex-col overflow-y-auto bg-slate-900/10">
-          
+
           {/* Active Filter Indicators if filtered */}
           {(selectedVector !== 'ALL' || selectedStatus !== 'ALL' || searchQuery) && (
             <div className="p-3 bg-slate-950/60 border-b border-slate-800">
@@ -289,7 +229,6 @@ export default function App() {
           {activeView === 'GRID' ? (
             <ModularGridView
               records={filteredRecords}
-              commits={activeCommits}
               onSelectRecord={setSelectedRecord}
               onResetFilters={handleResetFilters}
               selectedVector={selectedVector}
@@ -315,10 +254,7 @@ export default function App() {
         isOpen={isStateInspectorOpen}
         onClose={() => setIsStateInspectorOpen(false)}
         stateLog={stateLog}
-        onImportStateLog={(imported) => {
-          setStateLog(imported);
-          showToast('Imported and synchronized flat-file Git state log.');
-        }}
+        onImportStateLog={importStateLog}
       />
 
       {/* Toast Notification Alert */}
@@ -349,9 +285,9 @@ export default function App() {
         <div className="flex gap-4 text-slate-500">
           <span className="text-slate-400 font-bold hidden sm:inline">BLUECORE</span>
           <span>v4.2.0</span>
-          <span>HEAD: {stateLog.commits[0]?.commitHash.slice(0, 7) || 'init'}</span>
-          {!isHead && (
-            <span className="text-amber-400 font-bold">REPLAY: {selectedCommit.commitHash.slice(0, 7)}</span>
+          <span>HEAD: {shortHash(stateLog.commits[0]?.commitHash, 'init')}</span>
+          {!isHead && selectedCommit && (
+            <span className="text-amber-400 font-bold">REPLAY: {shortHash(selectedCommit.commitHash)}</span>
           )}
         </div>
       </footer>

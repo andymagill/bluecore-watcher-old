@@ -1,23 +1,16 @@
 import React from 'react';
-import { VectorMetricItem, OperationalVector } from '../types';
-import { 
-  TrendingUp, 
-  ExternalLink, 
-  AlertCircle, 
-  FileCheck, 
-  GitCommit, 
-  ShieldAlert,
-  ArrowUpRight,
+import { VectorMetricItem } from '../types';
+import {
+  ExternalLink,
+  FileCheck,
   Minus
 } from 'lucide-react';
 
 interface VectorMetricCardsProps {
-  vector: OperationalVector;
   metrics: VectorMetricItem[];
 }
 
 export const VectorMetricCards: React.FC<VectorMetricCardsProps> = ({
-  vector,
   metrics,
 }) => {
   return (
