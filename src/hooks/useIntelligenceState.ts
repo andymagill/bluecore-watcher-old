@@ -93,7 +93,10 @@ export function useIntelligenceState(): IntelligenceState {
         if (json.alreadyUpToDate) {
           showToast(json.message || 'All verified external sources already accessioned into Git.');
         } else {
-          showToast(`Workflow completed: Created Git commit ${json.commitHash || ''} on branch main`);
+          const count = json.newRecords?.length ?? 1;
+          showToast(
+            `Workflow completed: Accessioned ${count} record${count === 1 ? '' : 's'} in Git commit ${json.commitHash || ''} on branch main`
+          );
         }
       } else {
         showToast(`Workflow notice: ${json.error || 'Execution finished'}`);

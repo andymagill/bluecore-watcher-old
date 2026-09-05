@@ -124,6 +124,35 @@ export function shortHead(cwd: string): string | null {
   return result.ok ? result.stdout.trim() : null;
 }
 
+/**
+ * Maps every file ever added to the repository to the short hash of the commit that added it, in
+ * one `git log` call — used to resolve `sourceProvenance.commitHash` for ingested records without
+ * a per-record write-after-commit (see `server/records.ts`). If a path was added more than once
+ * (re-added after a delete), the most recent adding commit wins, since `git log` walks newest-first
+ * and the first hit for a path is kept.
+ */
+export function readAddedFileCommits(cwd: string): Map<string, string> {
+  const result = runGit(
+    ['log', '--diff-filter=A', '--format=__COMMIT__%h', '--name-only'],
+    cwd
+  );
+  const map = new Map<string, string>();
+  if (!result.ok || !result.stdout.trim()) return map;
+
+  let currentHash = '';
+  for (const line of result.stdout.split('\n')) {
+    if (line.startsWith('__COMMIT__')) {
+      currentHash = line.slice('__COMMIT__'.length).trim();
+      continue;
+    }
+    const filename = line.trim();
+    if (!filename || !currentHash) continue;
+    if (!map.has(filename)) map.set(filename, currentHash);
+  }
+
+  return map;
+}
+
 export type CommitOutcome = { ok: true; hash: string } | { ok: false; error: string };
 
 /**

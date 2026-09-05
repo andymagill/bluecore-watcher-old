@@ -18,6 +18,21 @@ function decodeXmlEntities(value: string): string {
     .replace(/&gt;/g, '>');
 }
 
+/**
+ * Normalizes a headline for dedup comparison. Google News appends `" - <Publisher>"` to every
+ * title, and the same story is frequently syndicated under near-identical headlines across
+ * aggregators — a plain `.toLowerCase()` equality check (the previous behavior) misses both, so
+ * re-fetches and cross-aggregator duplicates both slipped past dedup and got re-ingested.
+ */
+export function normalizeHeadline(value: string): string {
+  return value
+    .toLowerCase()
+    .replace(/\s+-\s+[^-]+$/, '') // strip a trailing " - Publisher" suffix
+    .replace(/[^\p{L}\p{N}\s]/gu, '') // strip punctuation
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 const NEWS_QUERIES = [
   '%22Bluecore+Energy%22',
   '%22Port+of+Long+Beach%22+nuclear',

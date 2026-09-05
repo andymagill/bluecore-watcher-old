@@ -9,6 +9,7 @@
     "start": "node dist/server.cjs",
     "preview": "vite preview",
     "seed": "tsx scripts/seed_git_repo.ts",
+    "ingest": "tsx scripts/ingest.ts",
     "clean": "node -e \"require('fs').rmSync('dist',{recursive:true,force:true})\"",
     "lint": "tsc --noEmit"
   },

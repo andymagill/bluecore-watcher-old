@@ -1,0 +1,35 @@
+name: Ingest external intelligence
+
+# Schedule mirrors INGEST_CRON in server/config.ts — the source of truth the UI's "cron
+# schedule" display reads from. If you change one, change the other.
+on:
+  schedule:
+    - cron: '0 */4 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      # `git commit` inside the pipeline fails without an identity — see server/git.ts.
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - run: npm run ingest
+
+      # The pipeline only commits locally (see server/pipeline.ts) — pushing is this workflow's
+      # job, not the pipeline's, so the same code can back the UI button without ever pushing on
+      # its own.
+      - run: git push

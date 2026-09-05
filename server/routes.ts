@@ -1,10 +1,6 @@
 import { Router, Request, Response } from 'express';
-import fs from 'fs';
-import path from 'path';
 import { buildStateLog } from './state';
-import { readRecords } from './records';
-import { stageAndCommit } from './git';
-import { fetchRealExternalCandidates, classifyIngestCandidate, buildRecordFromCandidate } from './ingest';
+import { runIngestPipeline } from './pipeline';
 
 export function createRoutes(rootDir: string, intelligenceDir: string): Router {
   const router = Router();
@@ -30,22 +26,15 @@ export function createRoutes(rootDir: string, intelligenceDir: string): Router {
     }
   });
 
-  // Fetches live external news/dockets and, if anything new is found, accessions it as a
-  // flat file and a real Git commit.
+  // Fetches live external news/dockets and, if anything new is found, accessions it as one or
+  // more flat files and a single real Git commit. The pipeline itself lives in `server/pipeline.ts`
+  // so it can also run headlessly via `npm run ingest` / `scripts/ingest.ts` — this route is just
+  // an adapter from `IngestResult` onto the response shape the frontend already expects.
   router.post('/workflow/run', async (_req: Request, res: Response) => {
     try {
-      const existingRecords = readRecords(intelligenceDir);
-      const existingTitles = new Set(existingRecords.map((r) => r.headline.toLowerCase()));
-      const existingUrls = new Set(
-        existingRecords.map((r) => (r.sourceProvenance?.externalUrl || '').toLowerCase())
-      );
+      const outcome = await runIngestPipeline(rootDir, intelligenceDir);
 
-      const candidates = await fetchRealExternalCandidates();
-      const fresh = candidates.find(
-        (c) => !existingTitles.has(c.title.toLowerCase()) && !existingUrls.has(c.url.toLowerCase())
-      );
-
-      if (!fresh) {
+      if (outcome.status === 'up-to-date') {
         return res.json({
           success: true,
           alreadyUpToDate: true,
@@ -55,59 +44,26 @@ export function createRoutes(rootDir: string, intelligenceDir: string): Router {
         });
       }
 
-      const { vector, subVector, targetSubdir } = classifyIngestCandidate(fresh);
-      const recordId = `REC-${
-        vector === 'TECHNICAL_EVOLUTION' ? 'TECH' : vector === 'REGULATORY_PATHWAYS' ? 'REG' : 'ECO'
-      }-LIVE-${Date.now().toString().slice(-4)}`;
-
-      const record = buildRecordFromCandidate(fresh, recordId, targetSubdir, vector, subVector);
-      const targetPath = path.join(intelligenceDir, targetSubdir, `${record.id}.json`);
-      const relativePath = path.relative(rootDir, targetPath).split(path.sep).join('/');
-
-      fs.writeFileSync(targetPath, JSON.stringify(record, null, 2), 'utf-8');
-
-      const commitMessage = `feat(ingest): accession real external record: ${record.headline.slice(0, 50)} [${record.sourceProvenance.sourcePublisher}]`;
-      const outcome = stageAndCommit(rootDir, [relativePath], commitMessage);
-
-      if (!outcome.ok) {
-        // Roll back the write: an uncommitted file on disk would be picked up as "already
-        // accessioned" by the dedup check above on the next run, permanently excluding this
-        // headline from ever being retried.
-        fs.unlinkSync(targetPath);
-        console.error('Ingest commit failed, rolled back file write:', outcome.error);
+      if (outcome.status === 'failed') {
+        console.error('Ingest pipeline failed:', outcome.error);
         return res.status(500).json({
           success: false,
-          error: 'Failed to commit the new record to Git; no file was left on disk.',
+          error: 'Failed to commit the new record(s) to Git; no files were left on disk.',
         });
       }
 
-      record.sourceProvenance.commitHash = outcome.hash;
-      fs.writeFileSync(targetPath, JSON.stringify(record, null, 2), 'utf-8');
-
+      const publishers = [...new Set(outcome.records.map((r) => r.sourceProvenance.sourcePublisher))];
       res.json({
         success: true,
-        message: `Workflow executed: Accessioned external record from ${record.sourceProvenance.sourcePublisher} into Git commit ${outcome.hash}`,
-        commitHash: outcome.hash,
-        newRecord: record,
+        message: `Workflow executed: Accessioned ${outcome.records.length} external record(s) from ${publishers.join(', ')} into Git commit ${outcome.commitHash}`,
+        commitHash: outcome.commitHash,
+        newRecord: outcome.records[0],
+        newRecords: outcome.records,
         data: buildStateLog(rootDir, intelligenceDir),
       });
     } catch (err) {
       console.error('Workflow execution error:', err);
       res.status(500).json({ success: false, error: 'Workflow execution failed.' });
-    }
-  });
-
-  // Legacy / compatibility cron tick — re-reads and returns current state without ingesting.
-  router.post('/cron-tick', (_req: Request, res: Response) => {
-    try {
-      res.json({
-        success: true,
-        data: buildStateLog(rootDir, intelligenceDir),
-        message: 'Cron tick completed from local Git repository.',
-      });
-    } catch (err) {
-      console.error('Cron tick error:', err);
-      res.status(500).json({ success: false, error: 'Cron tick failed.' });
     }
   });
 
