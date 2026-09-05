@@ -1,15 +1,13 @@
 import React from 'react';
-import { 
-  GitBranch, 
-  RefreshCw, 
+import {
+  GitBranch,
+  RefreshCw,
   Play,
   DownloadCloud,
   FileCode2,
-  DatabaseZap,
-  Activity,
-  CheckCircle2
 } from 'lucide-react';
 import { FlatFileStateLog } from '../types';
+import { shortHash } from '../utils/hash';
 
 interface HeaderProps {
   stateLog: FlatFileStateLog;
@@ -57,7 +55,7 @@ export const Header: React.FC<HeaderProps> = ({
           <span className="text-[10px] text-slate-500 uppercase tracking-widest font-mono-code">Git HEAD</span>
           <span className="font-mono-code text-xs text-emerald-400 flex items-center gap-1.5">
             <GitBranch className="h-3 w-3 text-emerald-400" />
-            {latestCommit?.commitHash.slice(0, 7) || 'HEAD'}
+            {shortHash(latestCommit?.commitHash, 'HEAD')}
           </span>
         </div>
 

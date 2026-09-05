@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { execSync } from 'child_process';
-import { INITIAL_DELTA_RECORDS } from '../src/data/gitFlatFiles';
+import { INITIAL_DELTA_RECORDS } from '../src/data/seedState';
 
 const ROOT_DIR = process.cwd();
 const INTELLIGENCE_DIR = path.join(ROOT_DIR, 'intelligence');

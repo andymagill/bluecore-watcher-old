@@ -1,15 +1,12 @@
 import React from 'react';
 import { GitCommitSnapshot } from '../types';
-import { 
-  History, 
-  RotateCcw, 
-  ChevronLeft, 
-  ChevronRight, 
-  Clock, 
-  GitCommit, 
-  Play, 
-  ShieldCheck,
-  AlertCircle
+import {
+  History,
+  RotateCcw,
+  ChevronLeft,
+  ChevronRight,
+  Clock,
+  GitCommit,
 } from 'lucide-react';
 
 interface DateScrubberProps {
@@ -17,15 +14,14 @@ interface DateScrubberProps {
   scrubberIndex: number; // 0 is HEAD, commits.length - 1 is oldest
   onScrubberChange: (index: number) => void;
   onResetToHead: () => void;
-  activeRecordsCount: number;
 }
 
+/** Renders nothing when there is no commit history to scrub through (empty or unreachable repo). */
 export const DateScrubber: React.FC<DateScrubberProps> = ({
   commits,
   scrubberIndex,
   onScrubberChange,
   onResetToHead,
-  activeRecordsCount,
 }) => {
   if (commits.length === 0) return null;
 

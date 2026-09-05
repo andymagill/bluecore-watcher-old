@@ -1,13 +1,12 @@
 import React from 'react';
 import { ComparativeSnapshotItem } from '../types';
-import { 
-  GitCompare, 
-  ArrowRight, 
-  ExternalLink, 
-  Calendar, 
-  TrendingUp, 
+import {
+  GitCompare,
+  ExternalLink,
+  Calendar,
+  TrendingUp,
   CheckCircle2,
-  FileText
+  SearchX
 } from 'lucide-react';
 
 interface ComparativeSnapshotsProps {
@@ -36,6 +35,18 @@ export const ComparativeSnapshots: React.FC<ComparativeSnapshotsProps> = ({
       </div>
 
       {/* Snapshots Table / Card Grid */}
+      {snapshots.length === 0 ? (
+        <div className="bg-slate-900/40 border border-slate-800 border-dashed rounded-lg p-5 text-center">
+          <div className="w-8 h-8 rounded-full bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 mx-auto mb-2">
+            <SearchX className="h-4 w-4" />
+          </div>
+          <p className="text-[11px] text-slate-400 max-w-md mx-auto font-mono-code leading-relaxed">
+            No comparative snapshot is available yet: a snapshot requires the same tracked metric to
+            appear on two or more accessioned records. This panel populates automatically as
+            follow-up ingestions corroborate an existing metric.
+          </p>
+        </div>
+      ) : (
       <div className="space-y-2.5">
         {snapshots.map((snap) => (
           <div
@@ -121,6 +132,7 @@ export const ComparativeSnapshots: React.FC<ComparativeSnapshotsProps> = ({
           </div>
         ))}
       </div>
+      )}
     </div>
   );
 };

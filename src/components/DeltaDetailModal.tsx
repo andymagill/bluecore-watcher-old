@@ -1,26 +1,20 @@
 import React, { useState } from 'react';
 import { OperationalDeltaRecord } from '../types';
-import { 
-  X, 
-  CheckCircle2, 
-  ShieldAlert, 
-  AlertTriangle, 
-  FileText, 
-  Cpu, 
-  Scale, 
-  TrendingUp, 
-  Copy, 
-  Check, 
+import { getVectorTheme } from '../utils/vectorTheme';
+import { shortHash } from '../utils/hash';
+import {
+  X,
+  CheckCircle2,
+  ShieldAlert,
+  AlertTriangle,
+  FileText,
+  Copy,
+  Check,
   Calendar,
-  Activity,
-  Layers,
   ChevronDown,
   ChevronUp,
-  ShieldCheck,
   Zap,
-  Clock,
   ExternalLink,
-  Globe
 } from 'lucide-react';
 
 interface DeltaDetailModalProps {
@@ -40,23 +34,14 @@ export const DeltaDetailModal: React.FC<DeltaDetailModalProps> = ({
   const isRejected = record.prNoiseFilter.verificationStatus === 'REJECTED_PR_CHATTER';
   const isVerified = record.prNoiseFilter.verificationStatus === 'VERIFIED_DELTA';
 
-  const vectorBadge = {
-    TECHNICAL_EVOLUTION: {
-      label: 'Technical Evolution',
-      color: 'text-blue-300 bg-blue-950/80 border-blue-800',
-      icon: <Cpu className="h-4 w-4" />,
-    },
-    REGULATORY_PATHWAYS: {
-      label: 'Regulatory Pathways',
-      color: 'text-emerald-300 bg-emerald-950/80 border-emerald-800',
-      icon: <Scale className="h-4 w-4" />,
-    },
-    ECOSYSTEM_MOMENTUM: {
-      label: 'Ecosystem Momentum',
-      color: 'text-purple-300 bg-purple-950/80 border-purple-800',
-      icon: <TrendingUp className="h-4 w-4" />,
-    },
-  }[record.operationalVector];
+  const theme = getVectorTheme(record.operationalVector);
+  const VectorIcon = theme.icon;
+
+  // evidenceDiff (and its line arrays) are optional on the record schema — an ingested record
+  // with no captured patch must not crash the modal.
+  const evidenceDiff = record.evidenceDiff;
+  const linesAdded = evidenceDiff?.linesAdded ?? [];
+  const linesRemoved = evidenceDiff?.linesRemoved ?? [];
 
   const handleCopyJson = () => {
     navigator.clipboard.writeText(JSON.stringify(record, null, 2));
@@ -72,9 +57,9 @@ export const DeltaDetailModal: React.FC<DeltaDetailModalProps> = ({
         <div className="p-3 sm:p-4 border-b border-slate-800 bg-slate-950/90 flex items-start justify-between gap-4">
           <div className="flex-1">
             <div className="flex flex-wrap items-center gap-1.5 mb-1.5">
-              <span className={`inline-flex items-center gap-1 font-mono-code text-[10px] px-2 py-0.5 rounded border ${vectorBadge.color}`}>
-                {vectorBadge.icon}
-                {vectorBadge.label}
+              <span className={`inline-flex items-center gap-1 font-mono-code text-[10px] px-2 py-0.5 rounded border ${theme.detailBadge}`}>
+                <VectorIcon className="h-4 w-4" />
+                {theme.label}
               </span>
 
               <span className="font-mono-code text-[10px] px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-blue-300">
@@ -249,7 +234,7 @@ export const DeltaDetailModal: React.FC<DeltaDetailModalProps> = ({
                   </a>
                 )}
                 <span className="text-[10px] text-blue-400 font-bold font-mono-code">
-                  Git: {record.sourceProvenance.commitHash ? record.sourceProvenance.commitHash.slice(0, 7) : 'head'}
+                  Git: {shortHash(record.sourceProvenance.commitHash, 'head')}
                 </span>
               </div>
             </div>
@@ -274,34 +259,36 @@ export const DeltaDetailModal: React.FC<DeltaDetailModalProps> = ({
             </div>
           </div>
 
-          {/* Collapsible File Patch Inspector */}
-          <div className="border border-slate-800 rounded-lg overflow-hidden">
-            <button
-              onClick={() => setShowFileDiff(!showFileDiff)}
-              className="w-full px-3 py-2 bg-slate-900/80 hover:bg-slate-800/80 flex items-center justify-between text-xs text-slate-300 font-mono-code transition"
-            >
-              <div className="flex items-center gap-2">
-                <FileText className="h-3.5 w-3.5 text-slate-400" />
-                <span>Raw Flat-File Audit ({record.evidenceDiff.linesAdded.length + record.evidenceDiff.linesRemoved.length} lines)</span>
-              </div>
-              {showFileDiff ? <ChevronUp className="h-3.5 w-3.5" /> : <ChevronDown className="h-3.5 w-3.5" />}
-            </button>
+          {/* Collapsible File Patch Inspector — hidden entirely when no diff was captured */}
+          {evidenceDiff && (linesAdded.length > 0 || linesRemoved.length > 0) && (
+            <div className="border border-slate-800 rounded-lg overflow-hidden">
+              <button
+                onClick={() => setShowFileDiff(!showFileDiff)}
+                className="w-full px-3 py-2 bg-slate-900/80 hover:bg-slate-800/80 flex items-center justify-between text-xs text-slate-300 font-mono-code transition"
+              >
+                <div className="flex items-center gap-2">
+                  <FileText className="h-3.5 w-3.5 text-slate-400" />
+                  <span>Raw Flat-File Audit ({linesAdded.length + linesRemoved.length} lines)</span>
+                </div>
+                {showFileDiff ? <ChevronUp className="h-3.5 w-3.5" /> : <ChevronDown className="h-3.5 w-3.5" />}
+              </button>
 
-            {showFileDiff && (
-              <div className="p-3 bg-slate-950 font-mono-code text-[11px] overflow-x-auto space-y-0.5 border-t border-slate-800">
-                {record.evidenceDiff.linesRemoved.map((line, idx) => (
-                  <div key={idx} className="text-rose-400 bg-rose-950/20 px-1 py-0.5 rounded">
-                    {line}
-                  </div>
-                ))}
-                {record.evidenceDiff.linesAdded.map((line, idx) => (
-                  <div key={idx} className="text-emerald-400 bg-emerald-950/20 px-1 py-0.5 rounded">
-                    {line}
-                  </div>
-                ))}
-              </div>
-            )}
-          </div>
+              {showFileDiff && (
+                <div className="p-3 bg-slate-950 font-mono-code text-[11px] overflow-x-auto space-y-0.5 border-t border-slate-800">
+                  {linesRemoved.map((line, idx) => (
+                    <div key={idx} className="text-rose-400 bg-rose-950/20 px-1 py-0.5 rounded">
+                      {line}
+                    </div>
+                  ))}
+                  {linesAdded.map((line, idx) => (
+                    <div key={idx} className="text-emerald-400 bg-emerald-950/20 px-1 py-0.5 rounded">
+                      {line}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          )}
 
         </div>
       </div>

@@ -1,9 +1,15 @@
 /**
  * Bluecore Energy Intelligence Engine - Core Types
- * Stateless, zero-database, Git-driven deterministic telemetry and operations schema.
+ *
+ * Stateless, zero-database, Git-driven telemetry schema. There is no ORM and no migration
+ * layer behind these types: every `OperationalDeltaRecord` is a literal JSON file under
+ * `intelligence/<vector>/`, and every `GitCommitSnapshot` is a literal commit in this
+ * repository. A value that doesn't match these shapes is either a malformed file on disk or an
+ * untrusted paste into the import tab — see `src/utils/stateGuards.ts` for the runtime checks
+ * that stand in for the schema validation a database would normally provide.
  */
 
-export type OperationalVector = 
+export type OperationalVector =
   | 'TECHNICAL_EVOLUTION'
   | 'REGULATORY_PATHWAYS'
   | 'ECOSYSTEM_MOMENTUM';
@@ -35,6 +41,14 @@ export interface OperationalMetric {
   status?: 'nominal' | 'elevated' | 'critical' | 'completed';
 }
 
+/**
+ * A single metric card as resolved by `getVectorMetrics` (`src/utils/metricDrift.ts`).
+ *
+ * Every field except `id`/`vector`/`label` is *derived*, never hand-set: `currentValue` and
+ * `sourceAttribution` come from a real record's `keyMetrics`/`sourceProvenance`, and
+ * `isUnpopulated` is true when no record currently supports the metric. See
+ * `src/data/metricDefinitions.ts` for what determines which records are eligible.
+ */
 export interface VectorMetricItem {
   id: string;
   vector: OperationalVector;
@@ -59,6 +73,12 @@ export interface VectorMetricItem {
   unpopulatedReason?: string;
 }
 
+/**
+ * A before/after comparison emitted by `getComparativeSnapshots` when the same tracked metric
+ * has two or more accessioned observations. A metric observed only once has nothing to compare
+ * against and produces no snapshot — an empty list here is a correct, expected state, not a
+ * bug, until a second corroborating record arrives.
+ */
 export interface ComparativeSnapshotItem {
   id: string;
   vector: OperationalVector;
@@ -108,15 +128,25 @@ export interface AgentRoutingMeta {
   routingTimestamp: string;
 }
 
+/**
+ * An illustrative diff snippet shown in the record detail modal's "Raw Flat-File Audit" panel.
+ * Every field is optional — a record ingested without a captured diff (or one hand-authored
+ * without one) is valid and must render with the panel simply omitted, not a crash. See
+ * `DeltaDetailModal`'s handling of `evidenceDiff`.
+ */
 export interface EvidenceDiffSnippet {
   filePath: string;
   type?: 'addition' | 'deletion' | 'modification';
   linesAdded?: string[];
   linesRemoved?: string[];
   contextHeader?: string;
-  rawPatch?: string;
 }
 
+/**
+ * One accessioned intelligence record — the atomic unit of this app's "database". Each one is a
+ * single JSON file at `sourceProvenance.filePath` under `intelligence/<vector>/`, so `id` should
+ * be treated as a stable filename-safe key, not just a display identifier.
+ */
 export interface OperationalDeltaRecord {
   id: string;
   operationalVector: OperationalVector;
@@ -133,7 +163,6 @@ export interface OperationalDeltaRecord {
     timestamp: string;
     filePath: string;
     fileSizeBytes?: number;
-    gitTreeSha?: string;
     externalUrl?: string;
     sourcePublisher?: string;
     externalDocketId?: string;
@@ -143,6 +172,11 @@ export interface OperationalDeltaRecord {
   agentRoutingMeta: AgentRoutingMeta;
 }
 
+/**
+ * One entry in the repository's commit history, as read by `server/git.ts#readCommits`.
+ * `totalAdditions`/`totalDeletions`/`filesChanged` are real `git show --numstat` output, not
+ * placeholder values — treat any code that hardcodes these as a regression.
+ */
 export interface GitCommitSnapshot {
   commitHash: string;
   parentHash: string;
@@ -155,26 +189,18 @@ export interface GitCommitSnapshot {
     status: 'added' | 'modified' | 'deleted';
     additions: number;
     deletions: number;
-    patch?: string;
   }[];
   totalAdditions: number;
   totalDeletions: number;
-  isSimulatedIngest?: boolean;
 }
 
-export interface GitSyncConfig {
-  repoOwner: string;
-  repoName: string;
-  branch: string;
-  dataPath: string;
-  token?: string;
-  autoSyncEnabled: boolean;
-  syncIntervalMinutes: number;
-  lastSyncTimestamp?: string;
-  connectionStatus: 'IDLE' | 'SYNCING' | 'CONNECTED' | 'ERROR';
-  lastError?: string;
-}
-
+/**
+ * The full state snapshot exchanged between server and client: `GET /api/state`'s response
+ * body, the shape `useIntelligenceState` holds in React state, and what the State Log
+ * Inspector's import/export tabs read and write verbatim. Constructed by `buildStateLog`
+ * (`server/state.ts`) on the server, or by `parseStateLog` (`src/utils/stateGuards.ts`) when
+ * assembled from an untrusted import.
+ */
 export interface FlatFileStateLog {
   version: string;
   repoIdentifier: string;

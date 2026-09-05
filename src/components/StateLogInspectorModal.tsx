@@ -1,18 +1,13 @@
 import React, { useState } from 'react';
 import { FlatFileStateLog } from '../types';
-import { 
-  X, 
-  FileCode2, 
-  Copy, 
-  Check, 
-  Download, 
-  Upload, 
-  GitBranch, 
-  Database, 
-  ShieldCheck, 
-  Clock,
-  Layers,
-  FileCheck
+import { parseStateLog } from '../utils/stateGuards';
+import {
+  X,
+  Copy,
+  Check,
+  Download,
+  Upload,
+  Database,
 } from 'lucide-react';
 
 interface StateLogInspectorModalProps {
@@ -54,17 +49,34 @@ export const StateLogInspectorModal: React.FC<StateLogInspectorModalProps> = ({
   };
 
   const handleImport = () => {
+    setImportError(null);
+
+    let raw: unknown;
     try {
-      setImportError(null);
-      const parsed = JSON.parse(importJsonText);
-      if (!parsed.commits || !parsed.records) {
-        throw new Error("Invalid schema: Must contain 'commits' and 'records' arrays.");
-      }
-      onImportStateLog(parsed);
-      onClose();
-    } catch (err: any) {
-      setImportError(err.message || 'Failed to parse JSON.');
+      raw = JSON.parse(importJsonText);
+    } catch {
+      setImportError('Failed to parse JSON — check for a trailing comma or unbalanced bracket.');
+      return;
     }
+
+    const result = parseStateLog(raw);
+    if (!result.ok) {
+      setImportError(result.error);
+      return;
+    }
+
+    onImportStateLog(result.stateLog);
+
+    if (result.droppedRecords > 0 || result.droppedCommits > 0) {
+      // Import still applies (the valid entries are real data worth keeping) but the modal
+      // stays open so this warning is actually visible before the user dismisses it.
+      setImportError(
+        `Imported, but dropped ${result.droppedRecords} malformed record(s) and ${result.droppedCommits} malformed commit(s) that didn't match the expected schema.`
+      );
+      return;
+    }
+
+    onClose();
   };
 
   return (
@@ -178,7 +190,7 @@ export const StateLogInspectorModal: React.FC<StateLogInspectorModalProps> = ({
           {/* TAB 2: COMMITS */}
           {activeTab === 'COMMITS' && (
             <div className="space-y-3">
-              {stateLog.commits.map((c, i) => (
+              {stateLog.commits.map((c) => (
                 <div key={c.commitHash} className="p-3.5 rounded-lg border border-slate-800 bg-slate-900/60 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
                   <div>
                     <div className="flex items-center gap-2 mb-1">
