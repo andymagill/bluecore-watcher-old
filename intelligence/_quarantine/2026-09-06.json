@@ -2528,5 +2528,16 @@
       "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-06T12:17:35.982Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "NuScale Joins the Race for a Next-Gen Floating Nuclear Power Plant - The Maritime Executive",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQndJY1B4SG9BU1BmZEpvcTVUamhscTFlX0VCWDVNbzBNWHNLZ1d0X2FLZEVUWXBHMVgxbTJfQzlUVC1XRHJ1MWZNaXQyVFpDc2o2a1U0V3ZtY0FwV2wwM1gyN2N4NEZXVFFtRlJCZno1VHBYTk54MXJpOUlONFRNTE1ZLTN3VDItZ3R1TXhPd2pkNmotLUppT3ZsX1ZnVjZHVXBuVXMySGs?oc=5",
+      "publisher": "The Maritime Executive",
+      "pubDate": "Wed, 26 Oct 2022 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
