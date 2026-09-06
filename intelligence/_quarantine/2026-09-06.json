@@ -2572,5 +2572,49 @@
       "pubDate": "Wed, 29 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-06T20:12:13.677Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear barge startup Bluecore Energy came out of stealth with $10M - Axios",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSkhMY2FnQUlSWDNtYk1yYW1lblRDeWYwelFnR25idTJzOEZZXzFHN2VkQ3MwWk0zUUMwVmdRX3pBTVd0Mi01RW9HVERKbnFiLWlYcURnMXRkZzFuQlFXT05UU1pYN21nUUxZckdZb201NzU5YlR4eHFrVUo2NnUyakp0V2JfYlJ6TDNPdFVUOE9zQ0s2X1R3?oc=5",
+      "publisher": "Axios",
+      "pubDate": "Tue, 21 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-06T20:12:13.677Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear barge startup Bluecore Energy came out of stealth with $10M - Axios",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSkhMY2FnQUlSWDNtYk1yYW1lblRDeWYwelFnR25idTJzOEZZXzFHN2VkQ3MwWk0zUUMwVmdRX3pBTVd0Mi01RW9HVERKbnFiLWlYcURnMXRkZzFuQlFXT05UU1pYN21nUUxZckdZb201NzU5YlR4eHFrVUo2NnUyakp0V2JfYlJ6TDNPdFVUOE9zQ0s2X1R3?oc=5",
+      "publisher": "Axios",
+      "pubDate": "Tue, 21 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-06T20:12:13.677Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach sees September cargo stats dip from previous year - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPN3JPcGd4b0N3TjZub3lSVXBwZnRsdzY4ZkNhWDcwdDVfdHl1SlBrbWRzVEZ0RXlTMmZqd2RIalR1bWh3d25aU0EzYlBheXNXNmFsR3ltTE9BVy14UkNsaEJEdk80b3lwbUo2S1J6NnNPN2lWbnRQT0xkSVRWN3F6bm9kbmNrblY3NDNJczEwQWotUmQ3R1FCNzdZLUxVT0E2WmVtYVFQR2lnSUE1M3pF?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Fri, 17 Oct 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-06T20:12:13.677Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "HD KSOE, Kepco win ABS’ AiP for floating nuclear power barge - offshore-energy.biz",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMjhEVXV5NHVObDVFNnBCUS0yU2RnOWdRWUh2a0p6ZDJJcEhIc1ZBZThlbThPUWFqWU9faEtUM0Z4N1ROU2t3NjRXc25sOVBUcGNDcDlLNWljcTVYS3RVTHhJXzFyTXh1Q0VYZjR5OXYyR2xveF85cFY2akhNYmJBQmxZWDRrMDZaRUNNMjBfbTAyY2hFakE?oc=5",
+      "publisher": "offshore-energy.biz",
+      "pubDate": "Wed, 04 Oct 2023 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
