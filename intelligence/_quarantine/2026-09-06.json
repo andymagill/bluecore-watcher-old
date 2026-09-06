@@ -2429,5 +2429,49 @@
       "pubDate": "Thu, 12 Aug 2021 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-06T04:15:01.468Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Workboat News Roundup | August 6 – Floating nuclear reactor demonstrator, UK operator lighthouse tender order and more - Baird Maritime",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPLUtnUUJPcFJEUXp2Sll5UWhybHdvUWtzcVFsYTBiLTJ2SVlGanZuaVlFQ2tNT2hCak0xY1hsZjNlc2NjbjlMVlZHWHFQY28tZFhkQ2htZ1BXY1FKTWMtVDk0NkY3TnZiYzBaeTNrOTVyLW1hMFV1bGRVY1c0MXNHb1dkVUY5STJHWUlFNnQtZjRSRWZBcXFxR0RKdHJPaEFOaXprNUEyZDhXamZFSzZQWlhpY3c0VFNkbW9reEttRzJFd3pCLUVNVkFWQU1VUFdSbU50Q05STWs4THVVQjdoamZEZTRGR045MVlZNGV4cUPSAf4BQVVfeXFMUEI4YnhURFVSYjlLUnppcUFzNGMwS0ZUTkZ6U2l1aXpCNVJSOHJfaXRJUmRSS0FRdk82cGtxMmdNZ2JNdFZVSXAyTHY4U1ZhbXNRMzkwbFpXLTZ4b1cyQ3Y3MktXQjRFX2p5TWd0eUNRdkNLbF94aGh4dzBfc3pPZk9TSTRscGVXbzhCR2VxZTlQdlNQUW9GcjA5Z2ZxTlIzZHhNeW1hVWJiRzJkV19ISGxMeVRfYlBRelBCcG1ZWkRmZVdqMk0xNzF2ZmpZLTBwS3Q0dmlFMTdST1h3UnVWY2prSkJEaEFQZ0twT0Q5T2tIYVhtOEZaU1YzZEwwM0E?oc=5",
+      "publisher": "Baird Maritime",
+      "pubDate": "Thu, 06 Aug 2026 12:52:50 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-06T04:15:01.468Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Watch California's Port of Long Beach prepares to go nuclear with floating reactors - The Claman Countdown - fox.com",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZHd6Slktc1I2M0RWcGNMa0tmNi1fZ1Q5T0tUTy1CaDNYbGE0djN4dnRIRVBOaWp2aERtM2FodVRqWHRqVmFCQmNLOEpOaEFCSVpycU9CSFRXYVcwOWFDMlNub2JxbVVSbGkwaXVENTJYYXJpWjdTeXFQa2xMUDJyci11REwxMmh3Y3FKejJSMGs2MkZJU2hMZ0FfMkY4MWZVQl9XWldSaDZtdnQzdVBKelFjM1lvYm5MZ3B5NmtjNFEzTGVsMU1sdg?oc=5",
+      "publisher": "fox.com",
+      "pubDate": "Fri, 04 Sep 2026 20:46:36 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-06T04:15:01.468Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Is Long Beach ready for a floating nuclear power plant? Here's what to know - AOL.com",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMVRMVnQ3LUlma0Roc0Q5TkhxRWtaT3ZmOTlGeUxxdTA5RFdKdTFVOGRtVHdVU2hSNFdJT3A5cXVsSWYtaEpYbTA5OGJUTUxNSG5lQjlmRERfSFZjNVhKSjdTSXk4MDE3REl1R2s2M1ZrT25vUWhqa0RRTjFpMl9lYXF6dw?oc=5",
+      "publisher": "AOL.com",
+      "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-06T04:15:01.468Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "‘Innovation Café’ focuses on small modular reactors - WorkBoat",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4yYlNSdTA5eDdjYnN0TmR5M2VvZGhDOXgzZk5YSmt1cjQtTGxFd0V6Vl9kRk13SnlsSG9CeF8xdjhmQnM5cWotdTJTeEpweU1uY1AzdjZpcjJHUmtsREhQS3Zwc0t0b0R2M24xSnEwRmlEWkxWOFFUVmk3QThDbEk?oc=5",
+      "publisher": "WorkBoat",
+      "pubDate": "Thu, 28 May 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
