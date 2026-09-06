@@ -2539,5 +2539,38 @@
       "pubDate": "Wed, 26 Oct 2022 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-06T16:12:45.826Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "America’s busiest port watched nearly 10 million containers pass through in a single year and decided the ships carrying the next wave may need nuclear power - Energies Media",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBQTUtBVGRuWU9xX0RpSFY4TUVreWNLQVduWGljYTJFMDZjLXZDRlFaWVBCcF9qYXhpN0JsNmh1Y0c0OEhJblBRbmtid3M0WU81M1NDcHNqYkk3MktEN2ZQV2w4R1IzRW55NXhxNA?oc=5",
+      "publisher": "Energies Media",
+      "pubDate": "Wed, 29 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-06T16:12:45.826Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Watch US Weighs Putting Nuclear Power Plants in Ocean Waters - Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYng2QmdkcjNRMzJ1RnRvWkxIOHhhdHlSVHh2VGtRNWlxNkdmVUt3NnNWa25lZndhXzhramdfMlJLVzJQTjR5aHBTWmlCODlGbWc4X3J0Uko5RVJUejM3NkdZM0kzcG9zY3RIZW9JU29zVjNIYXMtWlFnbUk0VEhQcTNmMG9UMmNCWVd6QW5BdHRpZFFqWTF0djQ2OTBpZEhQdFdzdGpQbmVYYkhlaWc?oc=5",
+      "publisher": "Bloomberg.com",
+      "pubDate": "Fri, 24 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-06T16:12:45.826Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "America’s busiest port watched nearly 10 million containers pass through in a single year and decided the ships carrying the next wave may need nuclear power - Energies Media",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBQTUtBVGRuWU9xX0RpSFY4TUVreWNLQVduWGljYTJFMDZjLXZDRlFaWVBCcF9qYXhpN0JsNmh1Y0c0OEhJblBRbmtid3M0WU81M1NDcHNqYkk3MktEN2ZQV2w4R1IzRW55NXhxNA?oc=5",
+      "publisher": "Energies Media",
+      "pubDate": "Wed, 29 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
