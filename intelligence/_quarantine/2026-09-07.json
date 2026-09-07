@@ -2440,5 +2440,27 @@
       "pubDate": "Thu, 12 Aug 2021 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-07T04:17:01.588Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Stream Live News, Sports, TV Shows & Entertainment - FOX One",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE96WGVJRGtJSTZNdUVxM0EzUmJDZFVjZGtUemNzTjZEOXBhOGQ3LXVJdUVYN2lTTlVHTnZQZjEtMFBYSzk3bWxXYlE2QXpfMzZZVDlod0g1YWxZYkU?oc=5",
+      "publisher": "FOX One",
+      "pubDate": "Fri, 06 Mar 2026 22:11:49 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-07T04:17:01.588Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "NuScale Joins the Race for a Next-Gen Floating Nuclear Power Plant - The Maritime Executive",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQndJY1B4SG9BU1BmZEpvcTVUamhscTFlX0VCWDVNbzBNWHNLZ1d0X2FLZEVUWXBHMVgxbTJfQzlUVC1XRHJ1MWZNaXQyVFpDc2o2a1U0V3ZtY0FwV2wwM1gyN2N4NEZXVFFtRlJCZno1VHBYTk54MXJpOUlONFRNTE1ZLTN3VDItZ3R1TXhPd2pkNmotLUppT3ZsX1ZnVjZHVXBuVXMySGs?oc=5",
+      "publisher": "The Maritime Executive",
+      "pubDate": "Wed, 26 Oct 2022 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
