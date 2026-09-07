@@ -2506,5 +2506,27 @@
       "pubDate": "Thu, 19 Jun 2025 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-07T12:20:51.073Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Dutch Offshore Giant Allseas Bets on Small Nuclear Reactors - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaHNZeXZGd1ZGQXYwTGItZGpyTzZjdnQzcUt6WjE3enFYckQ5SXh6SGI4enZGdlRQVktWNG5HVEk0a1RmRnpPZ255YUtRM3lZUjR5QUxJTTJCUDRxMHJnMXlVTUFubE9BMzVnRGxkd2FXcndlWXNsQXJVd25peVc0UjBBcGlzdHhX?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Tue, 18 Nov 2025 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-07T12:20:51.073Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Dutch Offshore Giant Allseas Bets on Small Nuclear Reactors - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaHNZeXZGd1ZGQXYwTGItZGpyTzZjdnQzcUt6WjE3enFYckQ5SXh6SGI4enZGdlRQVktWNG5HVEk0a1RmRnpPZ255YUtRM3lZUjR5QUxJTTJCUDRxMHJnMXlVTUFubE9BMzVnRGxkd2FXcndlWXNsQXJVd25peVc0UjBBcGlzdHhX?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Tue, 18 Nov 2025 08:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
