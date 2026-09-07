@@ -2528,5 +2528,16 @@
       "pubDate": "Tue, 18 Nov 2025 08:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-07T16:14:09.003Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "NuScale Launches Effort to Deploy Floating SMRs - neutronbytes.com",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNUl4MUhtRUtHRHdaLUtGSVFRQlJESV9zTTR4emx3a2dLd3lhVXFKUDNJbFhzLTB2cm5xWlo4YVZqYnVXQkdsYjBQQ1A0WFdveEdDNFZvMWktOEp0N1lLRzNieEdCWmZ1NGJuMl9paTNIcTlOZHBadUI0VnhGNnZObVhkYzVGVUxHa3BrTA?oc=5",
+      "publisher": "neutronbytes.com",
+      "pubDate": "Fri, 14 May 2021 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
