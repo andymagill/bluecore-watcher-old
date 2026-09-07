@@ -2539,5 +2539,16 @@
       "pubDate": "Fri, 14 May 2021 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-07T20:12:25.473Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach cargo numbers attain bragging rights for January - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTlFrdG5md2t2NmN6dEY5RUljV2NhU3JfZnctRWxNNmRUdXR1N25WQ1ZSQVdkbzJzazVWYUZEbkRMbEpVT1gyT3FOYWl1aGJkOVRMUmJ4S3J1SjkxWnVCZEVVMUhESDhfcUxLMjBlREtDc0FDVkE0NW56Q1BaUlR2VklaTW9LT2JVNHBsQmY3V3A4U2FuX2Vub01zeDY1V3pfZV80bk5uRlQ1UmZ5Y1E?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Wed, 25 Feb 2026 08:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
