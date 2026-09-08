@@ -2518,5 +2518,170 @@
       "pubDate": "Fri, 28 Aug 2026 10:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-08T16:15:34.557Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy raises $50M to build its first floating nuclear system - siliconangle.com",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQaFplaVJ6ZjA4cU11RW9ONDFWZEhlSVBJWS1XZlN6QUFQY3BHd3Q5UmJYOEFZTGRtVGNpWVhlSEt5dzdfVEl0M0ljY0NralBRMXUyNndLcUFHZ1A0MnZKYWQ4eWdfb3FGN0ZYMm00aE9kUDJkeE5LMURVUjBUcjFsV0hoUUItb3NiX0F0ZGxpMTdNMmhacGQtNUI5S2VzaUhqSU9WSjN1Uk41Zw?oc=5",
+      "publisher": "siliconangle.com",
+      "pubDate": "Tue, 08 Sep 2026 13:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-08T16:15:34.557Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy raises $50 million for floating nuclear power system - WorkBoat",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWjRfbExwYm5hdVg5aW5lNVFEVDVPTkdua1l1R0tKN2NuTkJzVFQ2ZDdDakpaN01wbFMxZnE4T19QblhoTGxxdHBjV21RZnljZDdRSEVxelZtRWFUeWF3U2t1OHY4TS1DSlh1NmFfNFB3dkV1VUwzZmZaLUNiMGZnRE1hUXhMbGdpNlFySWxia01Tb1VSS2ow?oc=5",
+      "publisher": "WorkBoat",
+      "pubDate": "Tue, 08 Sep 2026 13:05:29 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-08T16:15:34.557Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear startup Bluecore Energy raises $50M seed round, just two months after launch - TechCrunch",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVjBoU2Z3X3ZnR2hDTm9QYUpNVjR2aTh5X0d5U3JmZnNrUTVKSF9zb1lLTG9GalVNYmdndEFPZnZ0cnRiWHRycUx3WU1qeTNJakZZdnpoZ0dxQ1U5VlVTMi1lY3NFbi1UazlxNnl6QnZ3QjVJY1hmU2tTY0RyUklBYzVVdXpPYUpIWXZIanF0Z21aRHppMmQ5QjhudGI4OFdYVGN1SGF6RUZJVDZPNDB3M0VieHNNWUx1?oc=5",
+      "publisher": "TechCrunch",
+      "pubDate": "Tue, 08 Sep 2026 14:10:17 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-08T16:15:34.557Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Raises $50 Million to Build Floating Nuclear Power Plants - ESG Today",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNOTM0VDZzMENydEx5MEQyUkpaWW5MRU1tOU55Z0s3THJ0VDkyUnlDZ3pDMnI4SXlaSmtfRUJ1U3dJQjRlZk9vZUxxSjRtV0pEZlBTc2RzTnNsQ1dkRkVkTU9NMW9HWlMwaEVYTnZPU3lQb25VTF9BSEFwcWxiNzF1MXFiZWdmMW9UeTBsYWUyU19CQUdPb24zS2M5aDlNaDQ?oc=5",
+      "publisher": "ESG Today",
+      "pubDate": "Tue, 08 Sep 2026 14:48:44 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-08T16:15:34.557Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore raises $50 million for port-powering nuclear barges - Axios",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9ldWltREVhaXhMSFFNVUNwVW52MllrNXJ4eGxsamhOdnhHV3A3a3FxTWI5WGhxX1NDMnVKbTEzMWs1b0ZnZmJYTmNmZkFpS0V6cU1aUzFDMkZNMWdXSG52SVFYbHpLa2M?oc=5",
+      "publisher": "Axios",
+      "pubDate": "Tue, 08 Sep 2026 13:03:09 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-08T16:15:34.557Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy raises $50 million for floating nuclear power systems - Container News",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNeHMzUmJ1V2ZZcWpKT09aX1lVZUJCc0Nza0lXQktSVFhzZ3RHNlp0SEdXcHlOLWVlYkxtYmw0LVRzZlBTSmpnTGNQNjNHalhudnFfLXdmOG50Z2pRcEQxVTRIMXFFOTI1NlhkbTdieXVYdFlNRTlnQUVNNkhvdVJIOGxkbHZoeGNzS2tramNTY3lwaTl5WURzZ1FPUGE?oc=5",
+      "publisher": "Container News",
+      "pubDate": "Tue, 08 Sep 2026 16:00:41 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-08T16:15:34.557Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Bags $50M Seed, Just Weeks Post-Launch - The Tech Buzz",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNcS0wZUtDZXFGYVNsNjlTdDFwcWRDNnFXRjk5YzZIMVZ5Q2M4VkdzUWd4aUtXZ0c1RjhHTFdYcVBXdVFVTkY5bWtxS0ZXc1JPLW53d3VNT3dfeW9VemV4YmpzdGZXSW51cDZBMDl3UXhNZE4zMjlWWWJOU1RqRnhoNE92ZXdDeFRUaUtZdmd3?oc=5",
+      "publisher": "The Tech Buzz",
+      "pubDate": "Tue, 08 Sep 2026 15:07:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-08T16:15:34.557Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy raises $50M seed to develop floating nuclear power systems for ports and AI infrastructure - Tech Funding News",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQc1F3Wkd2aDhYWk9CcEpPNExKU1FWdklqV3h5QWdiUWt4Nm1kbzl3anE0SkdreHBjM1lKQ29fd3EzRDYybUFYbmkzNFdBZUFOcWN6ZzVKTUZTeWhtd0o3S2ZvNVdlN1lLRjdtUEFmUm5VYlRPUHc5ajRVTTRjWkx4amU3T3JrU3F1ZEYxRTk3SHh4QVdtbVRZT2trUWEtaEd1cGhYZ0pqeEItSV9nZ3pqcXhtbEpvRWZEMmxyNHl2RFI3Zk5WOE5PZHF1LVNLMXM?oc=5",
+      "publisher": "Tech Funding News",
+      "pubDate": "Tue, 08 Sep 2026 14:30:14 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-08T16:15:34.557Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Secures USD 50 Million for Floating Nuclear Reactors - streamlinefeed.co.ke",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNOV90SkZqbFBjeXppNjg0SjJJU1hSekFtOG91MFk5YnVQQTF1MzJONDNoQmFDTXRTSE9pbjFnNWdZMkZxTVFPbTFFbVVmMVQ3ZDVBeHVTX3pFM3VoTXR1MXZLbVpLX1JobnF6Z2NucWN6REJPLURVY2ZyU1RHMlV6Rl9NX1VxQ2RQRDdHMEdUX2ZVS1JjQk5JLTVlQ1UycmxNenZicw?oc=5",
+      "publisher": "streamlinefeed.co.ke",
+      "pubDate": "Tue, 08 Sep 2026 11:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-08T16:15:34.557Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy raises $50 million for floating nuclear power system - WorkBoat",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWjRfbExwYm5hdVg5aW5lNVFEVDVPTkdua1l1R0tKN2NuTkJzVFQ2ZDdDakpaN01wbFMxZnE4T19QblhoTGxxdHBjV21RZnljZDdRSEVxelZtRWFUeWF3U2t1OHY4TS1DSlh1NmFfNFB3dkV1VUwzZmZaLUNiMGZnRE1hUXhMbGdpNlFySWxia01Tb1VSS2ow?oc=5",
+      "publisher": "WorkBoat",
+      "pubDate": "Tue, 08 Sep 2026 13:05:29 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-08T16:15:34.557Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore raises $50 million for port-powering nuclear barges - Axios",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9ldWltREVhaXhMSFFNVUNwVW52MllrNXJ4eGxsamhOdnhHV3A3a3FxTWI5WGhxX1NDMnVKbTEzMWs1b0ZnZmJYTmNmZkFpS0V6cU1aUzFDMkZNMWdXSG52SVFYbHpLa2M?oc=5",
+      "publisher": "Axios",
+      "pubDate": "Tue, 08 Sep 2026 13:03:09 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-08T16:15:34.557Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Raises $50 Million to Build Floating Nuclear Power Plants - ESG Today",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNOTM0VDZzMENydEx5MEQyUkpaWW5MRU1tOU55Z0s3THJ0VDkyUnlDZ3pDMnI4SXlaSmtfRUJ1U3dJQjRlZk9vZUxxSjRtV0pEZlBTc2RzTnNsQ1dkRkVkTU9NMW9HWlMwaEVYTnZPU3lQb25VTF9BSEFwcWxiNzF1MXFiZWdmMW9UeTBsYWUyU19CQUdPb24zS2M5aDlNaDQ?oc=5",
+      "publisher": "ESG Today",
+      "pubDate": "Tue, 08 Sep 2026 14:48:44 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-08T16:15:34.557Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy raises $50M to build its first floating nuclear system - siliconangle.com",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQaFplaVJ6ZjA4cU11RW9ONDFWZEhlSVBJWS1XZlN6QUFQY3BHd3Q5UmJYOEFZTGRtVGNpWVhlSEt5dzdfVEl0M0ljY0NralBRMXUyNndLcUFHZ1A0MnZKYWQ4eWdfb3FGN0ZYMm00aE9kUDJkeE5LMURVUjBUcjFsV0hoUUItb3NiX0F0ZGxpMTdNMmhacGQtNUI5S2VzaUhqSU9WSjN1Uk41Zw?oc=5",
+      "publisher": "siliconangle.com",
+      "pubDate": "Tue, 08 Sep 2026 13:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-08T16:15:34.557Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear startup Bluecore Energy raises $50M seed round, just two months after launch - TechCrunch",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOVjBoU2Z3X3ZnR2hDTm9QYUpNVjR2aTh5X0d5U3JmZnNrUTVKSF9zb1lLTG9GalVNYmdndEFPZnZ0cnRiWHRycUx3WU1qeTNJakZZdnpoZ0dxQ1U5VlVTMi1lY3NFbi1UazlxNnl6QnZ3QjVJY1hmU2tTY0RyUklBYzVVdXpPYUpIWXZIanF0Z21aRHppMmQ5QjhudGI4OFdYVGN1SGF6RUZJVDZPNDB3M0VieHNNWUx1?oc=5",
+      "publisher": "TechCrunch",
+      "pubDate": "Tue, 08 Sep 2026 14:10:17 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-08T16:15:34.557Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy raises $50 million for floating nuclear power systems - Container News",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNeHMzUmJ1V2ZZcWpKT09aX1lVZUJCc0Nza0lXQktSVFhzZ3RHNlp0SEdXcHlOLWVlYkxtYmw0LVRzZlBTSmpnTGNQNjNHalhudnFfLXdmOG50Z2pRcEQxVTRIMXFFOTI1NlhkbTdieXVYdFlNRTlnQUVNNkhvdVJIOGxkbHZoeGNzS2tramNTY3lwaTl5WURzZ1FPUGE?oc=5",
+      "publisher": "Container News",
+      "pubDate": "Tue, 08 Sep 2026 16:00:41 GMT",
+      "type": "NEWS"
+    }
   }
 ]
