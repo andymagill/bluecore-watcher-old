@@ -2463,5 +2463,16 @@
       "type": "DOCKET",
       "docketNumber": "2026-09070"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-08T04:15:47.854Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear energy for maritime shipping and coastal applications -- ANS / Nuclear Newswire - American Nuclear Society",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQeXFqWUhoQm5GUDJHY0xrVHY0aFNSNGc5SldENTRhMmgwMVRwaE9yWHU1QURWMjlKS3R3TkJaRzluQ3VQUmotZWFNSTB2bGtteXlrTF9rRFlEZHFDLVdra0hhVGdFX0pEREhkQkRwNkp0ODNoWHJlUDRRdmpHcXJETktXSERNeV93cmYtSlByOUNMQnBubGJFVGFrRGpqRmV3T2hpVXp6Qm03RlRnU1JuOA?oc=5",
+      "publisher": "American Nuclear Society",
+      "pubDate": "Wed, 16 Jul 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
