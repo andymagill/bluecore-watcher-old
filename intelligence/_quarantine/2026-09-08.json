@@ -2474,5 +2474,16 @@
       "pubDate": "Wed, 16 Jul 2025 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-08T08:19:35.328Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "More than 50 containers toppled from a cargo ship berthed at Port of Long Beach - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOUjQ2OVFJcXZ0ZWdDYlZuX1ZCaWlXOEdmRUZCMVpjUGxaWkpoUlFYTkJHeEo5bFU5NW81aUZIOGFUaDZDSlJBYzZ1aUNLeE5iSk9PeEpBZTBucXo5eEhDNThrcXZpSU5XVTdIa3ZLN0d1S09uR3JMZmIzdEI4eENaUUxGQjFPeFNzcGxNOUYwSDZmRTFKWVh6R1hxUVdpTHFSdGxsSFNSZTJyZHVseVRzemw0eGFJekpYb1pRZg?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Tue, 09 Sep 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
