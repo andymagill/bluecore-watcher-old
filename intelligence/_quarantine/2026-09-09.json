@@ -2814,5 +2814,60 @@
       "pubDate": "Mon, 31 Aug 2026 12:07:52 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-09T20:12:59.591Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Raises $50M Seed Round To ‘Create And Deliver Zero-Emission Energy’ - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQYXdZT2pOOFc4SkVQOEZ6LXIzbVBYX2U4NFV4VXFfUlJHbmowXy0yMV9raV9MbU5KWWptWmpKRzZmaE5FT3pPMDJ1d0dOaU01S2IwWUZ5b3ZUZkZRRHBFRmpkRDJEaERiRXh2NkJkZTFMUGVBUHBuZ3Nfb3MtVmVsMTZ3RGo3cjl6U2RPNWl2LUM3QQ?oc=5",
+      "publisher": "Yahoo Finance",
+      "pubDate": "Wed, 09 Sep 2026 16:14:58 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-09T20:12:59.591Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "DOE Closes $1.9 Billion Loan to Restart Duane Arnold Nuclear Plant in Iowa - Neutron Bytes",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNblZaUmZqcXlTYUs1TzFCZWJSeGR4Mmt0ZDBzUHNWeEVldWstSXhOczdkanNTN0UzMGlFLWpVWGtNLV9oTHllVE5xejNOamxzNlp4TUdqUS1CMW5kcnZ5NDc1T3VpWDNZUGRkQnl5SUIwYmxlaGlMU2w0eHp4X3MwYlczdEJ1cFg1VjVOOEpsVUlvTW1vUmRmQm9PQUpDZE1MazVIWVZGaWo2SUhWNEZz?oc=5",
+      "publisher": "Neutron Bytes",
+      "pubDate": "Tue, 08 Sep 2026 17:14:24 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-09T20:12:59.591Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Raises $50M Seed Round To 'Create And Deliver Zero-Emission Energy' - AfroTech",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1SZUJGWS1nQ1BCQm9fdkVXQ1R0dFFZM3pIX2gwaFZ2Rm14cFlJU2c0MTREWFRub05aN3ExeEFTWERQS3NHdVcybHlSMlNBR2xOT3JfdVBPaEE2dzVCRzNVSF8xRXB0RzQ2cmc?oc=5",
+      "publisher": "AfroTech",
+      "pubDate": "Wed, 09 Sep 2026 16:14:58 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-09T20:12:59.591Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Canadian National Railway raises its 2026 volume outlook on firmer freight demand - MarketScale",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNcTlpVUlnYXZOTDk4Q3FacGxNWTJwNXRzMURQTkZIZ1RWOVcxWDZ3QmFOUTloU01nb21Ydi1VV0hrcVhzYURQdUVpVnNNQnJSaXE2Si1hM2NTMU80VS10ZHRSTHNfRS1wYmYwSXVRLXNzV0pwM0Y2Qm5Nb3hKc0pWaWlVVHdndHVQRkdwOW83am5ZeWhNYURFTVQweFRuTTI4SjZTdEZ6dEZ1b2dQSFY5RHdldWVaY1lBV3hxS0Z2bjl2VU1hZTlzajVNdzRITl9F?oc=5",
+      "publisher": "MarketScale",
+      "pubDate": "Mon, 03 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-09T20:12:59.591Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Hacegaba appointment confirmed as incoming Port of Long Beach CEO - Long Beach Press-Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRU9aZ01RcElueDNBTzNIY2FCVHp0R0hOODFHb3Q5MjNUd2kzTWdGZmxaQVR2UGUxODNRVEQ4MjRfclJKYzZPdGpHSHFQM3oxWXh4ZlplNVAtWmxieVpkejJ5UnJsWGEzeUw1Smg1dWxxUGVxVjJQa1ZMeEFUQkpiYWZleFg0ZHRtTzRyai13b1FzemE0MUNBY1Z6MUZxbHhHQ0ZSMnBHOFRFVGc?oc=5",
+      "publisher": "Long Beach Press-Telegram",
+      "pubDate": "Tue, 09 Dec 2025 08:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
