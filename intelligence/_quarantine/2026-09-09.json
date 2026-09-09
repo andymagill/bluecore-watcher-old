@@ -2495,5 +2495,126 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-09T04:16:10.072Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Raises $50M As Long Beach Nuclear Plan Advances - patch.com",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQnBnMVZWSHA1QnJYTHFqVWxKWHZsWFpTY0prbTBnMFctdjF4V2VoUW5FQUdDU2JPalA3RjlFb0tScUxNRGI1Q3REMDkxSmhIcUN6eDRuYVNPVFd3dEwxcUh2cW1LZ3pMcXRSNGI4QlBsblEtdlY1M1MycUZ2OExBTXYxWVJaYkZkWTdwV1UxMkozbWNFOFBtOEJn0gGvAUFVX3lxTFBlSlV4cnZaaGMxZ1J5MnBjamJlQ3FzT3F2ZTYwdGtsYmpDTi1SMi0weWRjLUhOTkhxNFBXYzRkaHhIbkIycFZ5UUdENHh4YkNQYy1mRXdySXp5a2FKaGVMMXIyUXZ0ZW44bjl6aUUtNF91ZmtHTndvQ3l2aHh1TG1seWNtdTZoV1pZY0hxYkhiSjZuRUx1TUtFLVk2OUoxTkVkTkdLelB1alo2LV9Pd3c?oc=5",
+      "publisher": "patch.com",
+      "pubDate": "Wed, 09 Sep 2026 01:04:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-09T04:16:10.072Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Floating-Nuclear Startup Bluecore Energy Raises $50M Seed - Wowtale",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5MNGFsYVJFWjZqMWFpY19vOGV6Tld1X0o0NHJVQzBQSV92S0xndmpJbW11N2V6UFFIdXNJbFFndzlray1JcWQ1SXhReWQxOFlBWDFr?oc=5",
+      "publisher": "Wowtale",
+      "pubDate": "Wed, 09 Sep 2026 00:55:28 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-09T04:16:10.072Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Secures USD 50 Million for Floating Nuclear Reactors - streamlinefeed.co.ke",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNOV90SkZqbFBjeXppNjg0SjJJU1hSekFtOG91MFk5YnVQQTF1MzJONDNoQmFDTXRTSE9pbjFnNWdZMkZxTVFPbTFFbVVmMVQ3ZDVBeHVTX3pFM3VoTXR1MXZLbVpLX1JobnF6Z2NucWN6REJPLURVY2ZyU1RHMlV6Rl9NX1VxQ2RQRDdHMEdUX2ZVS1JjQk5JLTVlQ1UycmxNenZicw?oc=5",
+      "publisher": "streamlinefeed.co.ke",
+      "pubDate": "Tue, 08 Sep 2026 11:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-09T04:16:10.072Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Raises $50M As Long Beach Nuclear Plan Advances - patch.com",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQnBnMVZWSHA1QnJYTHFqVWxKWHZsWFpTY0prbTBnMFctdjF4V2VoUW5FQUdDU2JPalA3RjlFb0tScUxNRGI1Q3REMDkxSmhIcUN6eDRuYVNPVFd3dEwxcUh2cW1LZ3pMcXRSNGI4QlBsblEtdlY1M1MycUZ2OExBTXYxWVJaYkZkWTdwV1UxMkozbWNFOFBtOEJn0gGvAUFVX3lxTFBlSlV4cnZaaGMxZ1J5MnBjamJlQ3FzT3F2ZTYwdGtsYmpDTi1SMi0weWRjLUhOTkhxNFBXYzRkaHhIbkIycFZ5UUdENHh4YkNQYy1mRXdySXp5a2FKaGVMMXIyUXZ0ZW44bjl6aUUtNF91ZmtHTndvQ3l2aHh1TG1seWNtdTZoV1pZY0hxYkhiSjZuRUx1TUtFLVk2OUoxTkVkTkdLelB1alo2LV9Pd3c?oc=5",
+      "publisher": "patch.com",
+      "pubDate": "Wed, 09 Sep 2026 01:04:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-09T04:16:10.072Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Floating-Nuclear Startup Bluecore Energy Raises $50M Seed - Wowtale",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5MNGFsYVJFWjZqMWFpY19vOGV6Tld1X0o0NHJVQzBQSV92S0xndmpJbW11N2V6UFFIdXNJbFFndzlray1JcWQ1SXhReWQxOFlBWDFr?oc=5",
+      "publisher": "Wowtale",
+      "pubDate": "Wed, 09 Sep 2026 00:55:28 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-09T04:16:10.072Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Two U.S. Ports Explore Nuclear Power For Next-Gen Commercial Shipping - Forbes",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNOThKbS1keHlTRXM0dWRXdENMb2VlRkx1Z191bUhYNGdCYlhBa2FYZHNhcktlWUJucXpwc1Fmci1EUE9DakZ3RGE3eE95N0FDTzhrZEJ6YnI0ek1BRU1jWVp6czhkVFpKcTBpOEFuSkdYV1BxM3RaMjdHNXE2cU1iZGdOVHBVbFVfblFoQ3I5UnE5LTVySW9xQ3F4UWF6NGo5eHVETDhCdFJ2d2J4VWdiekx2N3lpVGgyWjYzNERR?oc=5",
+      "publisher": "Forbes",
+      "pubDate": "Sun, 30 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-09T04:16:10.072Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Texas port looks to SMRs - Nuclear Engineering International",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9Tb1NmZXp2aEZRSVkySXpvQmE5RGFXTmJQRFBRWDJjdTlNRXFWVEdVdklwVlRPRXFMZGN5clYxT2cxNXFvRTJKS2o4RWhjY0hkRFg0ZmhYMjQ5TWppN1JlMEF1SjFkTE43ZEE?oc=5",
+      "publisher": "Nuclear Engineering International",
+      "pubDate": "Tue, 25 Aug 2026 12:04:45 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-09T04:16:10.072Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "OC Coastkeeper sues U.S. Coast Guard for information about 2025 Port of Long Beach container spill - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNEtCb25EWkFwYXRSMDJ4UkpHaEI1NFBmdE1mSWtYT3Q4eDFDbXlzQVlRY3NqcTY3SFN1OTBUdU9rUlhlTEpLeng0ZFdDWkQtd2tWNE9FOE5kNHROeEZwckZfY2ExcVp2UmZ2OXNuZXlHdE4tTlA1OUxzZkgtMHlzWklSTjk2d2ZJRF9UNk1TYjdkSXhHbTAyeUVwd051VGZSNW5jNGd6S09xMzlELV9EYThYU29NWW5MMU05ZG82c2pabTRDYWg1RlM1RThpWjdrOUdRd2hB?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Wed, 11 Feb 2026 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-09T04:16:10.072Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "‘Innovation Café’ focuses on small modular reactors - WorkBoat",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4yYlNSdTA5eDdjYnN0TmR5M2VvZGhDOXgzZk5YSmt1cjQtTGxFd0V6Vl9kRk13SnlsSG9CeF8xdjhmQnM5cWotdTJTeEpweU1uY1AzdjZpcjJHUmtsREhQS3Zwc0t0b0R2M24xSnEwRmlEWkxWOFFUVmk3QThDbEk?oc=5",
+      "publisher": "WorkBoat",
+      "pubDate": "Thu, 28 May 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-09T04:16:10.072Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "DOE OKs Startup of Oklo Research Reactor in Texas - Neutron Bytes",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOT2NmV29mY3FCR1ZNbUVTLUV3N3NsemZJYzdabU9GRnhZZ1hCV1pydm1UcTYwdGp2YjZFTEM3VU93aGg3N2VmblBuR2phUmp3cTRjeXZfQ3dyMkdPaFcyQWdNaU5UU2trUzhPXzdBRUZmc1hkbTFZQnBKZnBNSDVLNHRzbGplTS1aRGE4Ml9KUQ?oc=5",
+      "publisher": "Neutron Bytes",
+      "pubDate": "Sun, 26 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-09T04:16:10.072Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "NuScale and Prodigy conceptual design for marine-based SMR plant - World Nuclear News",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRVE0RGhUbm9OaHRwTHVXcEM4OTlzb3JBVk40SHFkZVZPMUdDYm1NS25fSEdmS3NHVzMtUkxBTnd5VU5oRDYyQW1CSlFwTnBFc3B5TzJzNHZ2ZVF5ZFFmblFSNGVZVkJPWmEzS3JVQUdTZ1gyQ2ZybUU2a2cxS09lSzhIaWxSdVpnclVkUmFST3RlMU9lNmtFUWlB?oc=5",
+      "publisher": "World Nuclear News",
+      "pubDate": "Thu, 27 Oct 2022 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
