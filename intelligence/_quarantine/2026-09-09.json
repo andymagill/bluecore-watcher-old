@@ -2693,5 +2693,49 @@
       "pubDate": "Wed, 26 Aug 2026 19:28:55 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-09T12:20:25.953Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Raises USD50M in Seed Funding - FinSMEs",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxObTkyNmZONmwwcWJCZW01bXVMZmtJZVFGanVWdTgybUc5czBUc3FfUEJYVHQ1dDZQbXItaFh4YlB6Vk9mVm5LQTdVbkMtSU5ROTgyeEFtQWFNeng1S2VfdC16SkQ0azZTWEExM1lFNTBoTTQxbGxKbkhxUk5vZWxwTXd0aU0xR1NvWlE?oc=5",
+      "publisher": "FinSMEs",
+      "pubDate": "Wed, 09 Sep 2026 09:54:35 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-09T12:20:25.953Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Raised $50 Million, Betting that Floating Reactors Can Bring Clean Energy Anywhere a Ship Can Go - Tech Labari",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPYUZ6OEd0eDk0WjhTMnFsY1NRYWFNOTNQZFdyMGpNdm9kZTQwT1dabmZkYXE5YmVJVUZoQVgzTGlLbWxnbkhXTGVDcW8yZGxjS3VHbmpyTXJFOHFHRklSRWZvVlc1X1NLVEJBQlhBeklEVzVJQW94MjJfR29xbE1qSkFOV3d3UzNidFpfemo3OWp6OWExVkU4cjl1ZG0zRFY1NUo1c2l6U3NEVWpEUlprdWl5ZUY5aVI1d3BDQXJEODFzYTFmQUlKQVFoQjR5Qk0?oc=5",
+      "publisher": "Tech Labari",
+      "pubDate": "Wed, 09 Sep 2026 08:33:56 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-09T12:20:25.953Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Secures $50M Seed for Floating Nuclear Power - N24 Haber",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNc0hMVThBZG1MdlM5cG02eTBmZ1o2N0FvWGFxUFZmR3lRZl9mbEdMcjJvTV9ySzdkRVJiamtHRk9ienl3VVoybTNtU3Nzc2tGYk9uLXc4cFRBZXNRT3FCVmdSSkE2UTNvcGhPX0dVUU1XRHZfQThrLUxxdG82S1JhQll3ZHJNOTFzZl83eTBscnV6YllGZzFOLU5QVQ?oc=5",
+      "publisher": "N24 Haber",
+      "pubDate": "Wed, 09 Sep 2026 01:30:24 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-09T12:20:25.953Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "500 giants floating in the sea — This country just unlocked energy from water alone - ECOticias.com 'El Periódico Verde'",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNR0NfY0hEVXppVUVKbVpyNEhUZG9zWU1qRlNBRDRndWdrTkZLeUk3Z0FzaENYRTNKZjV1c2lKUGpfQVByQ29NRXdIeVJNeFhHaTdmS0cyTUw5cWVmaGN4UHdxUHNJakoteDZpQ3JpSlBlRDlnQ1FFOXFRUVh2Q3JwNg?oc=5",
+      "publisher": "ECOticias.com 'El Periódico Verde'",
+      "pubDate": "Sun, 10 Aug 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
