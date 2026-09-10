@@ -2594,5 +2594,38 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-10T04:15:51.770Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy raises another $50m for floating nuclear power barges - Smart Maritime Network",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONmo5eWNsR2w2LVZtUkswSUpTQ2lHbHpxaktmNjMyTGEzbW91OFZpRmM0QW1MVjBqNXA1dVpxZmthbjhfel9Ob3hyeUFjOVdSQWk1TGRLV1V5UnhBcjNtY1pGRXQwbTJoNmdrRVdlNXhCVF94S3NtdVV3N0JqOXE0dENYcm5pMTFzaWEya3hONmpaUXphUnlQZ1ZKNXlDNE5tWWtXbjJfZ0RhRWJyQ2d2d2NyWQ?oc=5",
+      "publisher": "Smart Maritime Network",
+      "pubDate": "Wed, 09 Sep 2026 17:13:23 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-10T04:15:51.770Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy raises another $50m for floating nuclear power barges - Smart Maritime Network",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxONmo5eWNsR2w2LVZtUkswSUpTQ2lHbHpxaktmNjMyTGEzbW91OFZpRmM0QW1MVjBqNXA1dVpxZmthbjhfel9Ob3hyeUFjOVdSQWk1TGRLV1V5UnhBcjNtY1pGRXQwbTJoNmdrRVdlNXhCVF94S3NtdVV3N0JqOXE0dENYcm5pMTFzaWEya3hONmpaUXphUnlQZ1ZKNXlDNE5tWWtXbjJfZ0RhRWJyQ2d2d2NyWQ?oc=5",
+      "publisher": "Smart Maritime Network",
+      "pubDate": "Wed, 09 Sep 2026 17:13:23 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-10T04:15:51.770Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Consortium launched in S. Korea to develop floating offshore hydrogen production plant - Aju Press",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE0xcTA0SXZjbzJVVVJPRXFVSng3SldmeENoNlJsWG5rVkk1ZVg0MkV2Skdtd1VPWFFzNVpvUG15LVQyUW9ZMWNyYjZud1h5eWhvbUNSM1dXSldpMDTSAVdBVV95cUxOQzYwQ2wzNGxLZUtKQkoyaVUxUVNFZGVsNGJaZDd1a1JmNHV3LWh3NXdDam56YVplQTdmUHVpWGtWZUh1UlYxSEZSTnA1Z0VSY2pBMlFMRjQ?oc=5",
+      "publisher": "Aju Press",
+      "pubDate": "Thu, 12 Aug 2021 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
