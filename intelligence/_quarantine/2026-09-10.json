@@ -2803,5 +2803,16 @@
       "pubDate": "Mon, 27 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-10T20:12:10.353Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Emerging managers line up behind Bluecore Energy’s modular reactors - ImpactAlpha",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNbG5CRjJvQVRhUTJaRHJHdC1BUUx0MUg0aVN5VnJNTUFqZjBaSlI3Y2F5ZnlNbVhIdm01VGZMcDhxdkNHNUhWSEtNYXFsQUdDMG5TT3lSaGxBZ3hCWms5VExSVkxyMl9sNVhfWHZtbTZRcUFSTnVhNW13dllXRXp4cC1EcjVRVmFVSWcyTm9OOGZ0WFlwZGc?oc=5",
+      "publisher": "ImpactAlpha",
+      "pubDate": "Thu, 10 Sep 2026 10:44:31 GMT",
+      "type": "NEWS"
+    }
   }
 ]
