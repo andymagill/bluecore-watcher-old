@@ -2781,5 +2781,27 @@
       "pubDate": "Thu, 10 Sep 2026 11:10:24 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-10T16:13:36.642Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Is Long Beach ready for a floating nuclear power plant? Here's what to know - Yahoo",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQSV9JbHNLdXN1clRONHU5YV9kb0sxSk85cXVsWV9fU0dlNlRCbWxkWjlaSU1tMXZMZjlueXpveE9sWGR1czRsYzFEV0pFQWEwZFJXdXlpRHl0d3l5VHdHNVExaV9oY3BVNzhpTlFDZzl4dlZaNThhcnBobk9PYzVhdzdoVm1fdUNOQ0J1WWRkVlJSaUhtUlhB?oc=5",
+      "publisher": "Yahoo",
+      "pubDate": "Fri, 28 Aug 2026 10:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-10T16:13:36.642Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "First port signs up to US initiative on maritime SMRs - World Nuclear News",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPc1BYclhzcjVuR1JfYU9hV09YcVM0bXU4N3g0RmhXVUV2b1p5NkZ6SVgwUGU2Y2lhdExHYTlKSWEyaktaUFVCdThvMXdJeHdEN2w3Qnl2NTZ3dHF1dU8weWhwYmlzQ0RtTkl1alV6THhJdkV5S1p6Y1YxazB6OENRNUdna2NCUjRBWmZfbWxscmo4MVN4bjF5ZTFCTXdUZw?oc=5",
+      "publisher": "World Nuclear News",
+      "pubDate": "Mon, 27 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
