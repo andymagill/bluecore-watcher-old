@@ -2704,5 +2704,82 @@
       "pubDate": "Sun, 26 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-10T12:20:05.164Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Raises $50 Million Seed Funding To Develop Floating Nuclear Power Systems - pulse2.com",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOa2NiUmV2OUxvTXdRemtCTlJhSkhKTWs4NFBDN2tycTVSV040QUE0dDUzb2hGSFlDazVuZE5aLUd4WGVmaXZVMnpsV2VsZXJJa1JSc1dIc1JZTy1xU3paSkxrZFBCaGtnTTltVkllc3dpZVJDM01Vb0ozODRtVk9DVXM2Z2pNQU1qeHc0SWRRei02ZC0zMGtEeEhGbS02UnJra0HSAacBQVVfeXFMTWhhd2h0bFBiemduVl9lcF91bEVxSGNSNWc5WG1pZWF3cktqRTRUeXlNYzdHbmVaZ0M2YTBFWkpKZk04YTBEYnFUa0I0b2JhU3ZIMkxuTHJtUFBIUEZWb0hxeHAtYkFESGQ3dEpDR2xmSUNFYkFRQm5hYjdIRFY5SDh2bDRTcnFab3lWTUZwREdkd3V5N3dPTTZ0bVo2aW0wdm0xMHg3bnM?oc=5",
+      "publisher": "pulse2.com",
+      "pubDate": "Thu, 10 Sep 2026 11:10:24 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-10T12:20:05.164Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Maritime Nuclear Startup Bluecore Energy Raises $10 Million For Nuclear Plants On Barges - NucNet",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTmVzZXZZc0VGYlQwTWhVRFdCa0tEUy1HaThUby1YZnhIdEpxQXV0WlpNUlUxU2RMUGFrelpDZVpvaWl3RlViTFVHVXg5MFd0bXZndC1DWGhGMVYta2dSS3lEQ2owU004OUstdWdYRWtrWlVZZkx3MUJYSDZ0WWl2ZEdZaU5PeGF1RU9pdUQ1Z3NqLUNwcENzZnFlLW1QQ0VuREhvMTd2RFdNdDZEY0R3NE5lS2xVQlpDaVowUktOZS1nZ1ZPMmc?oc=5",
+      "publisher": "NucNet",
+      "pubDate": "Fri, 24 Jul 2026 09:47:29 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-10T12:20:05.164Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach, MARAD sign first-of-its-kind partnership agreement on nuclear energy in maritime - American Journal of Transportation",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVkJmcUstbWNmQmFna05ockVuMGFtWi10SHppRm8zYlhwdllKMlNUTXlQaG1vOW9qeHdnbHdpcEdnMXhOM0pVVVRST3NiUnBKYzB1ZUYtNno1LV80V080UFhyU1g2aGRaRXo2eEVVSlRIU0N6LUNKalZ2UC0ybHVSRU1KOG9LVFNxR2k2NzVjTnNoN2Z0NWZHSTZLV3BKbDdGV0c1WDU0ekRIc1VqWlYtN01vOHZoQWkxU09yX3Z1Qjd2Yms?oc=5",
+      "publisher": "American Journal of Transportation",
+      "pubDate": "Tue, 28 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-10T12:20:05.164Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Raises $50 Million Seed Funding To Develop Floating Nuclear Power Systems - pulse2.com",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOa2NiUmV2OUxvTXdRemtCTlJhSkhKTWs4NFBDN2tycTVSV040QUE0dDUzb2hGSFlDazVuZE5aLUd4WGVmaXZVMnpsV2VsZXJJa1JSc1dIc1JZTy1xU3paSkxrZFBCaGtnTTltVkllc3dpZVJDM01Vb0ozODRtVk9DVXM2Z2pNQU1qeHc0SWRRei02ZC0zMGtEeEhGbS02UnJra0HSAacBQVVfeXFMTWhhd2h0bFBiemduVl9lcF91bEVxSGNSNWc5WG1pZWF3cktqRTRUeXlNYzdHbmVaZ0M2YTBFWkpKZk04YTBEYnFUa0I0b2JhU3ZIMkxuTHJtUFBIUEZWb0hxeHAtYkFESGQ3dEpDR2xmSUNFYkFRQm5hYjdIRFY5SDh2bDRTcnFab3lWTUZwREdkd3V5N3dPTTZ0bVo2aW0wdm0xMHg3bnM?oc=5",
+      "publisher": "pulse2.com",
+      "pubDate": "Thu, 10 Sep 2026 11:10:24 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-10T12:20:05.164Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Maritime Nuclear Startup Bluecore Energy Raises $10 Million For Nuclear Plants On Barges - NucNet",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQTmVzZXZZc0VGYlQwTWhVRFdCa0tEUy1HaThUby1YZnhIdEpxQXV0WlpNUlUxU2RMUGFrelpDZVpvaWl3RlViTFVHVXg5MFd0bXZndC1DWGhGMVYta2dSS3lEQ2owU004OUstdWdYRWtrWlVZZkx3MUJYSDZ0WWl2ZEdZaU5PeGF1RU9pdUQ1Z3NqLUNwcENzZnFlLW1QQ0VuREhvMTd2RFdNdDZEY0R3NE5lS2xVQlpDaVowUktOZS1nZ1ZPMmc?oc=5",
+      "publisher": "NucNet",
+      "pubDate": "Fri, 24 Jul 2026 09:47:29 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-10T12:20:05.164Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "World’s first nuclear-powered merchant ship to be decommissioned -- ANS / Nuclear Newswire - American Nuclear Society",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNUEY1X2dUT1NRTlNtQVlaSUE2enJMaldKb1NVMGFhQXRiVDllTUZlLW9Mem9XWU5Hdm9EbTdMVmtGZGxiaHZDNlBfMmt2dkxicHg3U0hvNkRzMGg5RlhLNkVBQkdVcWNUSE1EZUZZelprWjI0OG9Zb0duNGtPcTB2aGpsQmFEb3h5ZlVCdzFHTmlURTRvY1dSYmhoM3ktSjBVSGNF?oc=5",
+      "publisher": "American Nuclear Society",
+      "pubDate": "Wed, 11 Jan 2023 15:36:13 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-10T12:20:05.164Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Raises $50 Million Seed Funding To Develop Floating Nuclear Power Systems - pulse2.com",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOa2NiUmV2OUxvTXdRemtCTlJhSkhKTWs4NFBDN2tycTVSV040QUE0dDUzb2hGSFlDazVuZE5aLUd4WGVmaXZVMnpsV2VsZXJJa1JSc1dIc1JZTy1xU3paSkxrZFBCaGtnTTltVkllc3dpZVJDM01Vb0ozODRtVk9DVXM2Z2pNQU1qeHc0SWRRei02ZC0zMGtEeEhGbS02UnJra0HSAacBQVVfeXFMTWhhd2h0bFBiemduVl9lcF91bEVxSGNSNWc5WG1pZWF3cktqRTRUeXlNYzdHbmVaZ0M2YTBFWkpKZk04YTBEYnFUa0I0b2JhU3ZIMkxuTHJtUFBIUEZWb0hxeHAtYkFESGQ3dEpDR2xmSUNFYkFRQm5hYjdIRFY5SDh2bDRTcnFab3lWTUZwREdkd3V5N3dPTTZ0bVo2aW0wdm0xMHg3bnM?oc=5",
+      "publisher": "pulse2.com",
+      "pubDate": "Thu, 10 Sep 2026 11:10:24 GMT",
+      "type": "NEWS"
+    }
   }
 ]
