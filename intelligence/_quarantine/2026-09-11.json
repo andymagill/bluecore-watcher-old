@@ -2827,5 +2827,38 @@
       "type": "DOCKET",
       "docketNumber": "2023-25163"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-11T12:20:50.079Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "US maritime nuclear energy company raises USD50 million - World Nuclear News",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNMmJiNDRhNjR4d1ZVZ1FZOFpPSlFqZzhnX3NRY1VkVkltRTlQRkQxdHlENGVGc2htcWxvYnNWYjkyZmQ3MDU5Tm85WnR4eVU3Q2xmRDlGblpwZG5QdkdTNHo4Skk3SFgtckZReUFBLXBKRFlTcV9aU0ozaDBhNE1fUzc3b05udUVGQ3NsWHB0Smd4SHhwT1FINGNkYw?oc=5",
+      "publisher": "World Nuclear News",
+      "pubDate": "Tue, 08 Sep 2026 15:26:47 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-11T12:20:50.079Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Core Power pushes for seven-year fast-track on nuclear-powered shipping - engine.online",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOFdMT0ljT2xRT2ZDZzdaWkZ6LXJQbkJYZ3ZlUFVZVjhZTGc3MFVrX0d4SE1Pb0tJVzltR1hCMFl0VVRpd2NzNWdjSlFoY1lPVklWUTc4am5pZWkzOFVmeHJOQTA5U2FGQzBqNXk3TVNFVWdocTBWd2c0ZzBNcGljS2c2X1R3Wko3YVQ3VTFKbG1fYjQ2NFVvUkZsbnVWX3hMVjY0dEc4Si00Q00?oc=5",
+      "publisher": "engine.online",
+      "pubDate": "Tue, 11 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-11T12:20:50.079Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "HD Hyundai gains U.S. approval for floating small modular reactor technology - CHOSUNBIZ - Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOYVB0RngxZjJyNy0zSzBkSk10NGVZN1BFOG1PZENucTZFMGF4aWRjMldLYWlfN19oeXpzcGpwclRxY25sWDhSeUVOX2RObEp4Ul9GdkVpVjduOU56bnEwV0s1N2JjUlE0bGNib0sxMFlzTWxvYXZkQWwyX09iaVlfN1pB0gGWAUFVX3lxTE81Z1pNNlFoQ3RmQVctVmZNSk1EM0NYdERuYld0ME53ZHZZQnoyVU9ZSWI2RXpHTVJNXzhpTHBvRjgzQWlSaTVRVW1KZS1rYVp4RkhGYXpodkxVX2RTWkxGeHhiV1VBbHVvNzdZWkdNNkhBdHNZZWc1Ql9NbmR6NHhmQVdPQUJ2VWRrMkNtbVdzSV94Vlhkdw?oc=5",
+      "publisher": "Chosunbiz",
+      "pubDate": "Thu, 19 Jun 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
