@@ -2860,5 +2860,38 @@
       "pubDate": "Thu, 19 Jun 2025 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-11T16:14:32.107Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Core Power launches U.S.-anchored maritime civil nuclear program -- ANS / Nuclear Newswire - American Nuclear Society",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPX0pqSWloS2NocHBEOUctTkFvVWdscGZZRTZtd0c0M1l2YXBBbU0xWkxSWEo3MWtEVGlIYUh3ZUx0RGJxQTJDdENhWmEwWmNSUmJ6cXBYa2V5LUtkWENJZkgxNU11N0c1akI2dWNZUHdQazczUnZkT3JtOWxmb3dHTy1lUEVpeUs1Z3cwLWpmQjVxSkYwcVdEWXJFWmE1YzNQQjNWb3gtNGZqaXpJaXBCLQ?oc=5",
+      "publisher": "American Nuclear Society",
+      "pubDate": "Thu, 20 Feb 2025 13:03:27 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-11T16:14:32.107Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Korean, US partnership to study maritime SMRs - World Nuclear News",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNNVRvRUJpOC1LMkVMbW5jSzdxdTZRWjBNOWdkblpnZ1dNcFVXSTI5dGQ0SFpxMlBzcTdmTTZQS1NNR3J4UTBkSzF1VzVuS0hyajJsVnBIcHpwVVlPS05KSEVUdVlnSWY5Uzc2RDRzcWlkQl9pQTBRNDR1aFBhNkdUaFl6WlBjd25jU1dPaFllLTBwdVE?oc=5",
+      "publisher": "World Nuclear News",
+      "pubDate": "Mon, 22 Jul 2024 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-11T16:14:32.107Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Core Power launches U.S.-anchored maritime civil nuclear program -- ANS / Nuclear Newswire - American Nuclear Society",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPX0pqSWloS2NocHBEOUctTkFvVWdscGZZRTZtd0c0M1l2YXBBbU0xWkxSWEo3MWtEVGlIYUh3ZUx0RGJxQTJDdENhWmEwWmNSUmJ6cXBYa2V5LUtkWENJZkgxNU11N0c1akI2dWNZUHdQazczUnZkT3JtOWxmb3dHTy1lUEVpeUs1Z3cwLWpmQjVxSkYwcVdEWXJFWmE1YzNQQjNWb3gtNGZqaXpJaXBCLQ?oc=5",
+      "publisher": "American Nuclear Society",
+      "pubDate": "Thu, 20 Feb 2025 13:03:27 GMT",
+      "type": "NEWS"
+    }
   }
 ]
