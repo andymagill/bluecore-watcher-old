@@ -2671,5 +2671,93 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-11T04:16:32.770Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "California could see first new nuclear project in decades after landmark port deal - The Cool Down",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOVUJENjctSHVIRFdaTVNDdHlhSk1QN0NQdnpZdHlTQ0lEN2hBM2hPY0JSWXR6bGItZU95UWx0Mm5RM24wT0Z4bjFEdDJEZnlWRUdUMHJwZ3RwaThlR1FyUEtselRjWEJDWTVaM2NyWThpY1BDU2xLN2Uzb0JoYTJLLXpmbWFkQ3dwNlE?oc=5",
+      "publisher": "The Cool Down",
+      "pubDate": "Tue, 25 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-11T04:16:32.770Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy partners with Port of Long Beach on offshore nuclear barges - Crypto Briefing",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE13bDdITTY4cl9DSGt6SURpQ0lmS1pNRzNjU1hVN043UC1vX0tBYUYtUUxDQ1ZqbVFGS1VwcExPMEJaYjZJdmJpdGxmaE9INFNYVnRxeGMzRGpKcnlzWWppdmJpYkRQRHdPNUl1Rml5NjJpZl9hVXpWWGtuV20zdjg?oc=5",
+      "publisher": "Crypto Briefing",
+      "pubDate": "Sat, 29 Aug 2026 07:29:27 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-11T04:16:32.770Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Two U.S. Ports Explore Nuclear Power For Next-Gen Commercial Shipping - Forbes",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNOThKbS1keHlTRXM0dWRXdENMb2VlRkx1Z191bUhYNGdCYlhBa2FYZHNhcktlWUJucXpwc1Fmci1EUE9DakZ3RGE3eE95N0FDTzhrZEJ6YnI0ek1BRU1jWVp6czhkVFpKcTBpOEFuSkdYV1BxM3RaMjdHNXE2cU1iZGdOVHBVbFVfblFoQ3I5UnE5LTVySW9xQ3F4UWF6NGo5eHVETDhCdFJ2d2J4VWdiekx2N3lpVGgyWjYzNERR?oc=5",
+      "publisher": "Forbes",
+      "pubDate": "Sun, 30 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-11T04:16:32.770Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Texas port looks to SMRs - Nuclear Engineering International",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9Tb1NmZXp2aEZRSVkySXpvQmE5RGFXTmJQRFBRWDJjdTlNRXFWVEdVdklwVlRPRXFMZGN5clYxT2cxNXFvRTJKS2o4RWhjY0hkRFg0ZmhYMjQ5TWppN1JlMEF1SjFkTE43ZEE?oc=5",
+      "publisher": "Nuclear Engineering International",
+      "pubDate": "Tue, 25 Aug 2026 12:04:45 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-11T04:16:32.770Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Is Long Beach ready for a floating nuclear power plant? Here's what to know - Yahoo",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQSV9JbHNLdXN1clRONHU5YV9kb0sxSk85cXVsWV9fU0dlNlRCbWxkWjlaSU1tMXZMZjlueXpveE9sWGR1czRsYzFEV0pFQWEwZFJXdXlpRHl0d3l5VHdHNVExaV9oY3BVNzhpTlFDZzl4dlZaNThhcnBobk9PYzVhdzdoVm1fdUNOQ0J1WWRkVlJSaUhtUlhB?oc=5",
+      "publisher": "Yahoo",
+      "pubDate": "Fri, 28 Aug 2026 10:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-11T04:16:32.770Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Cargo containers, some damaged, being offloaded from ship at Port of Long Beach after rough voyage - Long Beach Press-Telegram",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOTkp5VkNTVWRkZW81cG9EV1pETFliNGpCOEs1UVdGb3BMa0x4eW1LUzVpSGgyeGhsZVc5VTBqVzA1cjlkLXQwR2ZfNVZNT0RYb1ltUEZzeVRfcnZhQ25KdHNNWXRSLXE5VVpuby12UE5fNVRYbFcwUGxtSWNzZ0twNlVFcmNEcUVnZ2oySmxBSU5ZSENVUUFOYmh2b0dKRWFxeExOdklUYzNqR1lZUWlhc2hlUGYtWmRmeWRRcHU4ZmpCTlh3NERNNlY0TTVxR1VreWZ5ag?oc=5",
+      "publisher": "Long Beach Press-Telegram",
+      "pubDate": "Thu, 19 Mar 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-11T04:16:32.770Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Marad Inks Pact To Move On Maritime Nuclear Power - Marine News Magazine",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPeng0ekdUSGV4N1h0Ym9kUGswRnNmdDJDd2J0al9TVEJrSFhLNk54M2NUMFVoVmpDR2RpWTFlYVoyY01WNWR6alQwMW9NalpmMWJYYTRQd0puMXI3a1lXc2NjY3psY3dic2JkWmNydkVIR0x1ZWdLeDVoZGJaQjJzNkFn?oc=5",
+      "publisher": "Marine News Magazine",
+      "pubDate": "Mon, 24 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-11T04:16:32.770Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "DOE OKs Startup of Oklo Research Reactor in Texas - Neutron Bytes",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOT2NmV29mY3FCR1ZNbUVTLUV3N3NsemZJYzdabU9GRnhZZ1hCV1pydm1UcTYwdGp2YjZFTEM3VU93aGg3N2VmblBuR2phUmp3cTRjeXZfQ3dyMkdPaFcyQWdNaU5UU2trUzhPXzdBRUZmc1hkbTFZQnBKZnBNSDVLNHRzbGplTS1aRGE4Ml9KUQ?oc=5",
+      "publisher": "Neutron Bytes",
+      "pubDate": "Sun, 26 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
