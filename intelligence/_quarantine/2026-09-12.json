@@ -2738,5 +2738,27 @@
       "type": "DOCKET",
       "docketNumber": "2023-05457"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-12T08:16:00.021Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Watch US Weighs Putting Nuclear Power Plants in Ocean Waters - Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYng2QmdkcjNRMzJ1RnRvWkxIOHhhdHlSVHh2VGtRNWlxNkdmVUt3NnNWa25lZndhXzhramdfMlJLVzJQTjR5aHBTWmlCODlGbWc4X3J0Uko5RVJUejM3NkdZM0kzcG9zY3RIZW9JU29zVjNIYXMtWlFnbUk0VEhQcTNmMG9UMmNCWVd6QW5BdHRpZFFqWTF0djQ2OTBpZEhQdFdzdGpQbmVYYkhlaWc?oc=5",
+      "publisher": "Bloomberg.com",
+      "pubDate": "Fri, 24 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-12T08:16:00.021Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "HD Hyundai gains U.S. approval for floating small modular reactor technology - CHOSUNBIZ - Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOYVB0RngxZjJyNy0zSzBkSk10NGVZN1BFOG1PZENucTZFMGF4aWRjMldLYWlfN19oeXpzcGpwclRxY25sWDhSeUVOX2RObEp4Ul9GdkVpVjduOU56bnEwV0s1N2JjUlE0bGNib0sxMFlzTWxvYXZkQWwyX09iaVlfN1pB0gGWAUFVX3lxTE81Z1pNNlFoQ3RmQVctVmZNSk1EM0NYdERuYld0ME53ZHZZQnoyVU9ZSWI2RXpHTVJNXzhpTHBvRjgzQWlSaTVRVW1KZS1rYVp4RkhGYXpodkxVX2RTWkxGeHhiV1VBbHVvNzdZWkdNNkhBdHNZZWc1Ql9NbmR6NHhmQVdPQUJ2VWRrMkNtbVdzSV94Vlhkdw?oc=5",
+      "publisher": "Chosunbiz",
+      "pubDate": "Thu, 19 Jun 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
