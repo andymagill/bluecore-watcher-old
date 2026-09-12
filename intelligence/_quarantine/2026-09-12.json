@@ -2760,5 +2760,16 @@
       "pubDate": "Thu, 19 Jun 2025 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-12T12:17:24.664Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "‘Pink Corridor’ Project to Study Nuclear-Powered Container Route Across Atlantic - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPdWY1MnFsZ3dKd1BpcC1YYVgzT2FNUkdoZ0Uta2N0RzBuV0VPdnNkdU91RE1VaWdIQnV1b2ZJXzQyMUFVS2daUkIzQ3pxYUdaelJnUzB4SndfRlZqbzRWQlhCNVFESEl2TlY5akFQdXhkRUR1WFJCYnk3Z2lkWWtQc0RYTXdLSGFZX3Z6UW5jWXEzRFBxSWtQNDk1QklHNEk2cHc?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
