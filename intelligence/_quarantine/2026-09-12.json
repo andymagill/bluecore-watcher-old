@@ -2815,5 +2815,17 @@
       "pubDate": "Thu, 04 Dec 2025 08:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-12T20:11:59.268Z",
+    "reason": "Canonical URL did not return a successful response: https://www.federalregister.gov/documents/2023/11/16/2023-25163/emergency-preparedness-for-small-modular-reactors-and-other-new-technologies",
+    "candidate": {
+      "title": "Emergency Preparedness for Small Modular Reactors and Other New Technologies",
+      "url": "https://www.federalregister.gov/documents/2023/11/16/2023-25163/emergency-preparedness-for-small-modular-reactors-and-other-new-technologies",
+      "publisher": "Federal Register (Nuclear Regulatory Commission)",
+      "pubDate": "2023-11-16",
+      "type": "DOCKET",
+      "docketNumber": "2023-25163"
+    }
   }
 ]
