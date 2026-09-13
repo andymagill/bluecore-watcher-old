@@ -2860,5 +2860,28 @@
       "pubDate": "Wed, 18 Jun 2025 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-13T20:12:12.948Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "NHTSA Won't Investigate Tesla Door Latches - Jalopnik",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE8zeFhGSlZXSUYzNS14MnU2QkM0VXJNRTFmVUlqMU5FNDNNU3V3ejJVUmxhNWZIeFlhaUpobVRQN25BMEl0TzBMcE9lTDlNREhtY1ZwblZ3czlFUlFtdkx1a2x3N3JZSFJ4OEZzWEp5bXdtNTU0THNhQ3VVUHNuWVE?oc=5",
+      "publisher": "Jalopnik",
+      "pubDate": "Fri, 24 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-13T20:12:12.948Z",
+    "reason": "Canonical URL did not return a successful response: https://www.federalregister.gov/documents/2023/03/17/2023-05457/nuscale-power-llc",
+    "candidate": {
+      "title": "NuScale Power, LLC",
+      "url": "https://www.federalregister.gov/documents/2023/03/17/2023-05457/nuscale-power-llc",
+      "publisher": "Federal Register (Nuclear Regulatory Commission)",
+      "pubDate": "2023-03-17",
+      "type": "DOCKET",
+      "docketNumber": "2023-05457"
+    }
   }
 ]
