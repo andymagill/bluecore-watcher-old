@@ -2805,5 +2805,60 @@
       "type": "DOCKET",
       "docketNumber": "2024-17598"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-13T16:13:08.053Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy partners with Port of Long Beach on offshore nuclear barges - Crypto Briefing",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE13bDdITTY4cl9DSGt6SURpQ0lmS1pNRzNjU1hVN043UC1vX0tBYUYtUUxDQ1ZqbVFGS1VwcExPMEJaYjZJdmJpdGxmaE9INFNYVnRxeGMzRGpKcnlzWWppdmJpYkRQRHdPNUl1Rml5NjJpZl9hVXpWWGtuV20zdjg?oc=5",
+      "publisher": "Crypto Briefing",
+      "pubDate": "Sat, 29 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-13T16:13:08.053Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS and HD Hyundai Launch Nuclear-Powered Mega Containership Study - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPeDNqeTNHaXdhbnNvU2FkTWF1LXlDdzNibTBIMnBDX0FFRVB6OE1odUh5VzY4V2w0M1A0MlV2UnZSMkRJU3hmS2poWVU0Tllya29ma1hJNXhfUnBYVlV0dHlfM2JnSnM5UDdzRGYxTGJpbEtnZFVVMXVlWmxsYVJscUFyQXpLSDJMb2VVbi1HWU82UQ?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Mon, 09 Mar 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-13T16:13:08.053Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Core Power to study floating nuclear power plants using SMR technology - TradeWinds News",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPYkFTRHU5SmVLbVlSVWlVX2FzVk13WWVCWHlpZDBMX0JRSXFiOUhrMkFZdVMtMTlxOUd3WjZIbWpSRU1qUzlKWFhYenRQREdDYjRhYWhaUVdGdnBqbFIxUkVhSDllLS1PSTZoWi0xc2J4QlZXc3lIOHBPcWRpdDNjQUZYQmdtWGJaRkJldGN2YlJvVU1Fczk1M0ExWWQ0WTRYZnppWnM0R01wRi1BVG9TeFV4M043QlNtcng5Rml2QWItQQ?oc=5",
+      "publisher": "TradeWinds News",
+      "pubDate": "Fri, 19 Jun 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-13T16:13:08.053Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "MIT Maritime Consortium wins ABS approval - American Nuclear Society",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOT2ZFbWQxWnpQa0NfeEFDSmhtMVhOcGZkdjFOclR0SUVFNlpsMGxlaEJPaU93OWs4ZUpJUFR3cUx2WThZS2lyZXBBT05pZU9WZ0tmZUdlVHhIeUhBYzF2NTZHOEhLejhxUFZDMGlkSm82MENHU0JFc3pzenp6RUhjX1VXLWxXbXBSZmJkOU5SY25tYWxlQ0E?oc=5",
+      "publisher": "American Nuclear Society",
+      "pubDate": "Tue, 09 Jun 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-13T16:13:08.053Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS Issues AIP For Floating Nuclear Power Module - Marine News Magazine",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQeUsteUNSdGQ5UUhYODRrbHV5MEpXb0hLVklBWW9kM3AzT0Nia0IxYVZuTnZ3QnFDcVAwVDEwRW85b3dqb3BxZV9rRk1UZkVmYmlINjI3UFdjVmx0cmtyTTBreUpjTGhoUmNzR1lpMEF4eVJqSVNsZmJuMFh5M2xYLTBn?oc=5",
+      "publisher": "Marine News Magazine",
+      "pubDate": "Wed, 18 Jun 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
