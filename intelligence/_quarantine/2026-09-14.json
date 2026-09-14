@@ -2792,5 +2792,49 @@
       "pubDate": "Mon, 16 Feb 2026 08:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-14T08:21:32.118Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Raises $50 Million in Seed Round for Floating Nuclear Reactors - Global Legal Chronicle",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5JWmhGY0I5M1Bvc0lFX3RGTno3RjBBSDB1Wk9ack5NcG15SEZmeHpTRzh2SnhEVGZCVl8xekgwSHlmNU9QLW1rbnBpN3J0bTZfWFJDbW9BLTg?oc=5",
+      "publisher": "Global Legal Chronicle",
+      "pubDate": "Mon, 14 Sep 2026 00:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-14T08:21:32.118Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Pinch of Salt: Nuclear power in Long Beach worth developing – with safety first - Long Beach Press-Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTkVQbERBNTQtR3VTMTE4SUhfSmZvM2RrOVNiYnQ4TzNTbEZOeWxFZm5PSFViSEIydzZFTHdNWkZaNGxVSDdlQkV1VmJ4dmxnSURGbThkenpxQnBFV1dMemRtOUFiMmVZOGQxZDFtVUQ5dXVMYm42VnhfMW1vMExWX2o4Ujk3V0VQR080ZHpuQUFDcVhaNDQyNWhBTEgxaDdXYlJxc0lWNUptZHhldU1uTlNXZzI2SXZrS2c?oc=5",
+      "publisher": "Long Beach Press-Telegram",
+      "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-14T08:21:32.118Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Hacegaba appointment confirmed as incoming Port of Long Beach CEO - Long Beach Press-Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRU9aZ01RcElueDNBTzNIY2FCVHp0R0hOODFHb3Q5MjNUd2kzTWdGZmxaQVR2UGUxODNRVEQ4MjRfclJKYzZPdGpHSHFQM3oxWXh4ZlplNVAtWmxieVpkejJ5UnJsWGEzeUw1Smg1dWxxUGVxVjJQa1ZMeEFUQkpiYWZleFg0ZHRtTzRyai13b1FzemE0MUNBY1Z6MUZxbHhHQ0ZSMnBHOFRFVGc?oc=5",
+      "publisher": "Long Beach Press-Telegram",
+      "pubDate": "Tue, 09 Dec 2025 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-14T08:21:32.118Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS Grants AIP for Nuclear-Powered 15,000 TEU Containership Concept - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZ0hLdFJRTFpRMW1XZUNKSjdNYURyRzY3c0tvb0U3cERaenZXMk1oS3dwMkY2cnoxMy1sWER3Ums5djAxNWRoQWd2aHEyZEJpV1dRN2VuNG0tb1dvRFVQQmU5Z2otaWxkTk1rMDFQa3BFQkpDcnBlcmhMVG01Y3hfYVpodDhDWkJ6aDlnTThUZHhtUQ?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
