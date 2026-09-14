@@ -2836,5 +2836,27 @@
       "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-14T20:13:23.818Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach set to reach new record of container traffic - safety4sea",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORENzT2VSLW5wbmNwUm1SNHR5c1V4dVNUTDZNWC1HVjZSU3ZkUGw1UkZxeXllZGdEeUlLRUpOanFpSUl2SkI3WnNxcTNHekE0c3UxRTFJaWxFZFEzcTNBMzM5LVd3cWloZ1FzTDljUDRqRXlfZEVMMWx3VlJrUWR5cjhMM1FseWIwLW9KeW9BdXY?oc=5",
+      "publisher": "safety4sea",
+      "pubDate": "Wed, 18 Dec 2024 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-14T20:13:23.818Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS Approves Groundbreaking Floating Nuclear Power Module for Maritime Applications - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQSkVjRE8yX2txcHhNc0lHTUh5cS1rVHQ3a2NFYW9pTEVtUDlTR1BzZGF4RDRzbjF0YmQtUGNXZnpDT3V5b2RMZFpUcXhVVnc3eVAwSGlFRWVMOXB3a3Exb2h0dzlSUl9IZkdDaUJ6MGJySzd3djZuRUxNZndSMDhrVkFWb1pxLURDS3N6RTgzeEtEZm14bkQ3YUN5aXRCZXJsZi0zcFNfaEs?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Wed, 18 Jun 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
