@@ -2759,5 +2759,38 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-14T04:17:24.910Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Federal Maritime and Port Leaders Visit Bluecore Energy Clean Power Facility - TipRanks",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNQk4xa01SMTJaMGl1MVNzalAwc3ZvclVyNXpuZ1FvQkxGOWxST0hicHNsS0FVQXg1NEtmdm1WS0IzWXFsRVh6bW5sNmlUWGc3cHRBNUhOYXRlZ01QcklJNVNldVpQOVRZemhZT1NucGhDSVFlTnR4dDM4VEJKVkhvLWpUbktNQlA3N2FlNUwtV3AwNndyZGY1XzdkYVY1RTFuaWhKTXpfNk1xRDI1b3k3NFJodGJuclQ4aGY1RUZjSThoZw?oc=5",
+      "publisher": "TipRanks",
+      "pubDate": "Thu, 10 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-14T04:17:24.910Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Raises $50 Million Seed to Advance Floating Nuclear Power Platform - TipRanks",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNQXVxdk1sU21HcXMtUDNnSlhwWG0xa01sSUhCUkZPTHB5anVOSFlCbzhDSEd4amEtUldIbjBZY2Y1OEJFaGhlRXBRQjd1Z240TEw5QjR1ejlxTnVfcURnSnJqUndDQ0hCQTJmRndDcFBLVm9UZEwwRXh3SlVVVDZvakVsV1p2dTVnbjlGNDgwZkpMc2tDOGhkS1gzVmRXRjcwZGVLVy1GM1Nqa1FnMkx0SmFxUXBNb2IzVnBlc2tHX0k0LVFERUp0LQ?oc=5",
+      "publisher": "TipRanks",
+      "pubDate": "Tue, 08 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-14T04:17:24.910Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Ambitious LA-LB port partnership for work training center loses Long Beach - Daily Breeze",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPeTBmWnI0Nks3TGhiMlR6dVpNaEhMOVNXdDg2R2d5eHBLMC14R3ZxUXBqY0d6WkQ5c3ZHY0EyVy1sdElPN1dMdFNpLUpqSXJfeXdOOVlKbHpYWElzdnpSS0pLNmJyQU1zSkNRR0RMMTlxaFdDNmZCSWoxUUNaUV9PNm1oX1ZrSkV6amtCUllhUmRqbkgtTm91NDExT203MDY3WElJbVVoTXZsbDlfTDl4SkI1VFo?oc=5",
+      "publisher": "Daily Breeze",
+      "pubDate": "Mon, 16 Feb 2026 08:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
