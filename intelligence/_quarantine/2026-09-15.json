@@ -2858,5 +2858,83 @@
       "pubDate": "Tue, 09 Sep 2025 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-15T08:19:17.175Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Secures $50M Seed for Floating Nuclear Power - N24 Haber",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNc0hMVThBZG1MdlM5cG02eTBmZ1o2N0FvWGFxUFZmR3lRZl9mbEdMcjJvTV9ySzdkRVJiamtHRk9ienl3VVoybTNtU3Nzc2tGYk9uLXc4cFRBZXNRT3FCVmdSSkE2UTNvcGhPX0dVUU1XRHZfQThrLUxxdG82S1JhQll3ZHJNOTFzZl83eTBscnV6YllGZzFOLU5QVQ?oc=5",
+      "publisher": "N24 Haber",
+      "pubDate": "Wed, 09 Sep 2026 01:30:24 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-15T08:19:17.175Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach harbor commission OKs 2 port staff heads in infrastructure, environmental planning - Long Beach Press-Telegram",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOek1NVDZjc0FVbGxGWUF2TFJWb3lnYlJqQXMzZE85QndIemZneF9OX3ducXlESmNaQTkxUnQ4Z3JOM1R1dWp5NThaMjdGS3FBWEZlY2JQNFREMVpCMHRVTEJ2QlhKQll6N3NsT2pvVjA0c3lwQ3FpWG9uLVFyRms2OC1lZWVuSFFmXzJlcG96TlhNQ3c5RG10TTdKUnZXN01qOHpXdGlMNU5ndXBZVHNENVN6cmpRV05nbjh6aW9R?oc=5",
+      "publisher": "Long Beach Press-Telegram",
+      "pubDate": "Tue, 09 Jul 2024 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-15T08:19:17.175Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Fast chargers for heavy-duty ZE trucks unveiled at Port of Long Beach - Long Beach Press-Telegram",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOTXlLaC1rM3VaYmR5U3RGbHBrZ2RjRDN4QkoyRGVrSW5ERGpRNlNPamNXdDFvZm5hTDdmNXJaSmRnRFcyZnVtUjJhanpGRExSeGNZRXdaVC1wWi1wWHFHV2pIMkt6V1hmNkhlQTFsWU5xLVFUSm5ZdWgybTFYTE1xTENNZmRVWnh5X0FUQUpKZkNJVWRQQldUQk1GWWdCa1ExcmVkbkhUcnI3STh4OFpPOA?oc=5",
+      "publisher": "Long Beach Press-Telegram",
+      "pubDate": "Thu, 17 Oct 2024 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-15T08:19:17.175Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Dredging project at Port of Long Beach to improve efficiency - safety4sea",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPallmeXppUTRoRWdHMjNTVHVFVXpQdFIwbzEweENHMS1kTHdjWTAyZUx2NU5ZdGxuX0lWSWd5MmF3Y1VkNmttU2p5OUJJc2s0RVBGWTcwbUtSdTRRY3lNNWc2VG9PdWQ5NnVzU3NPSm5vTjlweElDNHl2Q1dPaFNUMVUycnRvWWEwXzA2Uw?oc=5",
+      "publisher": "safety4sea",
+      "pubDate": "Thu, 15 Sep 2022 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-15T08:19:17.175Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "USCMI Innovation Café puts focus on small modular reactors for maritime - marinelog.com",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeWxQY1VOdHZxQXpRSkd3VVdjSG1OcDZtWkNFWnFLcm8zRC1wQUdvQXctQXJlOTZJeENRVlkxWmxMZ2pPMHp0UnYzcW4zcGtKTVRFcUx0MzZGRk0yTm41NzRMZVhLZVFydGY2blFKakZvRkZ1NDJ6bFZ4aDFtVmtwdndKdDJOd3J2TVVvZEQ5YmZSbjVLejRsS0JCNTVJRzdZWlFWLXln?oc=5",
+      "publisher": "marinelog.com",
+      "pubDate": "Thu, 21 May 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-15T08:19:17.175Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Corpus Christi Port Signs On for Nuclear-Powered Shipping Push - Hoodline",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNM3JaWHZwVlVGX1dGb3I2dzkyU3YtZF9qbTlqZFc0cjkwbXlBQXIyb3BiZG15Z3RUdjZHNklOS0c4QUtzazRvZmhjNmtqVlBrdFhhZlZ4M1hpdUV4LXZQWmMzOEFTRlYzbjRDaDhzYS1xMWxIWmVRZXhpYXlnck9zdlBOU0xXR0RjZzZzalNCVTRQd2ZiZEJZ?oc=5",
+      "publisher": "Hoodline",
+      "pubDate": "Wed, 19 Aug 2026 20:51:51 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-15T08:19:17.175Z",
+    "reason": "Canonical URL did not return a successful response: https://www.federalregister.gov/documents/2023/03/17/2023-05457/nuscale-power-llc",
+    "candidate": {
+      "title": "NuScale Power, LLC",
+      "url": "https://www.federalregister.gov/documents/2023/03/17/2023-05457/nuscale-power-llc",
+      "publisher": "Federal Register (Nuclear Regulatory Commission)",
+      "pubDate": "2023-03-17",
+      "type": "DOCKET",
+      "docketNumber": "2023-05457"
+    }
   }
 ]
