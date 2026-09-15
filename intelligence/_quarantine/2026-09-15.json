@@ -2936,5 +2936,16 @@
       "type": "DOCKET",
       "docketNumber": "2023-05457"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-15T12:20:46.194Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Lloyd's Register and Maersk Launch Pink Corridor Study for Nuclear Container Shipping - News and Statistics - IndexBox",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPWkswMkJ1RFFjSmtYWnBvMmxQLUVlMlZQdk5EM3RmaWg2blJwZlREUXFhVWFxOW5ZUmg3MURxRXRvbzJhWjFSMnlLMlVTRE10MjUxNUNPd2VTNHNfZ2JEd3dLX0JCbFB6VDlybGJBZkNOek5qdFl1WnNzSHJ2dE9lLU05WUxtcUhBNlFNT0ZJNTNzd3JPM1RnRU9sNzJ3WWhfbWJEMGhJUGVvQQ?oc=5",
+      "publisher": "IndexBox",
+      "pubDate": "Thu, 03 Sep 2026 18:43:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
