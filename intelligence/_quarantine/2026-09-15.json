@@ -2980,5 +2980,27 @@
       "pubDate": "Wed, 20 Oct 2021 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-15T20:13:10.456Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Raises $50 Million to Build Nuclear Reactors on Barges for Ports - NewsAffinity",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOemFhTW8yTDlpaVhWMk1lZ1FOMGJLM3UtQjQ5aFhhQ0FKZzVkbWhhSG1NeU0xSWtLTEllWjFlYXVFaXhwbW5NNWlvR1BkZkVkdzBCaDVyS3JGdTJxTjRpWTJrNjR3Y08yMDAwYnR6OUMzV180MHkwV2dBZ0dtRVkyYkVCYWJkcEkxNG9fSXN0SHlKaTNRRzdRU1plYUZzQzVPeG9zcGRzR18?oc=5",
+      "publisher": "NewsAffinity",
+      "pubDate": "Wed, 09 Sep 2026 08:43:41 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-15T20:13:10.456Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS Charts Course for Floating Nuclear Data Centers to Power AI Revolution at Sea - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUEs2TnU0dUJLTldGdU0xOWp5czY0Zlh5bFowYUxOTzF0d3RqSmxJdXJoWnNCN0VBRkZ5MUtsaVRWU1p1RzNBbnJoLXZVNUdudXpxN1dkSW16cVdNVzZ2bjNNVGtBX2oyS2FreDEyVzRrVFMzYXF6YXhZNExxQm9XZC1wMkZjMnVCbXh5aVVDUEVOTWNCQWNnUWFxOXp3ZHVFOFF2ZGlB?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Mon, 02 Jun 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
