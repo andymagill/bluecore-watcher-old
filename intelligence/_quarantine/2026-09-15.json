@@ -2947,5 +2947,38 @@
       "pubDate": "Thu, 03 Sep 2026 18:43:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-15T16:14:04.330Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Pier T Terminal at Port of Long Beach Begins Pilot Program for 24-Hour Cargo Pickup - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWUpoNWloaXBGZVh0NFE3bkdPNUhiemJvZmRCeGdxQ1kxbmRMbU94UVdlRTRTanJGa3VwS0VZYXFla0xFVGw4Smczb1M5NHY2S3ZPOUxJVW9uMU0wNDNDRW9FNFJiZzJCWmt2aE12MVp3YjZ2UGxGWFJ2UzJfbkhPVmxxcjdrVnlOd0JoNTN2UkJUTmpOeUU1N1owbF84SDlqM3hGOGZOQ1M?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Tue, 21 Sep 2021 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-15T16:14:04.330Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "SoCal Port Backlog Continues as Imports Surge Through March - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPNTNuc3VFU0lyeWdWbVh0MlVBaUZHM3hjWDQ0eDVQVzZRYUcyOTdCVUwzTXFBRjZkTWdQakVNQXRyaFV6NzhWNUJVQ2VpZ2s3cG9pRlAydHdrUGxBV2gyZk1mSWk4cHBrczZUZHJPbTNUTWh0UUpUNHdhM3lHc2dQcVZjRWtnTmM4?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Mon, 12 Apr 2021 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-15T16:14:04.330Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "100 vessels are currently waiting for berth at LA and Long Beach - safety4sea",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVzNOX242ZWxDZi1XUTVCampUMzQ5aFRkY3lfN28yOVg0WmFscUkteXRXWW9YWWhJTm5rZ3oxUEs1OXhYVmNsVnpJMlZSUS1fa1ZybGFhUV9feGZXZTBTMURPcnR0aDltZ0l4ajZ1bHhpVUx4R0U5TTd1REMxODRPVUkxVFg0TWtHZm5TaGp2ODZrUQ?oc=5",
+      "publisher": "safety4sea",
+      "pubDate": "Wed, 20 Oct 2021 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
