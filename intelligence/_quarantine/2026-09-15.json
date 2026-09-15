@@ -2792,5 +2792,71 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-15T04:15:52.906Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Raises $50M Seed Round To ‘Create And Deliver Zero-Emission Energy’ - finance.yahoo.com",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQYXdZT2pOOFc4SkVQOEZ6LXIzbVBYX2U4NFV4VXFfUlJHbmowXy0yMV9raV9MbU5KWWptWmpKRzZmaE5FT3pPMDJ1d0dOaU01S2IwWUZ5b3ZUZkZRRHBFRmpkRDJEaERiRXh2NkJkZTFMUGVBUHBuZ3Nfb3MtVmVsMTZ3RGo3cjl6U2RPNWl2LUM3QQ?oc=5",
+      "publisher": "finance.yahoo.com",
+      "pubDate": "Wed, 09 Sep 2026 16:14:58 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-15T04:15:52.906Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach, DOT Sign First-of-Its-Kind SMR Agreement - National Association of Manufacturers - NAM",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOTG50bnZYdnhzTEFFQVRwM0lDSnh3amRIdlVzN0l1LUVqUEYzcWRPTHhmZmlGVkVxMUdvc3ZJY0J5QmhCTFEyal93eEtCSE1LTVVXUDZUVGpZalYxYUJJcFYtTnhFQzBjNkkyaklhSjB3aEJ1U3ZVQUExRmxjSWgxVTVR?oc=5",
+      "publisher": "National Association of Manufacturers - NAM",
+      "pubDate": "Fri, 07 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-15T04:15:52.906Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "US Weighs Putting Nuclear Power Plants in Ocean Waters - Energy Connects",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSFVVSlNVZnY4U3N5LVU5VHdNelFKbzg0TjFBWHlkbDQyaldpSU5qQXo4aUJybVM0bHB6dEpyNkdMUEEwWk9nN1RRVjRUeG1zd3l3T1Q2Qy1CMC1YRUM2THdTSk1GVE40elhrcndsWFBxMzE5TDJsbi1xU2dxdUVDcmRvQXIxc3d5MnRERWw2R2dIOFFpLVJKTDdrRFlfZ3JXTGE2VVJzWDVNeDgwbnl0eQ?oc=5",
+      "publisher": "Energy Connects",
+      "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-15T04:15:52.906Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach set to reach new record of container traffic - safety4sea.com",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxORENzT2VSLW5wbmNwUm1SNHR5c1V4dVNUTDZNWC1HVjZSU3ZkUGw1UkZxeXllZGdEeUlLRUpOanFpSUl2SkI3WnNxcTNHekE0c3UxRTFJaWxFZFEzcTNBMzM5LVd3cWloZ1FzTDljUDRqRXlfZEVMMWx3VlJrUWR5cjhMM1FseWIwLW9KeW9BdXY?oc=5",
+      "publisher": "safety4sea.com",
+      "pubDate": "Wed, 18 Dec 2024 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-15T04:15:52.906Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear-Powered LNG Carrier Design Receives Landmark Certification - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbkJTMS01UnREYkhYOUNfdWxacHRZZm5ZRzBQWjNJX1VBeE9NYUdoUXg1SFBCMllUbm9mM0doSjB1LVZYNHVUZnJydERyRG1yYlpTNHBoVWFxQnd5S2JtckljampQcndlbkg2SVd3YjdpaThGZ05ObTZ6SHh1S3Y2cnFTeU11TlNrN09ENGVMdGZxQQ?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Tue, 09 Sep 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-15T04:15:52.906Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear-Powered LNG Carrier Design Receives Landmark Certification - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbkJTMS01UnREYkhYOUNfdWxacHRZZm5ZRzBQWjNJX1VBeE9NYUdoUXg1SFBCMllUbm9mM0doSjB1LVZYNHVUZnJydERyRG1yYlpTNHBoVWFxQnd5S2JtckljampQcndlbkg2SVd3YjdpaThGZ05ObTZ6SHh1S3Y2cnFTeU11TlNrN09ENGVMdGZxQQ?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Tue, 09 Sep 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
