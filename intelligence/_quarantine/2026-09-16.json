@@ -2704,5 +2704,82 @@
       "pubDate": "Thu, 12 Aug 2021 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-16T04:16:14.435Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach port will provide Pier B on-dock rail updates on Sept. 2 - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOLWQtRndmdjBTTjlUU2FlaG93VmpJUjEtbjB5TzNGakgxV2t0SF9QeUlwd3hKaWkzbDhKQ0hjMVZkN0dpeUMtOVp6cmFrdVpmTTZVSXNNOE9BTlRkUzJ2MjdoeGtvNENycW1IaGpCVlFqOWk0MHBNb3JrVE9OZVlQNV9Ma1Qxb1FQS0VCdWk4b3dHbV9MR3hORHplb05vLW1xT3lzRVZDY3FDeDRu?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Mon, 24 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-16T04:16:14.435Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "U.S. weighs putting nuclear power plants in ocean waters - The Japan Times",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNV0xtTVREbnF0UGw3SUJ2Vlhpdk5xM1R3N1p0cTg4bDM0a1k2NGxLSGlFMVRZT1RmR3lpUXpuQUZ1N1ZFdWFzcFhjbndwYnpmekJpN2d1VDZULU0yZ3JYaFFhQ0NZWXNGaWh3MDhRRnhHSnF1S2VySjBUVGZCdW9xQ3FJMEdtalBQ?oc=5",
+      "publisher": "The Japan Times",
+      "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-16T04:16:14.435Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Trump Administration Launches Nuclear-Powered Shipping Push to Revive U.S. Maritime Industry - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNTXo4dHM2UVZUenJuTXVlNllnQVVFYTU1Z2IyWmFxTE5qWDdxMGJtU0ZnTElseGZWaTVlcXRDaUhVcDZ1cFRmOEdVV3RRRkc1Z3ZsUlRLMElpSEd2SFg1b0FtVTZYMEZQYW9rZy1mQ2k0R1NaNXNOTy1pZG5nNzQ0R0k5RlYxU0JQSnBRR3JuOVlON0JHMjIza0xvWXNiYmY2ZnlSU0RQLXdUTklxVC1Wekhpdw?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Thu, 07 May 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-16T04:16:14.435Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear-Powered LNG Carrier Design Receives Landmark Certification - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbkJTMS01UnREYkhYOUNfdWxacHRZZm5ZRzBQWjNJX1VBeE9NYUdoUXg1SFBCMllUbm9mM0doSjB1LVZYNHVUZnJydERyRG1yYlpTNHBoVWFxQnd5S2JtckljampQcndlbkg2SVd3YjdpaThGZ05ObTZ6SHh1S3Y2cnFTeU11TlNrN09ENGVMdGZxQQ?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Tue, 09 Sep 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-16T04:16:14.435Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach harbor commission OKs 2 port staff heads in infrastructure, environmental planning - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOek1NVDZjc0FVbGxGWUF2TFJWb3lnYlJqQXMzZE85QndIemZneF9OX3ducXlESmNaQTkxUnQ4Z3JOM1R1dWp5NThaMjdGS3FBWEZlY2JQNFREMVpCMHRVTEJ2QlhKQll6N3NsT2pvVjA0c3lwQ3FpWG9uLVFyRms2OC1lZWVuSFFmXzJlcG96TlhNQ3c5RG10TTdKUnZXN01qOHpXdGlMNU5ndXBZVHNENVN6cmpRV05nbjh6aW9R?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Tue, 09 Jul 2024 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-16T04:16:14.435Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "IAEA schedules August launch of ATLAS maritime nuclear initiative -- ANS / Nuclear Newswire - ans.org",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOemU3bnNUMTd0UkE3WVVaSGxvRlpWNVltYURHYldERUpPYkRZbncwUWUwOG8yY1RSajBDblcxT3ZfMEhtcDl0dURTQ1RFTmNhUGN4MXNKenoyMXBoOXV2bWliRU5UaFp4by1FLVhYZUtOak9QWVZ1TEJOY1ZwVW0zRXNyRXZ0YnFycTNXZUtodGJ6Rk5FU1lneTliMWVBa1NieTZRQTJTdw?oc=5",
+      "publisher": "ans.org",
+      "pubDate": "Wed, 03 Jun 2026 12:16:41 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-16T04:16:14.435Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear-Powered LNG Carrier Design Receives Landmark Certification - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbkJTMS01UnREYkhYOUNfdWxacHRZZm5ZRzBQWjNJX1VBeE9NYUdoUXg1SFBCMllUbm9mM0doSjB1LVZYNHVUZnJydERyRG1yYlpTNHBoVWFxQnd5S2JtckljampQcndlbkg2SVd3YjdpaThGZ05ObTZ6SHh1S3Y2cnFTeU11TlNrN09ENGVMdGZxQQ?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Tue, 09 Sep 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
