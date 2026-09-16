@@ -2891,5 +2891,71 @@
       "pubDate": "Thu, 16 Apr 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-16T20:14:08.404Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Trucker Appreciation Day held at the Port of Long Beach - Long Beach Press-Telegram",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPNWRYTjFITVJGRWoyTjkxN3B2TU9xUDg3Rkk0ajRxazBVU0tpUlJkNVlTUVlqUG13blJDWjNxWlFjU1NGVDVCRHFZVDNDZzRwZkdPNnpTbHQ4ZmdIakotdmF3RUtVMng2QkkySUduNVFOV0tZLXlQbnZ5OVlGZC1WTXd0bENpMUtIOVNqcWRZSVNlYkRIdUstQVllTExRdw?oc=5",
+      "publisher": "Long Beach Press-Telegram",
+      "pubDate": "Wed, 16 Sep 2026 19:57:22 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-16T20:14:08.404Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach scores top cargo numbers in March - Long Beach Press-Telegram",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQOEVodzFlc0hBSURzTVNDYnl4ZTVObHRPWnFNSUR1ODVJdjhpQmIyRlBFMzRDQTQ2Ny11TkNlRjAxS2RWeVBuYm9sMTBrcmI2U0ItYUxxenZYdTYybktnMzAtcmxWalhJWEJFQ1Zxb2lDWDVZOWd4Q3QyNXlSS05pSDJSUTFBZ2w2bTdNdXRiNWpJZHRzNzlqWnJn?oc=5",
+      "publisher": "Long Beach Press-Telegram",
+      "pubDate": "Wed, 15 Apr 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-16T20:14:08.404Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach signs agreement for Green Truck Corridor - Long Beach Press-Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPVDU0OXZIaWdmZXcxcER4Njl2WXpzR3NOSlJTem5Rbi1tY0FPQ25HTEFWRmtPcElFejdTd1piY1RqdzJYVjlfTy0weXpLY3A1NUhTMkZIMHhCb3haZDdMS1djc0ZnMXc2d2h0RGN0OGlUbjV1RnpkdV84bVVtRFoxSGFMQUN3VVVITTNyMUY5WWpLVUx6MEMyZE9fa0twVEdWVEdN?oc=5",
+      "publisher": "Long Beach Press-Telegram",
+      "pubDate": "Mon, 11 May 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-16T20:14:08.404Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Ambitious LA-LB port partnership for work training center loses Long Beach - Daily Breeze",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPeTBmWnI0Nks3TGhiMlR6dVpNaEhMOVNXdDg2R2d5eHBLMC14R3ZxUXBqY0d6WkQ5c3ZHY0EyVy1sdElPN1dMdFNpLUpqSXJfeXdOOVlKbHpYWElzdnpSS0pLNmJyQU1zSkNRR0RMMTlxaFdDNmZCSWoxUUNaUV9PNm1oX1ZrSkV6amtCUllhUmRqbkgtTm91NDExT203MDY3WElJbVVoTXZsbDlfTDl4SkI1VFo?oc=5",
+      "publisher": "Daily Breeze",
+      "pubDate": "Mon, 16 Feb 2026 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-16T20:14:08.404Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "OC Coastkeeper sues U.S. Coast Guard for information about 2025 Port of Long Beach container spill - Long Beach Press-Telegram",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNEtCb25EWkFwYXRSMDJ4UkpHaEI1NFBmdE1mSWtYT3Q4eDFDbXlzQVlRY3NqcTY3SFN1OTBUdU9rUlhlTEpLeng0ZFdDWkQtd2tWNE9FOE5kNHROeEZwckZfY2ExcVp2UmZ2OXNuZXlHdE4tTlA1OUxzZkgtMHlzWklSTjk2d2ZJRF9UNk1TYjdkSXhHbTAyeUVwd051VGZSNW5jNGd6S09xMzlELV9EYThYU29NWW5MMU05ZG82c2pabTRDYWg1RlM1RThpWjdrOUdRd2hB?oc=5",
+      "publisher": "Long Beach Press-Telegram",
+      "pubDate": "Wed, 11 Feb 2026 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-16T20:14:08.404Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "DOE OKs Startup of Oklo Research Reactor in Texas - Neutron Bytes",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOT2NmV29mY3FCR1ZNbUVTLUV3N3NsemZJYzdabU9GRnhZZ1hCV1pydm1UcTYwdGp2YjZFTEM3VU93aGg3N2VmblBuR2phUmp3cTRjeXZfQ3dyMkdPaFcyQWdNaU5UU2trUzhPXzdBRUZmc1hkbTFZQnBKZnBNSDVLNHRzbGplTS1aRGE4Ml9KUQ?oc=5",
+      "publisher": "Neutron Bytes",
+      "pubDate": "Sun, 26 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
