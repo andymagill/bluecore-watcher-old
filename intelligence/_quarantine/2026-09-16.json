@@ -2803,5 +2803,49 @@
       "pubDate": "Tue, 12 May 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-16T12:20:58.148Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Is Long Beach ready for a floating nuclear power plant? Here’s what to know - Los Angeles Times",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNNk50NWpQVTlObWlDZHdNaENDVHgzc2R2UnVnekJTdEk0eWlGWGhsTVUtdnBrVHZZU3Q4Z2VTRGF2elVacWdlQkdHcHVsNE5PV3dURGRZVXZESHlWRlc2M3RIaDJ0ajNZajcwVEVZcF81bXpPcFdRNVk3ZmQ0N0JMbVhNYUhfN19CUXpFQXFIMkh1ZjlfMkxGUHd5QWM1OUQ2bFlmaDJiMllYU0YyaFhVRGtmYVh4ejJXN19ZdC1n?oc=5",
+      "publisher": "Los Angeles Times",
+      "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-16T12:20:58.148Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Is Long Beach ready for a floating nuclear power plant? Here’s what to know - Los Angeles Times",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNNk50NWpQVTlObWlDZHdNaENDVHgzc2R2UnVnekJTdEk0eWlGWGhsTVUtdnBrVHZZU3Q4Z2VTRGF2elVacWdlQkdHcHVsNE5PV3dURGRZVXZESHlWRlc2M3RIaDJ0ajNZajcwVEVZcF81bXpPcFdRNVk3ZmQ0N0JMbVhNYUhfN19CUXpFQXFIMkh1ZjlfMkxGUHd5QWM1OUQ2bFlmaDJiMllYU0YyaFhVRGtmYVh4ejJXN19ZdC1n?oc=5",
+      "publisher": "Los Angeles Times",
+      "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-16T12:20:58.148Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach records another stellar cargo month in June - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcXgzSUNtdzN6SlFJMHdSM2RLcjBBMUN0TExWN0dNLV9FUGYwaE1fSGxNV0did0d4cksxRXJ0ZDlScHpTellHX0lkdjlTV0tNaGIzMGRXaHZvdHNhdzNDS3h0aXVvUVJXRDhldkpEU0hTY1JfVzJCZFlQS0lQamRrYkNJbmd0Rk5zTlp2NWNqMDBxZl9QR3l0NzBZZkk5Wm9SeVdSOUZfYw?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Tue, 14 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-16T12:20:58.148Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach to update public on $1.8 billion Pier B rail project - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaTZtT0h6MjFoVHdhS25qVEtrMkhZN2ZYVFZPVWhWNmdYdHVqWDFndkNFeDVRV0ZwLUR2Mm5FMFZaTlR1RldKaGlHYmVoeC02WWVpOWxwQkdjeDFWVlVwOTBZbG03S1J6ZEdwMTU4NUdPWEc0Nk1tX243VzlCb0h2dDlLdzFvbTExT1A3eEtxV0RBd19nS21nQVpSZkoxS1lGbmJkaXhGbXlCYXBrdjluNTln?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Wed, 18 Feb 2026 08:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
