@@ -2847,5 +2847,49 @@
       "pubDate": "Wed, 18 Feb 2026 08:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-16T16:14:49.032Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Second US port to explore nuclear maritime technologies - World Nuclear News",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcjBWNC1zaGp4RkZsOVZtZ1FYZ2h2Um9PTW96ZHY4NFBxYTJhbmtkOHVOSk9lb0F6RzBUQ2lNZGEzY1l6Q2E4dHN3UEdwZEMzMFJvS3ltZ2tqeDdUWk5wOGE0am40czV3c3JWcVNtUTBvQXRibHh0M2JZM05TSzhnVmUxMWFWN2dobGJPYU9VZHlqQU5qcTFxV01DODd0LWJ6?oc=5",
+      "publisher": "World Nuclear News",
+      "pubDate": "Thu, 20 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-16T16:14:49.032Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach unveils expanded security with cyber command center - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPU3dvMzBhUmpWNzhoNVlNU1FjTmNVanFadHh1VGxBcnNwMGlwa2FabFNYNC1UNEhkOTRNX3VwSjNnUEFQOURaSi1oT0JhRlZkZnFYaVJVeDViX25GM0FWdkRTX1pMM1E2S0VyOXJDRGhudVNVYjhvMEdLLTJ6UWZuWGpOSGhRQUVoTkpTcEJDNnR4U1pVZWdlbDdiYmQ1dDFuWmlsRHJFbnZhZzF4eGRlZlN3?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Fri, 15 May 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-16T16:14:49.032Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach Port CEO outlines green initiatives amid strong cargo numbers - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPb2laeDN1R3Q2OU9yOFFRS1ZYVUZIa0hXMXFHT3RIOERXN3hpREhPRy10cU8xcXJwQXBsdEF3bW1WQU5hODdGUkV2dWV3c2o0NUtsanR3dVlTRFV6U3dkV3JlWHdvUVJrVHB2Z1RuaUZHbEJ5bUtOdzlPLVowVkpJX0huNmZmcEdtTG01a1NaY204b3VPdmk0QVI2S3BBNFAwYVEzMldZYUJsTUV3eGZvV2wtTkQ?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Tue, 23 Jun 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-16T16:14:49.032Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach summer off-ramp closures will be topic of public meeting - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPd1dzd0Y2U0dvRFlPUzUyRm5MRVI3Y2daYTdXajJLb2E2MDd3MjlvMlQ4U1lmb0dSYmdKMzZXMXczdWFyWm81TDd4ZEh2dFBzRjFtcXd0RG1NcG1NUG5XUUlsYktmaG1WbmQ0RGtjT1NnSkN3N1I0Z2U5ZWZnR2x0X0pza2tibFBOeTZ2eDBPZ0lqdFU5aXNzaWsxZy1McVFTM25DVjlFcGU?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Thu, 16 Apr 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
