@@ -2781,5 +2781,27 @@
       "pubDate": "Tue, 09 Sep 2025 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-16T08:19:15.048Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore raises funds for floating SMRs - Nuclear Engineering International",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1IUXhiamE3OHBkWDNFQ0U5YUtYbXFReEdKR0k4SVg5anJaZnFwLWZfZW0tRXZkTVppRm1aRnFtZ0FxRllsRE9FcGo4ZEJiQmVLZmtlbkVaQzR2QUlZUk41QngzdUVxNFpHVVdxZ1dJOXNzSHFVTjBXdDcxRkZBZw?oc=5",
+      "publisher": "Nuclear Engineering International",
+      "pubDate": "Fri, 11 Sep 2026 18:20:57 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-16T08:19:15.048Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "America’s Nuclear Shipping Revival Is About More Than Reactors - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPcVc2V0NNaEJ0UDl1eng0RnZjSUhfTWplWUU2eUVaWi1aYTJiaDBvaVF4UkpIUENkNUdsbm1lRmNlS2J0bDlvcEdKSjUzV3VWSkxrTHlZb0FnSXR3WEtZQzBCM01oaEtNT1E2THhtR0xqVXpxSGxaTEpma1pHQkRrQVJjLVR2dkJ5ejFr?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Tue, 12 May 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
