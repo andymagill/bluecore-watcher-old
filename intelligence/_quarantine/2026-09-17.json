@@ -2737,5 +2737,49 @@
       "pubDate": "Fri, 26 Jun 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-17T16:15:40.184Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "California could see first new nuclear project in decades after landmark port deal - The Cool Down",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOVUJENjctSHVIRFdaTVNDdHlhSk1QN0NQdnpZdHlTQ0lEN2hBM2hPY0JSWXR6bGItZU95UWx0Mm5RM24wT0Z4bjFEdDJEZnlWRUdUMHJwZ3RwaThlR1FyUEtselRjWEJDWTVaM2NyWThpY1BDU2xLN2Uzb0JoYTJLLXpmbWFkQ3dwNlE?oc=5",
+      "publisher": "The Cool Down",
+      "pubDate": "Tue, 25 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-17T16:15:40.184Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "A tiny startup wants to bring nuclear power back to California - Yahoo",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORUlfMlBwWnlXN2hrQzNSTjcwMVNMTVFQQ016VVcwQUlOb2poOWFFVXVsT2h5ZlVqX3djcVZzRWFfRkR0SVdBS0JoWldiekVsMjE3QTBBelBIamhrVlVQNmxQbkpiWkNzbC14RHVyXzY3SVZLd2JXMlZzSnVnUThKNFlHQU9odXE1bkdnUmlORENoRTQyaGxr?oc=5",
+      "publisher": "Yahoo",
+      "pubDate": "Sat, 22 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-17T16:15:40.184Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "DOE OKs Startup of Oklo Research Reactor in Texas - Neutron Bytes",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOT2NmV29mY3FCR1ZNbUVTLUV3N3NsemZJYzdabU9GRnhZZ1hCV1pydm1UcTYwdGp2YjZFTEM3VU93aGg3N2VmblBuR2phUmp3cTRjeXZfQ3dyMkdPaFcyQWdNaU5UU2trUzhPXzdBRUZmc1hkbTFZQnBKZnBNSDVLNHRzbGplTS1aRGE4Ml9KUQ?oc=5",
+      "publisher": "Neutron Bytes",
+      "pubDate": "Sun, 26 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-17T16:15:40.184Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "NuScale and Prodigy conceptual design for marine-based SMR plant - World Nuclear News",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRVE0RGhUbm9OaHRwTHVXcEM4OTlzb3JBVk40SHFkZVZPMUdDYm1NS25fSEdmS3NHVzMtUkxBTnd5VU5oRDYyQW1CSlFwTnBFc3B5TzJzNHZ2ZVF5ZFFmblFSNGVZVkJPWmEzS3JVQUdTZ1gyQ2ZybUU2a2cxS09lSzhIaWxSdVpnclVkUmFST3RlMU9lNmtFUWlB?oc=5",
+      "publisher": "World Nuclear News",
+      "pubDate": "Thu, 27 Oct 2022 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
