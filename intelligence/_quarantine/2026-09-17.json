@@ -2638,5 +2638,38 @@
       "pubDate": "Thu, 12 Aug 2021 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-17T04:16:11.316Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Shoemaker Bridge ramp demolition to prompt weekend 710 Freeway closures - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNLXpwMWpWNXRHeDVIWGdmcWQ4RXhPYlFGaWUwVEZNdGFXbHR2QzlXeUR4Qm9YS0xoSVYzdkt1cFVTSlAzVjY5QTlKcDdyZHc5X21uNVBuVzNob3BNNnBseEpyLVdkQU9RbkRzR1ZuY1lnUm51RTljTWd1eU1qMWVUNDZ1UU1ua2I2ei0xVnpCYkFDOGNUclpoVVJWYXlQcnd6R24yQVVJYy0zemVJdldoZGV1MA?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Wed, 09 Sep 2026 23:40:19 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-17T04:16:11.316Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "OC Coastkeeper sues U.S. Coast Guard for information about 2025 Port of Long Beach container spill - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNEtCb25EWkFwYXRSMDJ4UkpHaEI1NFBmdE1mSWtYT3Q4eDFDbXlzQVlRY3NqcTY3SFN1OTBUdU9rUlhlTEpLeng0ZFdDWkQtd2tWNE9FOE5kNHROeEZwckZfY2ExcVp2UmZ2OXNuZXlHdE4tTlA1OUxzZkgtMHlzWklSTjk2d2ZJRF9UNk1TYjdkSXhHbTAyeUVwd051VGZSNW5jNGd6S09xMzlELV9EYThYU29NWW5MMU05ZG82c2pabTRDYWg1RlM1RThpWjdrOUdRd2hB?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Wed, 11 Feb 2026 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-17T04:16:11.316Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach summer off-ramp closures will be topic of public meeting - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPd1dzd0Y2U0dvRFlPUzUyRm5MRVI3Y2daYTdXajJLb2E2MDd3MjlvMlQ4U1lmb0dSYmdKMzZXMXczdWFyWm81TDd4ZEh2dFBzRjFtcXd0RG1NcG1NUG5XUUlsYktmaG1WbmQ0RGtjT1NnSkN3N1I0Z2U5ZWZnR2x0X0pza2tibFBOeTZ2eDBPZ0lqdFU5aXNzaWsxZy1McVFTM25DVjlFcGU?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Thu, 16 Apr 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
