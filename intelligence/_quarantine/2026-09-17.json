@@ -2704,5 +2704,38 @@
       "pubDate": "Tue, 09 Sep 2025 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-17T12:20:28.400Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Raises $50M As Long Beach Nuclear Plan Advances - Patch",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQnBnMVZWSHA1QnJYTHFqVWxKWHZsWFpTY0prbTBnMFctdjF4V2VoUW5FQUdDU2JPalA3RjlFb0tScUxNRGI1Q3REMDkxSmhIcUN6eDRuYVNPVFd3dEwxcUh2cW1LZ3pMcXRSNGI4QlBsblEtdlY1M1MycUZ2OExBTXYxWVJaYkZkWTdwV1UxMkozbWNFOFBtOEJn0gGvAUFVX3lxTFBlSlV4cnZaaGMxZ1J5MnBjamJlQ3FzT3F2ZTYwdGtsYmpDTi1SMi0weWRjLUhOTkhxNFBXYzRkaHhIbkIycFZ5UUdENHh4YkNQYy1mRXdySXp5a2FKaGVMMXIyUXZ0ZW44bjl6aUUtNF91ZmtHTndvQ3l2aHh1TG1seWNtdTZoV1pZY0hxYkhiSjZuRUx1TUtFLVk2OUoxTkVkTkdLelB1alo2LV9Pd3c?oc=5",
+      "publisher": "Patch",
+      "pubDate": "Wed, 09 Sep 2026 01:04:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-17T12:20:28.400Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Raises $50M As Long Beach Nuclear Plan Advances - Patch",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNQnBnMVZWSHA1QnJYTHFqVWxKWHZsWFpTY0prbTBnMFctdjF4V2VoUW5FQUdDU2JPalA3RjlFb0tScUxNRGI1Q3REMDkxSmhIcUN6eDRuYVNPVFd3dEwxcUh2cW1LZ3pMcXRSNGI4QlBsblEtdlY1M1MycUZ2OExBTXYxWVJaYkZkWTdwV1UxMkozbWNFOFBtOEJn0gGvAUFVX3lxTFBlSlV4cnZaaGMxZ1J5MnBjamJlQ3FzT3F2ZTYwdGtsYmpDTi1SMi0weWRjLUhOTkhxNFBXYzRkaHhIbkIycFZ5UUdENHh4YkNQYy1mRXdySXp5a2FKaGVMMXIyUXZ0ZW44bjl6aUUtNF91ZmtHTndvQ3l2aHh1TG1seWNtdTZoV1pZY0hxYkhiSjZuRUx1TUtFLVk2OUoxTkVkTkdLelB1alo2LV9Pd3c?oc=5",
+      "publisher": "Patch",
+      "pubDate": "Wed, 09 Sep 2026 01:04:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-17T12:20:28.400Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "New Green Truck Corridor will link Port of Long Beach with Mexico - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNTXZTU1B0Y1laTmlEVFJkWkJsbXFVQUZhUzFOeDF3QkN5TmRwd1pPT3VpSURubzB6VzVhaVRYc0g4TURfQUFQOGxSNnQyenREM2Vqc0VDUUo1R0JZTUx1WjFsbGVZdGo1T1V3dlBKZTlXZ05HbllvbU5yakZGUXVjOGkzVWtvVUpXMFFwSkxoaDExejVPNW50UV9uUERtX0VBVGtSdF9lMVhRS3M?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Fri, 26 Jun 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
