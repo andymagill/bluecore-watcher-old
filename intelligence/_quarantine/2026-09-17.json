@@ -2671,5 +2671,38 @@
       "pubDate": "Thu, 16 Apr 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-17T08:20:04.781Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "DOE Closes $1.9 Billion Loan to Restart Duane Arnold Nuclear Plant in Iowa - Neutron Bytes",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNblZaUmZqcXlTYUs1TzFCZWJSeGR4Mmt0ZDBzUHNWeEVldWstSXhOczdkanNTN0UzMGlFLWpVWGtNLV9oTHllVE5xejNOamxzNlp4TUdqUS1CMW5kcnZ5NDc1T3VpWDNZUGRkQnl5SUIwYmxlaGlMU2w0eHp4X3MwYlczdEJ1cFg1VjVOOEpsVUlvTW1vUmRmQm9PQUpDZE1MazVIWVZGaWo2SUhWNEZz?oc=5",
+      "publisher": "Neutron Bytes",
+      "pubDate": "Tue, 08 Sep 2026 17:14:24 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-17T08:20:04.781Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach scores top cargo numbers in March - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQOEVodzFlc0hBSURzTVNDYnl4ZTVObHRPWnFNSUR1ODVJdjhpQmIyRlBFMzRDQTQ2Ny11TkNlRjAxS2RWeVBuYm9sMTBrcmI2U0ItYUxxenZYdTYybktnMzAtcmxWalhJWEJFQ1Zxb2lDWDVZOWd4Q3QyNXlSS05pSDJSUTFBZ2w2bTdNdXRiNWpJZHRzNzlqWnJn?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Wed, 15 Apr 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-17T08:20:04.781Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear-Powered LNG Carrier Design Receives Landmark Certification - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbkJTMS01UnREYkhYOUNfdWxacHRZZm5ZRzBQWjNJX1VBeE9NYUdoUXg1SFBCMllUbm9mM0doSjB1LVZYNHVUZnJydERyRG1yYlpTNHBoVWFxQnd5S2JtckljampQcndlbkg2SVd3YjdpaThGZ05ObTZ6SHh1S3Y2cnFTeU11TlNrN09ENGVMdGZxQQ?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Tue, 09 Sep 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
