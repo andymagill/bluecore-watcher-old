@@ -2693,5 +2693,94 @@
       "pubDate": "Thu, 12 Aug 2021 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-18T04:15:20.730Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Maritime Administrator tours Bluecore Energy’s Port of Long Beach facility - Marine Log",
+      "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxQOUhOTzZPVThWSU9vaUtfLU9IQUFxS0FQU1VSbENYRGtlMU54N2RIeEZ3bS1uZUY5enRlT2wtd1NQZVJlcW5PSk5UUmJ1SVhZM3FUV0xGYm02SG9uUWN3NXNpMTdfYUs0QURCQnJBQTBETzQ5ZzAySTREWnhKWk9fNEwyY0MzcExUZUd5ZkZGcmxsa2Jwa1p6ZzM1NW5ibEswMkY0ejZaYUlEYmVBWUhHcFRSLUxrM1kzcUtWTDM0RFFGQWN5OGxUZVV1WDhJMk54Q01nSHAxa3hsR1ZNMUxGNWxkLW5tSE5MN09mNDhVemZKT1JpZlBaU1c1ZXFXZGd4SjliRGtMRGtkazNkdFVwWjBEVUZUSFpubFZQWW5KR19wLTVkN1hlQjRNWTB6Q1dxc25EcTk3dkdqWFI1blF2TVZKOVY?oc=5",
+      "publisher": "Marine Log",
+      "pubDate": "Thu, 17 Sep 2026 17:28:13 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-18T04:15:20.730Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy raises $50M to build its first floating nuclear system - SiliconANGLE",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQb1lXN3JCc0N0am5MZ002ZGh3Rm1qMW9KRnB0RzBubG1zUGl5RmJfQnFSaXVhVkZGTG1WTGE2Ym9CM2VZRkVKaXQ2Z3VJSktQMUhSdDhvTVZ0ZWhTaGlaOU02X2dORTJDR1Uwbm9GNEVCd3JyLVhPdmVranJ4R1F1SHRXOWx0WjNHWUxKTmhQQU5OblBZX3FiWXRGSzhNUlJMS2lWZFoxVWFGZw?oc=5",
+      "publisher": "SiliconANGLE",
+      "pubDate": "Mon, 07 Sep 2026 22:49:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-18T04:15:20.730Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach scores top cargo numbers in March - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQOEVodzFlc0hBSURzTVNDYnl4ZTVObHRPWnFNSUR1ODVJdjhpQmIyRlBFMzRDQTQ2Ny11TkNlRjAxS2RWeVBuYm9sMTBrcmI2U0ItYUxxenZYdTYybktnMzAtcmxWalhJWEJFQ1Zxb2lDWDVZOWd4Q3QyNXlSS05pSDJSUTFBZ2w2bTdNdXRiNWpJZHRzNzlqWnJn?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Wed, 15 Apr 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-18T04:15:20.730Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach moves a $1.05 billion budget for 2026-27 forward - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbDJXRHNKYWlVUlJvMWdlTnYyX05Gd1B1cENodEc4Mk9GcjN5Q0laMHNORDRuMUZEYzAyUHhjeFlPZjJ1U3N0LThCT1hMU1RxV3ZBekRxM3JMMFQ0RU8xOXp3bkpOclhqM016aG1ObmJfTnJZcXhIZWtBaDhXc29hYTlqOUY3NllPd2M5Qm0wYng3WUpaQ2pBOGVQd05xa0dONXdfM1J5S0d1ZHM?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Wed, 24 Jun 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-18T04:15:20.730Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Community event sponsorships available from Port of Long Beach - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSUpPVTVZSWh3TjZzV2VSdjdLY0JiVU83MEpXSENweDI2Ym43WlRCek1PQmFvSFZXN3FZQzNzcFlRTXlvQ0dOOFZCNGJnVzQ4VGtZRFlJaXFKWE5KcWFrZnpWOGtDUHJzNEVyQXQzLXZQdzVBd3A4QUpmUHBYNGZ4d0sxRVM4OE9PMGlNNG1FWDR0a0I1blpXejV6Vk1jLVpxZEhzMDJPdw?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Wed, 29 Apr 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-18T04:15:20.730Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "YMCA of Greater Long Beach hosts 58th annual Good Friday Breakfast - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSy1ZeXV3aFZsaDA4VmZCdi1Kc2plcGxoQ3pTSWo0QVVFd0hnU29XVGVSSEVMYzRmLWg4M3UwdTN6Zm1WWFhUd1dCWlR1a1hxcTVtMlU5SEJaU0FKWjlWU3E4MVNLMUt5Nkx0TmE0SmhkbVZ1bDFOU01KdXkxTlBLSjE4czFmRnRJbi1iZGRpVVhGdlg1bHdqVHR3S0xhSlpGS2VmUXIyeDVEMWZJ?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Fri, 03 Apr 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-18T04:15:20.730Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "DOE OKs Startup of Oklo Research Reactor in Texas - Neutron Bytes",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOT2NmV29mY3FCR1ZNbUVTLUV3N3NsemZJYzdabU9GRnhZZ1hCV1pydm1UcTYwdGp2YjZFTEM3VU93aGg3N2VmblBuR2phUmp3cTRjeXZfQ3dyMkdPaFcyQWdNaU5UU2trUzhPXzdBRUZmc1hkbTFZQnBKZnBNSDVLNHRzbGplTS1aRGE4Ml9KUQ?oc=5",
+      "publisher": "Neutron Bytes",
+      "pubDate": "Sun, 26 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-18T04:15:20.730Z",
+    "reason": "Canonical URL did not return a successful response: https://www.federalregister.gov/documents/2024/08/09/2024-17598/alternative-physical-security-requirements-for-advanced-reactors",
+    "candidate": {
+      "title": "Alternative Physical Security Requirements for Advanced Reactors",
+      "url": "https://www.federalregister.gov/documents/2024/08/09/2024-17598/alternative-physical-security-requirements-for-advanced-reactors",
+      "publisher": "Federal Register (Nuclear Regulatory Commission)",
+      "pubDate": "2024-08-09",
+      "type": "DOCKET",
+      "docketNumber": "2024-17598"
+    }
   }
 ]
