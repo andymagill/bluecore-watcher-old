@@ -2782,5 +2782,60 @@
       "type": "DOCKET",
       "docketNumber": "2024-17598"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-18T08:18:14.165Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy developing nuclear power barge at Port of Long Beach - WorkBoat",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNbW9EcVRZZmtCVmV6V05DZkNLT0NDcG9VdjFrSVIxZkN3ZHlPdDZRajhlbE5mMDBjODBhNDI3bVpJLTZWd1NSWXhpNndxX3FJT0ltTjZ5OGVvZmhoaGVqOEZQQzdEcGY0YjR5elA5Y2NBWEVPUG9VV3hJaVRKT3N3bDZFYTl6cTdLeEZQQlRPVGw1WUY5SEdjVA?oc=5",
+      "publisher": "WorkBoat",
+      "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-18T08:18:14.165Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy developing nuclear power barge at Port of Long Beach - WorkBoat",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNbW9EcVRZZmtCVmV6V05DZkNLT0NDcG9VdjFrSVIxZkN3ZHlPdDZRajhlbE5mMDBjODBhNDI3bVpJLTZWd1NSWXhpNndxX3FJT0ltTjZ5OGVvZmhoaGVqOEZQQzdEcGY0YjR5elA5Y2NBWEVPUG9VV3hJaVRKT3N3bDZFYTl6cTdLeEZQQlRPVGw1WUY5SEdjVA?oc=5",
+      "publisher": "WorkBoat",
+      "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-18T08:18:14.165Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach mayor makes line-item vetoes to FY27 budget, recommends funds go to public safety - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOb0czY2NsbWVzbld0VkF0aDFKOGYyd2tHRTN1eV81aU02M1RXNG0xWFdrOUF0THJSelhpOFFGY2I4WnNRVnVOeHhsNHZwcDFKRjNaSDMtWnpHWWFkYTlJT1hTRzluaHJEcWZzdWlrMXNlMDlhTDRmeTBPODJTLUlvQWl4VjhHUEM2S2VURnZzbW5XTGVubXZMOU9pNXBRdjU0T0U5LWpjb3pwdDFxZExFSk13bW5QeVJJYklzd0Nydl9IbXVqZ0VnTU9PMk5oZw?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Fri, 11 Sep 2026 22:23:54 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-18T08:18:14.165Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach lined up as US testbed for nuclear-powered shipping - splash247.com",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdmhwOGhlOGZ5TVF2VlVxMlBnbDd6TGY4YWhUSUFIMDFnejVBc2pGWEw3VEtub2twUTVGTzhjNjNKcGZrYnFkUS1lU09obGp0aXUwcWlsZXZoUjdUSTN2RXo4Y3JsNEZjSHlWZmoxQ08wZ3J2MVdpLUdZVjdxWV94cE0xSDhaaldZVE5jZnJR?oc=5",
+      "publisher": "splash247.com",
+      "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-18T08:18:14.165Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "NuScale and Prodigy conceptual design for marine-based SMR plant - World Nuclear News",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRVE0RGhUbm9OaHRwTHVXcEM4OTlzb3JBVk40SHFkZVZPMUdDYm1NS25fSEdmS3NHVzMtUkxBTnd5VU5oRDYyQW1CSlFwTnBFc3B5TzJzNHZ2ZVF5ZFFmblFSNGVZVkJPWmEzS3JVQUdTZ1gyQ2ZybUU2a2cxS09lSzhIaWxSdVpnclVkUmFST3RlMU9lNmtFUWlB?oc=5",
+      "publisher": "World Nuclear News",
+      "pubDate": "Thu, 27 Oct 2022 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
