@@ -3067,5 +3067,38 @@
       "pubDate": "Tue, 16 Dec 2025 08:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-19T12:18:09.542Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Kofi Asante's Bluecore Energy secures a $50 million seed - Condia",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1taUZsNHRHbkFjeE9Bc3RUanNiR2NEalV2aU1YaXBtMFlNdW52TzJHZjBXYWRlaXdtX3pQaU9lMkRRaEV2X0dJNUI0cjNhdld3SzhVVUdtVGdFWG03UUlHYQ?oc=5",
+      "publisher": "Condia",
+      "pubDate": "Wed, 09 Sep 2026 10:37:23 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-19T12:18:09.542Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach sees another record broken with August cargo stats - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQOEhabUlIWkhsbnBQM2liN0gwZ3VIRzVoRmdkNGFRQ2lnVzZTOEFOTzlsWWJVaVlnOHBndzAycEdHRF9XeUlKRk5kNnJ1YnRGZkRZMjRlVUYxcHhVNGhWVFg1bVJISmphUWZPVm5wemJLbUtGcDFmamRQMHY3TVM1SUxjWi15WU8tSWpVR1E5U0VBYkItdmQ4N1pzWnZNdUtBM3laRXVDLU5VVTNxdFRETQ?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Fri, 11 Sep 2026 18:43:56 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-19T12:18:09.542Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach’s Rocket Lab buying Iridium for $8B in challenge to SpaceX - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPX3R6N1ZIaHhYRFRvQWdDNWpKc0Y4ZlZJN3BfY191TmJLU3I3WVdidXE3YkNkczdLSlBiUDZnVm5SOGotQkVhX2Rybm1NVmtSN2xQU2R4aTljSER3NEJPS1h0TU9YNThGUmJNRkc1SlNtakZWZk9oMVJ2VDE1bUNTREhidWpHZzlILWNvSUlOS0dQXzVXUnNUbUNvOTJIUQ?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Mon, 29 Jun 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
