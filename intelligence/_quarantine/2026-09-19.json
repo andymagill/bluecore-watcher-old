@@ -2814,5 +2814,27 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-19T04:14:55.013Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Secures USD 50 Million for Floating Nuclear Reactors - streamlinefeed.co.ke",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNOV90SkZqbFBjeXppNjg0SjJJU1hSekFtOG91MFk5YnVQQTF1MzJONDNoQmFDTXRTSE9pbjFnNWdZMkZxTVFPbTFFbVVmMVQ3ZDVBeHVTX3pFM3VoTXR1MXZLbVpLX1JobnF6Z2NucWN6REJPLURVY2ZyU1RHMlV6Rl9NX1VxQ2RQRDdHMEdUX2ZVS1JjQk5JLTVlQ1UycmxNenZicw?oc=5",
+      "publisher": "streamlinefeed.co.ke",
+      "pubDate": "Tue, 08 Sep 2026 11:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-19T04:14:55.013Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach student arts program aims to see through a unique lens - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPaTNvUklfamNScXpnS2I0Y0hYTjBTaFZjSmwzWmRuQnVQUk5YLVM2ekVidldpQXFrNDNoaThrQTBna3VIZmdVTVdRQjVLY3RVUDE2Rk8zcy1peEFPWFltV3lkVTFtM2I5MWtHUVhsTERHcjFCb21GaXBlRDluVDI3VTc4TGs5MGM1SndPMGdkazREYWNQakdrX3dmeDV3RjI5b1NHZ3NwWmk3bS1JWk9mdzItendLdw?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Fri, 10 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
