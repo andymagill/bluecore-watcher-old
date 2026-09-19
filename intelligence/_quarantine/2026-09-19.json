@@ -3100,5 +3100,49 @@
       "pubDate": "Mon, 29 Jun 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-19T16:12:59.765Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Raises $50 Million for Maritime Nuclear System - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMlJnSUxuMmM3ZTdPMDRMLWF0VzNXc0Z5bzVyUWJrZ0tLcmF1aThOY0NSd3Vrc0s2VmtNanpHNmFVU0tSOHZSTnNzRDJPVHJEaUUwUi1MRHZMdzdEeFQwdUNoOXhpbUNiYTV1WHJZUGQzRVpYdU1hRlA1Q2tPaWR1N0R1d0Y4OGZxQ0dn?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-19T16:12:59.765Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Watch Port of Long Beach turns to floating nuclear reactors to cut emissions - The Bottom Line - FOX One",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNS0NHUEc0N2c4RzhPeFQ5STRMdWFXQ01ORkRvSDQwdHI2Zm50RWVPTUZjcWZtWXlERDU1UlVDQXBWc3Q5THlNbkRPWmxSajFzbEp4ZDU1OHk4N2FiRE83ZmVaNzJheGFTZ3N1WDhTZUJtWXZRY0gwXzVUOFRYRzJsT2cyY0l4QWVjVC1WVkMwRS1mWmd5R3N5ZHJtS1hMdHA2aXZlbW45TExTUU1zUUlpbFh1N2phU0Y5RlU3RGk5OA?oc=5",
+      "publisher": "FOX One",
+      "pubDate": "Fri, 04 Sep 2026 23:17:57 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-19T16:12:59.765Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS Approves Floating Offshore Nuclear Power Barge from HD KSOE & KEPCO E&C - maritime-executive.com",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZDU2bjRQZ2dseDdqaTdnaHR2T3hqY3lPNjZaNnBNNm1iVzJvVEc1MGlXRWNGUE00X3NMRXF5Mll5cHJVMlpKcmlPRm9nNGVOUmdTZHA5bFZya1htX24zYVVad3FhdENaVkRJM0NKMTJ2REZSSk14MHlyS19WUGdRV2xleVBjNGQ2aVB4S21aekVDZEwwYkFXNkhiMWF5RjdaOC1qNURUd1ZfcU9UejFlR092WXU?oc=5",
+      "publisher": "maritime-executive.com",
+      "pubDate": "Sat, 07 Oct 2023 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-19T16:12:59.765Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "HD KSOE, Kepco win ABS’ AiP for floating nuclear power barge - Offshore-Energy.biz",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMjhEVXV5NHVObDVFNnBCUS0yU2RnOWdRWUh2a0p6ZDJJcEhIc1ZBZThlbThPUWFqWU9faEtUM0Z4N1ROU2t3NjRXc25sOVBUcGNDcDlLNWljcTVYS3RVTHhJXzFyTXh1Q0VYZjR5OXYyR2xveF85cFY2akhNYmJBQmxZWDRrMDZaRUNNMjBfbTAyY2hFakE?oc=5",
+      "publisher": "Offshore-Energy.biz",
+      "pubDate": "Wed, 04 Oct 2023 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
