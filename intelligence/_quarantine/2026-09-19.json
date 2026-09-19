@@ -3144,5 +3144,51 @@
       "pubDate": "Wed, 04 Oct 2023 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-19T20:12:12.603Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Maritime Administrator tours Bluecore Energy’s Port of Long Beach facility - Marine Log",
+      "url": "https://news.google.com/rss/articles/CBMixAJBVV95cUxQOUhOTzZPVThWSU9vaUtfLU9IQUFxS0FQU1VSbENYRGtlMU54N2RIeEZ3bS1uZUY5enRlT2wtd1NQZVJlcW5PSk5UUmJ1SVhZM3FUV0xGYm02SG9uUWN3NXNpMTdfYUs0QURCQnJBQTBETzQ5ZzAySTREWnhKWk9fNEwyY0MzcExUZUd5ZkZGcmxsa2Jwa1p6ZzM1NW5ibEswMkY0ejZaYUlEYmVBWUhHcFRSLUxrM1kzcUtWTDM0RFFGQWN5OGxUZVV1WDhJMk54Q01nSHAxa3hsR1ZNMUxGNWxkLW5tSE5MN09mNDhVemZKT1JpZlBaU1c1ZXFXZGd4SjliRGtMRGtkazNkdFVwWjBEVUZUSFpubFZQWW5KR19wLTVkN1hlQjRNWTB6Q1dxc25EcTk3dkdqWFI1blF2TVZKOVY?oc=5",
+      "publisher": "Marine Log",
+      "pubDate": "Thu, 17 Sep 2026 17:28:13 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-19T20:12:12.603Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "America’s Nuclear Shipping Revival Is About More Than Reactors - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPcVc2V0NNaEJ0UDl1eng0RnZjSUhfTWplWUU2eUVaWi1aYTJiaDBvaVF4UkpIUENkNUdsbm1lRmNlS2J0bDlvcEdKSjUzV3VWSkxrTHlZb0FnSXR3WEtZQzBCM01oaEtNT1E2THhtR0xqVXpxSGxaTEpma1pHQkRrQVJjLVR2dkJ5ejFr?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Tue, 12 May 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-19T20:12:12.603Z",
+    "reason": "Canonical URL did not return a successful response: https://www.federalregister.gov/documents/2026/07/07/2026-13662/tennessee-valley-authority-clinch-river-nuclear-site-unit-1-notice-of-hearing",
+    "candidate": {
+      "title": "Tennessee Valley Authority; Clinch River Nuclear Site, Unit 1; Notice of Hearing",
+      "url": "https://www.federalregister.gov/documents/2026/07/07/2026-13662/tennessee-valley-authority-clinch-river-nuclear-site-unit-1-notice-of-hearing",
+      "publisher": "Federal Register (Nuclear Regulatory Commission)",
+      "pubDate": "2026-07-07",
+      "type": "DOCKET",
+      "docketNumber": "2026-13662"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-19T20:12:12.603Z",
+    "reason": "Canonical URL did not return a successful response: https://www.federalregister.gov/documents/2023/11/16/2023-25163/emergency-preparedness-for-small-modular-reactors-and-other-new-technologies",
+    "candidate": {
+      "title": "Emergency Preparedness for Small Modular Reactors and Other New Technologies",
+      "url": "https://www.federalregister.gov/documents/2023/11/16/2023-25163/emergency-preparedness-for-small-modular-reactors-and-other-new-technologies",
+      "publisher": "Federal Register (Nuclear Regulatory Commission)",
+      "pubDate": "2023-11-16",
+      "type": "DOCKET",
+      "docketNumber": "2023-25163"
+    }
   }
 ]
