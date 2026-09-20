@@ -2748,5 +2748,61 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-20T04:15:24.549Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "US$50M in venture capital boosts development of seaborne nuclear energy - megaproject.com",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMlJ4aERaaEtuYjRGTlN4NHRPdXU1eVhzQ3N4QnNFd2hmanFGdHF0WC0wQ0N5UnFha3U2b0JyX2hxejZtQ2hfRk94MWZKX2YyR3lBUGhNc1pRMXo5NTU4NkZvN2FweGZBVUJJUXB4U0N0bHc1eHJacElzeW1uR1pFX2NtSUNISENDTUNlVVQ1N3paMjVSQUZBdFpMM1k0VjB0TzdjbzlPRmVKLUtyX0FZbw?oc=5",
+      "publisher": "megaproject.com",
+      "pubDate": "Sun, 20 Sep 2026 00:56:15 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T04:15:24.549Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "US$50M in venture capital boosts development of seaborne nuclear energy - megaproject.com",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQMlJ4aERaaEtuYjRGTlN4NHRPdXU1eVhzQ3N4QnNFd2hmanFGdHF0WC0wQ0N5UnFha3U2b0JyX2hxejZtQ2hfRk94MWZKX2YyR3lBUGhNc1pRMXo5NTU4NkZvN2FweGZBVUJJUXB4U0N0bHc1eHJacElzeW1uR1pFX2NtSUNISENDTUNlVVQ1N3paMjVSQUZBdFpMM1k0VjB0TzdjbzlPRmVKLUtyX0FZbw?oc=5",
+      "publisher": "megaproject.com",
+      "pubDate": "Sun, 20 Sep 2026 00:56:15 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T04:15:24.549Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach, MARAD sign first-of-its-kind partnership agreement on Nuclear Energy in Maritime - Cyprus Shipping News",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOOTFJclVfNVFLaXp0aHVYNEtiQUpxOExHNXdUSG9teTZjYlJGX2ZVUkMxaHhsVzR4Vy1nMTZjVG1rNkV2OFlrNXhGSUVRM3YxMzM0R0FZVHNoR3NUOU1ac0hxbTd0bS1XNTBNRnR4bVNPcGxZbTVNTGRCZlF6UGtfZ0ZjWXhQZm5rT2g4eVlCYVlmQmR1NE9lNW5TbWhXM2JRWWN1X25BeU5XT2V1ZXRDNlp6V2hlUjhwelVQUzNYdUMtRmJ3cjg0Q2FSY19oSV9PSDFPdUZQY093UQ?oc=5",
+      "publisher": "Cyprus Shipping News",
+      "pubDate": "Fri, 24 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T04:15:24.549Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS Approves Floating Offshore Nuclear Power Barge from HD KSOE & KEPCO E&C - The Maritime Executive",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOZDU2bjRQZ2dseDdqaTdnaHR2T3hqY3lPNjZaNnBNNm1iVzJvVEc1MGlXRWNGUE00X3NMRXF5Mll5cHJVMlpKcmlPRm9nNGVOUmdTZHA5bFZya1htX24zYVVad3FhdENaVkRJM0NKMTJ2REZSSk14MHlyS19WUGdRV2xleVBjNGQ2aVB4S21aekVDZEwwYkFXNkhiMWF5RjdaOC1qNURUd1ZfcU9UejFlR092WXU?oc=5",
+      "publisher": "The Maritime Executive",
+      "pubDate": "Sat, 07 Oct 2023 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T04:15:24.549Z",
+    "reason": "Canonical URL did not return a successful response: https://www.federalregister.gov/documents/2023/11/16/2023-25163/emergency-preparedness-for-small-modular-reactors-and-other-new-technologies",
+    "candidate": {
+      "title": "Emergency Preparedness for Small Modular Reactors and Other New Technologies",
+      "url": "https://www.federalregister.gov/documents/2023/11/16/2023-25163/emergency-preparedness-for-small-modular-reactors-and-other-new-technologies",
+      "publisher": "Federal Register (Nuclear Regulatory Commission)",
+      "pubDate": "2023-11-16",
+      "type": "DOCKET",
+      "docketNumber": "2023-25163"
+    }
   }
 ]
