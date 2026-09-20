@@ -2804,5 +2804,49 @@
       "type": "DOCKET",
       "docketNumber": "2023-25163"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-20T08:17:02.349Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear barge startup Bluecore Energy came out of stealth with $10M - Axios",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSkhMY2FnQUlSWDNtYk1yYW1lblRDeWYwelFnR25idTJzOEZZXzFHN2VkQ3MwWk0zUUMwVmdRX3pBTVd0Mi01RW9HVERKbnFiLWlYcURnMXRkZzFuQlFXT05UU1pYN21nUUxZckdZb201NzU5YlR4eHFrVUo2NnUyakp0V2JfYlJ6TDNPdFVUOE9zQ0s2X1R3?oc=5",
+      "publisher": "Axios",
+      "pubDate": "Tue, 21 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T08:17:02.349Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Corpus Christi Joins U.S. Push for Nuclear-Powered Shipping - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOSzRYdVg5SVNUVUQyWkJCTV8wcGtwQjZwN2tMN1BvMk5mQXRGSFdXWmJfc3ROSGtldkxGU3VOSmJHdVV6M2tVdzhwb19uNEhBem1fNmFWNEFwV0xQN0NGNFRjVjVHajA4LWo2eXhkd1lEUmZzZU1GYk5FTVZUSGczMUYtSkQxZzIxVHVra1BSUHQ0QQ?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T08:17:02.349Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear barge startup Bluecore Energy came out of stealth with $10M - Axios",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSkhMY2FnQUlSWDNtYk1yYW1lblRDeWYwelFnR25idTJzOEZZXzFHN2VkQ3MwWk0zUUMwVmdRX3pBTVd0Mi01RW9HVERKbnFiLWlYcURnMXRkZzFuQlFXT05UU1pYN21nUUxZckdZb201NzU5YlR4eHFrVUo2NnUyakp0V2JfYlJ6TDNPdFVUOE9zQ0s2X1R3?oc=5",
+      "publisher": "Axios",
+      "pubDate": "Tue, 21 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T08:17:02.349Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Corpus Christi Joins U.S. Push for Nuclear-Powered Shipping - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOSzRYdVg5SVNUVUQyWkJCTV8wcGtwQjZwN2tMN1BvMk5mQXRGSFdXWmJfc3ROSGtldkxGU3VOSmJHdVV6M2tVdzhwb19uNEhBem1fNmFWNEFwV0xQN0NGNFRjVjVHajA4LWo2eXhkd1lEUmZzZU1GYk5FTVZUSGczMUYtSkQxZzIxVHVra1BSUHQ0QQ?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
