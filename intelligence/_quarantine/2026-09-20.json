@@ -2848,5 +2848,181 @@
       "pubDate": "Wed, 19 Aug 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-20T12:18:03.179Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy raises $10M pre-seed to put nuclear reactors on barges - Dealroom",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxORTR1cjdZOVZjRUJCWTRxZWxUOHVKN2EweEpiWUU3MDRxd2ZzR2N2MnY4S1gxdTNkdW50Z1QwcmhrZWlXMmFrdE1DbTEwcDNCU1dxeXl1YW1NMTdCSmZvVDZhclFUOEdQbm4xeWJTWTRuX3JKTC05OUphYnMtakVaLXlrWFpOeklITndyeDkzSlVmRHViVFVpX0x6b2Rhekhra2c5aEhR?oc=5",
+      "publisher": "Dealroom",
+      "pubDate": "Wed, 12 Aug 2026 18:06:53 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T12:18:03.179Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Advances Floating Nuclear Power - The Waterways Journal",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNN29ZNi1rc0NHZVlvMm16alU1N0JCVUcwbUpPQ3l3dnE5SHZ6WGpxSDZXOWtidm1vMEJaQUIxUWthYk5hUFBhVU9RY0ota0xjeXdWTXF0a0V4N0xITnlKYnJ6V1hmSWZlbjJ3UXhHVTRWMUxyZ29RbzFaeElpaVpvQmllR21QNlZPNUJDSk5n?oc=5",
+      "publisher": "The Waterways Journal",
+      "pubDate": "Fri, 24 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T12:18:03.179Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Pinch of Salt: Nuclear power in Long Beach worth developing – with safety first - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTkVQbERBNTQtR3VTMTE4SUhfSmZvM2RrOVNiYnQ4TzNTbEZOeWxFZm5PSFViSEIydzZFTHdNWkZaNGxVSDdlQkV1VmJ4dmxnSURGbThkenpxQnBFV1dMemRtOUFiMmVZOGQxZDFtVUQ5dXVMYm42VnhfMW1vMExWX2o4Ujk3V0VQR080ZHpuQUFDcVhaNDQyNWhBTEgxaDdXYlJxc0lWNUptZHhldU1uTlNXZzI2SXZrS2c?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T12:18:03.179Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach lined up as US testbed for nuclear-powered shipping - splash247.com",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdmhwOGhlOGZ5TVF2VlVxMlBnbDd6TGY4YWhUSUFIMDFnejVBc2pGWEw3VEtub2twUTVGTzhjNjNKcGZrYnFkUS1lU09obGp0aXUwcWlsZXZoUjdUSTN2RXo4Y3JsNEZjSHlWZmoxQ08wZ3J2MVdpLUdZVjdxWV94cE0xSDhaaldZVE5jZnJR?oc=5",
+      "publisher": "splash247.com",
+      "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T12:18:03.179Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach moves a $1.05 billion budget for 2026-27 forward - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPbDJXRHNKYWlVUlJvMWdlTnYyX05Gd1B1cENodEc4Mk9GcjN5Q0laMHNORDRuMUZEYzAyUHhjeFlPZjJ1U3N0LThCT1hMU1RxV3ZBekRxM3JMMFQ0RU8xOXp3bkpOclhqM016aG1ObmJfTnJZcXhIZWtBaDhXc29hYTlqOUY3NllPd2M5Qm0wYng3WUpaQ2pBOGVQd05xa0dONXdfM1J5S0d1ZHM?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Wed, 24 Jun 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T12:18:03.179Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach scores top cargo numbers in March - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQOEVodzFlc0hBSURzTVNDYnl4ZTVObHRPWnFNSUR1ODVJdjhpQmIyRlBFMzRDQTQ2Ny11TkNlRjAxS2RWeVBuYm9sMTBrcmI2U0ItYUxxenZYdTYybktnMzAtcmxWalhJWEJFQ1Zxb2lDWDVZOWd4Q3QyNXlSS05pSDJSUTFBZ2w2bTdNdXRiNWpJZHRzNzlqWnJn?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Wed, 15 Apr 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T12:18:03.179Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Watch Port of Long Beach turns to floating nuclear reactors to cut emissions - The Bottom Line - FOX One",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNS0NHUEc0N2c4RzhPeFQ5STRMdWFXQ01ORkRvSDQwdHI2Zm50RWVPTUZjcWZtWXlERDU1UlVDQXBWc3Q5THlNbkRPWmxSajFzbEp4ZDU1OHk4N2FiRE83ZmVaNzJheGFTZ3N1WDhTZUJtWXZRY0gwXzVUOFRYRzJsT2cyY0l4QWVjVC1WVkMwRS1mWmd5R3N5ZHJtS1hMdHA2aXZlbW45TExTUU1zUUlpbFh1N2phU0Y5RlU3RGk5OA?oc=5",
+      "publisher": "FOX One",
+      "pubDate": "Fri, 04 Sep 2026 23:17:57 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T12:18:03.179Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Trump administration explores nuclear power in federal waters By Investing.com - Investing.com Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNOUFvT1lhTGZIci02ampDSFNWWXNSUkxoZVFIZnI2WEdDTWFDODBXMi1QaGRDOTc0dWVTWTZnSjVLVWlnVGpCVlhvVFVjdzR3bnVtVzFzbF9xTFpqNWxzSkNoYW9NWGpaeWhfcHBWZExoZHc4X2JiRTM4U1AwclJvVDFPSkZjNUh6TmhMN1hYb05pbkRrM2ltS1dPRGpYdmdQVGtaQUlfSmRWVnZIVzJFQWV6MjFzamU0dHlpNnBBcw?oc=5",
+      "publisher": "Investing.com Nigeria",
+      "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T12:18:03.179Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Noel Hacegaba named to succeed retiring Port of Long Beach CEO Cordero - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOc0FVU01vUlZwUzFfU2R4d0NkdDRCMHk5M3YzTHI5UTFUa0IxcUl1cmxqT0Nvb05NOTEtOFo5YlVaMndNdnVtVzAyZU00ODBEVXc0OE5DZkRHaC1Pb3RWeEtxRGZlR0RGeXJBLTAzTVhzUUcyYzBxeU12LU9RWmtzY0RzYjJYNVQzUEpaMUF0OFVMRnFNRDJDNmNHZmdna2diSFdQZGdIbnNLU2R0NVA3Vzl3?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Thu, 04 Dec 2025 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T12:18:03.179Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "MARAD and Core Power cooperate to accelerate maritime nuclear pathways - Marine Log",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUFJ2Yy1yNHhxNVgwMWlQZEZvMkV3SW9UTDI5QlZnTDJOaThvaXg0N2VzSk5PNVlzcEZjajZiWXlwQlZOOXp0LUttTUhFUFUtcVJQQTR1aUJDRkNMZHNnemFKNUJJWWdXd2NLdy1BOVZOWkN4UXFQRnZDMGlWTjJ3TFh5WTYtSm44Si1JMXVJY0c1MDQ1dm5jWTlKem1Hb1QtclA5MQ?oc=5",
+      "publisher": "Marine Log",
+      "pubDate": "Tue, 25 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T12:18:03.179Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach lined up as US testbed for nuclear-powered shipping - splash247.com",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdmhwOGhlOGZ5TVF2VlVxMlBnbDd6TGY4YWhUSUFIMDFnejVBc2pGWEw3VEtub2twUTVGTzhjNjNKcGZrYnFkUS1lU09obGp0aXUwcWlsZXZoUjdUSTN2RXo4Y3JsNEZjSHlWZmoxQ08wZ3J2MVdpLUdZVjdxWV94cE0xSDhaaldZVE5jZnJR?oc=5",
+      "publisher": "splash247.com",
+      "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T12:18:03.179Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "USCMI Innovation Café puts focus on small modular reactors for maritime - Marine Log",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOeWxQY1VOdHZxQXpRSkd3VVdjSG1OcDZtWkNFWnFLcm8zRC1wQUdvQXctQXJlOTZJeENRVlkxWmxMZ2pPMHp0UnYzcW4zcGtKTVRFcUx0MzZGRk0yTm41NzRMZVhLZVFydGY2blFKakZvRkZ1NDJ6bFZ4aDFtVmtwdndKdDJOd3J2TVVvZEQ5YmZSbjVLejRsS0JCNTVJRzdZWlFWLXln?oc=5",
+      "publisher": "Marine Log",
+      "pubDate": "Thu, 21 May 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T12:18:03.179Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Dutch Offshore Giant Allseas Bets on Small Nuclear Reactors - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaHNZeXZGd1ZGQXYwTGItZGpyTzZjdnQzcUt6WjE3enFYckQ5SXh6SGI4enZGdlRQVktWNG5HVEk0a1RmRnpPZ255YUtRM3lZUjR5QUxJTTJCUDRxMHJnMXlVTUFubE9BMzVnRGxkd2FXcndlWXNsQXJVd25peVc0UjBBcGlzdHhX?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Tue, 18 Nov 2025 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T12:18:03.179Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Samsung Heavy Industries Collaborates with U.S. Nuclear Design Firm to Jointly Develop Floating SMR Platform - asiae.co.kr",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFB4Nmg5NlJ5QTU2V2UwMlN2V2VMSGZqaHpPenotaXdDZDE0bklxekdQZEpaVVVTemlrTWlNSjVNWmhMS0VjemJiRXROZVhqSW9TSDZCX0k5YnlzQ1V1SFVwN1c2Qk0?oc=5",
+      "publisher": "asiae.co.kr",
+      "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T12:18:03.179Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Commercial Nuclear Corridors Key to Unlocking Maritime Nuclear Propulsion, ABS Chief Says - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNzhqNVZ3d0RIdUhKMnppZWNBX0REWmN2S2RRT3pVU2xSbGdERVFoNWprRnFlZ2pYbndJQ0xkell0cW9LbkJZWjlKLUZMdUd5STRlTHpLcjNQNmQ5aFlOSzdvR1FSNU5XcFRWNTRzXzBxOERSTlJvTjVNY3Ryb081ZUFyYWFBbTFaT1RWR29PVnlsMm5Qa2dSeWpRTkRWUE9mWTQyUmZBNzh4b3Ntd1hZ?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Fri, 26 Sep 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T12:18:03.179Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "HD Hyundai gains U.S. approval for floating small modular reactor technology - CHOSUNBIZ - Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOYVB0RngxZjJyNy0zSzBkSk10NGVZN1BFOG1PZENucTZFMGF4aWRjMldLYWlfN19oeXpzcGpwclRxY25sWDhSeUVOX2RObEp4Ul9GdkVpVjduOU56bnEwV0s1N2JjUlE0bGNib0sxMFlzTWxvYXZkQWwyX09iaVlfN1pB0gGWAUFVX3lxTE81Z1pNNlFoQ3RmQVctVmZNSk1EM0NYdERuYld0ME53ZHZZQnoyVU9ZSWI2RXpHTVJNXzhpTHBvRjgzQWlSaTVRVW1KZS1rYVp4RkhGYXpodkxVX2RTWkxGeHhiV1VBbHVvNzdZWkdNNkhBdHNZZWc1Ql9NbmR6NHhmQVdPQUJ2VWRrMkNtbVdzSV94Vlhkdw?oc=5",
+      "publisher": "Chosunbiz",
+      "pubDate": "Thu, 19 Jun 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
