@@ -3024,5 +3024,60 @@
       "pubDate": "Thu, 19 Jun 2025 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-20T16:13:02.406Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Maritime Nuclear Startup Bluecore Energy Raises Further $50 Million For Nuclear Plants On Barges - NucNet",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVG5qU1JUa2pXa2lOOFZKZ2dQNElIOThPSDhhemRSeEV1M0lNalYxdmtyYTZGS2xodjdwVDhuaWpLZ25HYnd5TGI4VXVBZ2pUY0dhblctZzRKMWZaMDN4QmplbEtIY2RmVmcwODNxUzRfbk9YV2pJSGt5YjRwWXFISXZTTXZKaFo0NFppZ29sa3IzdnNiWVl1N0pzbDRpVm1ueTg5TUd6aHdmbFowNlJqcDdmNjI2bzR3aU1PUGFyaWc0dEVpQi1QNk1DcjVuSjM5?oc=5",
+      "publisher": "NucNet",
+      "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T16:13:02.406Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Corpus Christi seaport latest to partner with MARAD on maritime reactors - ans.org",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPb3pkazFNdEFoZVNJYTZDX3FPODFRWGx4a2l6SE1RbkdBTEJCQ3BtWDR3RF9RdXgzeDEzdmh3TVQzSkNhMndpMmxZU1BzdTAtODZuZkRYQVpWMDdYOW9hWVlraGFuV3dFZ2d5Vkd6NVMxNXpEZkRhRWhYbGtCUWpNMUJBOUgwZ3h3NS1SRkFpeWpjU2xxQzVWVmp0NUFTVmpxZW9GT2hRVlJiVEhSWGllYQ?oc=5",
+      "publisher": "ans.org",
+      "pubDate": "Mon, 24 Aug 2026 15:28:23 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T16:13:02.406Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Maritime Nuclear Startup Bluecore Energy Raises Further $50 Million For Nuclear Plants On Barges - NucNet",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPVG5qU1JUa2pXa2lOOFZKZ2dQNElIOThPSDhhemRSeEV1M0lNalYxdmtyYTZGS2xodjdwVDhuaWpLZ25HYnd5TGI4VXVBZ2pUY0dhblctZzRKMWZaMDN4QmplbEtIY2RmVmcwODNxUzRfbk9YV2pJSGt5YjRwWXFISXZTTXZKaFo0NFppZ29sa3IzdnNiWVl1N0pzbDRpVm1ueTg5TUd6aHdmbFowNlJqcDdmNjI2bzR3aU1PUGFyaWc0dEVpQi1QNk1DcjVuSjM5?oc=5",
+      "publisher": "NucNet",
+      "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T16:13:02.406Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach port’s new CEO lays out his vision at State of the Port speech - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQU0xsbVNyeDhoaFRXMkhpOWhuTmg4SllrWjRfMWEwclhOOEo1LWpoclNCdjhwTkRyMF9rMW9fSHJsY1lIbFVlemVIZS1US3dkcjB6b1VJS1Y3dU9DZFh2bjZIMWMwNmY2aW9TbE9VWWkyTG4zOENKZ0NITktqeFhQc2wtYVNRM21QYjV5b3Nmb3hiWTV0MzNpR0hHR1JONTMyYWNpVHZlQWRpRWdTeVJIU0RnX1I?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Thu, 15 Jan 2026 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-20T16:13:02.406Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach awards record nonprofit sponsorships - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZmtyN0FZcEQtUnJZa0E4X1pzS1Y2ZHhiMjgzZ1FpUlJjVU9aVW53SWk4d0FDUXpUd2ZwOHpTcHZudGU2SC0xWUJ1X2cwUmNxVXM1bVA3OHlFSDRDSG5UMHo0b3lwWklua0c4VE02enlKZG43UWNJRmhJWWhNdXdQaFZrX0UtUVprT2dySkVwR3dVaHlkbk9mWUY3aTBhUQ?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Tue, 31 Mar 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
