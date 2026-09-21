@@ -2803,5 +2803,38 @@
       "pubDate": "Tue, 31 Mar 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-21T16:15:00.658Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Community event sponsorships available from Port of Long Beach - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSUpPVTVZSWh3TjZzV2VSdjdLY0JiVU83MEpXSENweDI2Ym43WlRCek1PQmFvSFZXN3FZQzNzcFlRTXlvQ0dOOFZCNGJnVzQ4VGtZRFlJaXFKWE5KcWFrZnpWOGtDUHJzNEVyQXQzLXZQdzVBd3A4QUpmUHBYNGZ4d0sxRVM4OE9PMGlNNG1FWDR0a0I1blpXejV6Vk1jLVpxZEhzMDJPdw?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Wed, 29 Apr 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-21T16:15:00.658Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Canadian National Railway raises its 2026 volume outlook on firmer freight demand - MarketScale",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNcTlpVUlnYXZOTDk4Q3FacGxNWTJwNXRzMURQTkZIZ1RWOVcxWDZ3QmFOUTloU01nb21Ydi1VV0hrcVhzYURQdUVpVnNNQnJSaXE2Si1hM2NTMU80VS10ZHRSTHNfRS1wYmYwSXVRLXNzV0pwM0Y2Qm5Nb3hKc0pWaWlVVHdndHVQRkdwOW83am5ZeWhNYURFTVQweFRuTTI4SjZTdEZ6dEZ1b2dQSFY5RHdldWVaY1lBV3hxS0Z2bjl2VU1hZTlzajVNdzRITl9F?oc=5",
+      "publisher": "MarketScale",
+      "pubDate": "Mon, 03 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-21T16:15:00.658Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS approves second Korean floating SMR plant design - World Nuclear News",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPamVVWFE5WXFjS3F3ZGhibHVHanNsZlRmSkxZTzZFaWJ5b2NZM1NlYnJzT0JFY0V6ZXNwc1l4Q0RFQ2RFU29zbVhlajltMlRTQkNzX3l6cG9xUDFjb0xjVDFKemVReDZLRXZ2RWwweElub1hSVVRWZ3Jzbmt4MERQS2RqU09CMGlQek82U2hGNUJLVk1ZYVJhRFl6R00?oc=5",
+      "publisher": "World Nuclear News",
+      "pubDate": "Wed, 25 Jun 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
