@@ -2715,5 +2715,27 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-21T04:17:31.674Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Pinch of Salt: Nuclear power in Long Beach worth developing – with safety first - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTkVQbERBNTQtR3VTMTE4SUhfSmZvM2RrOVNiYnQ4TzNTbEZOeWxFZm5PSFViSEIydzZFTHdNWkZaNGxVSDdlQkV1VmJ4dmxnSURGbThkenpxQnBFV1dMemRtOUFiMmVZOGQxZDFtVUQ5dXVMYm42VnhfMW1vMExWX2o4Ujk3V0VQR080ZHpuQUFDcVhaNDQyNWhBTEgxaDdXYlJxc0lWNUptZHhldU1uTlNXZzI2SXZrS2c?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-21T04:17:31.674Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear Reactor on a Long Beach Barge: Climate Fix or Regulatory Nightmare? - gadgetreview.com",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSW96THFpT1FaTkVnVTZJQnpwbDVQTkpMYjl2WnUzMVhEVUV1ZmxhajN4N3V2Zjc5Q2l4c2pwZUxUNlNrdXBVUXRzSDRXSWd5dEVKbTBsdE0wWnhYWi1RTXNDRWpHZmdteENyNm1hbklwdmFDM2NiWklhaFVROEhhNTBkcXliaXBNZHBldTVQeDdidWNpMmxIazZqVnBKTlZkb0RmbA?oc=5",
+      "publisher": "gadgetreview.com",
+      "pubDate": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
