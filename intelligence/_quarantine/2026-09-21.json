@@ -2770,5 +2770,38 @@
       "pubDate": "Tue, 16 Dec 2025 08:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-21T12:19:46.536Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Floating Nuclear Power Plants: Inside Bluecore Energy - Mashable",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNLTJuVlhrWUVHQndCcDkwdXBiVmZtUk1qRVV1dzRpbmZTRWwtUS00emhrbjZJckxwZUEwTkNuOHlRUFFFZklaM1A4Vkc3b3dZMEZaNWozTm1oSWVTVU9NTnRHVVFIcndsZnFiQWtBLWlzem01X1hmMVpqekRqaFFla3hPWVp1UQ?oc=5",
+      "publisher": "Mashable",
+      "pubDate": "Mon, 21 Sep 2026 12:00:09 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-21T12:19:46.536Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "They’re Building Floating Nuclear Power Plants - CNET",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1lQVJ4MzB5b2xHOElkOUtaUEhRbVd3TTFKVURmV1d5MTBpRXJFcnFIMVdXanpaajVUU0dIRW5QZWl6em5XZjE5cURSYXQ3RHlSNEVTYzlRUWpvWGlTX2FoTUJjSjJ1c3psczRLR1FwZEMwY0pPazZKR0pBXzZ0aG8?oc=5",
+      "publisher": "CNET",
+      "pubDate": "Mon, 21 Sep 2026 12:14:50 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-21T12:19:46.536Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach awards record nonprofit sponsorships - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZmtyN0FZcEQtUnJZa0E4X1pzS1Y2ZHhiMjgzZ1FpUlJjVU9aVW53SWk4d0FDUXpUd2ZwOHpTcHZudGU2SC0xWUJ1X2cwUmNxVXM1bVA3OHlFSDRDSG5UMHo0b3lwWklua0c4VE02enlKZG43UWNJRmhJWWhNdXdQaFZrX0UtUVprT2dySkVwR3dVaHlkbk9mWUY3aTBhUQ?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Tue, 31 Mar 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
