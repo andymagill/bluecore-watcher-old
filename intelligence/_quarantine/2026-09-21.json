@@ -2737,5 +2737,38 @@
       "pubDate": "Wed, 19 Aug 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-21T08:21:18.054Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Vampire Planet: How Capitalism Chokes Los Angeles - CounterPunch.org",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOd1MtNm1mQlJtMWVxZGlEY012b05UVXAxc1gzdWJ6WEFGOXpGblBqcGdJeE1hX2FCMmxMeW9uUGtSOEtXT2Y3djRhLWVvM2dZMkg3aEFlbklPWUprVUdKWFR2VFNqbkNkWC1iWlZ2ZlV5YkFHODlDa0w3WFVLa3JYYlFQT2RMUU5TbERvRUl3LVFvSEU?oc=5",
+      "publisher": "CounterPunch.org",
+      "pubDate": "Fri, 21 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-21T08:21:18.054Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Corpus Christi Port Signs On for Nuclear-Powered Shipping Push - Hoodline",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNM3JaWHZwVlVGX1dGb3I2dzkyU3YtZF9qbTlqZFc0cjkwbXlBQXIyb3BiZG15Z3RUdjZHNklOS0c4QUtzazRvZmhjNmtqVlBrdFhhZlZ4M1hpdUV4LXZQWmMzOEFTRlYzbjRDaDhzYS1xMWxIWmVRZXhpYXlnck9zdlBOU0xXR0RjZzZzalNCVTRQd2ZiZEJZ?oc=5",
+      "publisher": "Hoodline",
+      "pubDate": "Wed, 19 Aug 2026 20:51:51 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-21T08:21:18.054Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Samsung wins ABS approval for floating nuclear vessel concept - Upstream Online",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQTHhxMUFNT3hDakoyQ0ktRTk0TVJ4ekNFZ2tLeTVheVF3YmlQdV9ETzlHZE1zRU12eVdERzlrSGplTW0zWmNZZkdmT1gxN1FkekFsU0JEeElyRHBveHJOZExGM2V3eE9Tb2JodDVCS2tJenJ5V0w4SmJaYmtiLUxaWFV0R1RTYkZLV181TGtpa1hZcTd6eklUUjBkVEJXMzc2MlJDYTBVZ05Ed3JCMGI3emh3R0RPLXEweEhBckVSRQ?oc=5",
+      "publisher": "Upstream Online",
+      "pubDate": "Tue, 16 Dec 2025 08:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
