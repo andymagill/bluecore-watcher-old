@@ -2759,5 +2759,38 @@
       "pubDate": "Sun, 10 Aug 2025 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-22T04:15:51.920Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach awards record nonprofit sponsorships - Long Beach Press-Telegram",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZmtyN0FZcEQtUnJZa0E4X1pzS1Y2ZHhiMjgzZ1FpUlJjVU9aVW53SWk4d0FDUXpUd2ZwOHpTcHZudGU2SC0xWUJ1X2cwUmNxVXM1bVA3OHlFSDRDSG5UMHo0b3lwWklua0c4VE02enlKZG43UWNJRmhJWWhNdXdQaFZrX0UtUVprT2dySkVwR3dVaHlkbk9mWUY3aTBhUQ?oc=5",
+      "publisher": "Long Beach Press-Telegram",
+      "pubDate": "Tue, 31 Mar 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-22T04:15:51.920Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach summer off-ramp closures will be topic of public meeting - Long Beach Press-Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPd1dzd0Y2U0dvRFlPUzUyRm5MRVI3Y2daYTdXajJLb2E2MDd3MjlvMlQ4U1lmb0dSYmdKMzZXMXczdWFyWm81TDd4ZEh2dFBzRjFtcXd0RG1NcG1NUG5XUUlsYktmaG1WbmQ0RGtjT1NnSkN3N1I0Z2U5ZWZnR2x0X0pza2tibFBOeTZ2eDBPZ0lqdFU5aXNzaWsxZy1McVFTM25DVjlFcGU?oc=5",
+      "publisher": "Long Beach Press-Telegram",
+      "pubDate": "Thu, 16 Apr 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-22T04:15:51.920Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ATLAS, new MARAD partnership, among latest maritime nuclear announcements - American Nuclear Society",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTDgyN0VaTjFadXN4YzljbDJtSV9jdUZ3Mjc1SVlhdHYtSG1pRXpjZTJnanZOZXhDYVBPeTA2SWhYekFFQTdsakxCZS0yNE5sVWVFN2VFaUdEbkM4b0lSZ1JFU0FUYS1uN25oU19GRkVpZm9MVlZjY1g0czYtSVgyRDdBRmlFemZhQ05DNE5HUjNHWjZZS0c0VW92eWtoZE1oSjdiNlQ2NWxfVXhxbExFeDRiWUllTEhDNWF3Z2Rn?oc=5",
+      "publisher": "American Nuclear Society",
+      "pubDate": "Mon, 31 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
