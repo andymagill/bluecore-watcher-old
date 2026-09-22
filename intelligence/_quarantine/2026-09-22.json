@@ -2803,5 +2803,27 @@
       "pubDate": "Tue, 25 Aug 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-22T12:20:02.283Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "VESSEL REVIEW | US startup introduces floating nuclear reactor barge for on-demand power generation in ports - Baird Maritime",
+      "url": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxQWW5qSjZRQm52VjV3NjhySTh6U3BzbTJIZlowTkJQNFY5ckIwbERQNHNBNS13VFFRdThhd2pXcVMzRzN2aWVON3kyLXRha0FqN3A4bmJpWEJkQVQ4ZUk2Qm95MU1vczltbUFOcml3TDM0b1p5TFlOTG52cmh3Mk9NYW1WaFJFT19UQXRFcEZVVFNVQU5tNC1YY3VCeGlDODNwWDg5VTBFVWt4VkgtVERRZ3I3em5mLUlZM2pEV0NkQk1ZM1JJLVdiWlVyb1VoTTIwS0dOZzZDcGZTMVdDUlV4Q2dFOWJ3NnlhX2NGQ3VWRkF0OWtuZWNCd3dIVnbSAYoCQVVfeXFMTlZ6RXdYTGw1OUxOcGNSUVcxQW0tZkJTd3BTUWdKZXE2NGhNZVkzT09jb3o5bU1UcF8zNHlmLUdoX2F5Tmd6MlZWcXVCOG5TSHFMdGpjTVU1VzJvTHV6NUhYZGFfLXQ4ZF9nSHZqdFNaUUphNW9MUW5PX2RneHFpbHBjUDk3OG03bmJneEZVX1JpV0NOWHJyWjBUWlBqazJSaFdBcmtVa0k2Zml5U1JTazl3VzREZVg3UUNIakVGOVVhVmdVQl9wYVlJanpIVFpfYU5KRUlDVFZGM2JIaThSUUhYc1I1QjBWWmVBT3hXR2xNN0U3MzRsYTBYWTh6M3dvanZxc2VoUXZGTEE?oc=5",
+      "publisher": "Baird Maritime",
+      "pubDate": "Tue, 22 Sep 2026 08:56:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-22T12:20:02.283Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS approves second Korean floating SMR plant design - World Nuclear News",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPamVVWFE5WXFjS3F3ZGhibHVHanNsZlRmSkxZTzZFaWJ5b2NZM1NlYnJzT0JFY0V6ZXNwc1l4Q0RFQ2RFU29zbVhlajltMlRTQkNzX3l6cG9xUDFjb0xjVDFKemVReDZLRXZ2RWwweElub1hSVVRWZ3Jzbmt4MERQS2RqU09CMGlQek82U2hGNUJLVk1ZYVJhRFl6R00?oc=5",
+      "publisher": "World Nuclear News",
+      "pubDate": "Wed, 25 Jun 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
