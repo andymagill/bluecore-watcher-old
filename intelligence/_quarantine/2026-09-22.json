@@ -2825,5 +2825,27 @@
       "pubDate": "Wed, 25 Jun 2025 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-22T16:14:09.507Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "US maritime nuclear push gathers pace - Splash247",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5SVzhMZ1pkSUVBUHFtbjV4b0J0akZBQllkQnpWdUJiV1ZvQWY3bGNLN1VZenhyWVg0bTg3bXB2ZTROMEdqak5vQV9MdXVNQmpDS0pxR2lrdmI2MkhLSEVsVndOWGp6NmgyVlRCRQ?oc=5",
+      "publisher": "Splash247",
+      "pubDate": "Thu, 10 Sep 2026 06:39:15 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-22T16:14:09.507Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "US maritime nuclear push gathers pace - Splash247",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5SVzhMZ1pkSUVBUHFtbjV4b0J0akZBQllkQnpWdUJiV1ZvQWY3bGNLN1VZenhyWVg0bTg3bXB2ZTROMEdqak5vQV9MdXVNQmpDS0pxR2lrdmI2MkhLSEVsVndOWGp6NmgyVlRCRQ?oc=5",
+      "publisher": "Splash247",
+      "pubDate": "Thu, 10 Sep 2026 06:39:15 GMT",
+      "type": "NEWS"
+    }
   }
 ]
