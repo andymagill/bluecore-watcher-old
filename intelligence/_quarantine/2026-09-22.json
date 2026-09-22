@@ -2792,5 +2792,16 @@
       "pubDate": "Mon, 31 Aug 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-22T08:19:03.232Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "US Plans Nuclear-Powered Merchant Fleet In Bid To Challenge China’s Shipbuilding Dominance - marineinsight.com",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbVM1ZDBMVFVEX0RrQ0tpa3NDSUtBMGQwQkRRQW1xWlN5Z05kd0ctdDV2bC1QRW1jbmJEQ3RwQ0hFNWJTcmRPQ1RCM3MxS1JET2VENUE0WEtFMnFQNkhTOUpvakhJc1hVS0NCaXFhRFBfcUFvbU9EWEFQVmlpVXJzeUpISGR3a09zNm0zbVhqTHlTRGFNUVFBNENGeXRHNXQ1aW56aXUwR0YyUW1UVG4tdXB5aHFsSXAwXzdhZA?oc=5",
+      "publisher": "marineinsight.com",
+      "pubDate": "Tue, 25 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
