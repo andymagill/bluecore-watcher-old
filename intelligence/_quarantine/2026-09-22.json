@@ -2847,5 +2847,27 @@
       "pubDate": "Thu, 10 Sep 2026 06:39:15 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-22T20:12:45.595Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Canadian National Railway raises its 2026 volume outlook on firmer freight demand - MarketScale",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNcTlpVUlnYXZOTDk4Q3FacGxNWTJwNXRzMURQTkZIZ1RWOVcxWDZ3QmFOUTloU01nb21Ydi1VV0hrcVhzYURQdUVpVnNNQnJSaXE2Si1hM2NTMU80VS10ZHRSTHNfRS1wYmYwSXVRLXNzV0pwM0Y2Qm5Nb3hKc0pWaWlVVHdndHVQRkdwOW83am5ZeWhNYURFTVQweFRuTTI4SjZTdEZ6dEZ1b2dQSFY5RHdldWVaY1lBV3hxS0Z2bjl2VU1hZTlzajVNdzRITl9F?oc=5",
+      "publisher": "MarketScale",
+      "pubDate": "Mon, 03 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-22T20:12:45.595Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "DOE OKs Startup of Oklo Research Reactor in Texas - Neutron Bytes",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOT2NmV29mY3FCR1ZNbUVTLUV3N3NsemZJYzdabU9GRnhZZ1hCV1pydm1UcTYwdGp2YjZFTEM3VU93aGg3N2VmblBuR2phUmp3cTRjeXZfQ3dyMkdPaFcyQWdNaU5UU2trUzhPXzdBRUZmc1hkbTFZQnBKZnBNSDVLNHRzbGplTS1aRGE4Ml9KUQ?oc=5",
+      "publisher": "Neutron Bytes",
+      "pubDate": "Sun, 26 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
