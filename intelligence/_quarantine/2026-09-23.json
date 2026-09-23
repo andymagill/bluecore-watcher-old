@@ -2825,5 +2825,27 @@
       "pubDate": "Tue, 09 Sep 2025 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-23T08:19:03.674Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "USDOT, Port of Corpus Christi explore nuclear reactors for maritime use - Baird Maritime",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNR3hNbERVUTB2c1RpUXJkVlZZOUg5dTI2SGVsUFV2a3Qxek5RUnFQalRxQnNLYTZoazVoZVpHLTJwSlN3dEdqUXNFSi1lM2R2TG8wcXZrY2tNQ1Z1c0JlcDdwNGM5Vkt0S0c0Z0JraGh5NC1qY09SZ0lBcVphWlZmRkZ6cHFJUHRKSldKYTVxeWNHUHkyMDlxUEtpZ2F3a1ozc3pFaVlHalVjeHV6YmVSQnFpOGlyQdIBwwFBVV95cUxORFk4QmxzcXI1a3AtYVlOYm1VVWpXRUtZRGdJY3lfNkNBV0MycFhCRk1NNktqdk52NTFacjVzRloxcmpZRDJwaGFFTXJLeUwzand4OEV3ZVJheWJZWE9FWENZcG1hWlAtckhPay1HVUdpUTZ4UWVzelRWZk1TTnJjMFFjaGZUMi1LdFNubGtEc0p6M0J6ZVRhTWZCMVBCb1NCNm9VbG5YVERrNzFzV0daUE5jSGpUTVk0aWFyTjFDNWxtR1k?oc=5",
+      "publisher": "Baird Maritime",
+      "pubDate": "Fri, 21 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-23T08:19:03.674Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Watch US Weighs Putting Nuclear Power Plants in Ocean Waters - Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYng2QmdkcjNRMzJ1RnRvWkxIOHhhdHlSVHh2VGtRNWlxNkdmVUt3NnNWa25lZndhXzhramdfMlJLVzJQTjR5aHBTWmlCODlGbWc4X3J0Uko5RVJUejM3NkdZM0kzcG9zY3RIZW9JU29zVjNIYXMtWlFnbUk0VEhQcTNmMG9UMmNCWVd6QW5BdHRpZFFqWTF0djQ2OTBpZEhQdFdzdGpQbmVYYkhlaWc?oc=5",
+      "publisher": "Bloomberg.com",
+      "pubDate": "Fri, 24 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
