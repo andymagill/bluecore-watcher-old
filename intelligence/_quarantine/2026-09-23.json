@@ -2737,5 +2737,93 @@
       "pubDate": "Sun, 10 Aug 2025 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-23T04:16:21.735Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Bags $50M Seed, Just Weeks Post-Launch - techbuzz.ai",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNcS0wZUtDZXFGYVNsNjlTdDFwcWRDNnFXRjk5YzZIMVZ5Q2M4VkdzUWd4aUtXZ0c1RjhHTFdYcVBXdVFVTkY5bWtxS0ZXc1JPLW53d3VNT3dfeW9VemV4YmpzdGZXSW51cDZBMDl3UXhNZE4zMjlWWWJOU1RqRnhoNE92ZXdDeFRUaUtZdmd3?oc=5",
+      "publisher": "techbuzz.ai",
+      "pubDate": "Tue, 08 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-23T04:16:21.735Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach port’s new CEO lays out his vision at State of the Port speech - Long Beach Press-Telegram",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQU0xsbVNyeDhoaFRXMkhpOWhuTmg4SllrWjRfMWEwclhOOEo1LWpoclNCdjhwTkRyMF9rMW9fSHJsY1lIbFVlemVIZS1US3dkcjB6b1VJS1Y3dU9DZFh2bjZIMWMwNmY2aW9TbE9VWWkyTG4zOENKZ0NITktqeFhQc2wtYVNRM21QYjV5b3Nmb3hiWTV0MzNpR0hHR1JONTMyYWNpVHZlQWRpRWdTeVJIU0RnX1I?oc=5",
+      "publisher": "Long Beach Press-Telegram",
+      "pubDate": "Thu, 15 Jan 2026 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-23T04:16:21.735Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach to update public on $1.8 billion Pier B rail project - Long Beach Press-Telegram",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPaTZtT0h6MjFoVHdhS25qVEtrMkhZN2ZYVFZPVWhWNmdYdHVqWDFndkNFeDVRV0ZwLUR2Mm5FMFZaTlR1RldKaGlHYmVoeC02WWVpOWxwQkdjeDFWVlVwOTBZbG03S1J6ZEdwMTU4NUdPWEc0Nk1tX243VzlCb0h2dDlLdzFvbTExT1A3eEtxV0RBd19nS21nQVpSZkoxS1lGbmJkaXhGbXlCYXBrdjluNTln?oc=5",
+      "publisher": "Long Beach Press-Telegram",
+      "pubDate": "Wed, 18 Feb 2026 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-23T04:16:21.735Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Cargo containers, some damaged, being offloaded from ship at Port of Long Beach after rough voyage - Long Beach Press-Telegram",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOTkp5VkNTVWRkZW81cG9EV1pETFliNGpCOEs1UVdGb3BMa0x4eW1LUzVpSGgyeGhsZVc5VTBqVzA1cjlkLXQwR2ZfNVZNT0RYb1ltUEZzeVRfcnZhQ25KdHNNWXRSLXE5VVpuby12UE5fNVRYbFcwUGxtSWNzZ0twNlVFcmNEcUVnZ2oySmxBSU5ZSENVUUFOYmh2b0dKRWFxeExOdklUYzNqR1lZUWlhc2hlUGYtWmRmeWRRcHU4ZmpCTlh3NERNNlY0TTVxR1VreWZ5ag?oc=5",
+      "publisher": "Long Beach Press-Telegram",
+      "pubDate": "Thu, 19 Mar 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-23T04:16:21.735Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Noel Hacegaba named to succeed retiring Port of Long Beach CEO Cordero - Long Beach Press-Telegram",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOc0FVU01vUlZwUzFfU2R4d0NkdDRCMHk5M3YzTHI5UTFUa0IxcUl1cmxqT0Nvb05NOTEtOFo5YlVaMndNdnVtVzAyZU00ODBEVXc0OE5DZkRHaC1Pb3RWeEtxRGZlR0RGeXJBLTAzTVhzUUcyYzBxeU12LU9RWmtzY0RzYjJYNVQzUEpaMUF0OFVMRnFNRDJDNmNHZmdna2diSFdQZGdIbnNLU2R0NVA3Vzl3?oc=5",
+      "publisher": "Long Beach Press-Telegram",
+      "pubDate": "Thu, 04 Dec 2025 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-23T04:16:21.735Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach cargo numbers attain bragging rights for January - Long Beach Press-Telegram",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTlFrdG5md2t2NmN6dEY5RUljV2NhU3JfZnctRWxNNmRUdXR1N25WQ1ZSQVdkbzJzazVWYUZEbkRMbEpVT1gyT3FOYWl1aGJkOVRMUmJ4S3J1SjkxWnVCZEVVMUhESDhfcUxLMjBlREtDc0FDVkE0NW56Q1BaUlR2VklaTW9LT2JVNHBsQmY3V3A4U2FuX2Vub01zeDY1V3pfZV80bk5uRlQ1UmZ5Y1E?oc=5",
+      "publisher": "Long Beach Press-Telegram",
+      "pubDate": "Wed, 25 Feb 2026 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-23T04:16:21.735Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "MARAD and CORE POWER partner to advance nuclear-powered commercial shipping - Data Portuaria",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPekctUmYxYmtqNjAwUmkzMWFmMnU3WFZOMWRhaFg0cXl0ZDFOZVBGaEg4blNQLVhzRVNVeVZ6RjBtTVJ4dEhINGZ4NEFUUkpxbjYxY0x0Y0tpaTFFaEFpOTY4VWxqT0lGcE1kZDlDNEx4d0VqVjVmY3ZnWThlcThBcFB6T1JtV1FSMTJ2ODMwVHJXX3JLSjc0Z2U5UlhaS0RMeHg5VlhRbVNPVno5REJSUEtjYmhBQ3QxcXozZ1VjQ3otVXdi?oc=5",
+      "publisher": "Data Portuaria",
+      "pubDate": "Wed, 26 Aug 2026 19:28:55 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-23T04:16:21.735Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear-Powered LNG Carrier Design Receives Landmark Certification - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbkJTMS01UnREYkhYOUNfdWxacHRZZm5ZRzBQWjNJX1VBeE9NYUdoUXg1SFBCMllUbm9mM0doSjB1LVZYNHVUZnJydERyRG1yYlpTNHBoVWFxQnd5S2JtckljampQcndlbkg2SVd3YjdpaThGZ05ObTZ6SHh1S3Y2cnFTeU11TlNrN09ENGVMdGZxQQ?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Tue, 09 Sep 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
