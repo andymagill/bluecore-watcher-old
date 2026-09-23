@@ -2858,5 +2858,16 @@
       "pubDate": "Thu, 27 Oct 2022 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-23T20:14:25.495Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Is Long Beach ready for a floating nuclear power plant? Here's what to know - Yahoo",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQSV9JbHNLdXN1clRONHU5YV9kb0sxSk85cXVsWV9fU0dlNlRCbWxkWjlaSU1tMXZMZjlueXpveE9sWGR1czRsYzFEV0pFQWEwZFJXdXlpRHl0d3l5VHdHNVExaV9oY3BVNzhpTlFDZzl4dlZaNThhcnBobk9PYzVhdzdoVm1fdUNOQ0J1WWRkVlJSaUhtUlhB?oc=5",
+      "publisher": "Yahoo",
+      "pubDate": "Fri, 28 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
