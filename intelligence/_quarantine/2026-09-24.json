@@ -2803,5 +2803,71 @@
       "pubDate": "Mon, 20 Apr 2026 09:48:29 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-24T20:14:44.028Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Trump administration explores nuclear power in federal waters By Investing.com - Investing.com Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNOUFvT1lhTGZIci02ampDSFNWWXNSUkxoZVFIZnI2WEdDTWFDODBXMi1QaGRDOTc0dWVTWTZnSjVLVWlnVGpCVlhvVFVjdzR3bnVtVzFzbF9xTFpqNWxzSkNoYW9NWGpaeWhfcHBWZExoZHc4X2JiRTM4U1AwclJvVDFPSkZjNUh6TmhMN1hYb05pbkRrM2ltS1dPRGpYdmdQVGtaQUlfSmRWVnZIVzJFQWV6MjFzamU0dHlpNnBBcw?oc=5",
+      "publisher": "Investing.com Nigeria",
+      "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-24T20:14:44.028Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach cargo numbers attain bragging rights for January - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOTlFrdG5md2t2NmN6dEY5RUljV2NhU3JfZnctRWxNNmRUdXR1N25WQ1ZSQVdkbzJzazVWYUZEbkRMbEpVT1gyT3FOYWl1aGJkOVRMUmJ4S3J1SjkxWnVCZEVVMUhESDhfcUxLMjBlREtDc0FDVkE0NW56Q1BaUlR2VklaTW9LT2JVNHBsQmY3V3A4U2FuX2Vub01zeDY1V3pfZV80bk5uRlQ1UmZ5Y1E?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Wed, 25 Feb 2026 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-24T20:14:44.028Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach awards record nonprofit sponsorships - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZmtyN0FZcEQtUnJZa0E4X1pzS1Y2ZHhiMjgzZ1FpUlJjVU9aVW53SWk4d0FDUXpUd2ZwOHpTcHZudGU2SC0xWUJ1X2cwUmNxVXM1bVA3OHlFSDRDSG5UMHo0b3lwWklua0c4VE02enlKZG43UWNJRmhJWWhNdXdQaFZrX0UtUVprT2dySkVwR3dVaHlkbk9mWUY3aTBhUQ?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Tue, 31 Mar 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-24T20:14:44.028Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Hacegaba appointment confirmed as incoming Port of Long Beach CEO - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRU9aZ01RcElueDNBTzNIY2FCVHp0R0hOODFHb3Q5MjNUd2kzTWdGZmxaQVR2UGUxODNRVEQ4MjRfclJKYzZPdGpHSHFQM3oxWXh4ZlplNVAtWmxieVpkejJ5UnJsWGEzeUw1Smg1dWxxUGVxVjJQa1ZMeEFUQkpiYWZleFg0ZHRtTzRyai13b1FzemE0MUNBY1Z6MUZxbHhHQ0ZSMnBHOFRFVGc?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Tue, 09 Dec 2025 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-24T20:14:44.028Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "BANDI reactor that can power 150,000 homes pitched for marine nuclear - Interesting Engineering",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOd2h2QnlOZno5RXVINHh6VDQ1eVF2YUdPQWRtb1A5MGFxcHpmaEhWYTYyQzlQa09KMW5scjd0T1R4U2hHcnZZQlh3Yi16NEhaUlV4bmswdktMMldwTUZ3RUZSZkN1VFdzVDJwTlZob0dmeTluNmdLQXdxOW0ySno1b2RjZw?oc=5",
+      "publisher": "Interesting Engineering",
+      "pubDate": "Wed, 05 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-24T20:14:44.028Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Russia Builds First RITM-200 Reactor Unit For Leningrad Nuclear Icebreaker - Marine Insight",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYWZYVU9WTk00WDVvUDNmUExpWUFodm1KMm56YUtnTzZXLWMzd2xjaHgxc09LYVZCR1ZObUVFdTY4TEVZT2k1aHN4N0FaaWZLaFRYSGNOa1FLTTBhVnRqYmxSLXI0amZ6N05UeXdTaGFwS0dlNUozOUtSV3RqN3dtck9YaVdmcXNsR3VTTmxBRE02Y1VBeXVVUmdsNVpVSm1BMTVQNlE1UkM?oc=5",
+      "publisher": "Marine Insight",
+      "pubDate": "Mon, 18 May 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
