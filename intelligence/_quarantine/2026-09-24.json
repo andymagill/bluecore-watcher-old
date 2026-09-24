@@ -2748,5 +2748,60 @@
       "pubDate": "Mon, 16 Feb 2026 08:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-24T08:20:02.870Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Kofi Asante’s unexpected turn from the humanities to nuclear energy - Long Beach Press-Telegram",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUk9KcElGeFZqQ3prOVZSSG1NcFV5c2VNN0h2U29SQUtvMDZFdktpOW9LQ1RzVmx1aHc2UE85TWVnQ2F3djlkUFZDbTVnSFFmdmZiU0pTV2FENHNzMkVPOGVhZWlXc0dCSVJ3bmd4aG5iQ3U3emFIRll3eVlNRFdBQ3N0U0pUX3VXYnlYMFZfeFdXLWhBbzJxVU1jOVBOckNfS0xDU1ozeHZ5djBi?oc=5",
+      "publisher": "Long Beach Press-Telegram",
+      "pubDate": "Sun, 16 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-24T08:20:02.870Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Kofi Asante’s unexpected turn from the humanities to nuclear energy - Long Beach Press-Telegram",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNUk9KcElGeFZqQ3prOVZSSG1NcFV5c2VNN0h2U29SQUtvMDZFdktpOW9LQ1RzVmx1aHc2UE85TWVnQ2F3djlkUFZDbTVnSFFmdmZiU0pTV2FENHNzMkVPOGVhZWlXc0dCSVJ3bmd4aG5iQ3U3emFIRll3eVlNRFdBQ3N0U0pUX3VXYnlYMFZfeFdXLWhBbzJxVU1jOVBOckNfS0xDU1ozeHZ5djBi?oc=5",
+      "publisher": "Long Beach Press-Telegram",
+      "pubDate": "Sun, 16 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-24T08:20:02.870Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "New deal could bring small nuclear reactors to the Port of Long Beach - Yahoo",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOeU9OUWR6aVdqZjdPMEV2eVVuZGZCdE12SFp3RC0yT1VaQ1BSQVdLcS1jakh5R29kYXZ6WWZPQXNyM2VEWGduUXVLRW9EdUhFSVJpLXUxM2ZnWkctZTQ4YUphNkVVcnQxa05YNW9UMC15Q3ExMDdHNXlONE9NUFN2RHdyY3luZw?oc=5",
+      "publisher": "Yahoo",
+      "pubDate": "Mon, 17 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-24T08:20:02.870Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Canadian National Railway raises its 2026 volume outlook as freight demand firms - MarketScale",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOSFc5bElyQTRVMXRrQWJUSHZENFZYeW11dEg3dkxGVlRIMVdiLWU1RlhNWmxqbm45ckVaTUFsbWlYSHJBeDRlcXB4My1GUG5GMVJvZjQxRkxRQmplSUQyVVNpMzdUZy1DRUtXOHY3N2tWMTZydVA0WXN2R3ZTSEdwNEYtMmdmcnZaSHo5YVhLTkhXdnF1VzNMQ2gzQzdzaWc2LWtKQVpudlRZTXNMd0RwYk1jWTJvMjV0cWxvUElxSlhfNWV1cHVBOEM1eWExQ09oN01NWUdkMmw?oc=5",
+      "publisher": "MarketScale",
+      "pubDate": "Sat, 01 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-24T08:20:02.870Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Capacity Of Reactors Under Construction At One Of Highest Levels In 30 Years - NucNet",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOUE5FOFdyal9TckhDOExCYXNQTkxHbUh5OS1YQVZlR3NIWU1fQUFuTnc3OFVLM1l3US1EcTFqM0VEVzdXMFdWWlJESkZOZkxGV283YzlzblVEYTlWY0RPQ293aUpHNkYtdkJnZU5tb3MtLXhZdDUtZ2xpOHoyaTJ6dUl2NHNpeFhlS3IzWF85d19jN0MtU29QUVVTcEhJTFFHZ0JYVER2MmVvU3BLOEJlYjJkMA?oc=5",
+      "publisher": "NucNet",
+      "pubDate": "Mon, 20 Apr 2026 09:48:29 GMT",
+      "type": "NEWS"
+    }
   }
 ]
