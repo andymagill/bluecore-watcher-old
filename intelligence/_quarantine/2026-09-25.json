@@ -2605,5 +2605,49 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-25T04:16:31.666Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy raises $50M seed to develop floating nuclear power systems for ports and AI infrastructure - Tech Funding News",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQc1F3Wkd2aDhYWk9CcEpPNExKU1FWdklqV3h5QWdiUWt4Nm1kbzl3anE0SkdreHBjM1lKQ29fd3EzRDYybUFYbmkzNFdBZUFOcWN6ZzVKTUZTeWhtd0o3S2ZvNVdlN1lLRjdtUEFmUm5VYlRPUHc5ajRVTTRjWkx4amU3T3JrU3F1ZEYxRTk3SHh4QVdtbVRZT2trUWEtaEd1cGhYZ0pqeEItSV9nZ3pqcXhtbEpvRWZEMmxyNHl2RFI3Zk5WOE5PZHF1LVNLMXM?oc=5",
+      "publisher": "Tech Funding News",
+      "pubDate": "Tue, 08 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-25T04:16:31.666Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Offshore nuclear barges could power ports and data centers—starting with California, where nuclear is banned - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPRi1BT3daN3pHYW9UNUdFSGUyX0IzUjlwVHh3U2p5ZHoxNXU1QTdiQWk0U2d3UnBndEhHb3JaN3hnYnZKNEJEeWFNeUFoLVFoai1lZm1wQUNGbzV2NkVidGQyal8wTnp3aDA2b3R5TElLb1dhREYzOUpZYVcybkNUR0xYb1hwcjJVTy1JYUVOZ3ZYZktiQmxZ?oc=5",
+      "publisher": "Yahoo Finance",
+      "pubDate": "Sat, 29 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-25T04:16:31.666Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy raises $50M seed to develop floating nuclear power systems for ports and AI infrastructure - Tech Funding News",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQc1F3Wkd2aDhYWk9CcEpPNExKU1FWdklqV3h5QWdiUWt4Nm1kbzl3anE0SkdreHBjM1lKQ29fd3EzRDYybUFYbmkzNFdBZUFOcWN6ZzVKTUZTeWhtd0o3S2ZvNVdlN1lLRjdtUEFmUm5VYlRPUHc5ajRVTTRjWkx4amU3T3JrU3F1ZEYxRTk3SHh4QVdtbVRZT2trUWEtaEd1cGhYZ0pqeEItSV9nZ3pqcXhtbEpvRWZEMmxyNHl2RFI3Zk5WOE5PZHF1LVNLMXM?oc=5",
+      "publisher": "Tech Funding News",
+      "pubDate": "Tue, 08 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-25T04:16:31.666Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Canadian National Railway raises its 2026 volume outlook on firmer freight demand - MarketScale",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNcTlpVUlnYXZOTDk4Q3FacGxNWTJwNXRzMURQTkZIZ1RWOVcxWDZ3QmFOUTloU01nb21Ydi1VV0hrcVhzYURQdUVpVnNNQnJSaXE2Si1hM2NTMU80VS10ZHRSTHNfRS1wYmYwSXVRLXNzV0pwM0Y2Qm5Nb3hKc0pWaWlVVHdndHVQRkdwOW83am5ZeWhNYURFTVQweFRuTTI4SjZTdEZ6dEZ1b2dQSFY5RHdldWVaY1lBV3hxS0Z2bjl2VU1hZTlzajVNdzRITl9F?oc=5",
+      "publisher": "MarketScale",
+      "pubDate": "Mon, 03 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
