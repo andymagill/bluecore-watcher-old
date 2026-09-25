@@ -2693,5 +2693,16 @@
       "pubDate": "Tue, 07 Apr 2026 02:03:37 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-25T16:15:49.020Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "IAEA schedules August launch of ATLAS maritime nuclear initiative -- ANS / Nuclear Newswire - ans.org",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOemU3bnNUMTd0UkE3WVVaSGxvRlpWNVltYURHYldERUpPYkRZbncwUWUwOG8yY1RSajBDblcxT3ZfMEhtcDl0dURTQ1RFTmNhUGN4MXNKenoyMXBoOXV2bWliRU5UaFp4by1FLVhYZUtOak9QWVZ1TEJOY1ZwVW0zRXNyRXZ0YnFycTNXZUtodGJ6Rk5FU1lneTliMWVBa1NieTZRQTJTdw?oc=5",
+      "publisher": "ans.org",
+      "pubDate": "Wed, 03 Jun 2026 12:16:41 GMT",
+      "type": "NEWS"
+    }
   }
 ]
