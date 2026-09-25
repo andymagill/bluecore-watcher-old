@@ -2649,5 +2649,38 @@
       "pubDate": "Mon, 03 Aug 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-25T08:19:21.225Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "California could see first new nuclear project in decades after landmark port deal - Yahoo",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPNjZ2MWFpb0gweWdYdHVyR3czLU5kMGFPZVpJb0VESl9iUldJb2FpZDUwZ1UtdmtUWVpvVVBOR28zb3UwOE9OUlc3N3pKUkNFaFczcXpjU3EyM1JCbk9LYVA0V2RzS19VdGNPdnY0M3NtRS0xMk9FeTA5cWxES2tONkp6UVFVNHlBMGR0ZUlzODhWVTNBZGJHMg?oc=5",
+      "publisher": "Yahoo",
+      "pubDate": "Mon, 24 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-25T08:19:21.225Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear-Powered LNG Carrier Design Receives Landmark Certification - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbkJTMS01UnREYkhYOUNfdWxacHRZZm5ZRzBQWjNJX1VBeE9NYUdoUXg1SFBCMllUbm9mM0doSjB1LVZYNHVUZnJydERyRG1yYlpTNHBoVWFxQnd5S2JtckljampQcndlbkg2SVd3YjdpaThGZ05ObTZ6SHh1S3Y2cnFTeU11TlNrN09ENGVMdGZxQQ?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Tue, 09 Sep 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-25T08:19:21.225Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS approves floating SMR - Nuclear Engineering International",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1Oc1MwWnhLWk44bWJyd24ydlc5RDdtVkQ0UExxLTZRWm5fSmw5cW1tc2VpcjNWOVBtSm1ZREczSzF2STFYd0prb1lDcnhTdzg1a2wwV3hDRTNYMk1zUF83Y0pXMUIxdjJJbnlr?oc=5",
+      "publisher": "Nuclear Engineering International",
+      "pubDate": "Thu, 26 Jun 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
