@@ -2704,5 +2704,27 @@
       "pubDate": "Wed, 03 Jun 2026 12:16:41 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-25T20:12:11.882Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach port to hold meeting to update public on Pier B on-dock rail project - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPUzNHaU00OGJpY2hwelM0elo0S3V5VXpkc1l1eFAzamRGOEwzeG15eXJMaVJ3YzJxRmtwYk1LRDU5VjZOWkVhTE5tTkNua0o1MXdQbFpWOEFVVkR2T3dfcnY4WVBTUEtBSzZLT0ZlaWRTdzBUejRYSEdjaWJNM3g0WkxZa0F0aWdYdUYyeHVMRmp1dVJrNXVkWTFaYXU3YldGSXhKYzF1U0RRNUdjMGdTd2NEV3N1UW9UODByVXVn?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Mon, 01 Dec 2025 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-25T20:12:11.882Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Samsung Heavy and Sargent & Lundy team to develop floating SMR platform - CHOSUNBIZ - Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPaXV0TUt2Q09FdnVZSTRPeV81bkd0TlJmOTFEcnNxWWRIYllYSHloLWlUR0gzN3cwWUNkMHAwdlB2QnpxR3RYSWE5NWN1ZlB5cGp4T1AtODBfRVFhZXRGXzdtYzJvT2RaRDFQS092ZWVUa1R6Rl9fZTRFazVBSE9QeVNR0gGWAUFVX3lxTE9fd3hTM3ZmSFp1a0x1V3JmcXRzTW1LaU05bGtWNDYxUGd2Z2JuNEFpZWVzeVVxcU1nWVZLUlpBWnNRNFpFSHBwNVItblZxWG5qX2FTWkRqc3psUlo2NEtweWE1a3k3QTVkbVRvUDFWRXpXNDRSVUxvUTVDdXY1R3gwbWpmQzc5T0dpMlBkaFFpQXFHemFhdw?oc=5",
+      "publisher": "Chosunbiz",
+      "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
