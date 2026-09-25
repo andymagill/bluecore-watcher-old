@@ -2682,5 +2682,16 @@
       "pubDate": "Thu, 26 Jun 2025 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-25T12:20:58.982Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS, HD Hyundai to study reactor-powered container ships - American Nuclear Society -- ANS",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNckNaODhRempZQXBCVmZqWEhyVHdDc3FOVmt0VTlaNmlhbjBwTEc1QmFmblpINzBIeWh4VzdENUIyNzFid3lyYV9ydEtQT19tWnNPT29wNGFLWkxzbnBQaGh2MjhaaTdaNWtocnBTZGdzZ1hpM2p4ZVNmeUUydHNDRGd5bGh4b2NrOEQ3WG5oVXF3Z1BGbDFBUnltSy1nRlk3MGVQakJONA?oc=5",
+      "publisher": "American Nuclear Society -- ANS",
+      "pubDate": "Tue, 07 Apr 2026 02:03:37 GMT",
+      "type": "NEWS"
+    }
   }
 ]
