@@ -2638,5 +2638,27 @@
       "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-26T12:18:15.610Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Highlights Collaborative Clean Maritime Vision at Port of Long Beach - TipRanks",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPNkFSSEFYdGlHOGR0V0lGYWxnem1lUV9LVDZPaGVHNlQzUk1OVUhwUDYxMnBPVTZSeHg3TS1xOEh2ZUFhaVAzUEtlME1XYU9iMk9FNy1BT1JGMDQ3eGQ2dlo2ay15OWtQYkFLaXg3bThIdGUxbl9RVjJBNllNREtnZXRxTkJZUzhweXMxZUF6bnBpSXNyNk9jWjZLektmdG1uaXNpTHdlOXRoYVJyNi1TeGpYN3pVbjBqdHNnbXYtWHF0V0EwbG95OXU5TWo?oc=5",
+      "publisher": "TipRanks",
+      "pubDate": "Sat, 19 Sep 2026 00:21:42 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-26T12:18:15.610Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Federal Maritime and Port Leaders Visit Bluecore Energy Clean Power Facility - TipRanks",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNQk4xa01SMTJaMGl1MVNzalAwc3ZvclVyNXpuZ1FvQkxGOWxST0hicHNsS0FVQXg1NEtmdm1WS0IzWXFsRVh6bW5sNmlUWGc3cHRBNUhOYXRlZ01QcklJNVNldVpQOVRZemhZT1NucGhDSVFlTnR4dDM4VEJKVkhvLWpUbktNQlA3N2FlNUwtV3AwNndyZGY1XzdkYVY1RTFuaWhKTXpfNk1xRDI1b3k3NFJodGJuclQ4aGY1RUZjSThoZw?oc=5",
+      "publisher": "TipRanks",
+      "pubDate": "Sun, 13 Sep 2026 18:24:33 GMT",
+      "type": "NEWS"
+    }
   }
 ]
