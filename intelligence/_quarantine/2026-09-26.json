@@ -2660,5 +2660,27 @@
       "pubDate": "Sun, 13 Sep 2026 18:24:33 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-26T16:14:00.931Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Hacegaba appointment confirmed as incoming Port of Long Beach CEO - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRU9aZ01RcElueDNBTzNIY2FCVHp0R0hOODFHb3Q5MjNUd2kzTWdGZmxaQVR2UGUxODNRVEQ4MjRfclJKYzZPdGpHSHFQM3oxWXh4ZlplNVAtWmxieVpkejJ5UnJsWGEzeUw1Smg1dWxxUGVxVjJQa1ZMeEFUQkpiYWZleFg0ZHRtTzRyai13b1FzemE0MUNBY1Z6MUZxbHhHQ0ZSMnBHOFRFVGc?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Tue, 09 Dec 2025 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-26T16:14:00.931Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "CORE POWER proposes nuclear commercial shipping program to MARAD - safety4sea",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPUndIOXktRXU5X0RVdVVVRUlvS2p3LTB3cW1xU1J5TmNyLVhqZEk5OU03ZE5nWkxWSWRNVXp5NFZOMTgxSWNmbnNSMG5taEk1ekRVWVp6UVFGX0V2OWtZcTVjTjhDMTRELU9kaHJ6cl9RQk02TktZdzFhZkRac3d6WjBnOFptZ0ZfZ0E0V3YybWY4UQ?oc=5",
+      "publisher": "safety4sea",
+      "pubDate": "Mon, 10 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
