@@ -2605,5 +2605,16 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-27T04:16:05.802Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Core Power pushes for seven-year fast-track on nuclear-powered shipping - engine.online",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOFdMT0ljT2xRT2ZDZzdaWkZ6LXJQbkJYZ3ZlUFVZVjhZTGc3MFVrX0d4SE1Pb0tJVzltR1hCMFl0VVRpd2NzNWdjSlFoY1lPVklWUTc4am5pZWkzOFVmeHJOQTA5U2FGQzBqNXk3TVNFVWdocTBWd2c0ZzBNcGljS2c2X1R3Wko3YVQ3VTFKbG1fYjQ2NFVvUkZsbnVWX3hMVjY0dEc4Si00Q00?oc=5",
+      "publisher": "engine.online",
+      "pubDate": "Tue, 11 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
