@@ -2638,5 +2638,27 @@
       "pubDate": "Thu, 10 Sep 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-27T12:19:34.981Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Noel Hacegaba named to succeed retiring Port of Long Beach CEO Cordero - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOc0FVU01vUlZwUzFfU2R4d0NkdDRCMHk5M3YzTHI5UTFUa0IxcUl1cmxqT0Nvb05NOTEtOFo5YlVaMndNdnVtVzAyZU00ODBEVXc0OE5DZkRHaC1Pb3RWeEtxRGZlR0RGeXJBLTAzTVhzUUcyYzBxeU12LU9RWmtzY0RzYjJYNVQzUEpaMUF0OFVMRnFNRDJDNmNHZmdna2diSFdQZGdIbnNLU2R0NVA3Vzl3?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Thu, 04 Dec 2025 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-27T12:19:34.981Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach summer off-ramp closures will be topic of public meeting - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPd1dzd0Y2U0dvRFlPUzUyRm5MRVI3Y2daYTdXajJLb2E2MDd3MjlvMlQ4U1lmb0dSYmdKMzZXMXczdWFyWm81TDd4ZEh2dFBzRjFtcXd0RG1NcG1NUG5XUUlsYktmaG1WbmQ0RGtjT1NnSkN3N1I0Z2U5ZWZnR2x0X0pza2tibFBOeTZ2eDBPZ0lqdFU5aXNzaWsxZy1McVFTM25DVjlFcGU?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Thu, 16 Apr 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
