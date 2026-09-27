@@ -2682,5 +2682,16 @@
       "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-27T20:13:12.533Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Ports of Long Beach, LA, take up addendum to agreement to cut pollution - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSFY0ajRGVS05T3ZvNmotSjJ1VEVHS2VYSTBVdUVIRFFLaFJLZmVVSXZtdGtfWjh2VjFNTmRxakMwMG44ZWlvTkZyUF9wb1B2UmEwSm1oeG5Pb0ZxVklkT1l5VjZmd2dVLVhuMVBpejRWdnd2MFpwN09VQ1BPNmZESDhUcWJmRmVxZmJSem1vSjhEVXhOR3VTWkI3YnN1eGhpM2V6TnJQRVV4WW1MYmIxNmRB?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Wed, 12 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
