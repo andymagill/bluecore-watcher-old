@@ -2660,5 +2660,27 @@
       "pubDate": "Thu, 16 Apr 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-27T16:14:05.220Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy raises $50M to build its first floating nuclear system - SiliconANGLE",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQb1lXN3JCc0N0am5MZ002ZGh3Rm1qMW9KRnB0RzBubG1zUGl5RmJfQnFSaXVhVkZGTG1WTGE2Ym9CM2VZRkVKaXQ2Z3VJSktQMUhSdDhvTVZ0ZWhTaGlaOU02X2dORTJDR1Uwbm9GNEVCd3JyLVhPdmVranJ4R1F1SHRXOWx0WjNHWUxKTmhQQU5OblBZX3FiWXRGSzhNUlJMS2lWZFoxVWFGZw?oc=5",
+      "publisher": "SiliconANGLE",
+      "pubDate": "Mon, 07 Sep 2026 22:49:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-27T16:14:05.220Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Samsung Heavy and Sargent & Lundy team to develop floating SMR platform - CHOSUNBIZ - Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPaXV0TUt2Q09FdnVZSTRPeV81bkd0TlJmOTFEcnNxWWRIYllYSHloLWlUR0gzN3cwWUNkMHAwdlB2QnpxR3RYSWE5NWN1ZlB5cGp4T1AtODBfRVFhZXRGXzdtYzJvT2RaRDFQS092ZWVUa1R6Rl9fZTRFazVBSE9QeVNR0gGWAUFVX3lxTE9fd3hTM3ZmSFp1a0x1V3JmcXRzTW1LaU05bGtWNDYxUGd2Z2JuNEFpZWVzeVVxcU1nWVZLUlpBWnNRNFpFSHBwNVItblZxWG5qX2FTWkRqc3psUlo2NEtweWE1a3k3QTVkbVRvUDFWRXpXNDRSVUxvUTVDdXY1R3gwbWpmQzc5T0dpMlBkaFFpQXFHemFhdw?oc=5",
+      "publisher": "Chosunbiz",
+      "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
