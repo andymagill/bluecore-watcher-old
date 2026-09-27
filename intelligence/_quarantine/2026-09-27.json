@@ -2616,5 +2616,27 @@
       "pubDate": "Tue, 11 Aug 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-27T08:17:30.933Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Secures Barge for Floating Nuclear Power System at Long Beach - Data Portuaria",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNN3hrdzF6My1DSHNQeWJ1QUhxdmMtNVFfM3hYZWdWUlVCclR1VHMzVWVyM1BidHFzV2xGaWJCeWNld1Budm9qNEhnYlFjTW1HdnlHVkowZDdIazRUUkhUUlJNREc0Y2dRR3ZOMUx1R3NIS2NaczMyckJjZmh3RDJnSThsb1VDb2ktclMwcVVidTVLY043NXFwVXo2T1pIVFZVam8xaVVKbVVpR0daQ1pxWEh2aHdocDFSWHlTZUZzT0tJZDg?oc=5",
+      "publisher": "Data Portuaria",
+      "pubDate": "Thu, 10 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-27T08:17:30.933Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Secures Barge for Floating Nuclear Power System at Long Beach - Data Portuaria",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNN3hrdzF6My1DSHNQeWJ1QUhxdmMtNVFfM3hYZWdWUlVCclR1VHMzVWVyM1BidHFzV2xGaWJCeWNld1Budm9qNEhnYlFjTW1HdnlHVkowZDdIazRUUkhUUlJNREc0Y2dRR3ZOMUx1R3NIS2NaczMyckJjZmh3RDJnSThsb1VDb2ktclMwcVVidTVLY043NXFwVXo2T1pIVFZVam8xaVVKbVVpR0daQ1pxWEh2aHdocDFSWHlTZUZzT0tJZDg?oc=5",
+      "publisher": "Data Portuaria",
+      "pubDate": "Thu, 10 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
