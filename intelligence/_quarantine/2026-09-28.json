@@ -2638,5 +2638,16 @@
       "pubDate": "Fri, 08 Aug 2025 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-28T08:25:53.562Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach summer off-ramp closures will be topic of public meeting - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPd1dzd0Y2U0dvRFlPUzUyRm5MRVI3Y2daYTdXajJLb2E2MDd3MjlvMlQ4U1lmb0dSYmdKMzZXMXczdWFyWm81TDd4ZEh2dFBzRjFtcXd0RG1NcG1NUG5XUUlsYktmaG1WbmQ0RGtjT1NnSkN3N1I0Z2U5ZWZnR2x0X0pza2tibFBOeTZ2eDBPZ0lqdFU5aXNzaWsxZy1McVFTM25DVjlFcGU?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Thu, 16 Apr 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
