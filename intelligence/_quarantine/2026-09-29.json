@@ -2583,5 +2583,38 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-29T04:17:00.125Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Watch Port of Long Beach tests offshore nuclear reactors to meet energy demands - The Big Money Show - FOX One",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPd3VsZWhURHQ1RVhaZjViYWxJUDB2Z2xjTWRmRE1NZ2EtMHlCNWVndFM4X2p2Q0NBTFZPTkFnbEppanRoMTZOWmdQeC1RZDZxbzZpdC1Ka2JST1RJQktGMEtqbjdEc19KOVVkZnNYRWZXMWJYUmd6MHRvaFJYZlVYRzgxazlTa1Z3NVMxODAyelRYX3NqNUN0Q0U1XzY4a0hUenRMLWxpdjl2aDVLdGItUW1zWkVzZVRHSWFlUmotWVhvTFk?oc=5",
+      "publisher": "FOX One",
+      "pubDate": "Fri, 04 Sep 2026 18:30:37 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-29T04:17:00.125Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Watch California's Port of Long Beach prepares to go nuclear with floating reactors - The Claman Countdown - FOX One",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZHd6Slktc1I2M0RWcGNMa0tmNi1fZ1Q5T0tUTy1CaDNYbGE0djN4dnRIRVBOaWp2aERtM2FodVRqWHRqVmFCQmNLOEpOaEFCSVpycU9CSFRXYVcwOWFDMlNub2JxbVVSbGkwaXVENTJYYXJpWjdTeXFQa2xMUDJyci11REwxMmh3Y3FKejJSMGs2MkZJU2hMZ0FfMkY4MWZVQl9XWldSaDZtdnQzdVBKelFjM1lvYm5MZ3B5NmtjNFEzTGVsMU1sdg?oc=5",
+      "publisher": "FOX One",
+      "pubDate": "Fri, 04 Sep 2026 20:46:36 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-29T04:17:00.125Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach port to hold meeting to update public on Pier B on-dock rail project - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPUzNHaU00OGJpY2hwelM0elo0S3V5VXpkc1l1eFAzamRGOEwzeG15eXJMaVJ3YzJxRmtwYk1LRDU5VjZOWkVhTE5tTkNua0o1MXdQbFpWOEFVVkR2T3dfcnY4WVBTUEtBSzZLT0ZlaWRTdzBUejRYSEdjaWJNM3g0WkxZa0F0aWdYdUYyeHVMRmp1dVJrNXVkWTFaYXU3YldGSXhKYzF1U0RRNUdjMGdTd2NEV3N1UW9UODByVXVn?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Mon, 01 Dec 2025 08:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
