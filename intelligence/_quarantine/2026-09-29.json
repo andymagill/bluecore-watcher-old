@@ -2660,5 +2660,16 @@
       "pubDate": "Thu, 19 Jun 2025 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-29T20:15:34.575Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "US maritime nuclear energy company raises USD50 million - World Nuclear News",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMGdFX1pJVEJxY1p4dGlkczMyb3FNUF9wS21taXlhZS0wMzNvUml0b2tIU3VGYjdMdFNwUlNtbzRWSFdvUGR5amFselR3MHl5U3l6NHROVE1SWWYtdGN5WFNEdlRsOXphRkw4RTJkeDh6VDVJSGljVGNxUV9lcEdhN2VVMXU3NGpaNlpaRXJyNzVUUzFoTmlQdWl5OU1rbHJW?oc=5",
+      "publisher": "World Nuclear News",
+      "pubDate": "Tue, 08 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
