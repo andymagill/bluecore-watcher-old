@@ -2616,5 +2616,27 @@
       "pubDate": "Mon, 01 Dec 2025 08:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-29T08:19:49.834Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Mayor, investors tour Port of Long Beach barge slated to house nuclear reactor - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQUVMX09aeVlxUUsxR0dhRmlVYjlXMEFRZmhhUlczVHE4Z09kRzhGX3B2eGluQlA4Wkg4SmtTWFNZZGo4NVl6SFJRdERKVV96S0Znb01JMU82SmpjYzFKdTdYVDFpSkNKZ3k4ZVBKb1FMYjdwLW9FWVVWSzlSMi1FV3UxcjduRmJSbkFURGNxbjl1NmFWVS1KQ0lVcWFxczFHbGZad2xma21VdGNNR05zZnFJTQ?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Tue, 15 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-29T08:19:49.834Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Mayor, investors tour Port of Long Beach barge slated to house nuclear reactor - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQUVMX09aeVlxUUsxR0dhRmlVYjlXMEFRZmhhUlczVHE4Z09kRzhGX3B2eGluQlA4Wkg4SmtTWFNZZGo4NVl6SFJRdERKVV96S0Znb01JMU82SmpjYzFKdTdYVDFpSkNKZ3k4ZVBKb1FMYjdwLW9FWVVWSzlSMi1FV3UxcjduRmJSbkFURGNxbjl1NmFWVS1KQ0lVcWFxczFHbGZad2xma21VdGNNR05zZnFJTQ?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Tue, 15 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
