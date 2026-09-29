@@ -2638,5 +2638,27 @@
       "pubDate": "Tue, 15 Sep 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-29T16:16:16.486Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "New consortium to explore floating nuclear power for Mediterranean energy needs - Offshore Energy",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPWW55bF9ac21ULWNoZ2cwZXY1QXBSWUFoOFFQTFE0RDl2MG1rb3ZIbS1Tb3ZJR3MxMkRldzJLLV9qX0oyUW9wUE9pUzQ0d0ZVakhRX2dONEFlcy1tSGYtWXd0aEZkLVhJQ1pVWEM5YUpZUV9rYktWeHM0R3VBd2Z5bXJJQ0o5NXhUSDFUbGtIeS10YnNkMXI2NV9VUE9jR0I1N3c3Xzd4QlpEWllFc200Qg?oc=5",
+      "publisher": "Offshore Energy",
+      "pubDate": "Thu, 03 Jul 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-29T16:16:16.486Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "HD Hyundai gains U.S. approval for floating small modular reactor technology - CHOSUNBIZ - Chosunbiz",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOYVB0RngxZjJyNy0zSzBkSk10NGVZN1BFOG1PZENucTZFMGF4aWRjMldLYWlfN19oeXpzcGpwclRxY25sWDhSeUVOX2RObEp4Ul9GdkVpVjduOU56bnEwV0s1N2JjUlE0bGNib0sxMFlzTWxvYXZkQWwyX09iaVlfN1pB0gGWAUFVX3lxTE81Z1pNNlFoQ3RmQVctVmZNSk1EM0NYdERuYld0ME53ZHZZQnoyVU9ZSWI2RXpHTVJNXzhpTHBvRjgzQWlSaTVRVW1KZS1rYVp4RkhGYXpodkxVX2RTWkxGeHhiV1VBbHVvNzdZWkdNNkhBdHNZZWc1Ql9NbmR6NHhmQVdPQUJ2VWRrMkNtbVdzSV94Vlhkdw?oc=5",
+      "publisher": "Chosunbiz",
+      "pubDate": "Thu, 19 Jun 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
