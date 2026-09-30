@@ -2550,5 +2550,71 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-30T04:17:27.915Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Raises $50 Million Seed Funding To Develop Floating Nuclear Power Systems - Pulse 2.0",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOa2NiUmV2OUxvTXdRemtCTlJhSkhKTWs4NFBDN2tycTVSV040QUE0dDUzb2hGSFlDazVuZE5aLUd4WGVmaXZVMnpsV2VsZXJJa1JSc1dIc1JZTy1xU3paSkxrZFBCaGtnTTltVkllc3dpZVJDM01Vb0ozODRtVk9DVXM2Z2pNQU1qeHc0SWRRei02ZC0zMGtEeEhGbS02UnJra0HSAacBQVVfeXFMTWhhd2h0bFBiemduVl9lcF91bEVxSGNSNWc5WG1pZWF3cktqRTRUeXlNYzdHbmVaZ0M2YTBFWkpKZk04YTBEYnFUa0I0b2JhU3ZIMkxuTHJtUFBIUEZWb0hxeHAtYkFESGQ3dEpDR2xmSUNFYkFRQm5hYjdIRFY5SDh2bDRTcnFab3lWTUZwREdkd3V5N3dPTTZ0bVo2aW0wdm0xMHg3bnM?oc=5",
+      "publisher": "Pulse 2.0",
+      "pubDate": "Thu, 10 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-30T04:17:27.915Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear Reactor on a Long Beach Barge: Climate Fix or Regulatory Nightmare? - Gadget Review",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSW96THFpT1FaTkVnVTZJQnpwbDVQTkpMYjl2WnUzMVhEVUV1ZmxhajN4N3V2Zjc5Q2l4c2pwZUxUNlNrdXBVUXRzSDRXSWd5dEVKbTBsdE0wWnhYWi1RTXNDRWpHZmdteENyNm1hbklwdmFDM2NiWklhaFVROEhhNTBkcXliaXBNZHBldTVQeDdidWNpMmxIazZqVnBKTlZkb0RmbA?oc=5",
+      "publisher": "Gadget Review",
+      "pubDate": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-30T04:17:27.915Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Raises $50 Million Seed Funding To Develop Floating Nuclear Power Systems - Pulse 2.0",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOa2NiUmV2OUxvTXdRemtCTlJhSkhKTWs4NFBDN2tycTVSV040QUE0dDUzb2hGSFlDazVuZE5aLUd4WGVmaXZVMnpsV2VsZXJJa1JSc1dIc1JZTy1xU3paSkxrZFBCaGtnTTltVkllc3dpZVJDM01Vb0ozODRtVk9DVXM2Z2pNQU1qeHc0SWRRei02ZC0zMGtEeEhGbS02UnJra0HSAacBQVVfeXFMTWhhd2h0bFBiemduVl9lcF91bEVxSGNSNWc5WG1pZWF3cktqRTRUeXlNYzdHbmVaZ0M2YTBFWkpKZk04YTBEYnFUa0I0b2JhU3ZIMkxuTHJtUFBIUEZWb0hxeHAtYkFESGQ3dEpDR2xmSUNFYkFRQm5hYjdIRFY5SDh2bDRTcnFab3lWTUZwREdkd3V5N3dPTTZ0bVo2aW0wdm0xMHg3bnM?oc=5",
+      "publisher": "Pulse 2.0",
+      "pubDate": "Thu, 10 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-30T04:17:27.915Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear Reactor on a Long Beach Barge: Climate Fix or Regulatory Nightmare? - Gadget Review",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNSW96THFpT1FaTkVnVTZJQnpwbDVQTkpMYjl2WnUzMVhEVUV1ZmxhajN4N3V2Zjc5Q2l4c2pwZUxUNlNrdXBVUXRzSDRXSWd5dEVKbTBsdE0wWnhYWi1RTXNDRWpHZmdteENyNm1hbklwdmFDM2NiWklhaFVROEhhNTBkcXliaXBNZHBldTVQeDdidWNpMmxIazZqVnBKTlZkb0RmbA?oc=5",
+      "publisher": "Gadget Review",
+      "pubDate": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-30T04:17:27.915Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Core Power pushes for seven-year fast-track on nuclear-powered shipping - engine.online",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNM0dIMmhfQnZheG5BRnMyYmVwdWx1dWdUMUM5VjlJaXZaV3ZIOVE5ZW1KRl96c1BuU2htaWozR0p5aTAtUGlUQ3dIWjVOUV9IWGNHc3dSYURHVHI1eGczaWpJWTNCeVM2Q3pJQ25jMFpWeW9nX0JvY3hNRG81b1lIbTloWlNCMUEzVGtkR0xiZXFkTGYwaDVVaU1RYThfd1BBVldCN2VR?oc=5",
+      "publisher": "engine.online",
+      "pubDate": "Tue, 11 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-30T04:17:27.915Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Raises $50 Million Seed Funding To Develop Floating Nuclear Power Systems - Pulse 2.0",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOa2NiUmV2OUxvTXdRemtCTlJhSkhKTWs4NFBDN2tycTVSV040QUE0dDUzb2hGSFlDazVuZE5aLUd4WGVmaXZVMnpsV2VsZXJJa1JSc1dIc1JZTy1xU3paSkxrZFBCaGtnTTltVkllc3dpZVJDM01Vb0ozODRtVk9DVXM2Z2pNQU1qeHc0SWRRei02ZC0zMGtEeEhGbS02UnJra0HSAacBQVVfeXFMTWhhd2h0bFBiemduVl9lcF91bEVxSGNSNWc5WG1pZWF3cktqRTRUeXlNYzdHbmVaZ0M2YTBFWkpKZk04YTBEYnFUa0I0b2JhU3ZIMkxuTHJtUFBIUEZWb0hxeHAtYkFESGQ3dEpDR2xmSUNFYkFRQm5hYjdIRFY5SDh2bDRTcnFab3lWTUZwREdkd3V5N3dPTTZ0bVo2aW0wdm0xMHg3bnM?oc=5",
+      "publisher": "Pulse 2.0",
+      "pubDate": "Thu, 10 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
