@@ -2649,5 +2649,38 @@
       "pubDate": "Wed, 01 Jun 2016 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-30T20:16:13.794Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Borusan Ventures invests in Bluecore Energy, which develops offshore nuclear energy systems - SteelRadar",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOOGNCWTBaUzBOTV9zRXlhSHN3VnB6RnZxOC1GaDVScDdrTUxjcmFRQzZJelNZWkkwUUQyWXNTSmJIbkc3dmR5WWUxQXhoczNBRjFnNTFFaXFDSXg2ek9DMzVpSHhwNS1SVm1RUWpXZU8ySEZ5VVpGTDFWRF9weUlLMll0RC04dTBHS1Vqa3c4dmptY2dCblpuUkpHRVJ0ZFhBTll6bTAtaUdvaFJtRkFYWVRHM0RCLWotMHFaM1dtS2hpWU0tSmc?oc=5",
+      "publisher": "SteelRadar",
+      "pubDate": "Wed, 30 Sep 2026 17:35:15 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-30T20:16:13.794Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Watch US Weighs Putting Nuclear Power Plants in Ocean Waters - Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYng2QmdkcjNRMzJ1RnRvWkxIOHhhdHlSVHh2VGtRNWlxNkdmVUt3NnNWa25lZndhXzhramdfMlJLVzJQTjR5aHBTWmlCODlGbWc4X3J0Uko5RVJUejM3NkdZM0kzcG9zY3RIZW9JU29zVjNIYXMtWlFnbUk0VEhQcTNmMG9UMmNCWVd6QW5BdHRpZFFqWTF0djQ2OTBpZEhQdFdzdGpQbmVYYkhlaWc?oc=5",
+      "publisher": "Bloomberg.com",
+      "pubDate": "Fri, 24 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-30T20:16:13.794Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Vampire Planet: How Capitalism Chokes Los Angeles - CounterPunch.org",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOd1MtNm1mQlJtMWVxZGlEY012b05UVXAxc1gzdWJ6WEFGOXpGblBqcGdJeE1hX2FCMmxMeW9uUGtSOEtXT2Y3djRhLWVvM2dZMkg3aEFlbklPWUprVUdKWFR2VFNqbkNkWC1iWlZ2ZlV5YkFHODlDa0w3WFVLa3JYYlFQT2RMUU5TbERvRUl3LVFvSEU?oc=5",
+      "publisher": "CounterPunch.org",
+      "pubDate": "Fri, 21 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
