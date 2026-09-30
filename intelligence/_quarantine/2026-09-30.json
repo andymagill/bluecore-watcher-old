@@ -2627,5 +2627,27 @@
       "pubDate": "Wed, 11 Feb 2026 08:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-09-30T16:16:36.357Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Watch Port of Long Beach turns to floating nuclear reactors to cut emissions - The Bottom Line - FOX One",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNS0NHUEc0N2c4RzhPeFQ5STRMdWFXQ01ORkRvSDQwdHI2Zm50RWVPTUZjcWZtWXlERDU1UlVDQXBWc3Q5THlNbkRPWmxSajFzbEp4ZDU1OHk4N2FiRE83ZmVaNzJheGFTZ3N1WDhTZUJtWXZRY0gwXzVUOFRYRzJsT2cyY0l4QWVjVC1WVkMwRS1mWmd5R3N5ZHJtS1hMdHA2aXZlbW45TExTUU1zUUlpbFh1N2phU0Y5RlU3RGk5OA?oc=5",
+      "publisher": "FOX One",
+      "pubDate": "Fri, 04 Sep 2026 23:17:57 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-09-30T16:16:36.357Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Floating nuclear power plants: China is far from first - Bulletin of the Atomic Scientists",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPOVBWa2RVN1B1TXQ3RDVXdzlaYWFWYUdDdEdxZkJHcFZfdFl5V3EwQVE0aEl6aENKWmJaZmJBY1dxdVh6dGN4RHA3bFF1QXIwZ2lHMXptZFRvNjNGY2ZQNl9PeUhoRDFJbkpxT2NTS1RQVkVEWXZfNW9GczRkSHFGM2lxVFJnX2ZoZFhHdFY2aw?oc=5",
+      "publisher": "Bulletin of the Atomic Scientists",
+      "pubDate": "Wed, 01 Jun 2016 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
