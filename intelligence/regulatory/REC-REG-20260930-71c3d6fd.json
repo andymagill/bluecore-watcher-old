@@ -1,0 +1,27 @@
+{
+  "id": "REC-REG-20260930-71c3d6fd",
+  "operationalVector": "REGULATORY_PATHWAYS",
+  "subVector": "MARAD Frameworks",
+  "headline": "Request for Information on Artificial Intelligence Infrastructure on DOE Lands",
+  "verifiableClaim": "Request for Information on Artificial Intelligence Infrastructure on DOE Lands",
+  "verifiableDelta": "Accessioned from Federal Register (Energy Department), published 2025-04-07. This record captures the headline, publisher, and publication date as stated by the source feed; the article body was not retrieved and no claim within it has been independently corroborated.",
+  "keyMetrics": [
+    {
+      "label": "Docket Number",
+      "value": "2025-05936",
+      "status": "nominal"
+    }
+  ],
+  "sourceProvenance": {
+    "documentRef": "2025-05936",
+    "commitHash": "",
+    "timestamp": "2026-09-30T00:40:34.022Z",
+    "filePath": "intelligence/regulatory/REC-REG-20260930-71c3d6fd.json",
+    "externalUrl": "https://www.federalregister.gov/documents/2025/04/07/2025-05936/request-for-information-on-artificial-intelligence-infrastructure-on-doe-lands",
+    "canonicalUrl": "https://www.federalregister.gov/documents/2025/04/07/2025-05936/request-for-information-on-artificial-intelligence-infrastructure-on-doe-lands",
+    "urlVerifiedAt": "2026-09-30T00:40:33.975Z",
+    "sourcePublisher": "Federal Register (Energy Department)",
+    "externalDocketId": "2025-05936",
+    "fileSizeBytes": 1417
+  }
+}
