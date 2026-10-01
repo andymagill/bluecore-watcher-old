@@ -2638,5 +2638,49 @@
       "pubDate": "Wed, 04 Oct 2023 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-01T20:51:13.673Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Corpus Christi’s nuclear power plans - American Journal of Transportation",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQaUNBWTNydU5fX1FkajB6clY3UnNmUF9JZ3hna2JHeWtwLTZnbXVFajhUVU05WjV5SFFvY2N4SGhnd3ZnYWpVcHdhMzVETHAxeWx6VlVmNTd1RHFYR1ZsYU5EYy01Uy1BS0laNG9jTGpkZXNQMmNqZkZhR285Vy1IckQ4bHZWYzdl?oc=5",
+      "publisher": "American Journal of Transportation",
+      "pubDate": "Thu, 01 Oct 2026 17:51:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-01T20:51:13.673Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach becomes first US port to partner with MARAD on nuclear-powered shipping - Manifold Times",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNa0hsNTE0ODgwQlRDOEFpM3hGUXoyNGhETkxFdFlmNUxta0xiUnpQS1pyaE91QWFTZGhMS2ZuYWVodlFZRVZqUHRsU244Ni1EenFLcnNNWlFDNVlCaEc4RVYtQUVwczI4Zk5SRFVDX1Y0NlJyR0lRTC1JRXhobWd4b2VhWGtuX3RtSE1XVFR6ZElLeUwxcm1ueUx5eDBQWXZlWjlReENHdGFKTlZkVDV6ak5qREdpQTE1a1E?oc=5",
+      "publisher": "Manifold Times",
+      "pubDate": "Fri, 24 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-01T20:51:13.673Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Vampire Planet: How Capitalism Chokes Los Angeles - CounterPunch.org",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOd1MtNm1mQlJtMWVxZGlEY012b05UVXAxc1gzdWJ6WEFGOXpGblBqcGdJeE1hX2FCMmxMeW9uUGtSOEtXT2Y3djRhLWVvM2dZMkg3aEFlbklPWUprVUdKWFR2VFNqbkNkWC1iWlZ2ZlV5YkFHODlDa0w3WFVLa3JYYlFQT2RMUU5TbERvRUl3LVFvSEU?oc=5",
+      "publisher": "CounterPunch.org",
+      "pubDate": "Fri, 21 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-01T20:51:13.673Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Washington Puts Oil Flows Ahead of Iran’s Nuclear Program - کوردستان 24",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRnNEeFpsWVdEaVZFMTRwVlBTZHp5cXUzckNDb2pUVzJTY3hKUXh6WjhmX1UzNEM3RVVuQWZEQU95dlBuVkVla2Y5Z19QTlBIV0VWRDE2THJHb3Z0Q2NwU21lQll5aXBXN2pSSVllc3diZlJrZ1AtWVA0dTYzdkZCaDF4ZTZWdkNIZjdGVExseXlWMzFPbkRrX2JMVUhKbzg0a2c?oc=5",
+      "publisher": "کوردستان 24",
+      "pubDate": "Fri, 14 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
