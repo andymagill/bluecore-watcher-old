@@ -2594,5 +2594,27 @@
       "pubDate": "Mon, 15 Dec 2025 08:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-03T22:43:45.471Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach takes first step toward nuclear-powered port - American Journal of Transportation",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQYWg2QXJ3SHZxTU45ZG5WRlVZYzJTTmdLQXYwZWJHdTgxb3ZVTW9TTng4TGk4MEwwMEVZdUwtVjhJX1dUbzRkNkNmLW0zUkxCQzRSZ3FSOElRakRVcUdVRncwM1d0eDgxZTgxdHNLbjFhUzFPeHZGaURQUHFmenpRZDd0UFVQdTVTN0RmeXk0MnZKUTl3WWx5RTFZQlIxcEtzNjBv?oc=5",
+      "publisher": "American Journal of Transportation",
+      "pubDate": "Thu, 20 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-03T22:43:45.471Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach takes first step toward nuclear-powered port - American Journal of Transportation",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQYWg2QXJ3SHZxTU45ZG5WRlVZYzJTTmdLQXYwZWJHdTgxb3ZVTW9TTng4TGk4MEwwMEVZdUwtVjhJX1dUbzRkNkNmLW0zUkxCQzRSZ3FSOElRakRVcUdVRncwM1d0eDgxZTgxdHNLbjFhUzFPeHZGaURQUHFmenpRZDd0UFVQdTVTN0RmeXk0MnZKUTl3WWx5RTFZQlIxcEtzNjBv?oc=5",
+      "publisher": "American Journal of Transportation",
+      "pubDate": "Thu, 20 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
