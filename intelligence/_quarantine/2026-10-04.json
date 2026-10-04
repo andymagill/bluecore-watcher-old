@@ -2528,5 +2528,49 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-04T13:46:36.229Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Washington Puts Oil Flows Ahead of Iran’s Nuclear Program - کوردستان 24",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPRnNEeFpsWVdEaVZFMTRwVlBTZHp5cXUzckNDb2pUVzJTY3hKUXh6WjhmX1UzNEM3RVVuQWZEQU95dlBuVkVla2Y5Z19QTlBIV0VWRDE2THJHb3Z0Q2NwU21lQll5aXBXN2pSSVllc3diZlJrZ1AtWVA0dTYzdkZCaDF4ZTZWdkNIZjdGVExseXlWMzFPbkRrX2JMVUhKbzg0a2c?oc=5",
+      "publisher": "کوردستان 24",
+      "pubDate": "Fri, 14 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-04T13:46:36.229Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "IAEA launches global push to bring nuclear power back to sea - Splash 24/7",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPanZHcDR2UVJ5OUFJVS1MSDZfZGtjZW1tV3h3ODdLME1OT2p2blkyWVZWbUZrVFgyMl9VTkRnaEd5bGxkRG5DeFdhUV9wcXZ3LVBKWUpZQnVwU2FyZzZlMEFKdHpxUGZRRW9CZmh4QkZBWV82dTR2YnlXOHVUVXB6VU12dWJUdTFUaVVv?oc=5",
+      "publisher": "Splash 24/7",
+      "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-04T13:46:36.229Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Copenhagen Atomics Begins Engineering Review For Ocean-Power Floating Nuclear Plants - NucNet",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZU9XNF9hbG9Ic2xIaFozLXIyUGNLN0M0WFZJV0M3VUNEcW0xMzZ6ZVpLb1RXaGJOcmpNZmtXZThidHh5ZFZXa1h4SWtSaGRkaEZianQ3RzFRd3QxRGhPaTRQVEhVRGVPLVoycWIydGc1VmE5c3dXRnp1bVJYQ3g2d0V6TFRiREZwMTVyY0FoRExGdGlKZFBDMGh6NjI1VWliUWdsWGVyOEZKWXpQZU82WTBjNngtdnY5RnpJR2Jn?oc=5",
+      "publisher": "NucNet",
+      "pubDate": "Tue, 26 Aug 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-04T13:46:36.229Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS approves floating SMR - Nuclear Engineering International",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1Oc1MwWnhLWk44bWJyd24ydlc5RDdtVkQ0UExxLTZRWm5fSmw5cW1tc2VpcjNWOVBtSm1ZREczSzF2STFYd0prb1lDcnhTdzg1a2wwV3hDRTNYMk1zUF83Y0pXMUIxdjJJbnlr?oc=5",
+      "publisher": "Nuclear Engineering International",
+      "pubDate": "Thu, 26 Jun 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
