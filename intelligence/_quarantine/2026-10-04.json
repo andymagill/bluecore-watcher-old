@@ -2638,5 +2638,60 @@
       "pubDate": "Fri, 19 Dec 2025 08:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-04T22:49:59.541Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "One of the Busiest Shipping Ports Wants to Go Nuclear - WSJ",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPVjZ2cE5iWEw0Z08zbE1kbmNJSk00bUJHbmhHbjU5b1B5QXNvQ2tMRTZ6SUJQR3Nma3ZRYk9MWGJmMG9jM01LV0ZVbnRTcWh6Y0xQWjRVdXFCeXhqeC1FckRnek1mOEJ0QzRoSnlqT1JRbG5pTHl1cFozMzFZWFBiRjJrSkdUZkhYdHhSdFJfdkhhSWVxay1mTGZSVnduYXU4WnZJ?oc=5",
+      "publisher": "WSJ",
+      "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-04T22:49:59.541Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach port will provide Pier B on-dock rail updates on Sept. 2 - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOLWQtRndmdjBTTjlUU2FlaG93VmpJUjEtbjB5TzNGakgxV2t0SF9QeUlwd3hKaWkzbDhKQ0hjMVZkN0dpeUMtOVp6cmFrdVpmTTZVSXNNOE9BTlRkUzJ2MjdoeGtvNENycW1IaGpCVlFqOWk0MHBNb3JrVE9OZVlQNV9Ma1Qxb1FQS0VCdWk4b3dHbV9MR3hORHplb05vLW1xT3lzRVZDY3FDeDRu?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Mon, 24 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-04T22:49:59.541Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Texas port looks to SMRs - Nuclear Engineering International",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9Tb1NmZXp2aEZRSVkySXpvQmE5RGFXTmJQRFBRWDJjdTlNRXFWVEdVdklwVlRPRXFMZGN5clYxT2cxNXFvRTJKS2o4RWhjY0hkRFg0ZmhYMjQ5TWppN1JlMEF1SjFkTE43ZEE?oc=5",
+      "publisher": "Nuclear Engineering International",
+      "pubDate": "Tue, 25 Aug 2026 12:04:45 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-04T22:49:59.541Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Canadian National Railway raises its 2026 volume outlook on firmer freight demand - MarketScale",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNcTlpVUlnYXZOTDk4Q3FacGxNWTJwNXRzMURQTkZIZ1RWOVcxWDZ3QmFOUTloU01nb21Ydi1VV0hrcVhzYURQdUVpVnNNQnJSaXE2Si1hM2NTMU80VS10ZHRSTHNfRS1wYmYwSXVRLXNzV0pwM0Y2Qm5Nb3hKc0pWaWlVVHdndHVQRkdwOW83am5ZeWhNYURFTVQweFRuTTI4SjZTdEZ6dEZ1b2dQSFY5RHdldWVaY1lBV3hxS0Z2bjl2VU1hZTlzajVNdzRITl9F?oc=5",
+      "publisher": "MarketScale",
+      "pubDate": "Mon, 03 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-04T22:49:59.541Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach awards record nonprofit sponsorships - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQZmtyN0FZcEQtUnJZa0E4X1pzS1Y2ZHhiMjgzZ1FpUlJjVU9aVW53SWk4d0FDUXpUd2ZwOHpTcHZudGU2SC0xWUJ1X2cwUmNxVXM1bVA3OHlFSDRDSG5UMHo0b3lwWklua0c4VE02enlKZG43UWNJRmhJWWhNdXdQaFZrX0UtUVprT2dySkVwR3dVaHlkbk9mWUY3aTBhUQ?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Tue, 31 Mar 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
