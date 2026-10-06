@@ -2517,5 +2517,60 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-06T11:03:49.515Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "U.S. DOT and Port of Long Beach Sign Agreement to Explore Nuclear-Powered Shipping - Xinde Maritime News",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE41VF9YOUVWNnhqTVlGeFVNeGNqRWFsRXBBWnphRDRjbVZSU2FJQzVCQjNTaVNoVE5obU5kTHJQZFIzRDRqci04NTgzcmxIRXM0N0M4M2NILTZLejRsekFCTGNQMUx6akE?oc=5",
+      "publisher": "Xinde Maritime News",
+      "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-06T11:03:49.515Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach Commission President Neal targets 20m teu goal and nuclear energy standards - Container Management",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQZFdfdzhVR3AtMGVPUlFwMkVxd0ZIYjNUakNieWFlYXdlaUlaUXlocVVseldEbHd5RENtUnJjM0NuRXNWZnlWRE9MRlpjWGtWaHpWTkhkb2owaHBKSWRUMk52VXAtYmlkNGZ5M1VGU3pWQm5YWlVFNHotQ21QMnMtSl9KRl9HZDBfM2VyQVIzaVpUYTJ1R1B3ZW9YN2pGc01xc3gtSg?oc=5",
+      "publisher": "Container Management",
+      "pubDate": "Tue, 11 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-06T11:03:49.515Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Watch Port of Long Beach turns to floating nuclear reactors to cut emissions - The Bottom Line - FOX One",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNS0NHUEc0N2c4RzhPeFQ5STRMdWFXQ01ORkRvSDQwdHI2Zm50RWVPTUZjcWZtWXlERDU1UlVDQXBWc3Q5THlNbkRPWmxSajFzbEp4ZDU1OHk4N2FiRE83ZmVaNzJheGFTZ3N1WDhTZUJtWXZRY0gwXzVUOFRYRzJsT2cyY0l4QWVjVC1WVkMwRS1mWmd5R3N5ZHJtS1hMdHA2aXZlbW45TExTUU1zUUlpbFh1N2phU0Y5RlU3RGk5OA?oc=5",
+      "publisher": "FOX One",
+      "pubDate": "Fri, 04 Sep 2026 23:17:57 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-06T11:03:49.515Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "U.S. DOT and Port of Long Beach Sign Agreement to Explore Nuclear-Powered Shipping - Xinde Maritime News",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE41VF9YOUVWNnhqTVlGeFVNeGNqRWFsRXBBWnphRDRjbVZSU2FJQzVCQjNTaVNoVE5obU5kTHJQZFIzRDRqci04NTgzcmxIRXM0N0M4M2NILTZLejRsekFCTGNQMUx6akE?oc=5",
+      "publisher": "Xinde Maritime News",
+      "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-06T11:03:49.515Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS, HD Hyundai to study reactor-powered container ships - American Nuclear Society -- ANS",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNckNaODhRempZQXBCVmZqWEhyVHdDc3FOVmt0VTlaNmlhbjBwTEc1QmFmblpINzBIeWh4VzdENUIyNzFid3lyYV9ydEtQT19tWnNPT29wNGFLWkxzbnBQaGh2MjhaaTdaNWtocnBTZGdzZ1hpM2p4ZVNmeUUydHNDRGd5bGh4b2NrOEQ3WG5oVXF3Z1BGbDFBUnltSy1nRlk3MGVQakJONA?oc=5",
+      "publisher": "American Nuclear Society -- ANS",
+      "pubDate": "Wed, 11 Mar 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
