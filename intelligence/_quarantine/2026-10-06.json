@@ -2638,5 +2638,27 @@
       "pubDate": "Fri, 19 Jul 2024 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-06T23:38:02.462Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach sees another record broken with August cargo stats - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQOEhabUlIWkhsbnBQM2liN0gwZ3VIRzVoRmdkNGFRQ2lnVzZTOEFOTzlsWWJVaVlnOHBndzAycEdHRF9XeUlKRk5kNnJ1YnRGZkRZMjRlVUYxcHhVNGhWVFg1bVJISmphUWZPVm5wemJLbUtGcDFmamRQMHY3TVM1SUxjWi15WU8tSWpVR1E5U0VBYkItdmQ4N1pzWnZNdUtBM3laRXVDLU5VVTNxdFRETQ?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Fri, 11 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-06T23:38:02.462Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS approves second Korean floating SMR plant design - World Nuclear News",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPamVVWFE5WXFjS3F3ZGhibHVHanNsZlRmSkxZTzZFaWJ5b2NZM1NlYnJzT0JFY0V6ZXNwc1l4Q0RFQ2RFU29zbVhlajltMlRTQkNzX3l6cG9xUDFjb0xjVDFKemVReDZLRXZ2RWwweElub1hSVVRWZ3Jzbmt4MERQS2RqU09CMGlQek82U2hGNUJLVk1ZYVJhRFl6R00?oc=5",
+      "publisher": "World Nuclear News",
+      "pubDate": "Wed, 25 Jun 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
