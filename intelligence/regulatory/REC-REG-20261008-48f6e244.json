@@ -1,0 +1,27 @@
+{
+  "id": "REC-REG-20261008-48f6e244",
+  "operationalVector": "REGULATORY_PATHWAYS",
+  "subVector": "MARAD Frameworks",
+  "headline": "Modernizing Reactor Licensing, Safety Oversight, and Siting Practices",
+  "verifiableClaim": "Modernizing Reactor Licensing, Safety Oversight, and Siting Practices",
+  "verifiableDelta": "Accessioned from Federal Register (Nuclear Regulatory Commission), published 2026-07-16. This record captures the headline, publisher, and publication date as stated by the source feed; the article body was not retrieved and no claim within it has been independently corroborated.",
+  "keyMetrics": [
+    {
+      "label": "Docket Number",
+      "value": "2026-14341",
+      "status": "nominal"
+    }
+  ],
+  "sourceProvenance": {
+    "documentRef": "2026-14341",
+    "commitHash": "",
+    "timestamp": "2026-10-08T08:21:24.677Z",
+    "filePath": "intelligence/regulatory/REC-REG-20261008-48f6e244.json",
+    "externalUrl": "https://www.federalregister.gov/documents/2026/07/16/2026-14341/modernizing-reactor-licensing-safety-oversight-and-siting-practices",
+    "canonicalUrl": "https://www.federalregister.gov/documents/2026/07/16/2026-14341/modernizing-reactor-licensing-safety-oversight-and-siting-practices",
+    "urlVerifiedAt": "2026-10-08T08:21:24.484Z",
+    "sourcePublisher": "Federal Register (Nuclear Regulatory Commission)",
+    "externalDocketId": "2026-14341",
+    "fileSizeBytes": 1401
+  }
+}
