@@ -2638,5 +2638,27 @@
       "pubDate": "Mon, 31 Aug 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-08T20:14:46.381Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach scores top cargo numbers in March - Daily Breeze",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOYThWcmJUdnljeWFhdHoyN1NzMlF2WWxYOTRlR29EeUZJT21HT2Fab1RuUlYyZHVyNlEwaVBER2RPd1J5aDdELXQ1MS1uVUR6QkRwNzRqNjQ1TU5tSWhGa1RjWC0xU2I3SndQeHFJN3hBSVhWaHJ0WjA0M0o2RTVLc18wN0E5RFlWVG1wYzJOWWEtWmREeWpJ?oc=5",
+      "publisher": "Daily Breeze",
+      "pubDate": "Wed, 15 Apr 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-08T20:14:46.381Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Watch Port of Long Beach turns to floating nuclear reactors to cut emissions - The Bottom Line - FOX One",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNS0NHUEc0N2c4RzhPeFQ5STRMdWFXQ01ORkRvSDQwdHI2Zm50RWVPTUZjcWZtWXlERDU1UlVDQXBWc3Q5THlNbkRPWmxSajFzbEp4ZDU1OHk4N2FiRE83ZmVaNzJheGFTZ3N1WDhTZUJtWXZRY0gwXzVUOFRYRzJsT2cyY0l4QWVjVC1WVkMwRS1mWmd5R3N5ZHJtS1hMdHA2aXZlbW45TExTUU1zUUlpbFh1N2phU0Y5RlU3RGk5OA?oc=5",
+      "publisher": "FOX One",
+      "pubDate": "Fri, 04 Sep 2026 23:17:57 GMT",
+      "type": "NEWS"
+    }
   }
 ]
