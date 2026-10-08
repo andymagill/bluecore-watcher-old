@@ -2605,5 +2605,16 @@
       "pubDate": "Thu, 10 Sep 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-08T12:21:59.440Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "California Currents - Politico",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9xOV9ERVZ0UDBVMjNqc1h3UHVramdwUUZaZ1FQSnRnWEZxTTNwUnhmNnV1akZneC1aLU9OSXZYTFhFR3RBMjZiYXhqcGtEa0d0QWZZakhFNTZiVmdKUFNNdVdick9aS1E?oc=5",
+      "publisher": "Politico",
+      "pubDate": "Tue, 09 Jun 2026 14:39:17 GMT",
+      "type": "NEWS"
+    }
   }
 ]
