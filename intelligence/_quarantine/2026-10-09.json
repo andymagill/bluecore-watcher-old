@@ -2660,5 +2660,16 @@
       "pubDate": "Mon, 18 May 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-09T16:14:45.070Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach Port Signs First U.S. Nuclear Reactor Partnership with MARAD - Data Portuaria",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOOFY1WHZob0JaLTJCOUlQZldYejE1UUppSHVvQWFJbTRtZHhNcHNqa2had2xkb2hwWWJYVkJHV2x4SnVOSlk2NnRlZm8wckwxUzdwWHZWYXJwMzFPOEJ6LUdnZDdBdHNUTkdZN1liVVc5dHg1RWJ1LVZrQTBqMWNMZUhoQ2xuM0c0aWxndVRtTTJfRGNfcFlHRjhaY011OGFGdEdxRVljenFXOWpnYUViSW1qMlFMamZVYWNqc0M0MTUzMk0?oc=5",
+      "publisher": "Data Portuaria",
+      "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
