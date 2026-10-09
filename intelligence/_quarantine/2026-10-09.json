@@ -2616,5 +2616,49 @@
       "pubDate": "Wed, 26 May 2021 17:01:59 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-09T12:20:30.709Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Community event sponsorships available from Port of Long Beach - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOSUpPVTVZSWh3TjZzV2VSdjdLY0JiVU83MEpXSENweDI2Ym43WlRCek1PQmFvSFZXN3FZQzNzcFlRTXlvQ0dOOFZCNGJnVzQ4VGtZRFlJaXFKWE5KcWFrZnpWOGtDUHJzNEVyQXQzLXZQdzVBd3A4QUpmUHBYNGZ4d0sxRVM4OE9PMGlNNG1FWDR0a0I1blpXejV6Vk1jLVpxZEhzMDJPdw?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Wed, 29 Apr 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-09T12:20:30.709Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "New consortium to explore floating nuclear power for Mediterranean energy needs - Offshore Energy",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRnFLVzlUOGE4LTNBYVJxdzRtQlJIT3JLSVQyYlN1a2tMUmxwN0swV2dmYTE2Mzk2M180YjFhUUZ1ejlUbjV2Vy10bWdtMU5ERXFRZXIyWWUweWxMRXBGUENERUJMYTc2Tnc5dHVMdmlQTEY1WEkxTGlQdnZ2UXhvOEt4OEpiZjk0bXNlVzM5aWhQcnJHajZjYnhuVGx5YUdWNDFCN25OdTk4X28yVHZRV2QzQlRSNWVyUVE?oc=5",
+      "publisher": "Offshore Energy",
+      "pubDate": "Thu, 03 Jul 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-09T12:20:30.709Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear maritime opportunities and floating data centres - Seatrade Maritime News",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbDFQWUVXTkRCMFpwb256aFFoZndVaU52cmVlZkZzN255T0FkZ2ZpOWhEMm43ZHJ0aEhqSXhESU9lZWJiQVFibFBoM25faWo1LVdsZnBLazhmUkZDYjhQUXF5bEY2bjVvWVBFWUpnN1RHMTBwdGpqOFU0Q2NpWm1jWWI3Vm1waXQwZkpqY1o4TTdldEJmd1phZzQ0cGhaUnp3?oc=5",
+      "publisher": "Seatrade Maritime News",
+      "pubDate": "Mon, 31 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-09T12:20:30.709Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Russia Builds First RITM-200 Reactor Unit For Leningrad Nuclear Icebreaker - Marine Insight",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYWZYVU9WTk00WDVvUDNmUExpWUFodm1KMm56YUtnTzZXLWMzd2xjaHgxc09LYVZCR1ZObUVFdTY4TEVZT2k1aHN4N0FaaWZLaFRYSGNOa1FLTTBhVnRqYmxSLXI0amZ6N05UeXdTaGFwS0dlNUozOUtSV3RqN3dtck9YaVdmcXNsR3VTTmxBRE02Y1VBeXVVUmdsNVpVSm1BMTVQNlE1UkM?oc=5",
+      "publisher": "Marine Insight",
+      "pubDate": "Mon, 18 May 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
