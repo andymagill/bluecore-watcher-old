@@ -2594,5 +2594,27 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-09T04:18:44.895Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach scores top cargo numbers in March - Daily Breeze",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOYThWcmJUdnljeWFhdHoyN1NzMlF2WWxYOTRlR29EeUZJT21HT2Fab1RuUlYyZHVyNlEwaVBER2RPd1J5aDdELXQ1MS1uVUR6QkRwNzRqNjQ1TU5tSWhGa1RjWC0xU2I3SndQeHFJN3hBSVhWaHJ0WjA0M0o2RTVLc18wN0E5RFlWVG1wYzJOWWEtWmREeWpJ?oc=5",
+      "publisher": "Daily Breeze",
+      "pubDate": "Wed, 15 Apr 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-09T04:18:44.895Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Consortium debuts new design for U.K. SMR - American Nuclear Society -- ANS",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVWVnQUxaMmFQWG5kSDVCMVQ3N19hV1RaOHR0a181U2VIZE1OdnljdzdaOHN2cWJnV2FnYXJDdXVWaTJtVVFNS0EwZ1B1Q1Q0T3RLcUxodlhtUmZsZ09IVlQ0T3Z5R1BUVFlZSm9rOTE4SFk2c1dSUTdtUG1ZRHlCelEybC0?oc=5",
+      "publisher": "American Nuclear Society -- ANS",
+      "pubDate": "Wed, 26 May 2021 17:01:59 GMT",
+      "type": "NEWS"
+    }
   }
 ]
