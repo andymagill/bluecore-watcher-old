@@ -2605,5 +2605,38 @@
       "pubDate": "Mon, 31 Aug 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-10T08:17:38.991Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Raises $50M Seed Round To 'Create And Deliver Zero-Emission Energy' - AfroTech",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1SZUJGWS1nQ1BCQm9fdkVXQ1R0dFFZM3pIX2gwaFZ2Rm14cFlJU2c0MTREWFRub05aN3ExeEFTWERQS3NHdVcybHlSMlNBR2xOT3JfdVBPaEE2dzVCRzNVSF8xRXB0RzQ2cmc?oc=5",
+      "publisher": "AfroTech",
+      "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-10T08:17:38.991Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Corpus Christi port, DOT to explore floating nuclear power plants - Corpus Christi Caller-Times",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNUkY4c1dSNXJoenNvZGlvb21fVkJNZ0JrM0xVZld4ZWZTdDBaRjg2RFdiWXhHa2hZcUZIVDhBa2gzaGJ4S3JYZjViWGVuVC1xNWVWS0dPTFlRUC1ZSWJsQnllb3R6TlUxR0hjaHl6ZGQtZkxIS3RMTXJMQVZlMm1rblpNR2tNM2tYcmIydENVak9jVE05T3JoNmlPcnpZdlBWbmVRT2ljWGg4d2pEM05YODlFMXFaalhaRElxSUtoclU0eWgyVGxOOFBaeml4Uy13OGZJSE0yc2xtWWEzZHBTU1ZtU1FUYlgtUmwzZA?oc=5",
+      "publisher": "Corpus Christi Caller-Times",
+      "pubDate": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-10T08:17:38.991Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Russia Builds First RITM-200 Reactor Unit For Leningrad Nuclear Icebreaker - Marine Insight",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYWZYVU9WTk00WDVvUDNmUExpWUFodm1KMm56YUtnTzZXLWMzd2xjaHgxc09LYVZCR1ZObUVFdTY4TEVZT2k1aHN4N0FaaWZLaFRYSGNOa1FLTTBhVnRqYmxSLXI0amZ6N05UeXdTaGFwS0dlNUozOUtSV3RqN3dtck9YaVdmcXNsR3VTTmxBRE02Y1VBeXVVUmdsNVpVSm1BMTVQNlE1UkM?oc=5",
+      "publisher": "Marine Insight",
+      "pubDate": "Mon, 18 May 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
