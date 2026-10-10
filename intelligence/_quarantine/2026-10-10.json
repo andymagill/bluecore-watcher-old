@@ -2572,5 +2572,38 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-10T04:16:45.439Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Texas Port Looks to SMRs - House.gov",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1McTNyajhlYkV6R0xJd29iUzdQbGQ3QXVUWTJNS0FxcGppTXdiVFZES0NLdU03VUxhSVJ4UGM3bU5CYWsyMHNoV2hqZlVwenQwRWtxMDVEQmtaOURpdzVGM2U2Z0o?oc=5",
+      "publisher": "House.gov",
+      "pubDate": "Tue, 25 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-10T04:16:45.439Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Corpus Christi explores SMRs for maritime use - power-eng.com",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUzBudHZ6aTU1aEI5eVZ5M3YzV1djZzNla0xUTmtZYWJtbFFDN2lsdm5qX3pRMk5LUWd0dDlxUlpwUVA0SHd4MGdhRnNGY2lZZDYwVmpraFFfSnNMRHFYaGlWSXgwakhFbGw1QzQ0aGs4WFJ3VV9odEJJR3c3VlZON1hrb1laUEplZFZ6SDdJUWItbXRGalVjSQ?oc=5",
+      "publisher": "power-eng.com",
+      "pubDate": "Mon, 31 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-10T04:16:45.439Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear maritime opportunities and floating data centres - Seatrade Maritime News",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbDFQWUVXTkRCMFpwb256aFFoZndVaU52cmVlZkZzN255T0FkZ2ZpOWhEMm43ZHJ0aEhqSXhESU9lZWJiQVFibFBoM25faWo1LVdsZnBLazhmUkZDYjhQUXF5bEY2bjVvWVBFWUpnN1RHMTBwdGpqOFU0Q2NpWm1jWWI3Vm1waXQwZkpqY1o4TTdldEJmd1phZzQ0cGhaUnp3?oc=5",
+      "publisher": "Seatrade Maritime News",
+      "pubDate": "Mon, 31 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
