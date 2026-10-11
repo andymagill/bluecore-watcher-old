@@ -2583,5 +2583,16 @@
       "pubDate": "Wed, 19 Aug 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-11T16:15:03.477Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach scores top cargo numbers in March - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQOEVodzFlc0hBSURzTVNDYnl4ZTVObHRPWnFNSUR1ODVJdjhpQmIyRlBFMzRDQTQ2Ny11TkNlRjAxS2RWeVBuYm9sMTBrcmI2U0ItYUxxenZYdTYybktnMzAtcmxWalhJWEJFQ1Zxb2lDWDVZOWd4Q3QyNXlSS05pSDJSUTFBZ2w2bTdNdXRiNWpJZHRzNzlqWnJn?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Wed, 15 Apr 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
