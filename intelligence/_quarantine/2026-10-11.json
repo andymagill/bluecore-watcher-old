@@ -2561,5 +2561,27 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-11T04:17:19.297Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Lands $50 Million Seed Round for Floating Nuclear Reactors - finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBkRFgxcC1udVhrTWNGdXhOMzF2OGp2cndGT1Nmb2lfbDhPNWJSRVNWZHNCS19BWkU1b1BKTTNCWC1neVk5VmVscHBXM01qaGY2MDVOZkRvUW40RGZLN3lsTjBDcTNPTnowSFVjZTlvUExXVlRzS1E?oc=5",
+      "publisher": "finance.biggo.com",
+      "pubDate": "Tue, 08 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-11T04:17:19.297Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear Reactor on a Long Beach Barge: Climate Fix or Regulatory Nightmare? - Yahoo",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaTVtVTVyaWotUEZfMnRJUTlGbjVuV2ZhT2g3OEVCWVJMa2xIaTVSYU5ZUWlrTHlDZHhNLTFMVjBTVjRMamdkT05iMW5XZVBXSHpzVzJwUVF1WkZLMXJpTWxLN240UU9FVGFVclRneWhHUV9VcHFHMjE0WnZNRzB1b2lfVHBWczhyRFdXckJSVTk2cEd4TUE?oc=5",
+      "publisher": "Yahoo",
+      "pubDate": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
