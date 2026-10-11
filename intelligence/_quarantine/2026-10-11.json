@@ -2594,5 +2594,27 @@
       "pubDate": "Wed, 15 Apr 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-11T20:14:01.089Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Article | The audacious plan to float nuclear power into California - POLITICO Pro",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZG1FZW9yV2FoMXBiZ043Uk9WSTBBdXVJTzBkMkREMlN4NWpZdUIwSl90aXpnTERsLTZneFc2U01BR20tVFVLRWVwTUtkVkdGeDFadGw1VkZlc1p3TThJM2xWZWVQeERYOGdnak5NRUtMd0VRTjBHX3ZFT1IyQ3M0ZEI2MEhLQVBQOV81SEpBVFRlNFgyNFFQcEV5bG9tYTFFVnMtbjYwV21fLWJlTHhhbnN3Wi1zS3dL?oc=5",
+      "publisher": "POLITICO Pro",
+      "pubDate": "Thu, 08 Oct 2026 00:37:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-11T20:14:01.089Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Corpus Christi port, DOT to explore floating nuclear power plants - BIC Magazine",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQN00wLVlDS3AxRnNFMEVIWlpHeWVqNnlHSjZPclR1aFA5dkM3SVFtR2thdzlHcjZlOFZCME55UXdNdzVteUJyOGZ6a0NUNmtXd2ZRN0pxTXAxOHpQUFBCTU41UEdXSzBzX013U3RhMnR5VFdWZmtWRTJXeXJhLVJ0WWRrSWpDWElyTU5nSlhuRjBUMC05a3pFLWpjc2MySVJ1eXJHWkZURnNJV1dFMktQd005eVUwcEpTN3c?oc=5",
+      "publisher": "BIC Magazine",
+      "pubDate": "Fri, 21 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
