@@ -2572,5 +2572,16 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-12T08:33:32.910Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Raises $50M Seed Round To ‘Create And Deliver Zero-Emission Energy’ - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQYXdZT2pOOFc4SkVQOEZ6LXIzbVBYX2U4NFV4VXFfUlJHbmowXy0yMV9raV9MbU5KWWptWmpKRzZmaE5FT3pPMDJ1d0dOaU01S2IwWUZ5b3ZUZkZRRHBFRmpkRDJEaERiRXh2NkJkZTFMUGVBUHBuZ3Nfb3MtVmVsMTZ3RGo3cjl6U2RPNWl2LUM3QQ?oc=5",
+      "publisher": "Yahoo Finance",
+      "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
