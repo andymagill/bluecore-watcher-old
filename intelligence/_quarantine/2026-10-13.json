@@ -2660,5 +2660,27 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-13T04:21:27.533Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy raises $50M seed to develop floating nuclear power systems for ports and AI infrastructure - Tech Funding News",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQc1F3Wkd2aDhYWk9CcEpPNExKU1FWdklqV3h5QWdiUWt4Nm1kbzl3anE0SkdreHBjM1lKQ29fd3EzRDYybUFYbmkzNFdBZUFOcWN6ZzVKTUZTeWhtd0o3S2ZvNVdlN1lLRjdtUEFmUm5VYlRPUHc5ajRVTTRjWkx4amU3T3JrU3F1ZEYxRTk3SHh4QVdtbVRZT2trUWEtaEd1cGhYZ0pqeEItSV9nZ3pqcXhtbEpvRWZEMmxyNHl2RFI3Zk5WOE5PZHF1LVNLMXM?oc=5",
+      "publisher": "Tech Funding News",
+      "pubDate": "Tue, 08 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-13T04:21:27.533Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS, US Department of Energy sign MoU on commercial maritime nuclear applications - Baird Maritime",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNUjFTcDhlNk5aZzBrUXhDVzYyZGswWlFPSkdXVXo4Wm5HNGxJb3pXc2huZzM3WVFKY2tsQ1dOQW1SYThMZVJ2TnhLMVBnbHRuRDVmMHU1bFV4OU8teXBOeWNEYTF3NEUwbHRkUVdIWU1ZV25LZVd3YzhOZUtwZllDS2dKWFZCTDNlcjgtSlVlYnk5QjA4TjREWS1zd0LSAaoBQVVfeXFMTzJrNndnVHFKc1dwU0FWTWVEdXpBZXZMSjhMckFyQmFnRnNmZzhkTE9PVVY0OFVsNjZGWUZzWlY3emh3QU15OWU4OUphcHVWQW5iM0ppMnFxZmZOZWZpUnJyVkR5LUFVcm5aVzV6cmZjb3Y3Ql9jekpCWHhPckUwZEVMMzNSay1wS3pCaHlrYlQyWktORzdYZTBlQW5ZZnJTTnhyQzMwY1hfN2c?oc=5",
+      "publisher": "Baird Maritime",
+      "pubDate": "Tue, 13 Oct 2026 01:55:26 GMT",
+      "type": "NEWS"
+    }
   }
 ]
