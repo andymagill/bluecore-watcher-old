@@ -2748,5 +2748,82 @@
       "pubDate": "Mon, 24 Aug 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-13T16:16:07.256Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Secures Nuclear Fuel as Floating Reactor Plans Advance at Port of Long Beach - Breakbulk.News",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQXdIUWRpVXJBTmpLamN3RTBvSTlsM05SaE9TbElXZWU2bi1MY1p4OEpvVURoOHF3NVZPTXF3V0VSWXdwQnZlNmpLSkVpUnV1VURQSlBpdU5hR0hYbll3clZ6cC1OLW81aU83WXMyTTd6a2p0YlBNMnE1OU5ZQWF3dGNuemQ0V0xQRks3RWxlRE1ybnVONWZkY1NneG52OERYSjJxLWxtek9STjhSQkdybWdUNTRYTlk?oc=5",
+      "publisher": "Breakbulk.News",
+      "pubDate": "Tue, 13 Oct 2026 12:22:16 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-13T16:16:07.256Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach, MARAD Sign First-of-its-Kind Partnership Agreement on Nuclear Energy in Maritime - Port of Long Beach",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOZkYwaXd5ZjItekN4ZHN5TlRfbXlnSnN3eVg0U3N3a0w1YUdSRmFJVUlZMEJFck1kMWxOV3NTZWN3aGY3WVp5RmxKUzR0bUh4OV84ZEx2U2JqNWRDT0tOUWZSWXhEUC1xUjFKeGdKeHE4eWRQZldpUmY4LVdPeW9RbW0wYXVhMXBXeVloSnFFVllkWVRfZGdzS3g5OExnRGg1NTNpWjBUR295aXlHSjF3YXdvSWF6UExvaXhKYmswc2wtMnoycVNwZHJvb3ZoSHlVV094ME9wdmJFUDhLbFl3ZXFIekVDcDdq?oc=5",
+      "publisher": "Port of Long Beach",
+      "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-13T16:16:07.256Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Kofi Asante's Bluecore Energy secures a $50 million seed - Condia",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1taUZsNHRHbkFjeE9Bc3RUanNiR2NEalV2aU1YaXBtMFlNdW52TzJHZjBXYWRlaXdtX3pQaU9lMkRRaEV2X0dJNUI0cjNhdld3SzhVVUdtVGdFWG03UUlHYQ?oc=5",
+      "publisher": "Condia",
+      "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-13T16:16:07.256Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Secures Nuclear Fuel as Floating Reactor Plans Advance at Port of Long Beach - Breakbulk.News",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOQXdIUWRpVXJBTmpLamN3RTBvSTlsM05SaE9TbElXZWU2bi1MY1p4OEpvVURoOHF3NVZPTXF3V0VSWXdwQnZlNmpLSkVpUnV1VURQSlBpdU5hR0hYbll3clZ6cC1OLW81aU83WXMyTTd6a2p0YlBNMnE1OU5ZQWF3dGNuemQ0V0xQRks3RWxlRE1ybnVONWZkY1NneG52OERYSjJxLWxtek9STjhSQkdybWdUNTRYTlk?oc=5",
+      "publisher": "Breakbulk.News",
+      "pubDate": "Tue, 13 Oct 2026 12:22:16 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-13T16:16:07.256Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach port reports record cargo numbers for September - Los Angeles Daily News",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRGhzNUtQSGJsbVEyWDd0TTRNczFMclVabzc4STdZY3c1SWxqdTlzWS1ncUM5UlQ2Y2VndC1PV0wwQzNPSmM0ei1jMnZpN2hGM3RRZHh3SlpMNzhOT1VZS0R6MGphbTBfdVdSTU9SZ001aGRxTWRkNWJ6QzNSTWd1OE01OFRMazFfWFlsWHFUVGJFYVpvVy1FLUZDY08?oc=5",
+      "publisher": "Los Angeles Daily News",
+      "pubDate": "Mon, 12 Oct 2026 23:07:01 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-13T16:16:07.256Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach, MARAD Sign First-of-its-Kind Partnership Agreement on Nuclear Energy in Maritime - Port of Long Beach",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOZkYwaXd5ZjItekN4ZHN5TlRfbXlnSnN3eVg0U3N3a0w1YUdSRmFJVUlZMEJFck1kMWxOV3NTZWN3aGY3WVp5RmxKUzR0bUh4OV84ZEx2U2JqNWRDT0tOUWZSWXhEUC1xUjFKeGdKeHE4eWRQZldpUmY4LVdPeW9RbW0wYXVhMXBXeVloSnFFVllkWVRfZGdzS3g5OExnRGg1NTNpWjBUR295aXlHSjF3YXdvSWF6UExvaXhKYmswc2wtMnoycVNwZHJvb3ZoSHlVV094ME9wdmJFUDhLbFl3ZXFIekVDcDdq?oc=5",
+      "publisher": "Port of Long Beach",
+      "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-13T16:16:07.256Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach, MARAD Sign First-of-its-Kind Partnership Agreement on Nuclear Energy in Maritime - Port of Long Beach",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOZkYwaXd5ZjItekN4ZHN5TlRfbXlnSnN3eVg0U3N3a0w1YUdSRmFJVUlZMEJFck1kMWxOV3NTZWN3aGY3WVp5RmxKUzR0bUh4OV84ZEx2U2JqNWRDT0tOUWZSWXhEUC1xUjFKeGdKeHE4eWRQZldpUmY4LVdPeW9RbW0wYXVhMXBXeVloSnFFVllkWVRfZGdzS3g5OExnRGg1NTNpWjBUR295aXlHSjF3YXdvSWF6UExvaXhKYmswc2wtMnoycVNwZHJvb3ZoSHlVV094ME9wdmJFUDhLbFl3ZXFIekVDcDdq?oc=5",
+      "publisher": "Port of Long Beach",
+      "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
