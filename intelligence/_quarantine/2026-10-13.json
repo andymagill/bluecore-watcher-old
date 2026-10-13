@@ -2682,5 +2682,27 @@
       "pubDate": "Tue, 13 Oct 2026 01:55:26 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-13T08:23:38.996Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy secures $50 million to develop floating nuclear barges - NewsBytes",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZU1OSG9oLTNNNGpxZFNMZnlnT0FVU2wzZFFiaHlLMFpNRnZveW9la2VPSlpaRFBscEx6a3pIWDFDb0Q0ZENhTmlkNmtWT3l0V3FuaHdkbklfcjJmUDFuenRHZVlja00wU21zcTV3SkpORlNXSFl1bkhEMVlJN09lOFZYVTRRLVdJODhHR1QyZ2owbE9SdFhXTEo2ejVNSWo3ZC1kZmV4alVYMkJOSjFJQzJyd1FGaUJR?oc=5",
+      "publisher": "NewsBytes",
+      "pubDate": "Tue, 08 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-13T08:23:38.996Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "US eyes offshore nuclear reactors - Tech Xplore",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5FdHg1TTNEN3lWaDN5aGlBcXoxWjlCUWdvbEhlLVVZSHJRSkQ4aWN6UGtBeHYzU3NEZFowOEd5QUluMFdjcEN3aHZpNVJtcENjaF82Y0xHSnJabzhGSGVwbVFkMjBmTHFjVGcxeXYtZ05XNlZacDlCQy1YTQ?oc=5",
+      "publisher": "Tech Xplore",
+      "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
