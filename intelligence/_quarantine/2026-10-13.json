@@ -2825,5 +2825,38 @@
       "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-13T20:14:22.099Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy purchases uranium for floating nuclear power system - WorkBoat",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQS2Z0UjdyNjVZQmlFY0pLRUtseUdaVnFMT25QSWNnazJ3MDRKRG1HekQ5Nmh2ZEJKM2lZcFBYUnRZajg3V0tfZVdvdTNkN05aX3pZcERkVUhMZHUzWnhLd0Q1QU5mbUFWLVJ4N2dxNVBJSHJSZ3Z0bmN4OTN3N2Yzcnh5X1FoOXhINmE3a3hnZFhlRGEtZnd3?oc=5",
+      "publisher": "WorkBoat",
+      "pubDate": "Tue, 13 Oct 2026 15:01:38 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-13T20:14:22.099Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy purchases uranium for floating nuclear power system - WorkBoat",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQS2Z0UjdyNjVZQmlFY0pLRUtseUdaVnFMT25QSWNnazJ3MDRKRG1HekQ5Nmh2ZEJKM2lZcFBYUnRZajg3V0tfZVdvdTNkN05aX3pZcERkVUhMZHUzWnhLd0Q1QU5mbUFWLVJ4N2dxNVBJSHJSZ3Z0bmN4OTN3N2Yzcnh5X1FoOXhINmE3a3hnZFhlRGEtZnd3?oc=5",
+      "publisher": "WorkBoat",
+      "pubDate": "Tue, 13 Oct 2026 15:01:38 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-13T20:14:22.099Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Vampire Planet: How Capitalism Chokes Los Angeles - Counterpunch",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOd1MtNm1mQlJtMWVxZGlEY012b05UVXAxc1gzdWJ6WEFGOXpGblBqcGdJeE1hX2FCMmxMeW9uUGtSOEtXT2Y3djRhLWVvM2dZMkg3aEFlbklPWUprVUdKWFR2VFNqbkNkWC1iWlZ2ZlV5YkFHODlDa0w3WFVLa3JYYlFQT2RMUU5TbERvRUl3LVFvSEU?oc=5",
+      "publisher": "Counterpunch",
+      "pubDate": "Fri, 21 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
