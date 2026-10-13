@@ -2704,5 +2704,49 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-13T12:22:54.114Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore takes nuclear barge plan beyond the drawing board - Splash247",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZExkd1pvd0tPQjA1S215ZjZaRVVxbndwQW5vOHZJbFRtZjBUdWtjeEtzOGc4c0xOcXNSc0xSa0VZdlh0QkpqOWlibGsxdWRWOUc1amRQUlJiRE1IV2pLTldWQ3g3c3F4ZFZYV2VIeWJ3ekNCa2FKZXc2bFdPdXdTeHhKU2VKNFBo?oc=5",
+      "publisher": "Splash247",
+      "pubDate": "Tue, 13 Oct 2026 10:08:22 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-13T12:22:54.114Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore takes nuclear barge plan beyond the drawing board - Splash247",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZExkd1pvd0tPQjA1S215ZjZaRVVxbndwQW5vOHZJbFRtZjBUdWtjeEtzOGc4c0xOcXNSc0xSa0VZdlh0QkpqOWlibGsxdWRWOUc1amRQUlJiRE1IV2pLTldWQ3g3c3F4ZFZYV2VIeWJ3ekNCa2FKZXc2bFdPdXdTeHhKU2VKNFBo?oc=5",
+      "publisher": "Splash247",
+      "pubDate": "Tue, 13 Oct 2026 10:08:22 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-13T12:22:54.114Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Watch California's Port of Long Beach prepares to go nuclear with floating reactors - The Claman Countdown - FOX One",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOZHd6Slktc1I2M0RWcGNMa0tmNi1fZ1Q5T0tUTy1CaDNYbGE0djN4dnRIRVBOaWp2aERtM2FodVRqWHRqVmFCQmNLOEpOaEFCSVpycU9CSFRXYVcwOWFDMlNub2JxbVVSbGkwaXVENTJYYXJpWjdTeXFQa2xMUDJyci11REwxMmh3Y3FKejJSMGs2MkZJU2hMZ0FfMkY4MWZVQl9XWldSaDZtdnQzdVBKelFjM1lvYm5MZ3B5NmtjNFEzTGVsMU1sdg?oc=5",
+      "publisher": "FOX One",
+      "pubDate": "Fri, 04 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-13T12:22:54.114Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Trump’s Transportation Secretary Sean P. Duffy and Port of Corpus Christi Sign Agreement to Explore Nuclear Maritime Technologies - DredgeWire",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPRXZJLUFoTk9rM0U4b3ljTGh1VzNYLXZpenNTandrX1drZUMxTWxuc2Y4WU1MX3hsbjhZZ0xNOHVHYTEtOWF6SXBOSFhmOC10LTBiTUJOXzNGVEEtOFBBVk43TGtyZUxvenBPdzNTaWxqUHFXV2xwMVRORldJY3BfemMwWmJISDZoQXZzYWZSaE5SbGg4cTJxTUtOMUFUcU8wdGViSnJJN2tmYzdHWFB2TVJkUkNsYUVaUnJJUklYaXN2clQ5Qmx0a3ZsVVYyVDZHU2RTSVlFT3BXUkQtdzFaakNIQUNlUQ?oc=5",
+      "publisher": "DredgeWire",
+      "pubDate": "Mon, 24 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
