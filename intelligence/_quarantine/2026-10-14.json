@@ -2858,5 +2858,27 @@
       "pubDate": "Tue, 15 Sep 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-14T16:14:44.501Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "US maritime nuclear firm Bluecore Energy announces uranium purchase - World Nuclear News",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxONFNVZVVfRzJSZmpRMld6OWhFZkFiTDNBNXV4bUY5ZzJ6Rmh5eHNPYm9VRXdPN1YwWWllS3k1ODZOeHR6RlplYk9oaTA1cHhxZkx0eVZzNEljMnZLc3B3NGRqdmZPWlV2SksxZXRnZWJIak4wR0NVQ3FGS0V4bkRnbUk1dk42Z2FaQlgzZk5WcV9jcnhuWklpNFlOZkRJa0JYcHNncmY1aXBYbEE?oc=5",
+      "publisher": "World Nuclear News",
+      "pubDate": "Wed, 14 Oct 2026 11:04:25 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-14T16:14:44.501Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "4.95%-enriched nuclear fuel secured for next-gen floating power plant - Interesting Engineering",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUkVvRTJIR0VRV2hiQkhfelJFa1dSdWFEbzhrNndMclZHb2pva2ZNVmNQc2lTRmxHb2Rmek43TjBoTEF1bjNxZUQxOXpfamtpWGNqY0wyY0NxQ25tN0RURkx6clNoYkdVNUM2QmJvb1Y2M1ZpdGs5SFVxWjg2MVhENlhnMmtDeTEzYThhNVNHeGlST3hOSEJTNUo2X1FSQQ?oc=5",
+      "publisher": "Interesting Engineering",
+      "pubDate": "Wed, 14 Oct 2026 13:40:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
