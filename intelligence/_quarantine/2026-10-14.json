@@ -2880,5 +2880,38 @@
       "pubDate": "Wed, 14 Oct 2026 13:40:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-14T20:13:30.938Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy buys uranium, advances plans for a small nuclear barge in Long Beach port - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPU2R0c2dlZWMyZG92S3hhdWU3Y2xVSUx0Z2xWSzFLelpUU25MOWdmNzhQUUFKaHZwUnFsd0FLcXRNX0ZrTzgyODJZVnFRMGI0MmlSaEhQLTlUcEFaY242U01OaW1pMm15WDFLNk1wYURjbzdqYTg1a2VEWlJVamxUQ1V4ajJjbk42ckU3YmdQbHRxY09WMTZVdW93QWluYW5qN0dHSXdDQVQ5bkE5ekdTVVpkelVzWGV0YU5VOVJ5cnJ4SUhCcF9QR1Fn?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Wed, 14 Oct 2026 19:07:07 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-14T20:13:30.938Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "New Floating Nuclear Plant Secures Uranium Supply - Tomorrow's World Today",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORmRGN3VjSXktbElQcVcteGx5YjRTRi03b0prbXZxOVRGOS1tbnVuTm8zaWdYbnpyRnlLd2FBMHl0Z0VKdGJLYVhsMlZtRjRSaF9fOWdlS1EtV3hWQzlCYmhFXzZteTc3UzlaY1lKLUlRZXFfUm0zd2NaWTNpOWs2NGdmWEZmcnVjYWhmazJieVBxNmpVM2dJb05R?oc=5",
+      "publisher": "Tomorrow's World Today",
+      "pubDate": "Wed, 14 Oct 2026 19:05:27 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-14T20:13:30.938Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy buys uranium, advances plans for a small nuclear barge in Long Beach port - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPU2R0c2dlZWMyZG92S3hhdWU3Y2xVSUx0Z2xWSzFLelpUU25MOWdmNzhQUUFKaHZwUnFsd0FLcXRNX0ZrTzgyODJZVnFRMGI0MmlSaEhQLTlUcEFaY242U01OaW1pMm15WDFLNk1wYURjbzdqYTg1a2VEWlJVamxUQ1V4ajJjbk42ckU3YmdQbHRxY09WMTZVdW93QWluYW5qN0dHSXdDQVQ5bkE5ekdTVVpkelVzWGV0YU5VOVJ5cnJ4SUhCcF9QR1Fn?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Wed, 14 Oct 2026 19:07:07 GMT",
+      "type": "NEWS"
+    }
   }
 ]
