@@ -2726,5 +2726,27 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-14T04:16:50.913Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "U.S. DOT and Port of Long Beach Sign Agreement to Explore Nuclear-Powered Shipping - Xinde Maritime News",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE41VF9YOUVWNnhqTVlGeFVNeGNqRWFsRXBBWnphRDRjbVZSU2FJQzVCQjNTaVNoVE5obU5kTHJQZFIzRDRqci04NTgzcmxIRXM0N0M4M2NILTZLejRsekFCTGNQMUx6akE?oc=5",
+      "publisher": "Xinde Maritime News",
+      "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-14T04:16:50.913Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "U.S. DOT and Port of Long Beach Sign Agreement to Explore Nuclear-Powered Shipping - Xinde Maritime News",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE41VF9YOUVWNnhqTVlGeFVNeGNqRWFsRXBBWnphRDRjbVZSU2FJQzVCQjNTaVNoVE5obU5kTHJQZFIzRDRqci04NTgzcmxIRXM0N0M4M2NILTZLejRsekFCTGNQMUx6akE?oc=5",
+      "publisher": "Xinde Maritime News",
+      "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
