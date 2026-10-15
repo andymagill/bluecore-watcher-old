@@ -2869,5 +2869,49 @@
       "pubDate": "Thu, 15 Oct 2026 10:43:07 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-15T16:14:52.745Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore secures maritime LEU - Nuclear Engineering International",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBpenY2bDB3ZjVXR1Z6T0ptMU1tbUxBb1lUOUwyM21hSEpoUTRBcU82Z1NwbFFROTZyenRhQXJ3QzVienlQaHBwS0NPbUNwbUVRQjBOSk5IalJtZDh3Y0RVc1FIRVpKZVVKYVI2X1UtZlY?oc=5",
+      "publisher": "Nuclear Engineering International",
+      "pubDate": "Thu, 15 Oct 2026 13:02:10 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-15T16:14:52.745Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach port’s new CEO lays out his vision at State of the Port speech - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQU0xsbVNyeDhoaFRXMkhpOWhuTmg4SllrWjRfMWEwclhOOEo1LWpoclNCdjhwTkRyMF9rMW9fSHJsY1lIbFVlemVIZS1US3dkcjB6b1VJS1Y3dU9DZFh2bjZIMWMwNmY2aW9TbE9VWWkyTG4zOENKZ0NITktqeFhQc2wtYVNRM21QYjV5b3Nmb3hiWTV0MzNpR0hHR1JONTMyYWNpVHZlQWRpRWdTeVJIU0RnX1I?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Thu, 15 Jan 2026 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-15T16:14:52.745Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Consortium debuts new design for U.K. SMR - American Nuclear Society -- ANS",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVWVnQUxaMmFQWG5kSDVCMVQ3N19hV1RaOHR0a181U2VIZE1OdnljdzdaOHN2cWJnV2FnYXJDdXVWaTJtVVFNS0EwZ1B1Q1Q0T3RLcUxodlhtUmZsZ09IVlQ0T3Z5R1BUVFlZSm9rOTE4SFk2c1dSUTdtUG1ZRHlCelEybC0?oc=5",
+      "publisher": "American Nuclear Society -- ANS",
+      "pubDate": "Wed, 26 May 2021 17:01:59 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-15T16:14:52.745Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS greenlights floating nuclear SMR design by HD Hyundai affiliates - Offshore Energy",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVnJzRlhqSURfbnd1UUhGS3E4RHRndGstRDg2bl9zQVZXMGg3RDlZOG1TbGhwRThxaVFDc3V1bGVvRlQ0R0pCMXUxTzIxczFFempsUzZqbm1vVmdkSlJXTlhtN204ODVKbTVqUXlETEVrekEwbWlzeFFwX1R6X2RYZGkzT1ZsSnZUODgwaG93ckk3WDFqZ3I0cE1OV0xYRXVDYnc?oc=5",
+      "publisher": "Offshore Energy",
+      "pubDate": "Fri, 20 Jun 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
