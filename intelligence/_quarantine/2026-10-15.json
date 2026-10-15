@@ -2781,5 +2781,27 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-15T04:15:03.385Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Raises $50 Million in Seed Round for Floating Nuclear Reactors - Global Legal Chronicle",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5JWmhGY0I5M1Bvc0lFX3RGTno3RjBBSDB1Wk9ack5NcG15SEZmeHpTRzh2SnhEVGZCVl8xekgwSHlmNU9QLW1rbnBpN3J0bTZfWFJDbW9BLTg?oc=5",
+      "publisher": "Global Legal Chronicle",
+      "pubDate": "Mon, 14 Sep 2026 00:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-15T04:15:03.385Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Samsung Heavy partners with Sargent & Lundy on floating nuclear platform - Splash247",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPX0t6U3JVcEZwMDhqUWRlQ0ltVERabDMzd0FRYzdZeVA5Vnd1V0dhM2pHZHBmYk5OMlI0Q1VLVXJCdE9XZWxZaklRbHVEX1A2eWRNaE5tQkdnb1RIdF92RjdLMHBmUXhqWjlTZUxRTVdEYjJYSzlvSUtITmlfUy12cGlzQ3lsV054NHdEMkVxdDhLNS1rVEpfaw?oc=5",
+      "publisher": "Splash247",
+      "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
