@@ -2803,5 +2803,38 @@
       "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-15T08:18:52.626Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy buys uranium, advances plans for a small nuclear barge in Long Beach port - Los Angeles Daily News",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPWUdUdGgyblFMVVp1NjhHZklWTUVTV2NWT05qdWgtMUNwR3VhVl9wS1NNcXUtdkVKbWJjMmtLallqNl8wbFBZdTE1UUNMbkc1eWFiakhseF9qeV9naXFHZHVOM1B5WnNkYmZJRVNuYWx2bU5kQ0VTY0FkTFc5a3E1X1A1SmpralFxcWlTcjFsdHJYb1plUUprUVQ2X3VaX3J6X2k5VkRYOHdSVlc2MmNqSHI0UDNReUJtUXg1VFRUM01ESjJa?oc=5",
+      "publisher": "Los Angeles Daily News",
+      "pubDate": "Wed, 14 Oct 2026 19:04:28 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-15T08:18:52.626Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Buys Enriched Uranium for Floating Reactor: Land-Based NRC Rules Don't Apply - Tech Times",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPRFJDY3ZSX3J6Qmc0U3NVbEUxNWdiVnJrY2dKNUZhYmxjRElDUm9BYVp0d1hBRHBQLWJPUHdHSW9BS1libmlldHdoZmhuZzh1dHB0ZkIyQXd1M1V5c0RUekRTTkdxYmpLQnBYd0l5Q1pyNEJRd2FNeU43Q00zQzFJQTc1d3lwZ1pTNkx3RHlXYWUzLWNyNEExa2g5b0NhUUpEZURrNTJOZFVXRE95bVpVd1lueFA0em5ON0FjN0RFdXJuOXIwWEo2LUNfczZ1OURxWlU0T0gteUE?oc=5",
+      "publisher": "Tech Times",
+      "pubDate": "Thu, 15 Oct 2026 05:54:50 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-15T08:18:52.626Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Trump’s Transportation Secretary Sean P. Duffy and Port of Corpus Christi Sign Agreement to Explore Nuclear Maritime Technologies - DredgeWire",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPRXZJLUFoTk9rM0U4b3ljTGh1VzNYLXZpenNTandrX1drZUMxTWxuc2Y4WU1MX3hsbjhZZ0xNOHVHYTEtOWF6SXBOSFhmOC10LTBiTUJOXzNGVEEtOFBBVk43TGtyZUxvenBPdzNTaWxqUHFXV2xwMVRORldJY3BfemMwWmJISDZoQXZzYWZSaE5SbGg4cTJxTUtOMUFUcU8wdGViSnJJN2tmYzdHWFB2TVJkUkNsYUVaUnJJUklYaXN2clQ5Qmx0a3ZsVVYyVDZHU2RTSVlFT3BXUkQtdzFaakNIQUNlUQ?oc=5",
+      "publisher": "DredgeWire",
+      "pubDate": "Mon, 24 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
