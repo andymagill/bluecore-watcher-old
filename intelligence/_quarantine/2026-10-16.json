@@ -2880,5 +2880,16 @@
       "pubDate": "Fri, 20 Jun 2025 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-16T12:20:28.934Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Guest Column: Nuclear power offers opportunity for ports - NOLA.com",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQaHZwakdUamZlRUFDb0ZwOERtTDFQcXVMY29hdzFxQTdRY1p3bE1USjFhQXduTXh4NnhiWjZvM1h0QzA0amlURXpodlVaWnFPeUVURDVPQ2tzMHFSc05GdmNxOVo4dFlUMTNpMTRFbERKSU80MzluVW9mOVRLNHJjMVVROXhVcnhYVHpYRWMyR1Buamstb3lDYVN6T3dxQm5TQm04M3dXZEV2aHZnZ2w5OElIbTVQMFduREMtNWw5Tmo3UnpyemNaNWR4VzJRZnhPRGtiT055UUM2d0ZmNEZyblNwMG5iQ2F3UWJod0s4NXROd9IB8gFBVV95cUxQaHZwakdUamZlRUFDb0ZwOERtTDFQcXVMY29hdzFxQTdRY1p3bE1USjFhQXduTXh4NnhiWjZvM1h0QzA0amlURXpodlVaWnFPeUVURDVPQ2tzMHFSc05GdmNxOVo4dFlUMTNpMTRFbERKSU80MzluVW9mOVRLNHJjMVVROXhVcnhYVHpYRWMyR1Buamstb3lDYVN6T3dxQm5TQm04M3dXZEV2aHZnZ2w5OElIbTVQMFduREMtNWw5Tmo3UnpyemNaNWR4VzJRZnhPRGtiT055UUM2d0ZmNEZyblNwMG5iQ2F3UWJod0s4NXROdw?oc=5",
+      "publisher": "NOLA.com",
+      "pubDate": "Fri, 16 Oct 2026 10:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
