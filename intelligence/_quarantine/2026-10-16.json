@@ -2836,5 +2836,38 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-16T04:15:19.245Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy buys uranium, advances plans for a small nuclear barge in Long Beach port - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPU2R0c2dlZWMyZG92S3hhdWU3Y2xVSUx0Z2xWSzFLelpUU25MOWdmNzhQUUFKaHZwUnFsd0FLcXRNX0ZrTzgyODJZVnFRMGI0MmlSaEhQLTlUcEFaY242U01OaW1pMm15WDFLNk1wYURjbzdqYTg1a2VEWlJVamxUQ1V4ajJjbk42ckU3YmdQbHRxY09WMTZVdW93QWluYW5qN0dHSXdDQVQ5bkE5ekdTVVpkelVzWGV0YU5VOVJ5cnJ4SUhCcF9QR1Fn?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Wed, 14 Oct 2026 19:07:07 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-16T04:15:19.245Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach leader highlights record cargo movements and infrastructure at news briefing - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPc3NjcVloa2Nid0FXYy1EWmVVNTBLX0p0bDY4cThUdmtZVTVyWlllX3NfTU9kYXYyM3JTc2FrQ2x4TVRhc0VwZXdScG1MMm9QWENjLXBlN0p4Nm5OTlFqVmx2TlFIcEpaclJsLWt5WDRxSF9Mb2ZSNnFIRUNMRVRIMUxRTmkwdDBUSG1yM2tYWG9FUWs0ZUNNQm1NMmN4TFlzUHQ5Z3AxRTB3bFpiNzRpOUZLVUdScmhtSDd3NXNWQlY1NXI2NkpidDdNSUYyeXVjbDlz?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Thu, 15 Oct 2026 21:45:10 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-16T04:15:19.245Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "“Pink Corridor” to Explore Nuclear-Powered Transatlantic Container Shipping - The Maritime Executive",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPWnk2WFhGWktyUE85TTR6ZGhOVUtsTDRLSk1NT00wb09nLW9xQmZRUDhYX2VDcUtnYXdjV08wdGJLZDVMNFJLLVByMW5jc3FQeEpGakRpeWs2bG5wYWtDckJwUG50T0piNzlPMi1HdmVvQWNndWtjZXJ3VFB5XzRXMkZFSEtlVEcybGM5ZFdQSEZ4QmgxcW52bG1YMV9nWHJ6SG1FRVM0T1dISzRQMmE4TEJ3?oc=5",
+      "publisher": "The Maritime Executive",
+      "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
