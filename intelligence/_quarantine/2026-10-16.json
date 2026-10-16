@@ -2869,5 +2869,16 @@
       "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-16T08:17:55.788Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS greenlights floating nuclear SMR design by HD Hyundai affiliates - Offshore Energy",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVnJzRlhqSURfbnd1UUhGS3E4RHRndGstRDg2bl9zQVZXMGg3RDlZOG1TbGhwRThxaVFDc3V1bGVvRlQ0R0pCMXUxTzIxczFFempsUzZqbm1vVmdkSlJXTlhtN204ODVKbTVqUXlETEVrekEwbWlzeFFwX1R6X2RYZGkzT1ZsSnZUODgwaG93ckk3WDFqZ3I0cE1OV0xYRXVDYnc?oc=5",
+      "publisher": "Offshore Energy",
+      "pubDate": "Fri, 20 Jun 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
