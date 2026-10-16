@@ -2891,5 +2891,16 @@
       "pubDate": "Fri, 16 Oct 2026 10:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-16T16:14:27.980Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Russia Builds First RITM-200 Reactor Unit For Leningrad Nuclear Icebreaker - Marine Insight",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYWZYVU9WTk00WDVvUDNmUExpWUFodm1KMm56YUtnTzZXLWMzd2xjaHgxc09LYVZCR1ZObUVFdTY4TEVZT2k1aHN4N0FaaWZLaFRYSGNOa1FLTTBhVnRqYmxSLXI0amZ6N05UeXdTaGFwS0dlNUozOUtSV3RqN3dtck9YaVdmcXNsR3VTTmxBRE02Y1VBeXVVUmdsNVpVSm1BMTVQNlE1UkM?oc=5",
+      "publisher": "Marine Insight",
+      "pubDate": "Mon, 18 May 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
