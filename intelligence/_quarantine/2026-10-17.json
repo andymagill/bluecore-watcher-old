@@ -2902,5 +2902,16 @@
       "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-17T16:13:03.262Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "United States Set Regulatory Framework for Future Floating Nuclear Reactors - energynews.pro",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbUM5ZWg2OUlmcml2M2hUN0VBSUVxb3Y5SzFDcWxSdkczRFo0TUlrSF9VczFoUWNUY3RfWEczUDdfZTZ0VTVmdGJuRXJ0bEQwbW01cDltUUN5QUk5S2NQUXFvU0tDZUFzYy1ISm9tNjRtMUM2azVnd283STZqek9PQ1BZNEF1X1lCaVBSV1hid3VYXzlJd2hZbkZmMnZoOFFpQVJV?oc=5",
+      "publisher": "energynews.pro",
+      "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
