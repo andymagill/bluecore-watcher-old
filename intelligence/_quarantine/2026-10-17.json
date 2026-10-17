@@ -2825,5 +2825,38 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-17T04:14:17.810Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy, 3 Months Out of Stealth Mode, Signs LEU Contract - Energy Intelligence",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBtUGxtMFlBa1IwZ2JZYnF6QTNoQzBpTXlUUk1fMU9CMUVadkpmcVlULXJWOUl5Mi1mZmw2LWd4d1BVak1VWEpfVk1hWTV6R1loVGJVTjB4Z09hSXVCNWtIbHNKSXFOMGIxOGg0QndtbmV5dw?oc=5",
+      "publisher": "Energy Intelligence",
+      "pubDate": "Fri, 16 Oct 2026 23:14:29 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-17T04:14:17.810Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "US maritime nuclear push gathers pace - Splash247",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5SVzhMZ1pkSUVBUHFtbjV4b0J0akZBQllkQnpWdUJiV1ZvQWY3bGNLN1VZenhyWVg0bTg3bXB2ZTROMEdqak5vQV9MdXVNQmpDS0pxR2lrdmI2MkhLSEVsVndOWGp6NmgyVlRCRQ?oc=5",
+      "publisher": "Splash247",
+      "pubDate": "Thu, 10 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-17T04:14:17.810Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear Shipping's Next Chapter: India's Chance to Shape the Rules - orfonline.org",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPT01VNWdJM2RrM1dmUVk3Qk1HMkdJZ0RMMF9FUUNVbVB2V2hObVZiRi1JUzl4eENaSU9HUFFHLTBEeWRYWnRfck41VWdIWlB0QVBoSDNZVUl5cnNKakxGTFE4SVZEcGk2S1BQanZwbUplVDdHNFJhTFZuQjZKd3dvLVNGb09lV3hOMEY4RGo5RjNoNlRrUUJDUEdNWXpEalk2VjhoamJEcw?oc=5",
+      "publisher": "orfonline.org",
+      "pubDate": "Mon, 05 Oct 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
