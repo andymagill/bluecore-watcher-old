@@ -2858,5 +2858,27 @@
       "pubDate": "Mon, 05 Oct 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-17T08:15:25.026Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Corpus Christi ink agreement to explore nuclear maritime technologies - Manifold Times",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQV2tSeFJVRHZiNlJNdXY3Q29qWTQyYXM3eHF3TDIzeFJ3MVBHRFFpWGxDdldJVV9YWVBJNk42bVd4OEZNZlYxc1F5LW9FWmI2dDVGUU9SWXZNbGQ2SlZDSE5PWVc4V1NzbFUyVU9LdHdvVjhyemJXUkpLQkxhdjQwMGJ5R294MjlycVA5cFlfVXpncDFlRHoxXzVRMlozcGUxZW1NcGdWdXluVGcyT2JpdzQ2SQ?oc=5",
+      "publisher": "Manifold Times",
+      "pubDate": "Thu, 20 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-17T08:15:25.026Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Core Power Begins Feasibility Study On BWXT Reactors For Floating Nuclear Plants - NucNet",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNY0Rxb0kyR1paWHJ2cFlOaVgybW5HbWx5M3ZhZzBXTXhndUs3TXFRZEJHQ3NfakowTG5kNHptNlJ2bDJxSFJ6b2RKX0dTNEtvcDl4VUJWdnFyTU9DMU5TVmFqWFBEQ1V5Sk43azBHdXRVQ1ZhMHJRNHl5VkhLWnZzUFdsTndmdHRwYUV5RjhYMW5iZWUzUWNjdW11d1o1WklWU2hVeUtmLWwyUGVsUDRPSUd4RTRYMHBT?oc=5",
+      "publisher": "NucNet",
+      "pubDate": "Thu, 18 Jun 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
