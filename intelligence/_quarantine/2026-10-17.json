@@ -2913,5 +2913,60 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-17T20:12:07.022Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Maritime Administrator tours Bluecore Energy’s Port of Long Beach facility - Marine Log",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQazQyY21xSW1xNXhzVHBzTU14T2ZidDJhZHZac2VPektnbFBOVnFVY2pRbko4bHlXYmJpN3hpRmt4TmZpRnpKSDJiTVRxR0QyaXJXZnNVS0FnajdVRHR6UjJ4OWs5TmtNaktxbEV3Z2tiX2lyVDhaUTRfWjY4Z2VxVm80WDVBVkhGYklCdDZ2M0dNOVVGZmNkalVwLTBkdG1yUW5iYlFRSW8?oc=5",
+      "publisher": "Marine Log",
+      "pubDate": "Thu, 17 Sep 2026 17:05:49 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-17T20:12:07.022Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Long Beach port reports record cargo numbers for September - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNLWJhTTVZRWx4Q2dSdHp6Y3FtYi1pVTJ0dVllQUNSRzhaQXpKU09jNFJ1UGV0M0ZiR21JckowZDd5LVZNX0YxcG54cl9lSEN4bjhNQTRibDktdFo5WVNTTkswQ0FvRUlNdVhqUUlUc0llWDZsT21WREpWVWVYcTZfcXRxQzdIc3Fsd250aUM1dmV4QzVHSExxcDMwWXdKNTh6Z3c?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Mon, 12 Oct 2026 23:08:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-17T20:12:07.022Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Maritime Administrator tours Bluecore Energy’s Port of Long Beach facility - Marine Log",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQazQyY21xSW1xNXhzVHBzTU14T2ZidDJhZHZac2VPektnbFBOVnFVY2pRbko4bHlXYmJpN3hpRmt4TmZpRnpKSDJiTVRxR0QyaXJXZnNVS0FnajdVRHR6UjJ4OWs5TmtNaktxbEV3Z2tiX2lyVDhaUTRfWjY4Z2VxVm80WDVBVkhGYklCdDZ2M0dNOVVGZmNkalVwLTBkdG1yUW5iYlFRSW8?oc=5",
+      "publisher": "Marine Log",
+      "pubDate": "Thu, 17 Sep 2026 17:05:49 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-17T20:12:07.022Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "US Launches Initiative To Develop Small Modular Reactors For Commercial Shipping - NucNet",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNc1dKaHp1azVyMXA5Yno0WkkzemFUa2ZFMk1ISUVPa0pjNUluQzVXSU1nM0VsTktJU3d3UW5XQ3pIWFptZmR4dF9MSjJMdG80cWZWLXp5RnNKbjhvcjR1VWNSTWpjLWI3N3FIdVdhcmhGVjl5ZE1zZEJCakJMcGFhc0RPaUYteThyQUpSendkWHJNenB4bDJvdTdwU1pDbFRyMzZzV3FfZ1FxVXJMRXZoNVlSRmFKQi1m?oc=5",
+      "publisher": "NucNet",
+      "pubDate": "Tue, 12 May 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-17T20:12:07.022Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear maritime opportunities and floating data centres - Seatrade Maritime News",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbDFQWUVXTkRCMFpwb256aFFoZndVaU52cmVlZkZzN255T0FkZ2ZpOWhEMm43ZHJ0aEhqSXhESU9lZWJiQVFibFBoM25faWo1LVdsZnBLazhmUkZDYjhQUXF5bEY2bjVvWVBFWUpnN1RHMTBwdGpqOFU0Q2NpWm1jWWI3Vm1waXQwZkpqY1o4TTdldEJmd1phZzQ0cGhaUnp3?oc=5",
+      "publisher": "Seatrade Maritime News",
+      "pubDate": "Mon, 31 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
