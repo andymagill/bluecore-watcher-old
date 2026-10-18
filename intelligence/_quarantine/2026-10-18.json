@@ -2836,5 +2836,38 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-18T04:14:31.491Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "US Launches Initiative To Develop Small Modular Reactors For Commercial Shipping - NucNet",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNc1dKaHp1azVyMXA5Yno0WkkzemFUa2ZFMk1ISUVPa0pjNUluQzVXSU1nM0VsTktJU3d3UW5XQ3pIWFptZmR4dF9MSjJMdG80cWZWLXp5RnNKbjhvcjR1VWNSTWpjLWI3N3FIdVdhcmhGVjl5ZE1zZEJCakJMcGFhc0RPaUYteThyQUpSendkWHJNenB4bDJvdTdwU1pDbFRyMzZzV3FfZ1FxVXJMRXZoNVlSRmFKQi1m?oc=5",
+      "publisher": "NucNet",
+      "pubDate": "Tue, 12 May 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-18T04:14:31.491Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "USA To Examine SMRs For Commercial Shipping - Eurasia Review",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPUlVUbWRIMUppSlFldmlwbFdlb3dSaXNGVEtNNTFJaTdqZEFvUTdjRE1RbkJxZUtwRnVwOUIydElIQzBlQjA3R2JNaFlPYmtwOE40RER5ZnplekhyX00yQlZHRlppV3dYQzNIeUFIdjRDbnkzbkh3T2ppRVpvVklhVzRDZWszTmFiOU53?oc=5",
+      "publisher": "Eurasia Review",
+      "pubDate": "Mon, 11 May 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-18T04:14:31.491Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "\"Artificial intelligence base floating on the sea\"...中 Technology of K-ship Breaks Its Will to Pursue - 매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBTb0FHeUhqS053anFWZ21KZ1VNLUp2T1RVdkcxRmdVSXRON2RCazV3MEdTR0RkU3JQS2dWVzAwR21UZVRQeFREd05xb3VRcTcwTXBZ?oc=5",
+      "publisher": "매일경제",
+      "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
