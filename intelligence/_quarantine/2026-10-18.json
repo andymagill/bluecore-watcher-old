@@ -2869,5 +2869,60 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-18T08:15:49.541Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Offshore nuclear barges could power ports and data centers—starting with California, where nuclear is banned - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPRi1BT3daN3pHYW9UNUdFSGUyX0IzUjlwVHh3U2p5ZHoxNXU1QTdiQWk0U2d3UnBndEhHb3JaN3hnYnZKNEJEeWFNeUFoLVFoai1lZm1wQUNGbzV2NkVidGQyal8wTnp3aDA2b3R5TElLb1dhREYzOUpZYVcybkNUR0xYb1hwcjJVTy1JYUVOZ3ZYZktiQmxZ?oc=5",
+      "publisher": "Yahoo Finance",
+      "pubDate": "Sat, 29 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-18T08:15:49.541Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach records another stellar cargo month in June - Long Beach Press-Telegram",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcXgzSUNtdzN6SlFJMHdSM2RLcjBBMUN0TExWN0dNLV9FUGYwaE1fSGxNV0did0d4cksxRXJ0ZDlScHpTellHX0lkdjlTV0tNaGIzMGRXaHZvdHNhdzNDS3h0aXVvUVJXRDhldkpEU0hTY1JfVzJCZFlQS0lQamRrYkNJbmd0Rk5zTlp2NWNqMDBxZl9QR3l0NzBZZkk5Wm9SeVdSOUZfYw?oc=5",
+      "publisher": "Long Beach Press-Telegram",
+      "pubDate": "Tue, 14 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-18T08:15:49.541Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "United States Set Regulatory Framework for Future Floating Nuclear Reactors - energynews.pro",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbUM5ZWg2OUlmcml2M2hUN0VBSUVxb3Y5SzFDcWxSdkczRFo0TUlrSF9VczFoUWNUY3RfWEczUDdfZTZ0VTVmdGJuRXJ0bEQwbW01cDltUUN5QUk5S2NQUXFvU0tDZUFzYy1ISm9tNjRtMUM2azVnd283STZqek9PQ1BZNEF1X1lCaVBSV1hid3VYXzlJd2hZbkZmMnZoOFFpQVJV?oc=5",
+      "publisher": "energynews.pro",
+      "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-18T08:15:49.541Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Korean SMR 'SMART100' Heads Offshore with Approval in Principle from ABS - 아시아경제",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBYeTNRX2VRbnA1LU1aUV9uekFXa3NiTTktZ0ZRZEtnQWE5dkQyZkpCNG56bEl4QkdmdDJJRy1tNnlWZF9aZmp2MTMwUzd0REFaejQweWkxbGFFdkdrR1NsMW9TN3M?oc=5",
+      "publisher": "아시아경제",
+      "pubDate": "Tue, 16 Dec 2025 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-18T08:15:49.541Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS delves into potential of nuclear propulsion on LNG carrier - Offshore Energy",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQa252UEZFZmh5ZDItRWw3Ni1VT0RuZmlqcHloUzZlUkVtRWlOc3pwWTJVdzl5b194VWkxZUw3bmtET0EtYXVUTWV5UnBENEpNNEp5cWFfNjdiNkJJd3Q0TkdyaHEwZlQwOGU3ZnBycnVfbTRhRUxHdnExUVlWSjhpcTdhZHA3cE4xLWRxaWR1MDFHTnBZOGc0b1VvSzVhcHJwYTNPQjhkclA?oc=5",
+      "publisher": "Offshore Energy",
+      "pubDate": "Tue, 29 Oct 2024 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
