@@ -2902,5 +2902,27 @@
       "pubDate": "Mon, 18 May 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-19T12:21:28.520Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach channel deepening moves forward in Congress - Long Beach Press-Telegram",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdUtWQTFaQjFUMWJzYmN6LXNkLUFtcFN4V2JfN3V1ckM3Q1BrXzJySnM1Mnc5dkFPWk85RnFKVFlXNm1tXzl4eHAyZnhnVmlET2VWekRWZ3dzTGJtMkNQMW5WNjYtVXE5a3oyZTV6bG9QbE1CSlc3eGJHZ0kyYzAzdXpkS1JUWl9pWm80LUYzRGZCUEQ2cGh1YVB2RDU1WkV6U1paX04xMA?oc=5",
+      "publisher": "Long Beach Press-Telegram",
+      "pubDate": "Tue, 14 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-19T12:21:28.520Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear Concept from HHI and HD KSOE Receives ABS Approval - Cision News",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOaHhUaHpvZjNlRkJMcTM1QnNDVkUxZW53cmFKemlKZUh3NlhjOU9Xd0ZWdnY4bF9kbGd0bm5JSFZiVUtQZks3ZEdYbllHVk1OcmR4QlY5NXlSZUE0SVNvQS03MnVtTjhFZk14clpsNjM1N2NXeS03bnh3cVVrdzFQNjgwUTd1N3FGRXBDQWtFZlQ0TG1TcDJVa3NhWWY1dWtVV2cySXlGakY2aVUtSG5sbjVzRlRhcndQYlEyYXVn?oc=5",
+      "publisher": "Cision News",
+      "pubDate": "Wed, 18 Jun 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
