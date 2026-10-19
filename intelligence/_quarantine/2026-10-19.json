@@ -2880,5 +2880,27 @@
       "pubDate": "Fri, 27 Jun 2025 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-19T08:22:35.478Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS, HD Hyundai to study reactor-powered container ships - American Nuclear Society -- ANS",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNckNaODhRempZQXBCVmZqWEhyVHdDc3FOVmt0VTlaNmlhbjBwTEc1QmFmblpINzBIeWh4VzdENUIyNzFid3lyYV9ydEtQT19tWnNPT29wNGFLWkxzbnBQaGh2MjhaaTdaNWtocnBTZGdzZ1hpM2p4ZVNmeUUydHNDRGd5bGh4b2NrOEQ3WG5oVXF3Z1BGbDFBUnltSy1nRlk3MGVQakJONA?oc=5",
+      "publisher": "American Nuclear Society -- ANS",
+      "pubDate": "Wed, 11 Mar 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-19T08:22:35.478Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Russia Builds First RITM-200 Reactor Unit For Leningrad Nuclear Icebreaker - Marine Insight",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYWZYVU9WTk00WDVvUDNmUExpWUFodm1KMm56YUtnTzZXLWMzd2xjaHgxc09LYVZCR1ZObUVFdTY4TEVZT2k1aHN4N0FaaWZLaFRYSGNOa1FLTTBhVnRqYmxSLXI0amZ6N05UeXdTaGFwS0dlNUozOUtSV3RqN3dtck9YaVdmcXNsR3VTTmxBRE02Y1VBeXVVUmdsNVpVSm1BMTVQNlE1UkM?oc=5",
+      "publisher": "Marine Insight",
+      "pubDate": "Mon, 18 May 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
