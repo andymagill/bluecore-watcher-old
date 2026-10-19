@@ -2924,5 +2924,38 @@
       "pubDate": "Wed, 18 Jun 2025 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-19T20:13:59.900Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "In 2026, Kofi Asante-led Bluecore Energy raised $50 million to put small nuclear reactors on floating barg - The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOVkhieEFRTEQzVm55MVdHcjVZS1hmcG9wV0JwNVJvTDVjbkpqajBDZWd5SFhMZU4zWVVJaGNZSVlveUxSNERqSTYxSU5PaWlseFhSclk2Mm52dXA4dlNnUHlRTlNSclg0eVRTdDE3UktVb1BtRS1aODVNQ3ZwZTUxaGFmT0JXU242aTd0YWRSNTJERDQyLXo0ZWZhdlRXWHV4d3dJY3ZnOTZWelZnZmFEYVppdnRET1B3d3BjQzloc0Q1NjJmY0tqTDB1cXY4UE5GM0RZRVZPNTRWNkZPVlBWWVBMWnEyZklEd0VoZURxZTE1Wi1UdkpRNUUxdGdyd9IBgwJBVV95cUxPQ1k4VVlkeklVWkdZZHE2YnpBNDUtSjhmQ3NkMDdzeFZqMFA5UzlFRUUtd3lGdnFiM1FVZDg2bHplOGNWdVFaYUVaMjJLdVEzanhUZUxhN2xKWU5FMjRReWZ2NUdHdV9ldy1VNWZxQW84YV9PWXo4WEhYbWU2Nk1KTDRxcU5iZ1RpcGR2cVdsZjIzTlNUc0JUSEJvcjlyRGw0cWRqbEZmaDMzWTdJRUxNZmgwNURBZy1xY2F3SGl0eWJoakk0b2twaE5aMEtoZGd2am5tdVcyRW1sbFQ3WWZDZng4YkNZUE84VFVPSV9ILW1qTXRldnFhOFNTMUk1ZVh5aFRN?oc=5",
+      "publisher": "The Economic Times",
+      "pubDate": "Mon, 19 Oct 2026 17:40:59 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-19T20:13:59.900Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy secures nuclear fuel for maritime power development - Container News",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOYmpOYlVsMzFOeTBDTEFSMXN5UF9CcUVXc3dXd3BnWXM4N1puOUtBNmhrOVN2bmR5Qk5sZ1N3QVU2NGxxNDd2TzVhTGxmNU9fXzNzSDhuMWM5aS1uLVZkUTI3Q3lsY1JraHpHT2xTZi0wR3o0UXN4WTBqb0hWZ3Y1X3JfeUJKS09NZ1QtYUY1cm5CbDlxVUd2bG1DNA?oc=5",
+      "publisher": "Container News",
+      "pubDate": "Wed, 14 Oct 2026 09:00:51 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-19T20:13:59.900Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy secures nuclear fuel for maritime power development - Container News",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOYmpOYlVsMzFOeTBDTEFSMXN5UF9CcUVXc3dXd3BnWXM4N1puOUtBNmhrOVN2bmR5Qk5sZ1N3QVU2NGxxNDd2TzVhTGxmNU9fXzNzSDhuMWM5aS1uLVZkUTI3Q3lsY1JraHpHT2xTZi0wR3o0UXN4WTBqb0hWZ3Y1X3JfeUJKS09NZ1QtYUY1cm5CbDlxVUd2bG1DNA?oc=5",
+      "publisher": "Container News",
+      "pubDate": "Wed, 14 Oct 2026 09:00:51 GMT",
+      "type": "NEWS"
+    }
   }
 ]
