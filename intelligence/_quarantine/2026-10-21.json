@@ -2847,5 +2847,16 @@
       "pubDate": "Sun, 31 May 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-21T12:19:55.813Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "NuScale Exploring Marine-Deployed SMR Power Plant - POWER Magazine",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPbkpnVTJkMUstRG1ic1BIYzFFNWpFaDZpZGE4Sjc1TXNncDdQQmxzSU1GZDZjdGJHc1M5M0g1aE5fX2N3ZFVCcTc1N3RMVmxneGtqY2RwUjZFWFVxYzBLOURJRUg0QnZYd25qM3VhNHZTblFkZldVMGtyeE93b1lzZQ?oc=5",
+      "publisher": "POWER Magazine",
+      "pubDate": "Wed, 19 May 2021 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
