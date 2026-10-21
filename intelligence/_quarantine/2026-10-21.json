@@ -2814,5 +2814,38 @@
       "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-21T08:17:32.200Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Offshore nuclear barges could power ports and data centers—starting with California, where nuclear is banned - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPRi1BT3daN3pHYW9UNUdFSGUyX0IzUjlwVHh3U2p5ZHoxNXU1QTdiQWk0U2d3UnBndEhHb3JaN3hnYnZKNEJEeWFNeUFoLVFoai1lZm1wQUNGbzV2NkVidGQyal8wTnp3aDA2b3R5TElLb1dhREYzOUpZYVcybkNUR0xYb1hwcjJVTy1JYUVOZ3ZYZktiQmxZ?oc=5",
+      "publisher": "Yahoo Finance",
+      "pubDate": "Sat, 29 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-21T08:17:32.200Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Floating Nuclear Reactors for Port Power - Briefs Finance",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNcHhlbTlnWGdWSWs0aC1HU0c1X096ZzBoZExsOTRfUFFMam1BdmdMaVhvb0dYcEhOYXdLRVZzcG80VVRDTTEtN1p2aUNXTzBRNHNQbUc5WEhjU1hVcFo5dG1yc1dJdVdTVXhwaHZIZVdCdzc0dGhwbGtJUGtibzNIaTkyTi12UDdYVEVaR1FXOEpudw?oc=5",
+      "publisher": "Briefs Finance",
+      "pubDate": "Tue, 08 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-21T08:17:32.200Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "U.S. Pushing Small Modular Reactors For Commercial Shipping In Major Nuclear Maritime Push - Yahoo Finance",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOS2dZLUpJVkFFYm03cFh1cmhZWkoyaXNmSmx5aElNN3BjcEtpbXBPYjJob2FVRUVkQUlmRFNqaFJaMlk3U1lKN2xMbEMxeHgteWpablkwSDkyaUIyVzRWRmVfTGRLNDdjMkZIU0g4TTBmSEFDSzNwaHloWE1pa2d6UWZzMVZ2Y1d5RmhVR21wS3hpRzVaeVdiS0lZWUlEQQ?oc=5",
+      "publisher": "Yahoo Finance",
+      "pubDate": "Sun, 31 May 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
