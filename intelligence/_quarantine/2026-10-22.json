@@ -2649,5 +2649,16 @@
       "pubDate": "Mon, 18 May 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-22T20:13:25.515Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port Leaders Eye Nuclear Power for Maritime Future - Biz New Orleans",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTjFCZVhPeDd3WkNtd1VpeWpFTERucXdUbm5QRVFndXMzazB6RW9TNE5HNkRYTUxpS1oyeUFmX1l3MjJXYVJyWUhxWUVuYXI0Z0NGYTNHek95NS1IS2xfMW9rZDlrYjE5d3JMekx3cnVTRUFvSzFjMTNHelFybTU5YmhVWQ?oc=5",
+      "publisher": "Biz New Orleans",
+      "pubDate": "Thu, 22 Oct 2026 09:10:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
