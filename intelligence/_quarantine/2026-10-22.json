@@ -2627,5 +2627,27 @@
       "pubDate": "Mon, 31 Aug 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-22T16:15:34.572Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy, 3 Months Out of Stealth Mode, Signs LEU Contract - Energy Intelligence",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBtUGxtMFlBa1IwZ2JZYnF6QTNoQzBpTXlUUk1fMU9CMUVadkpmcVlULXJWOUl5Mi1mZmw2LWd4d1BVak1VWEpfVk1hWTV6R1loVGJVTjB4Z09hSXVCNWtIbHNKSXFOMGIxOGg0QndtbmV5dw?oc=5",
+      "publisher": "Energy Intelligence",
+      "pubDate": "Fri, 16 Oct 2026 23:14:29 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T16:15:34.572Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Russia Builds First RITM-200 Reactor Unit For Leningrad Nuclear Icebreaker - Marine Insight",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNYWZYVU9WTk00WDVvUDNmUExpWUFodm1KMm56YUtnTzZXLWMzd2xjaHgxc09LYVZCR1ZObUVFdTY4TEVZT2k1aHN4N0FaaWZLaFRYSGNOa1FLTTBhVnRqYmxSLXI0amZ6N05UeXdTaGFwS0dlNUozOUtSV3RqN3dtck9YaVdmcXNsR3VTTmxBRE02Y1VBeXVVUmdsNVpVSm1BMTVQNlE1UkM?oc=5",
+      "publisher": "Marine Insight",
+      "pubDate": "Mon, 18 May 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
