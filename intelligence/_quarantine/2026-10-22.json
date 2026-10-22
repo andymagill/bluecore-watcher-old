@@ -1989,5 +1989,621 @@
       "pubDate": "Wed, 26 Oct 2022 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "In 2026, Kofi Asante-led Bluecore Energy raised $50 million to put small nuclear reactors on floating barg - The Economic Times",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOVkhieEFRTEQzVm55MVdHcjVZS1hmcG9wV0JwNVJvTDVjbkpqajBDZWd5SFhMZU4zWVVJaGNZSVlveUxSNERqSTYxSU5PaWlseFhSclk2Mm52dXA4dlNnUHlRTlNSclg0eVRTdDE3UktVb1BtRS1aODVNQ3ZwZTUxaGFmT0JXU242aTd0YWRSNTJERDQyLXo0ZWZhdlRXWHV4d3dJY3ZnOTZWelZnZmFEYVppdnRET1B3d3BjQzloc0Q1NjJmY0tqTDB1cXY4UE5GM0RZRVZPNTRWNkZPVlBWWVBMWnEyZklEd0VoZURxZTE1Wi1UdkpRNUUxdGdyd9IBgwJBVV95cUxPQ1k4VVlkeklVWkdZZHE2YnpBNDUtSjhmQ3NkMDdzeFZqMFA5UzlFRUUtd3lGdnFiM1FVZDg2bHplOGNWdVFaYUVaMjJLdVEzanhUZUxhN2xKWU5FMjRReWZ2NUdHdV9ldy1VNWZxQW84YV9PWXo4WEhYbWU2Nk1KTDRxcU5iZ1RpcGR2cVdsZjIzTlNUc0JUSEJvcjlyRGw0cWRqbEZmaDMzWTdJRUxNZmgwNURBZy1xY2F3SGl0eWJoakk0b2twaE5aMEtoZGd2am5tdVcyRW1sbFQ3WWZDZng4YkNZUE84VFVPSV9ILW1qTXRldnFhOFNTMUk1ZVh5aFRN?oc=5",
+      "publisher": "The Economic Times",
+      "pubDate": "Mon, 19 Oct 2026 17:40:59 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore secures maritime LEU - Nuclear Engineering International",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBpenY2bDB3ZjVXR1Z6T0ptMU1tbUxBb1lUOUwyM21hSEpoUTRBcU82Z1NwbFFROTZyenRhQXJ3QzVienlQaHBwS0NPbUNwbUVRQjBOSk5IalJtZDh3Y0RVc1FIRVpKZVVKYVI2X1UtZlY?oc=5",
+      "publisher": "Nuclear Engineering International",
+      "pubDate": "Thu, 15 Oct 2026 13:02:10 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "New floating nuclear power project secures 4.95% enriched uranium fuel for testing - Interesting Engineering",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNUkVvRTJIR0VRV2hiQkhfelJFa1dSdWFEbzhrNndMclZHb2pva2ZNVmNQc2lTRmxHb2Rmek43TjBoTEF1bjNxZUQxOXpfamtpWGNqY0wyY0NxQ25tN0RURkx6clNoYkdVNUM2QmJvb1Y2M1ZpdGs5SFVxWjg2MVhENlhnMmtDeTEzYThhNVNHeGlST3hOSEJTNUo2X1FSQQ?oc=5",
+      "publisher": "Interesting Engineering",
+      "pubDate": "Wed, 14 Oct 2026 13:40:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "New Floating Nuclear Plant Secures Uranium Supply - Tomorrow's World Today",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORmRGN3VjSXktbElQcVcteGx5YjRTRi03b0prbXZxOVRGOS1tbnVuTm8zaWdYbnpyRnlLd2FBMHl0Z0VKdGJLYVhsMlZtRjRSaF9fOWdlS1EtV3hWQzlCYmhFXzZteTc3UzlaY1lKLUlRZXFfUm0zd2NaWTNpOWs2NGdmWEZmcnVjYWhmazJieVBxNmpVM2dJb05R?oc=5",
+      "publisher": "Tomorrow's World Today",
+      "pubDate": "Wed, 14 Oct 2026 19:05:27 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Maritime Nuclear Startup Bluecore Buys First Uranium For Nuclear Plants On Barges - NucNet",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOREZoMTVnYVoweXowWHl1NzZxR3RqN0VCTGZ1WWY3Q0V0RHlHaDUtNXhPYVBucFZQOERjNG5wTHpDOUJXRWxfMkJQUjZSczRWc25HNkU0X0QwUDdLaHc4S0ZKU1JxTFZzdnVzVERJZUFPYnVEb2ZsUHFfRUxOLThra0Rybkl1anRQZUlNUExPVWRQdGVhTm9VYUg4ZzF3cFMtY1gzZkZGRW8zUnJpeTJmaWJ2b0pvM3pPN3Nn?oc=5",
+      "publisher": "NucNet",
+      "pubDate": "Thu, 15 Oct 2026 10:57:48 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "American Nuclear Power Barge Startup Buys its First Uranium Fuel - The Maritime Executive",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPV2ZWUGZZSm84MEpnaUVGbFFiZ0JzcHpMVTBmbHNxT2pwQU1jeWFFZU1jaGJGRXhVWG82c2JxV1k2VElYa1BNaFc4d01fYjZfcXBETFdBWVBOTXB3aExLTWNwVjAwa1JkeWoxMjA3T0FvLWlWcWNpbzAzYW50ZllsSUZVLWxHRXBJLUhEZHZxUU1vRnBUTjR5ZVJVdFFGVEwxQVZ6S2V3?oc=5",
+      "publisher": "The Maritime Executive",
+      "pubDate": "Wed, 14 Oct 2026 02:36:15 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Offshore nuclear barges could power ports and data centers—starting with California, where nuclear is banned - Fortune",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPT2JrSGN3YVFieU1QcXNwdkhhSmlDME16RU9QOEFoMVB0Nks3a08xOFlEeGZLWGVKYWtSMWxNTFdRQVVOZXQ4R0pORVpfS3ZjS3lwSWVOekVVTEc4eUU3ZEtqVG4tRlFhSVpEdGJxMjVzN0pBUkpIOVVPMmpSVFZWYUJpVWpZNmMwUnlTNm8taF9CcFdwaWl3Zi1CNVlEdlk?oc=5",
+      "publisher": "Fortune",
+      "pubDate": "Sat, 29 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Borusan Ventures invests in Bluecore Energy, which develops offshore nuclear energy systems - SteelRadar",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNMnJJUmNyVjNqVmt4VlR4ZEplSGZtcUV2TWN1T2pPRllJalZha1E5OFQtR1RzWU9CdVRWUkNKR2xlcXEyR2xWN2tRTUZUMFo5c1N5ak11ODRrWmFJcUtYR05wLWFnTjdrWmVIZU0yQkw5SVVHSlVKZVdtZUlyRWREUkpKYVo1akU1VXhvNDlYRUFFcWcwNUhYd3oxSDI1U3c4ZE1nTmlUbjBWakZCWGZUSWNhWHFrUWdKRXFUQV9R?oc=5",
+      "publisher": "SteelRadar",
+      "pubDate": "Wed, 30 Sep 2026 19:23:42 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "News Content Hub - US$50M in venture capital boosts development of seaborne nuclear energy - Riviera Maritime Media",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQMXY1Z0xhUE1PdWExSWhyQVZCeU9PZG9tYTZ0NTlBRmVyQjlYODVseGNkYUdPNkZaT3J0NUxzZkMtemFFUXNMYWdYSkZsRlhkTUZ1WFdLZncxTnRFaWhKUW1oRUM3TXZzT2lVbGRWR3E1azQ1WEdyVmVpV2JoNVhpYVROdmx5dWc3c3NCNERUZjA0WE1WNFh6UFo5dmR0MzhTTzFRNmlhR2ZLZnRGcU91b3NnWkJxSVR1ZUtPSVNoVGVPTUJvWHhaV1NIX3VHcWsxeEE?oc=5",
+      "publisher": "Riviera Maritime Media",
+      "pubDate": "Fri, 18 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "California stuns with offshore nuclear reactor - Fox Business",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBtN0Zqd0xlMFFUeUNjVXJhdjUyMnpDWFFXREN3dWd3UF82U3VocWJCWGNkOC1QWDVUSVc4YjlBNDlXa1ZyX20tSDR3aVRuSHNESUVZT2Z5dEUtakk?oc=5",
+      "publisher": "Fox Business",
+      "pubDate": "Fri, 04 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Floating nuclear startup Bluecore lands $50M funding before setting sail - The Register",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc1hMSlpxX1ZidnZXM05OMWFIaEZaZzVuY2tVUGpDamhDYnJ0RzVLZUd2UVFyaDlYdGFHdkoxb0pqaC1VTTJvZDZ0aVdSLVpEMDRZNTNVVEI1Yzc2NFlCMENOcjhUNF9VQXE3aGtsR1A0V0NwSFBrNlpRQmd1OFc1Zi0tbms4TXZVeWhWR0lESmlUM3Bzcjk0LS1fZTBydlYwWUp6X3hEd29XVXUybmZrMFRBSGRPMHZBUXUyOW5Sbm5QVEh3?oc=5",
+      "publisher": "The Register",
+      "pubDate": "Tue, 08 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Secures $50M Funding for Floating Nuclear Reactor System - Data Portuaria",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQN0Z6ZnY2NXh2M1pXNGN2cm5iOXg0S0ljM050dXRYUUlRWUVidFItU0pOT2J0RUE2QUFLd1hmdjh5WjRhaFRZeDJSaGxscmNFYWFEaVRfNVBKNHozVV9PbzZDLWRybWN1cUh3aDR4YW9nRkNCOGNaRjhVZ3ljM0t3UWtlNlQ5Q2NfaEdiR0dITFBFaUtqWkdVUC04bTRuWnVVMk5ubHkwZ200N0NZbjBCNW5xY0ZTTWY1VHM2S0ppVUVHWkhp?oc=5",
+      "publisher": "Data Portuaria",
+      "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "They’re Building Floating Nuclear Power Plants - CNET",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1lQVJ4MzB5b2xHOElkOUtaUEhRbVd3TTFKVURmV1d5MTBpRXJFcnFIMVdXanpaajVUU0dIRW5QZWl6em5XZjE5cURSYXQ3RHlSNEVTYzlRUWpvWGlTX2FoTUJjSjJ1c3psczRLR1FwZEMwY0pPazZKR0pBXzZ0aG8?oc=5",
+      "publisher": "CNET",
+      "pubDate": "Mon, 21 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore raises funds for floating SMRs - Nuclear Engineering International",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1IUXhiamE3OHBkWDNFQ0U5YUtYbXFReEdKR0k4SVg5anJaZnFwLWZfZW0tRXZkTVppRm1aRnFtZ0FxRllsRE9FcGo4ZEJiQmVLZmtlbkVaQzR2QUlZUk41QngzdUVxNFpHVVdxZ1dJOXNzSHFVTjBXdDcxRkZBZw?oc=5",
+      "publisher": "Nuclear Engineering International",
+      "pubDate": "Fri, 11 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Advances Floating Nuclear Power - The Waterways Journal",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNN29ZNi1rc0NHZVlvMm16alU1N0JCVUcwbUpPQ3l3dnE5SHZ6WGpxSDZXOWtidm1vMEJaQUIxUWthYk5hUFBhVU9RY0ota0xjeXdWTXF0a0V4N0xITnlKYnJ6V1hmSWZlbjJ3UXhHVTRWMUxyZ29RbzFaeElpaVpvQmllR21QNlZPNUJDSk5n?oc=5",
+      "publisher": "The Waterways Journal",
+      "pubDate": "Fri, 24 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Develops a Floating Nuclear Reactor to Supply Power to Ships and Ports - Puente de Mando",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSFNXMGM5WHBObmZoOHkxNUg4ZkVlaFpxUmxWOTRTVFF5eHVNN3J4MHl5TUtKRXgyd0I2SzdTT0ZkZzIwVjhNbmtsYmhIYUd6cmpsejV4TGMwbVpRTGZBMUpYN3ExTjFWUndUQS14SjBmbThCVkxZZEotc256MVVpaWV4NmU2YUU?oc=5",
+      "publisher": "Puente de Mando",
+      "pubDate": "Mon, 05 Oct 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "US maritime nuclear push gathers pace - Splash247",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5SVzhMZ1pkSUVBUHFtbjV4b0J0akZBQllkQnpWdUJiV1ZvQWY3bGNLN1VZenhyWVg0bTg3bXB2ZTROMEdqak5vQV9MdXVNQmpDS0pxR2lrdmI2MkhLSEVsVndOWGp6NmgyVlRCRQ?oc=5",
+      "publisher": "Splash247",
+      "pubDate": "Thu, 10 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Port of Long Beach, MARAD sign first-of-its-kind partnership agreement on nuclear energy in maritime - American Journal of Transportation",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQVkJmcUstbWNmQmFna05ockVuMGFtWi10SHppRm8zYlhwdllKMlNUTXlQaG1vOW9qeHdnbHdpcEdnMXhOM0pVVVRST3NiUnBKYzB1ZUYtNno1LV80V080UFhyU1g2aGRaRXo2eEVVSlRIU0N6LUNKalZ2UC0ybHVSRU1KOG9LVFNxR2k2NzVjTnNoN2Z0NWZHSTZLV3BKbDdGV0c1WDU0ekRIc1VqWlYtN01vOHZoQWkxU09yX3Z1Qjd2Yms?oc=5",
+      "publisher": "American Journal of Transportation",
+      "pubDate": "Tue, 28 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore raises $50m for floating nuclear power at ports - Splash247",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNdWg0OUlDU2Itcnc2SlhEOFBUdlFOQl9XWVVQZHVnZUtSUzhOTzhHXzZyQnY5bjhLSU5jQUUxVUFtRDI1Q1JtdW9mVHM5SlJhcWtLTVE1ZW4wLVNtSVEtWDh0N2xtNGg2aXdxSm5sNGJKa2dMd1lUUkI2Ykt4Wlc5azlMT1A?oc=5",
+      "publisher": "Splash247",
+      "pubDate": "Thu, 10 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "California could see first new nuclear project in decades after landmark port deal - The Cool Down",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOVUJENjctSHVIRFdaTVNDdHlhSk1QN0NQdnpZdHlTQ0lEN2hBM2hPY0JSWXR6bGItZU95UWx0Mm5RM24wT0Z4bjFEdDJEZnlWRUdUMHJwZ3RwaThlR1FyUEtselRjWEJDWTVaM2NyWThpY1BDU2xLN2Uzb0JoYTJLLXpmbWFkQ3dwNlE?oc=5",
+      "publisher": "The Cool Down",
+      "pubDate": "Tue, 25 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "U.S. weighs putting nuclear power plants in ocean waters - The Japan Times",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNV0xtTVREbnF0UGw3SUJ2Vlhpdk5xM1R3N1p0cTg4bDM0a1k2NGxLSGlFMVRZT1RmR3lpUXpuQUZ1N1ZFdWFzcFhjbndwYnpmekJpN2d1VDZULU0yZ3JYaFFhQ0NZWXNGaWh3MDhRRnhHSnF1S2VySjBUVGZCdW9xQ3FJMEdtalBQ?oc=5",
+      "publisher": "The Japan Times",
+      "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "BlueCore acquires 100% stake in Axxela - African Law & Business",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOYWZPYkFEMFpOLVg5YmIyMzJDdERYd2FaLTBETGVCSVNHWGdjR21LUVo0ekk5RzNKS0VzdFNLdzVFTHFDa3hYSF9JSzFMaG9lb1AyLTd2WkVlRmJVT1pGX09udzVlb3FNTnV4N2RCU0FWVDBCTXphSi1hY05abElFZEdscXo?oc=5",
+      "publisher": "African Law & Business",
+      "pubDate": "Tue, 13 Jan 2026 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nigerian investor Tope Lawani’s Helios completes Axxela stake sale to BlueCore - Billionaires.Africa",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPUjhFa1N5WWJfZE5rY1dZdlJPdGoyaEpNNkt6TjYzSTZ6WmJxVEZHUFZxZ1VwamRoZUpJZHNacDltZjlVV3JEcHVaT0ZueDFsT20xR1E1a2U4em1YVzlZMkF4S0t0azhuRUxLNmd6NEdzR3BVdzhMbi14QlRGbmQ3SmgyYzVRVHhoX2tOczVTVWFfd0dmRU1KaTBzZXFzemoxY0tUNHVwUlJPUUtnWkZrZF8xSkNuU1pDQk9GdE9B?oc=5",
+      "publisher": "Billionaires.Africa",
+      "pubDate": "Sat, 03 Jan 2026 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy secures $50 million to develop floating nuclear barges - NewsBytes",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZU1OSG9oLTNNNGpxZFNMZnlnT0FVU2wzZFFiaHlLMFpNRnZveW9la2VPSlpaRFBscEx6a3pIWDFDb0Q0ZENhTmlkNmtWT3l0V3FuaHdkbklfcjJmUDFuenRHZVlja00wU21zcTV3SkpORlNXSFl1bkhEMVlJN09lOFZYVTRRLVdJODhHR1QyZ2owbE9SdFhXTEo2ejVNSWo3ZC1kZmV4alVYMkJOSjFJQzJyd1FGaUJR?oc=5",
+      "publisher": "NewsBytes",
+      "pubDate": "Tue, 08 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Pinch of Salt: Nuclear power in Long Beach worth developing – with safety first - Press Telegram",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTkVQbERBNTQtR3VTMTE4SUhfSmZvM2RrOVNiYnQ4TzNTbEZOeWxFZm5PSFViSEIydzZFTHdNWkZaNGxVSDdlQkV1VmJ4dmxnSURGbThkenpxQnBFV1dMemRtOUFiMmVZOGQxZDFtVUQ5dXVMYm42VnhfMW1vMExWX2o4Ujk3V0VQR080ZHpuQUFDcVhaNDQyNWhBTEgxaDdXYlJxc0lWNUptZHhldU1uTlNXZzI2SXZrS2c?oc=5",
+      "publisher": "Press Telegram",
+      "pubDate": "Thu, 27 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "News Content Hub - US$50M in venture capital boosts development of seaborne nuclear energy - Riviera Maritime Media",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQMXY1Z0xhUE1PdWExSWhyQVZCeU9PZG9tYTZ0NTlBRmVyQjlYODVseGNkYUdPNkZaT3J0NUxzZkMtemFFUXNMYWdYSkZsRlhkTUZ1WFdLZncxTnRFaWhKUW1oRUM3TXZzT2lVbGRWR3E1azQ1WEdyVmVpV2JoNVhpYVROdmx5dWc3c3NCNERUZjA0WE1WNFh6UFo5dmR0MzhTTzFRNmlhR2ZLZnRGcU91b3NnWkJxSVR1ZUtPSVNoVGVPTUJvWHhaV1NIX3VHcWsxeEE?oc=5",
+      "publisher": "Riviera Maritime Media",
+      "pubDate": "Fri, 18 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Bluecore Energy Secures $50M Funding for Floating Nuclear Reactor System - Data Portuaria",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQN0Z6ZnY2NXh2M1pXNGN2cm5iOXg0S0ljM050dXRYUUlRWUVidFItU0pOT2J0RUE2QUFLd1hmdjh5WjRhaFRZeDJSaGxscmNFYWFEaVRfNVBKNHozVV9PbzZDLWRybWN1cUh3aDR4YW9nRkNCOGNaRjhVZ3ljM0t3UWtlNlQ5Q2NfaEdiR0dITFBFaUtqWkdVUC04bTRuWnVVMk5ubHkwZ200N0NZbjBCNW5xY0ZTTWY1VHM2S0ppVUVHWkhp?oc=5",
+      "publisher": "Data Portuaria",
+      "pubDate": "Wed, 09 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Can shipyards mass-produce nuclear power plants? - Splash 24/7",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5tTDg2bTZqS2g4b2lnb0RkYVphRDVsVTFLTUx5eHNWREEzVkNBNTQtcnFhdFM5Ql9la0pOVGZLT19xNUl5c1F3MEhmNlVyeUxHMEM2ZnlYZ08ycU9DT3lBSUpIaXA2akNyM2NnbDRFb0pQZFdkSWxmSUlB?oc=5",
+      "publisher": "Splash 24/7",
+      "pubDate": "Fri, 19 Jun 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Samsung Heavy Industries Partners with U.S. Nuclear Design Powerhouse S&L to Co-Develop Floating Offshore Nuclear Platform - finance.biggo.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9lUzV3LVhOSzdJR1M0SjhhaENIMm1KeFA4NGhZd0VZX0MwZWkzZnhpaHlnYXBZSEd1WGowVXdIYjFId21IVXpNMGpNcGlEUGNQaXF2RHV0b0xHZHZaMmRpNGdrZUp3dGlzalNRVGZfRllPVG9mU1E?oc=5",
+      "publisher": "finance.biggo.com",
+      "pubDate": "Tue, 21 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Floating Nuclear: A New Offshore Energy Frontier - Marine Link",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOTVlXQWd1RzVKbGRlRTFwQjhwQnBQbkhRSEFqOXRFY241ZVp6bHJEN0pjQ0xlLUdMYlBkcFVPQURFOTJpN1VleDhjYlhnUzE2RVRuMHBob0E0cXhsTGlxTG1ia1hMc1czQ3p4cFVWRlBoYnhybjVzb0FmaGpvbnJpZEN1Y9IBiAFBVV95cUxOTUd5TGFLbnplNHBxWWI4REkteUlIZU82ZXFvWXlTdmtDLXR2RUNROFBpLTFjLWVLZHRCX3V1LS13cy1tMHhpM3p6Wlk5ZDlDVTFfVFVGNVpOS01fQi1CYzJHMVFQV2FHaXdaWkJveUFjczBiMURLWnBLTW8xOG1MVGk1UTNZRWpC?oc=5",
+      "publisher": "Marine Link",
+      "pubDate": "Thu, 25 Jun 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Korean Floating Nuclear Plant Design Secures Approval in Principle from ABS - DongA Science",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1hb21Cbmg3YkJLem9IQS1nLUYzdV9iSHBaSHYzaDNqUlpicmtMUnk1SnAwMEhPYjNUb2ZwUU5qNFhjU0djcWduNGx5RUdkRlNyeDl1Ng?oc=5",
+      "publisher": "DongA Science",
+      "pubDate": "Tue, 16 Dec 2025 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS, HD Hyundai to study reactor-powered container ships - American Nuclear Society",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNckNaODhRempZQXBCVmZqWEhyVHdDc3FOVmt0VTlaNmlhbjBwTEc1QmFmblpINzBIeWh4VzdENUIyNzFid3lyYV9ydEtQT19tWnNPT29wNGFLWkxzbnBQaGh2MjhaaTdaNWtocnBTZGdzZ1hpM2p4ZVNmeUUydHNDRGd5bGh4b2NrOEQ3WG5oVXF3Z1BGbDFBUnltSy1nRlk3MGVQakJONA?oc=5",
+      "publisher": "American Nuclear Society",
+      "pubDate": "Wed, 11 Mar 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Core Power to assess BWXT SMRs for floating nuclear power plants - World Nuclear News",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQNnYtX0Naa3dDSzBfWjdHQVdVLXAxVzRLdk5qR1RfQlhWcVdXOVV0X1lXNnRJQ3ZYVnNkSVFweW9NYWxucWpON0YtRm1NVFdfRnBCbkRaQmZlVGZIN3A0bDA1Q3BadExvZTRka2lBd1o1Wl9mS3RqZXZ6SXFxZXJoVDF3VklGd21YbGZmeF9vVWc0UWZ4ZDJZRG1WajA4M21kamc?oc=5",
+      "publisher": "World Nuclear News",
+      "pubDate": "Wed, 17 Jun 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Corpus Christi port, DOT to explore floating nuclear power plants - Corpus Christi Caller-Times",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNUkY4c1dSNXJoenNvZGlvb21fVkJNZ0JrM0xVZld4ZWZTdDBaRjg2RFdiWXhHa2hZcUZIVDhBa2gzaGJ4S3JYZjViWGVuVC1xNWVWS0dPTFlRUC1ZSWJsQnllb3R6TlUxR0hjaHl6ZGQtZkxIS3RMTXJMQVZlMm1rblpNR2tNM2tYcmIydENVak9jVE05T3JoNmlPcnpZdlBWbmVRT2ljWGg4d2pEM05YODlFMXFaalhaRElxSUtoclU0eWgyVGxOOFBaeml4Uy13OGZJSE0yc2xtWWEzZHBTU1ZtU1FUYlgtUmwzZA?oc=5",
+      "publisher": "Corpus Christi Caller-Times",
+      "pubDate": "Wed, 19 Aug 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS approves floating small modular reactor-powered power module - Ship Technology",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVzdhT1BTbVVITG8yRlg2QWRfaTBxQWs1Um92U29WMG5DWW9SVWhhWURkNTczbjY0dFBqaG5Ec214QmFqTk50cGxZMGZERlRuVWRjNjNUd0tLMi1mbHkwV01SNUh2NG1vVkt1WXdsVHhFQjB6Wk9heG40Q1A3LTJkZHFjSkdmZEpZUHVub1N4OWNxd0ZJZFNWY0ZQd3JtMHJIRGNKTg?oc=5",
+      "publisher": "Ship Technology",
+      "pubDate": "Mon, 23 Jun 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "DOE OKs Startup of Oklo Research Reactor in Texas - Neutron Bytes",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOT2NmV29mY3FCR1ZNbUVTLUV3N3NsemZJYzdabU9GRnhZZ1hCV1pydm1UcTYwdGp2YjZFTEM3VU93aGg3N2VmblBuR2phUmp3cTRjeXZfQ3dyMkdPaFcyQWdNaU5UU2trUzhPXzdBRUZmc1hkbTFZQnBKZnBNSDVLNHRzbGplTS1aRGE4Ml9KUQ?oc=5",
+      "publisher": "Neutron Bytes",
+      "pubDate": "Sun, 26 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Marine Nuclear Reactors Are Economic Low-Hanging Fruit - Bismarck Brief",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB0WjJYOERlSFp2c2VjOWNPMEFPOUZUNWdwNEhPUVRKazNDYjFXTk9IRVFjSG8ybDJub2d2RHl3QzNLSzBMT1pfWkdKMFlqdnVmZERvZjZKcUszN1I3cW9HR3ppWThVTHpJY0xGZzk2LVZxdDExeGx0eUpPd0QwZw?oc=5",
+      "publisher": "Bismarck Brief",
+      "pubDate": "Wed, 07 Oct 2026 13:27:52 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Copenhagen Atomics Begins Engineering Review For Ocean-Power Floating Nuclear Plants - NucNet",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQZU9XNF9hbG9Ic2xIaFozLXIyUGNLN0M0WFZJV0M3VUNEcW0xMzZ6ZVpLb1RXaGJOcmpNZmtXZThidHh5ZFZXa1h4SWtSaGRkaEZianQ3RzFRd3QxRGhPaTRQVEhVRGVPLVoycWIydGc1VmE5c3dXRnp1bVJYQ3g2d0V6TFRiREZwMTVyY0FoRExGdGlKZFBDMGh6NjI1VWliUWdsWGVyOEZKWXpQZU82WTBjNngtdnY5RnpJR2Jn?oc=5",
+      "publisher": "NucNet",
+      "pubDate": "Tue, 26 Aug 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "United States Set Regulatory Framework for Future Floating Nuclear Reactors - energynews.pro",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNbUM5ZWg2OUlmcml2M2hUN0VBSUVxb3Y5SzFDcWxSdkczRFo0TUlrSF9VczFoUWNUY3RfWEczUDdfZTZ0VTVmdGJuRXJ0bEQwbW01cDltUUN5QUk5S2NQUXFvU0tDZUFzYy1ISm9tNjRtMUM2azVnd283STZqek9PQ1BZNEF1X1lCaVBSV1hid3VYXzlJd2hZbkZmMnZoOFFpQVJV?oc=5",
+      "publisher": "energynews.pro",
+      "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "South Korea’s KAERI and Samsung Heavy win approval for floating nuclear reactor design - Interesting Engineering",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOckF4VkZqeWJNclJyYUwtcmpIeEM4Z1I0M3hrT3RIVllUNnZDSVRBdV9kMW9pc3NDUkctci10cTE5UUlaTnNDbDRHTmU3WldiQTFuMGU4UWVDSmZDRzVzZ1ItTzFQRlZTRV96Tld1eHJLWHVyUzA5NmdqUHlXdUIwb2dYZFh0N2luOE84ajZMaEc1N2JjMGc3R01ydw?oc=5",
+      "publisher": "Interesting Engineering",
+      "pubDate": "Wed, 17 Dec 2025 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Commercial Nuclear Corridors Key to Unlocking Maritime Nuclear Propulsion, ABS Chief Says - gCaptain",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNzhqNVZ3d0RIdUhKMnppZWNBX0REWmN2S2RRT3pVU2xSbGdERVFoNWprRnFlZ2pYbndJQ0xkell0cW9LbkJZWjlKLUZMdUd5STRlTHpLcjNQNmQ5aFlOSzdvR1FSNU5XcFRWNTRzXzBxOERSTlJvTjVNY3Ryb081ZUFyYWFBbTFaT1RWR29PVnlsMm5Qa2dSeWpRTkRWUE9mWTQyUmZBNzh4b3Ntd1hZ?oc=5",
+      "publisher": "gCaptain",
+      "pubDate": "Fri, 26 Sep 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Korean SMR 'SMART100' Heads Offshore with Approval in Principle from ABS - 아시아경제",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBYeTNRX2VRbnA1LU1aUV9uekFXa3NiTTktZ0ZRZEtnQWE5dkQyZkpCNG56bEl4QkdmdDJJRy1tNnlWZF9aZmp2MTMwUzd0REFaejQweWkxbGFFdkdrR1NsMW9TN3M?oc=5",
+      "publisher": "아시아경제",
+      "pubDate": "Tue, 16 Dec 2025 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear Shipping's Next Chapter: India's Chance to Shape the Rules - orfonline.org",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPT01VNWdJM2RrM1dmUVk3Qk1HMkdJZ0RMMF9FUUNVbVB2V2hObVZiRi1JUzl4eENaSU9HUFFHLTBEeWRYWnRfck41VWdIWlB0QVBoSDNZVUl5cnNKakxGTFE4SVZEcGk2S1BQanZwbUplVDdHNFJhTFZuQjZKd3dvLVNGb09lV3hOMEY4RGo5RjNoNlRrUUJDUEdNWXpEalk2VjhoamJEcw?oc=5",
+      "publisher": "orfonline.org",
+      "pubDate": "Mon, 05 Oct 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Nuclear Concept from HHI and HD KSOE Receives ABS Approval - Cision News",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOaHhUaHpvZjNlRkJMcTM1QnNDVkUxZW53cmFKemlKZUh3NlhjOU9Xd0ZWdnY4bF9kbGd0bm5JSFZiVUtQZks3ZEdYbllHVk1OcmR4QlY5NXlSZUE0SVNvQS03MnVtTjhFZk14clpsNjM1N2NXeS03bnh3cVVrdzFQNjgwUTd1N3FGRXBDQWtFZlQ0TG1TcDJVa3NhWWY1dWtVV2cySXlGakY2aVUtSG5sbjVzRlRhcndQYlEyYXVn?oc=5",
+      "publisher": "Cision News",
+      "pubDate": "Wed, 18 Jun 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "China’s plan to float nuclear reactors in South China Sea seen as risky - VOA - Voice of America English News",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNS05icHM0M1VLLVl0ZlZiaXNLdWRJV1VzbmtzZGNwbnVvQi0zLWo1ZGc2ZGtjaXlsWjNqUVdFTWQyUzBmZkxkV2ZNYXh0U0NKM3kzamRCdW1mcWNmbXJ5alBuQ3lYTHc2MUdWemtzNFAxSnVHNm5qZG84U2pESTMyRFBHY2RzZ3FNQnBxTDhSMmZxOGk4TXJVZTBuS3hXZGF5bzNJclRSVVQ4RG5HZVEw0gGyAUFVX3lxTE8weWpXbUJJSVFBWl85eTdxWU02VUJwcUhIc3hBVUE1eUkwdHRwX2JITjg3QkhhYnY4M1hfYXJMS2M0TnJJNGVqSEwzOTZNb0RJWmZPMGhLSWw0VThDUUE3ZlJIX1d4WW5wZ1R4b0o4ZVZMZ0lNSGQ4QUJ5WFhXMEJGR25VREZjeXFfTzdHNTg2V1NtbnlDN2ZXR3Z1TERoazlzUTMyX0NvbVlWcnIzMTVsVWc?oc=5",
+      "publisher": "VOA - Voice of America English News",
+      "pubDate": "Thu, 16 May 2024 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Westinghouse and Core Power Partner on eVinci for Floating Power - Neutron Bytes",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNd3B3ZTU5RFRPbnp0amt6MERZRVJSZzMwQmdkRXVjUUxneFVFWncyVExVUUhtOGlBS2xJNzJudU1STGFiazBiWFpHMFB5YkhQSlNqTDhFNnJXalVnOGJ2U1N0ajQ4YXBrUmZOZnFPY2FBY3ZOemJHbXNsRmljclZ1ZVEtd19UczliOExScXgyZjBKa1RZbUpucThJTzZraHVzV0FR?oc=5",
+      "publisher": "Neutron Bytes",
+      "pubDate": "Sat, 30 Nov 2024 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "News Content Hub - Nuclear buzz grows in offshore - www.rivieramm.com",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRkFSTHRtQTZQUnVpZm5MQnhVMGRMYUhMVHQ3N0g3bUlfMzg3UklISG9iOE9KMWl3T1lJeUhvU3lEVmFCYWRVOFdid3NJWE1fZFg3dk5lU3p5S2IzSmlYdFVFdTFBOTM3OElkQm91cEF1M1g4eEN1QXB4N1lNOGJES09hUHNpbzg5SjdBLTlERk9pRjZDTlBMUlNyWko?oc=5",
+      "publisher": "www.rivieramm.com",
+      "pubDate": "Fri, 27 Jun 2025 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "NuScale Launches Effort to Deploy Floating SMRs - Neutron Bytes",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNUl4MUhtRUtHRHdaLUtGSVFRQlJESV9zTTR4emx3a2dLd3lhVXFKUDNJbFhzLTB2cm5xWlo4YVZqYnVXQkdsYjBQQ1A0WFdveEdDNFZvMWktOEp0N1lLRzNieEdCWmZ1NGJuMl9paTNIcTlOZHBadUI0VnhGNnZObVhkYzVGVUxHa3BrTA?oc=5",
+      "publisher": "Neutron Bytes",
+      "pubDate": "Fri, 14 May 2021 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS delves into potential of nuclear propulsion on LNG carrier - Offshore Energy",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQa252UEZFZmh5ZDItRWw3Ni1VT0RuZmlqcHloUzZlUkVtRWlOc3pwWTJVdzl5b194VWkxZUw3bmtET0EtYXVUTWV5UnBENEpNNEp5cWFfNjdiNkJJd3Q0TkdyaHEwZlQwOGU3ZnBycnVfbTRhRUxHdnExUVlWSjhpcTdhZHA3cE4xLWRxaWR1MDFHTnBZOGc0b1VvSzVhcHJwYTNPQjhkclA?oc=5",
+      "publisher": "Offshore Energy",
+      "pubDate": "Tue, 29 Oct 2024 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Samsung and Seaborg Plan Molten Salt Floating Nuclear Power Barges - The Maritime Executive",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMzBmbDNnWHlBdjVwTFg0LUxPNUhIRzJUTHNmNjhPcUlBaVZYd0s3Y3F5TVBtVzV6aE9yclEyeEFWY0hLU2FELUhEbTNrRS0tc0Z2Z2dsQThRajZ4V1JxMWZ6bmVVNjZ2T0pzbHBWWVQxLU93WUV3UTZVb3FCbW5UdkJBOWJwaDFWQjNMb1gtaEpZLVhodkRQVEpkWUdDX0QzWnR0V3NiNXE?oc=5",
+      "publisher": "The Maritime Executive",
+      "pubDate": "Thu, 07 Apr 2022 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Report: KSOE reveals design of SMR-powered vessel - Offshore Energy",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOUGFDNHdVa1JOVldpVHRTY0UxVjF5RVI5NUFWNmN2ZGtpalVyeXhISHFxdVVqYXNWN0x5Y3R2VUo3R1VxQ1dpTjAwYzVlYW1qQVVWY2thcDZkMlVBRWxlSWFzVE9qaFJha3VQLWlWU0VCXzl1bTh2S1E1bHByd3VjWVFNSnJiTkVwTFl1Vl9oQUVPZnV6R0E?oc=5",
+      "publisher": "Offshore Energy",
+      "pubDate": "Mon, 13 Mar 2023 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "NuScale Exploring Marine-Deployed SMR Power Plant - POWER Magazine",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPbkpnVTJkMUstRG1ic1BIYzFFNWpFaDZpZGE4Sjc1TXNncDdQQmxzSU1GZDZjdGJHc1M5M0g1aE5fX2N3ZFVCcTc1N3RMVmxneGtqY2RwUjZFWFVxYzBLOURJRUg0QnZYd25qM3VhNHZTblFkZldVMGtyeE93b1lzZQ?oc=5",
+      "publisher": "POWER Magazine",
+      "pubDate": "Wed, 19 May 2021 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "ABS Approves Floating Offshore Nuclear Power Barge From HD KSOE And KEPCO E&C - Marine Insight",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOOVlwcW91MFh6ZDNqeG0yTVlEcFRRaVZ5ZktVMUIzWlJzRXZhdDNDWmdNWXdNQ2piQTlSWEJ4UzUyZ3JOMnpDY0lLVXNTMkRBWVBWM0RHVFo3Qy1FcjhOYWJSckxVUGtldU1kemxGU19EM0VwTFNXd05iU0VBcW9wQnN1eUZKRGtUdzZtMmJlX0Q5QTQ0TlFEUU5yZG16VE9ERGxSS29IdXloNnM?oc=5",
+      "publisher": "Marine Insight",
+      "pubDate": "Wed, 04 Oct 2023 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "\"Artificial intelligence base floating on the sea\"...中 Technology of K-ship Breaks Its Will to Pursue - 매일경제",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBTb0FHeUhqS053anFWZ21KZ1VNLUp2T1RVdkcxRmdVSXRON2RCazV3MEdTR0RkU3JQS2dWVzAwR21UZVRQeFREd05xb3VRcTcwTXBZ?oc=5",
+      "publisher": "매일경제",
+      "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "China Starts Building SMR-Based Floating Nuclear Plant - POWER Magazine",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQUExWOGNLbXRBbE1jMjNzcVE2MG9TQ3ItenBzUXBVQk1fT2RWTWYwTHBpNmVncGxJcURsV3N1bTJaQzRlUk16dkdyQVdjSF9zUnZDd0s5LUZ4cDQ1TnQtM29OTXo0cWpCNC1yN3RCamFOS2luMlVEdEQyOFdJWGhjOG9FMzFsMGM?oc=5",
+      "publisher": "POWER Magazine",
+      "pubDate": "Sun, 01 Jan 2017 08:00:00 GMT",
+      "type": "NEWS"
+    }
+  },
+  {
+    "quarantinedAt": "2026-10-22T04:14:58.177Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "Samsung Heavy and Sargent & Lundy Launch Floating Nuclear Power Plant for Any SMR - Tech Times",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNYlJldXhKZGV4V0hwb3FJel9iMWFfbTVBcUh4bzVWbzBESGdTLWNxNU9kWU5oLVM5RHhuajBtZGJGYVpLbVNlaGVMaThjaUpodHp1dUNWUVJRUzIzRTRoOEJPWXdMYnA1VFZSTkpZOXh5OTlTNFpJb3Nlb3RYQWFIREF1UDBCaVBrbDlTNzdLa3FGcUlBTlRydUoxdWkzd0NzaW4wSWRkaWhPdUdrUG5haTcyb3p0UHVhUll4MHB5TXA0cUtf?oc=5",
+      "publisher": "Tech Times",
+      "pubDate": "Thu, 23 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
