@@ -2836,5 +2836,16 @@
       "pubDate": "Wed, 22 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-23T16:15:09.070Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "“Pink Corridor” to Explore Nuclear-Powered Transatlantic Container Shipping - The Maritime Executive",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPWnk2WFhGWktyUE85TTR6ZGhOVUtsTDRLSk1NT00wb09nLW9xQmZRUDhYX2VDcUtnYXdjV08wdGJLZDVMNFJLLVByMW5jc3FQeEpGakRpeWs2bG5wYWtDckJwUG50T0piNzlPMi1HdmVvQWNndWtjZXJ3VFB5XzRXMkZFSEtlVEcybGM5ZFdQSEZ4QmgxcW52bG1YMV9nWHJ6SG1FRVM0T1dISzRQMmE4TEJ3?oc=5",
+      "publisher": "The Maritime Executive",
+      "pubDate": "Thu, 03 Sep 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
