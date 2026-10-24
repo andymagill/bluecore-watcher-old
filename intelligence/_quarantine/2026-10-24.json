@@ -2880,5 +2880,16 @@
       "pubDate": "Tue, 14 Jul 2026 07:00:00 GMT",
       "type": "NEWS"
     }
+  },
+  {
+    "quarantinedAt": "2026-10-24T16:12:15.149Z",
+    "reason": "Could not resolve a canonical publisher URL from the feed link.",
+    "candidate": {
+      "title": "America’s busiest port watched nearly 10 million containers pass through in a single year and decided the ships carrying the next wave may need nuclear power - Energies Media",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBQTUtBVGRuWU9xX0RpSFY4TUVreWNLQVduWGljYTJFMDZjLXZDRlFaWVBCcF9qYXhpN0JsNmh1Y0c0OEhJblBRbmtid3M0WU81M1NDcHNqYkk3MktEN2ZQV2w4R1IzRW55NXhxNA?oc=5",
+      "publisher": "Energies Media",
+      "pubDate": "Wed, 29 Jul 2026 07:00:00 GMT",
+      "type": "NEWS"
+    }
   }
 ]
